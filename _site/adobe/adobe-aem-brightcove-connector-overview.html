@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Known Issues</title>
+  <title>Adobe-AEM-Brightcove Connector: Overview</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -85,9 +85,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/references/">References</a></li>
+      <li class="breadcrumb-item"><a href="/adobe/">General Information</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Known Issues</li>
+      <li class="breadcrumb-item active" aria-current="page">Adobe-AEM-Brightcove Connector: Overview</li>
     </ol>
   </nav>
 </header>
@@ -143,23 +143,25 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </div>
 
 <article class="bcls-article">
-
-  <h1>Video Cloud CMS Connectors Known Issues</h1>
-  <summary>This topic lists known issues for the Video Cloud CMS Connectors application.</summary>
-
+  <h1>Adobe-AEM-Brightcove Connector: Overview</h1>
+  <summary>This topic provides an overview of the Brightcove connector for Adobe Experience Manager (AEM) 5.5.1.</summary>
   <section class="bcls-section">
-    <h2 id="Advertising">Advertising</h2>
-    <ol>
-      <li>If advertisements are configured at the playlist level, when a video from that playlist is found and played via <em>Search</em>, <em>Recently Watched</em>, <em>Related</em> or <em>Favorites</em>, the adds will not play. Noe that if an ad
-        was assigned to the video directly, that ad will still play.</li>
-    </ol>
+    <h2 id="Introduction">Introduction</h2>
+    <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
+    <p>The latest release of the connector can be found on <a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/">https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/</a>.</p>
+    <p>For detailed instructions, see:</p>
+    <ul>
+      <li><a href="/node/18478">Installation</a></li>
+      <li><a href="/node/18482">Configuration</a></li>
+      <li><a href="/node/18484">Using the Connector</a></li>
+    </ul>
+    <p>Installation of the Connector is similar to installation of the v4.1/v4.2 Connector described <a href="http://files.brightcove.com/bc-adobe-experience-manager.pdf">here</a> . If you are new to the Brightcove AEM Connector we recommend you read that document prior to proceeding.</p>
+    <p>Because this version of the Connector has just been released, it is recommended to install the connector on a development server that is configured as similarly as possible to your production server and work with it enough to be sure that it meets your needs in terms of both functionality and stability before deploying it on a production server. Also, the Connector is open source and any usage of the Connector falls under this <a href="https://github.com/coresecure/Adobe-AEM-Brightcove-Connector/blob/master/LICENSE">License</a>.</p>
   </section>
-
   <section class="bcls-section">
-    <h2 id="Parental_controls">Parental controls</h2>
-    <ol>
-      <li>All content is displayed to end users (in lists, carousels, etc), but when trying to play the video the parental pin will be requested.</li>
-    </ol>
+    <h2 id="key_changes">Key changes</h2>
+    <p>The v5.x&nbsp;now supports Touch UI while maintaining support for Classic UI. The Connector no longer allows legacy SmartPlayer Flash players to be embedded on web pages, but existing SmartPlayers on existing web pages are not impacted.</p>
+    <p>One other notable change in this version of the AEM Connector is that it now uses the built-in Digital Asset Manager (DAM) in AEM, meaning that every video in your Brightcove account will have a matching video object in the AEM DAM and metadata will be synchronized between AEM and Brightcove. If you prefer, you will now be able to keep a copy of your master video in AEM by uploading the video to the AEM DAM first. However, even when you keep your master video in AEM, all renditions used for streaming your video will only be stored in Brightcove, not in the AEM DAM, and all video stream delivery will continue to use Brightcove ensuring the delivery quality you are accustomed to and expect from Brightcove.</p>
   </section>
 </article>
 
@@ -178,7 +180,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Feb 2020
+  Page last updated on 04 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">

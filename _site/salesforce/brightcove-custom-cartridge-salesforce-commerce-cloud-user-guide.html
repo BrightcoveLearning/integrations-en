@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Brightcove Custom Cartridge for Salesforce Commerce Cloud: User Guide</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/assets/css/site/bc-icons.css"> -->
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-video-cloud.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);" style="margin-right: 1rem;">
+  <option value="">Select a language</option>
+  <option value="en|en">English</option>
+  <option value="en|fr">Français</option>
+  <option value="en|de">Deutsch</option>
+  <option value="en|ja">日本語</option>
+  <option value="en|ko">한국어</option>
+  <option value="en|es">Español</option>
+</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+<select id="site_select" style="margin-right: 1rem;">
+  <option value="">Other Brightcove Documentation</option>
+  
+    
+      <option value="https://support.brightcove.com">Documentation Home</option>
+    
+  
+    
+      <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+    
+  
+    
+      <option value="https://beacon.support.brightcove.com">Brightcove Beacon</option>
+    
+  
+    
+      <option value="https://campaign.support.brightcove.com">Brightcove Campaign</option>
+    
+  
+    
+      <option value="https://gallery.support.brightcove.com">Gallery</option>
+    
+  
+    
+      <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+    
+  
+</select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/salesforce/">General Information</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Custom Cartridge for Salesforce Commerce Cloud: User Guide</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/getting-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/getting-started/overview-zencoder.html">Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/quick-start-zencoder.html">Quick Start</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<!-- search bar -->
+<div id="search_bar" class="search-bar">
+  <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+  <!-- <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:6sd3di5mwuw"></script> -->
+  <div id="search_box" class="gcse-search"></div>
+</div>
+
+<article class="bcls-article">
+  <h1>Brightcove Custom Cartridge for Salesforce Commerce Cloud: User Guide</h1>
+  <summary>This topic provides a users guide for the Brightcove Custom Cartridge for Salesforce Commerce Cloud.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>This document provides step-by-step instructions for using Brightcove Salesforce Commerce Cloud Custom Cartridge to upload video files to the Brightcove Cloud/server and publish these files on product details page, as needed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="terms">Terms</h2>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">
+      SFCC Terms
+      </caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Term</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>SFCC</td>
+          <td>Salesforce Commerce Cloud</td>
+        </tr>
+        <tr>
+          <td>Business Manager (BM)</td>
+          <td>The primary admin tool used to configure SFCC platform and customer facing storefront</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Instructions">Instructions</h2>
+    <p>The following sections describe details of instructions to add, assign, embed and bulk upload videos to the Brightcove cloud server using SFCC Business Manager.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Add_a_video_to_the_Brightcove_server">Add a video to the Brightcove server</h2>
+    <p>The <strong>Add Video</strong> Module provides the functionality to add videos to the Brightcove Server/Cloud using SFCC Business Manager. Here are the steps:</p>
+    <ol class="bcls-tasklist">
+      <li>Login to SFCC Business Manager with your valid credentials.</li>
+      <li>Select Merchant Tools from the top-level BM menu and then navigate to the Brightcove section as shown below:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Top-Level BM Menu" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/BM-top-level-menu.png" />
+          <figcaption class="bcls-caption--image">Top-Level BM Menu</figcaption>
+        </figure>
+      </li>
+      <li>Under the Brightcove section Select/Click <strong>Add Video</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/add-video.png" />
+          <figcaption class="bcls-caption--image">Add Video</figcaption>
+        </figure>
+      </li>
+      <li>The <strong>Add Video Page</strong> will be displayed. Fill out the form details to upload the video to Brightcove Server:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add Video Page" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/add-video-page.png" />
+          <figcaption class="bcls-caption--image">Add Video Page</figcaption>
+        </figure>
+      </li>
+      <li>Make sure that appropriate information is entered in <strong> Name </strong> and <strong>Video</strong> fields (Mandatory fields).
+        <p>Note: You can hover mouse over the tag field (the orange icon), for details on usage of the tag field:</p>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Tags Field Info" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/tags-field-info.png" />
+          <figcaption class="bcls-caption--image">Tags Field Info</figcaption>
+        </figure>
+      </li>
+      <li>Click on <strong>Select</strong> option as shown below, it will give you a pop-up to select the video from list of files:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select a Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/select-video.png" />
+          <figcaption class="bcls-caption--image">Select a Video</figcaption>
+        </figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="File Browser" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/file-browser.png" />
+          <figcaption class="bcls-caption--image">File Browser</figcaption>
+        </figure>
+      </li>
+      <li>Likewise, you can select files for the <strong>Poster</strong> and the <strong>Thumbnail</strong>, but these fields are optional.</li>
+      <li>Note that the <strong>Reference ID</strong> field is optional, but if you add one, it must be unique.</li>
+      <li>Now click the <strong>Submit</strong> button to upload the desired video on to the Brightcove Server:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Submit the Form" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/submit-form.png" />
+          <figcaption class="bcls-caption--image">Submit the Form</figcaption>
+        </figure>
+      </li>
+      <li>A "Video file ingested Successfully" message is shown:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Ingest Success Message" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/ingest-success-message.png" />
+          <figcaption class="bcls-caption--image">Ingest Success Message</figcaption>
+        </figure>
+      </li>
+      <li>Login to <a href="https://signin.brightcove.com/">Brightcove Studio</a> and go to the <strong>Media</strong> module to verify that the video is there:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove Studio Media Module" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/studio-media-module.png" />
+          <figcaption class="bcls-caption--image">Brightcove Studio Media Module</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Assign_a_video_to_a_product_in_SFCC">Assign a video to a product in SFCC</h2>
+    <p>The <strong>Assign Video</strong> Module provides the functionality to assign a video, that has already been uploaded to the Brightcove server, to a product, as in the product catalog, in SFCC. Here are the steps:</p>
+    <ol class="bcls-tasklist">
+      <li>Login to the SFCC Business Manager with your valid credentials.</li>
+      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then under the <strong>Brightcove</strong> section, select <strong>Assign Video</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove - Assign Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/mechant-tools-brightcove.png" />
+          <figcaption class="bcls-caption--image">Brightcove - Assign Video</figcaption>
+        </figure>
+      </li>
+      <li>On the <strong>Assign Video</strong> page videos can be assigned or unassigned to any product in the catalog:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Assign Video Page" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/assign-videos-page.png" />
+          <figcaption class="bcls-caption--image">Assign Video Page</figcaption>
+        </figure>
+      </li>
+      <li>To assign a video to a product, click the <strong>Assign Video</strong> link:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Assign Video Link" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/assign-video-link.png" />
+          <figcaption class="bcls-caption--image">Assign Video Link</figcaption>
+        </figure>
+      </li>
+      <li>Now you will see a display of all videos that have been added:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Display of Videos" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/display-of-videos.png" />
+          <figcaption class="bcls-caption--image">Display of Videos</figcaption>
+        </figure>
+      </li>
+      <li>Select the video you want, and then click <strong>Select Video</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select a Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/select-video-to-assign.png" />
+          <figcaption class="bcls-caption--image">Select a Video</figcaption>
+        </figure>
+      </li>
+      <li>After selecting the video, it will be shown as assigned to the product:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Video Assigned to Product" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/video-assigned-to-product.png" />
+          <figcaption class="bcls-caption--image">Video Assigned to Product</figcaption>
+        </figure>
+      </li>
+      <li>Next, go to the product you assigned the video to, to verify whether the Brightcove video attribute are being assigned to the correct product or not. Click on <strong>Merchant tools-&gt; Products and Catalogs-&gt; Product</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Go to Products" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/go-to-products.png" />
+          <figcaption class="bcls-caption--image">Go to Products</figcaption>
+        </figure>
+      </li>
+      <li>Search for the product using the Product ID and click on it to open the product details:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Product Details" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/product-details.png" />
+          <figcaption class="bcls-caption--image">Product Details</figcaption>
+        </figure>
+      </li>
+      <li>All the video attributes should be populated with details from the video:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Video Attributes" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/video-attributes.png" />
+          <figcaption class="bcls-caption--image">Video Attributes</figcaption>
+        </figure>
+      </li>
+      <li>Similarly, a video file can be un-assigned or decoupled from a product in SFCC by clicking the <strong>Un-assign video</strong> link located under the video file. You can all change the assigned video by clicking the <strong>Change Video</strong> link:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Remove or Change Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/change-remove-video.png" />
+          <figcaption class="bcls-caption--image">Remove or Change Video</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Embed_a_video_in_a_content_slot">Embed a video in a content slot</h2>
+    <p>The <strong>Embed Video</strong> functionality enables an SFCC business user with embedding iFrame or Java script code for any video or media file residing on the Brightcove server, in any of the content slots, to render that video on any of the store pages. Here are the steps:</p>
+    <ol class="bcls-tasklist">
+      <li>Login to the SFCC Business Manager with your valid credentials.</li>
+      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then <strong>Brightcove &gt; Embed Video</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove &gt; Embed Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/brightcove-embed-video.png" />
+          <figcaption class="bcls-caption--image">Brightcove &gt; Embed Video</figcaption>
+        </figure>
+      </li>
+      <li>On the <strong>Embed Video</strong> page, search for videos using <strong>tags</strong> or the <strong>Video ID</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Search for Videos" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/search-videos.png" />
+          <figcaption class="bcls-caption--image">Search for Videos</figcaption>
+        </figure>
+      </li>
+      <li>When you have found the video you want to publish, select a player from the dropdown menu (or use the default player), and click the <strong>Get Code</strong> button to get the player publishing code:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select Player and Get Publishing Code" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/select-player-get-code.png" />
+          <figcaption class="bcls-caption--image">Select Player and Get Publishing Code</figcaption>
+        </figure>
+      </li>
+      <li>The Standard and Advanced publishing codes are displayed, with the option to make the player responsive (automatically resize according to the size of the browser window) or fixed. Brightcove recommends that in most cases, you should use the responsive Standard publishing code, unless you know the Advanced code is required for some reason.</li>
+      <li>Copy the code you want and paste it into your page HTML code where needed.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="PDP_Rendering">PDP Rendering</h2>
+    <p>The <strong>PDP Rendering</strong> Module provides the functionality to render video corresponding to the product on the PDP page. This requires mapping of a product with video id existing in the local SFCC catalog database. Here are the steps.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: you may need help from an SFCC expert or administrator for PDP Rendering.</aside>
+    <ol class="bcls-tasklist">
+      <li>Follow the steps in the <a href="#Add_a_video_to_the_Brightcove_server">Assign a video to a product in SFCC</a> section to assign a video to the product, if you have not already done so.</li>
+      <li>
+        <p>Add the following line in <code>app/cartridge/templates/default/product/productDetails.isml</code>:</p>
+        <p><code>
+          <isinclude template="slots/html/htmlBrightcoveVideo"></isinclude>
+          </code></p>
+        <p>The code should then look like this:</p>
+        <figure class="bcls-figure"><img class="bcls-image" alt="isml Code with Brightcove Line" src="https://learning-services-media.brightcove.com/BCL-Doc-Assets/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/isml-code-with-brightcove.png" />
+          <figcaption class="bcls-caption--image">isml Code with Brightcove Line</figcaption>
+        </figure>
+      </li>
+      <li>Go to storefront and search for the assigned product. You should see the video included in the page:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Product Page with Video" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/product-page-video.png" />
+          <figcaption class="bcls-caption--image">Product Page with Video</figcaption>
+        </figure>
+      </li>
+      <li>If you want to change the position of the above video template on PDP, you can do that by editing the file <code>app/cartridge/templates/default/product/productDetails.isml</code> and moving the line that includes the Brightcove Video (see above) to a different location.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bulk_upload">Bulk Upload</h2>
+    <p>The <strong>Bulk Upload</strong> Module provides the functionality to upload multiple files to the Brightcove server as once. Business users can use a csv file containing details of files to be uploaded (name of file, location of the file etc.) during this process. Here are the steps.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to the SFCC Business Manager with your valid credentials.</li>
+      <li>Login to the SFCC Business Manager with your valid credentials.</li>
+      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then <strong>Brightcove &gt; Bulk Upload</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Bulk Upload Menu Item" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/bulk-upload-menu-item.png" />
+          <figcaption class="bcls-caption--image">Bulk Upload Menu Item</figcaption>
+        </figure>
+      </li>
+      <li>Select CSV file (that contains files to be uploaded details) and process it by clicking the <strong>Submit</strong> button:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Process CSV File" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/process-csv-file.png" />
+          <figcaption class="bcls-caption--image">Process CSV File</figcaption>
+        </figure>
+      </li>
+      <li>If you want to check on the progress of adding the videos you can look for them in the Media Module in Brightcove Studio.</li>
+    </ol>
+    <h3>Details of the CSV file</h3>
+    <p>The table below shows the headers you should have in the CSV file, along with a description of the contents for the items under each header/** * @deprecated description */</p>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">
+      CSV Headers/Fields
+      </caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Table Header</th>
+          <th>Table Header</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><code>videoname</code></td>
+          <td>A title for the video - REQUIRED</td>
+        </tr>
+        <tr>
+          <td><code>videoreferenceid</code></td>
+          <td>A unique reference id for the video - optional</td>
+        </tr>
+        <tr>
+          <td><code>videotags</code></td>
+          <td>A comma-delimited list of tags for the video - optional</td>
+        </tr>
+        <tr>
+          <td><code>videodescription</code></td>
+          <td>A short description for the video - optional</td>
+        </tr>
+        <tr>
+          <td><code>videofile</code></td>
+          <td>A public URL where the video resides - REQUIRED</td>
+        </tr>
+        <tr>
+          <td><code>videothumbnail</code></td>
+          <td>A public URL where the thumbnail image file resides - optional</td>
+        </tr>
+        <tr>
+          <td><code>videoposter</code></td>
+          <td>A public URL where the poster image file resides - optional</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Sample</h4>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample CSV" src="https://learning-services-media.brightcove.com/doc-assets/node/18959-brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide/bulk-upload.png" />
+      <figcaption class="bcls-caption--image">Sample CSV</figcaption>
+    </figure>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 04 Mar 2020
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:gqomuefz6aq"></script>
+</body>
+
+</html>

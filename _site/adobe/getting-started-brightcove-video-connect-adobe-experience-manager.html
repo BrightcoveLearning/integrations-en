@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Known Issues</title>
+  <title>Getting Started with Brightcove Video Connect for Adobe Experience Manager</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -85,9 +85,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/references/">References</a></li>
+      <li class="breadcrumb-item"><a href="/adobe/">General Information</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Known Issues</li>
+      <li class="breadcrumb-item active" aria-current="page">Getting Started with Brightcove Video Connect for Adobe Experience Manager</li>
     </ol>
   </nav>
 </header>
@@ -143,24 +143,122 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </div>
 
 <article class="bcls-article">
-
-  <h1>Video Cloud CMS Connectors Known Issues</h1>
-  <summary>This topic lists known issues for the Video Cloud CMS Connectors application.</summary>
-
-  <section class="bcls-section">
-    <h2 id="Advertising">Advertising</h2>
-    <ol>
-      <li>If advertisements are configured at the playlist level, when a video from that playlist is found and played via <em>Search</em>, <em>Recently Watched</em>, <em>Related</em> or <em>Favorites</em>, the adds will not play. Noe that if an ad
-        was assigned to the video directly, that ad will still play.</li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Parental_controls">Parental controls</h2>
-    <ol>
-      <li>All content is displayed to end users (in lists, carousels, etc), but when trying to play the video the parental pin will be requested.</li>
-    </ol>
-  </section>
+  <h1>Getting Started with Brightcove Video Connect for Adobe Experience Manager</h1>
+  <summary>This topic provides an overview of Brightcove Video Connect for the Adobe Experience Manager.</summary>
+  <table class="bcls-table">
+    <thead>
+      <tr class="bcls-table__head">
+        <th scope="col">Plug-in Version</th>
+        <th scope="col">Documentation</th>
+        <th scope="col">Download</th>
+        <th scope="col">Compatibility Notes</th>
+      </tr>
+    </thead>
+    <tbody class="bcls-table__body">
+      <tr> </tr>
+      <tr>
+        <td>5.5.3</td>
+        <td>Same as 5.5.2</td>
+        <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.3">Plugin with Source</a></td>
+        <td><ul>
+            <li>Removes hardcoded ingest profile if no value selected in the AEM OSGi config</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>5.5.2</td>
+        <td><ul compact="compact">
+            <li><a href="/node/18483">Overview</a></li>
+            <li><a href="/node/18478">Installation</a></li>
+            <li><a href="/node/18482">Configuration</a></li>
+            <li><a href="/node/18484">Using the Connector</a></li>
+          </ul></td>
+        <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.2">Plugin with Source</a></td>
+        <td><ul>
+            <li>Supports AEM 6.5</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>5.5.1</td>
+        <td><ul compact="compact">
+            <li><a href="/node/18483">Overview</a></li>
+            <li><a href="/node/18478">Installation</a></li>
+            <li><a href="/node/18482">Configuration</a></li>
+            <li><a href="/node/18484">Using the Connector</a></li>
+          </ul></td>
+        <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.1">Plug-in with Source</a></td>
+        <td><ul>
+            <li>Supports AEM 6.2, AEM 6.3 and AEM 6.4</li>
+            <li>Uses Brightcove CMS &amp; Dynamic Ingest API's&nbsp;</li>
+            <li>Embeds Brightcove HTML5 Player</li>
+            <li>Supports Classic UI and Touch UI&nbsp;</li>
+            <li>Uses AEM asset manager</li>
+            <li>Added UTF-8 multi-language support</li>
+            <li>Extended Proxy support for S3 video upload</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td><p>5.5.0 (EOL)</p></td>
+        <td><ul compact="compact">
+            <li><a href="/node/18483">Overview</a></li>
+            <li><a href="/node/18478">Installation</a></li>
+            <li><a href="/node/18482">Configuration</a></li>
+            <li><a href="/node/18484">Using the Connector</a></li>
+          </ul></td>
+        <td>EOL</td>
+        <td><ul>
+            <li><strong>End of Life&nbsp;as of January 1, 2020&nbsp;</strong></li>
+            <li>Supports AEM 6.2 and AEM 6.3&nbsp;</li>
+            <li>Uses Brightcove CMS &amp; Dynamic Ingest API's&nbsp;</li>
+            <li>Embeds Brightcove HTML5 Player</li>
+            <li>Supports Classic UI and Touch UI&nbsp;</li>
+            <li>Uses AEM asset manager</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>4.2.0 (EOL)</td>
+        <td><a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a>&nbsp;</td>
+        <td>EOL</td>
+        <td><ul>
+            <li><strong>End of Life as of December 31, 2017&nbsp;</strong></li>
+            <li>Supports AEM 6.2&nbsp;</li>
+            <li>Uses Brightcove Media API for video management</li>
+            <li>Uses Brightcove CMS&nbsp;API for player embed</li>
+            <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
+            <li>Embeds Brightcove HTML5 Player&nbsp;</li>
+            <li>Supports Classic UI</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>4.1.2 (EOL)</td>
+        <td><a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a></td>
+        <td>EOL</td>
+        <td><ul>
+            <li><strong>End of Life as of December 31, 2017&nbsp;</strong></li>
+            <li>Supports AEM 6.1&nbsp;</li>
+            <li>Uses Brightcove Media API for video management</li>
+            <li>Uses Brightcove CMS&nbsp;API for player embed</li>
+            <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
+            <li>Embeds Brightcove HTML5 Player&nbsp;</li>
+            <li>Supports Classic UI</li>
+          </ul></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforAEMSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://support.brightcove.com/en/contact/create">Brightcove customer support</a>.</p>
+  <p>&nbsp;</p>
+  <h2>AEM Mandatory Upgrade Explanation</h2>
+  <p>The Brightcove Connector for AEM, v4.2 and previous versions, ceased to function at the end of 2017 because we retired the underlying API’s and Flash Player used by the Connector. &nbsp;We updated the Brightcove Connector in the&nbsp;v5.0 release to use our current APIs and HTML5 player. &nbsp;The 5.0&nbsp;Brightcove Connector supports&nbsp;AEM versions 6.2,&nbsp;6.3 and 6.4 in both Classic UI and Touch UI modes and now synchronizes video assets between Brightcove and the AEM Digital Asset Manager (DAM). &nbsp;</p>
+  <h3>Actions Required</h3>
+  <p>If you are currently using an AEM/CQ release prior to AEM 6.0 and are also using the Brightcove Connector, you will need to upgrade to a newer version of AEM and the Connector per the discussion below.</p>
+  <p>If you are currently using AEM 6.0/6.1 with the v4.1 Connector or if you are currently using AEM 6.2 with the v4.2 Connector you may to continue using your existing Connector version under the following three conditions:</p>
+  <p>1. You do not require Touch UI support<br />
+    2. You only use the Connector to embed video and you are managing your video content directly in Brightcove Studio and are not using the Video Manager (/brightcove/admin) in the Brightcove Connector.<br />
+    3. You are not moving to AEM 6.3 or AEM 6.4</p>
+  <p>You will need to upgrade to AEM 6.2 or AEM 6.3 or AEM 6.4 and you will need to use the new v5.0 Connector under any of the following three conditions:</p>
+  <p>1. You require Touch UI support<br />
+    2. You use the Connector to upload videos and/or edit metadata&nbsp;<br />
+    3. You need to keep a copy of your master video in the AEM DAM</p>
+  <p>&nbsp;</p>
 </article>
 
 <!-- complete bootstrap layout -->
@@ -178,7 +276,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Feb 2020
+  Page last updated on 04 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">

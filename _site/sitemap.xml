@@ -6,119 +6,210 @@
 
     
     <url>
-        <loc>https://studio.support.brightcove.com/404.html</loc>
+        <loc>https://integrations.support.brightcove.com/404.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/assets/js/feedback.js</loc>
+        <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-configuration.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/references/glossary.html</loc>
+        <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/icons.html</loc>
+        <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/references/</loc>
+        <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/getting-started/</loc>
+        <loc>https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/support/</loc>
+        <loc>https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/</loc>
+        <loc>https://integrations.support.brightcove.com/training/cms-integration-training-videos.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/index_for_launch.html</loc>
+        <loc>https://integrations.support.brightcove.com/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/references/known-issues.html</loc>
+        <loc>https://integrations.support.brightcove.com/assets/js/feedback.js</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/assets/css/local.css</loc>
+        <loc>https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+        <loc>https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/references/product-updates.html</loc>
+        <loc>https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/assets/js/search.js</loc>
+        <loc>https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/sitemap.xml</loc>
+        <loc>https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+        <loc>https://integrations.support.brightcove.com/references/glossary.html</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://studio.support.brightcove.com/feed.xml</loc>
+        <loc>https://integrations.support.brightcove.com/icons.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/references/</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/support/</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/getting-started/</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/index_for_launch.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/references/known-issues.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/assets/css/local.css</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/references/product-updates.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/assets/js/search.js</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/sitemap.xml</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+        <lastmod>2020-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://integrations.support.brightcove.com/feed.xml</loc>
         <lastmod>2020-03-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
