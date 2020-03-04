@@ -18,22 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Video Cloud Studio Documentation
+title: Video Cloud CMS Connector Documentation
 email: training@brightcove.com
 description: |- # this means to ignore newlines until "baseurl:"
   With Video Cloud you can deliver fast, innovative, TV-like experiences out-of-the-box, dynamically insert server-side ads to maximize revenue, and reach your audiences wherever they are.
 
   Video Cloud Studio allows you to manage your video publishing workflow across desktop, tablet and mobile devices.
 # baseurl: "" # the subpath of your site, e.g. /blog
-site_url: "https://studio.support.brightcove.com"
+site_url: "https://integrations.support.brightcove.com"
 
 # Build settings
 # theme: minima
 
 # local server (for "jekyll serve") will be localhost:{PORT number below}
-port: 8100
+port: 8400
 
-product: Video Cloud Studio
+product: Video Cloud CMS Connectors
 color: rgb(51, 51, 51)
 product_color: rgb(239, 108, 42)
 product_icon: "logo-bc-video-cloud.svg"
