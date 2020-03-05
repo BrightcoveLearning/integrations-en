@@ -2,14 +2,83 @@
   name: 'Home'
   url: '/'
 - section: 
-  name: 'Getting Started'
-  url: '/getting-started/'
-  icon: '<i class="far fa-location-arrow"></i>'
+  name: 'General Information'
+  url: '/general/'
   docs:
-    - name: 'Overview'
-      url: '/getting-started/overview-zencoder.html'
-    - name: 'Quick Start'
-      url: '/getting-started/quick-start-zencoder.html'
+    - name: CMS Integration Training Videos
+      url: /general/cms-integration-training-videos.html
+    - name: Debugging Network and API Connection Issues
+      url: /general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html
+    - name: Embedding Brightcove Players in a CMS
+      url: /general/embedding-brightcove-players-cms.html
+- section: 
+  name: 'Adobe'
+  url: '/adobe/'
+  docs:
+    - name: Getting Started with Brightcove Video Connect
+      url: /adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
+    - name: Configuration
+      url: /adobe/adobe-aem-brightcove-connector-configuration.html
+    - name: Installation
+      url: /adobe/adobe-aem-brightcove-connector-installation.html
+    - name: Overview
+      url: /adobe/adobe-aem-brightcove-connector-overview.html
+    - name: Using the Connector
+      url: /adobe/adobe-aem-brightcove-connector-using-connector.html
+- section: 
+  name: 'Drupal'
+  url: '/drupal/'
+  docs:
+    - name: Getting Started with Brightcove Video Connect
+      url: /drupal/getting-started-brightcove-video-connect-drupal-cms.html
+    - name: Drupal 8 - Configuration
+      url: /drupal/drupal-8-brightcove-connector-configuration.html
+    - name: Drupal 8 - Content Management
+      url: /drupal/drupal-8-brightcove-connector-content-management.html
+    - name: Drupal 8 - Embedding Content
+      url: /drupal/drupal-8-brightcove-connector-embedding-content.html
+    - name: Drupal 8 - Connector Installation
+      url: /drupal/drupal-8-brightcove-connector-installation.html
+    - name: Drupal 7 - Configuration and Usage
+      url: /drupal/drupal-7-brightcove-connector-configuration-and-usage.html
+    - name: Drupal 7 - Installation
+      url: /drupal/drupal-7-brightcove-connector-installation.html
+- section: 
+  name: 'Salesforce'
+  url: '/salesforce/'
+  docs:
+    - name: 'Brightcove Custom Cartridge: Installation'
+      url: /salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html
+    - name: 'Brightcove Custom Cartridge: User Guide'
+      url: /salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html
+- section: 
+  name: 'SharePoint'
+  url: '/sharepoint/'
+  docs:
+    - name: Getting Started with Brightcove Video Connect
+      url: /sharepoint/getting-started-brightcove-video-connect-sharepoint.html
+    - name: Using the Connector
+      url: /sharepoint/sharepoint-brightcove-connector-4041-using-connector.html
+- section: 
+  name: 'Sitecore'
+  url: '/sitecore/'
+  docs:
+    - name: Getting Started with Brightcove Video Connect
+      url: /sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+- section: 
+  name: 'WordPress'
+  url: '/wordpress/'
+  docs:
+    - name: Getting Started with Brightcove Video Connect
+      url: /wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
+    - name: Configuration
+      url: /wordpress/wordpress-brightcove-connector-configuration.html
+    - name: Frequently Asked Questions
+      url: /wordpress/wordpress-brightcove-connector-frequently-asked-questions.html
+    - name: Installation
+      url: /wordpress/wordpress-brightcove-connector-installation.html
+    - name: Using the Connector
+      url: /wordpress/wordpress-brightcove-connector-using-connector.html
 - section: 
   name: 'Support'
   url: '/support/'
