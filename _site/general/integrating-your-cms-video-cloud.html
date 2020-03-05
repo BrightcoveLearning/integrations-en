@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Adobe-AEM-Brightcove Connector: Installation</title>
+  <title>Integrating Your CMS with Video Cloud</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -85,9 +85,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/adobe/">Adobe</a></li>
+      <li class="breadcrumb-item"><a href="/general/">General Information</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Adobe-AEM-Brightcove Connector: Installation</li>
+      <li class="breadcrumb-item active" aria-current="page">Integrating Your CMS with Video Cloud</li>
     </ol>
   </nav>
 </header>
@@ -277,47 +277,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <div id="search_box" class="gcse-search"></div>
 </div>
 
-<article class="bcls-article">
-  <h1>Adobe-AEM-Brightcove Connector: Installation</h1>
-  <summary>This topic covers the installation of the Brightcove connector for Adobe Experience Manager (AEM).</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
-    <aside class="bcls-aside bcls-aside--information">Note that this guide uses AEM 6.3. The connector also works with AEM 6.2 and&nbsp;AEM 6.4&nbsp;and the steps are similar.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="installation_steps">Getting Started</h2>
-    <p>If you do not already have an AEM dev&nbsp;instance, you can easily create one using the AEM Quickstart .jar file:</p>
-    <pre>
-<code class="language-java">java  -Xmx1400M -jar AEM_6.3_Quickstart.jar</code></pre>
-    <p>If you use this Quickstart, your AEM instance will be hosted at: http://localhost:4502 by default. The following sections will assume this default location, so if you are using a different location or port, you will need to adjust the URLs shown in the steps, or use the AEM navigation menu instead.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="installing_the_connector">Installing the connector</h2>
-    <p>The following steps will walk you through installing the connector using the classic interface.</p>
-    <ul class="bcls-tasklist">
-      <li>Go to <a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/">https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/</a> and download the&nbsp;connector for your version of AEM (the brightcove-all...zip file).</li>
-      <li>Start your dev instance of AEM.</li>
-      <li>After you login, go to the CRX Package Manager (http://localhost:4502/crx/packmgr/index.jsp)</li>
-      <li>Click the Upload button:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Upload Package" src="//learning-services-media.brightcove.com/doc-assets/node/18478-brightcove-aem-adobe-experience-manager-installation/node18478-1-selectupload.png" />
-          <figcaption class="bcls-caption--image">Upload Package</figcaption>
-        </figure>
-      </li>
-      <li>In the Upload dialog, browse to the zip file for the connector and click OK to upload it.</li>
-      <li>When the package appears in the list, click Install to install it:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Install Package" src="//learning-services-media.brightcove.com/doc-assets/node/18478-brightcove-aem-adobe-experience-manager-installation/node18478-1-installpackage.png" />
-          <figcaption class="bcls-caption--image">Install Package</figcaption>
-        </figure>
-      </li>
-      <li>Go to the console bundles page (http://localhost:4502/system/console/bundles) to verify that the package is active:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Verify Package Status" src="//learning-services-media.brightcove.com/doc-assets/node/18478-brightcove-aem-adobe-experience-manager-installation/node18478-1-checkpackagestatus.png" />
-          <figcaption class="bcls-caption--image">Verify Package Status</figcaption>
-        </figure>
-      </li>
-    </ul>
-    <p>When you have completed these steps, the connector is successfully installed, and you should proceed to the <a href="/node/18482">Configuration</a>.</p>
-  </section>
+<script>
+  shared_content = '/shared-content/integration/integrating-your-cms-video-cloud.html';
+</script>
+<h1>Integrating Your CMS with Video Cloud</h1>
+<summary>In this topic, you will learn the basic operations involved in integrating Brightcove Video Cloud with a CMS. It lists typical functions that users perform within the CMS and the Brightcove API operations that can be used to provide that functionality.</summary>
+<article id="bcls_article" class="bcls-article">
 </article>
 
 <!-- complete bootstrap layout -->
@@ -335,7 +300,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 04 Mar 2020
+  Page last updated on 05 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
@@ -417,13 +382,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
   
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc-shared-content.js"></script>
   
   <script src="/assets/js/sites_nav.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
   <script src="/assets/js/feedback.js"></script>
   <script src="/assets/js/search.js"></script>
   <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:gqomuefz6aq"></script>
+  <script src="/assets/js/share.js"></script>
 </body>
 
 </html>
