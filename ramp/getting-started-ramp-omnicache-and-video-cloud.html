@@ -1,0 +1,69 @@
+---
+title: 'Getting Started with Ramp OmniCache and Video Cloud'
+description: 'This topic provides an overview of using the Ramp AltitudeCDN™ OmniCache eCDN solution with Brightcove Video Cloud.'
+parent: Ramp
+---
+
+<article class="bcls-article">
+  <h1>{{ page.title }}</h1>
+  <summary>
+    <p>{{ page.description }}</p>
+  </summary>
+  <section class="bcls-section">
+    <h2 id="introduction">Introduction</h2>
+  
+    <p>Ramp's&nbsp;<a href="https://ramp.com/product/altitudecdn/omnicache/">AltitudeCDN™ OmniCache</a>&nbsp;product is an enterprise video distribution system that makes use of proxy cache technology to reduce video traffic over the internet gateway or limited bandwidth links within the enterprise network. With OmniCache, client desktop computers and mobile devices using the Brightcove Player will pull the stream directly from the OmniCache server and then OmniCache server will pull&nbsp;the stream from the Brightcove CDN, if it does not already have a local copy in the cache. OmniCache is a completely on-premise solution delivered as a software appliance and is managed by the AltitudeCDN™ Altimeter management console. &nbsp;Omnicache can be used standalone or in concert with&nbsp;AltitudeCDN™ Multicast+ for mixed unicast/multicast networks.</p>
+    
+    <p>The integration with the Brightcove uses the <a href="https://livetools.ramp.com/omnicache/plugin/brightcove-omnicache-v1.4.js">OmniCache Video.js plug-in</a> to rewrite the stream URL to the OmniCache server. &nbsp;For complete details on setting up the OmniCache server for use with Video Cloud, see this <a target="_blank" href="https://files.brightcove.com/Altitude%20CDN_OmniCache_Brightcove_TechNote_v14.pdf">TechNote</a> from Ramp.</p>
+    
+    <p>Before proceeding with the instructions below, please complete the OmniCache Quickstart process with the Ramp team to ensure that the OmniCache&nbsp;server&nbsp;and the local network are configured properly.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="playerconfig">Player Configuration</h2>
+    
+    <p>Start by configuring a Brightcove player to use the OmniCache plug-in. Create a new player with the desired skin and options.</p>
+    
+    <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16837-player-setup.png" /></p>
+    
+    <p>Then, add the OmniCache Video.js plug-in.</p>
+    
+    <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16837-player-setup-plugins-javascript.png" /></p>
+    
+    <p>Copy and paste from here:</p>
+    <!--Drupal editor breaks <pre> formatting.  Here is the original
+    //livetools.ramp.com/omnicache/plugin/brightcove-omnicache-1.4.js
+    -->
+    
+    <pre class="line-numbers">
+    <code class="language-html">https://livetools.ramp.com/omnicache/plugin/brightcove-omnicache-v1.4.js</code>
+    </pre>
+    
+    <p>Finally, set the OmniCache plug-in options. Replace the proxy value "omnicachedemo.ramp.com" with the DNS name of your OmniCache server. Alternatively you can also specify a DNS load balancer to spread the video traffic across multiple OmniCache servers.</p>
+    
+    <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16837-player-setup-plugins-options.png" /></p>
+    
+    <p>Copy and paste from here:</p>
+    <!--Drupal editor breaks <pre> formatting.  Here is the original
+    {
+        "proxy": "omnicachedemo.ramp.com",
+        "verbose": true,
+        "timeout": 2000
+    }
+    -->
+    
+    <pre class="line-numbers">
+    <code class="language-json">{
+        "proxy": "omnicachedemo.ramp.com",
+        "verbose": true,
+        "timeout": 2000
+    }</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="embed">Embed Brightcove Player</h2>
+    
+    <p>Finally, embed the Brightcove player on your web page using the standard player publishing process.</p>
+    
+    <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16837-player-embed.png" /><br />
+    <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16837-player-embed_copy_code.png" /></p>
+    </section>
+</article>

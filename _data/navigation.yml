@@ -4,81 +4,101 @@
 - section: 
   name: 'General Information'
   url: '/general/'
+  icon: '<i class="far fa-info-circle"></i>'
   docs:
-    - name: CMS Integration Training Videos
-      url: /general/cms-integration-training-videos.html
-    - name: Debugging Network and API Connection Issues
-      url: /general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html
-    - name: Embedding Brightcove Players in a CMS
-      url: /general/embedding-brightcove-players-cms.html
+    - name: 'CMS Integration Training Videos'
+      url: '/general/cms-integration-training-videos.html'
+    - name: 'Integrating Your CMS with Video Cloud'
+      url: '/general/integrating-your-cms-video-cloud.html'
+    - name: 'Embedding Brightcove Players in a CMS'
+      url: '/general/embedding-brightcove-players-cms.html'
+    - name: 'Embedding In-Page Experiences in a CMS'
+      url: '/general/embedding-brightcove-page-experiences-cms.html'
+    - name: 'Debugging Network and API Connection Issues'
+      url: '/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html'
 - section: 
   name: 'Adobe'
   url: '/adobe/'
+  icon: '<i class="fab fa-adobe"></i>'
   docs:
-    - name: Getting Started with Brightcove Video Connect
-      url: /adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html
-    - name: Configuration
-      url: /adobe/adobe-aem-brightcove-connector-configuration.html
-    - name: Installation
-      url: /adobe/adobe-aem-brightcove-connector-installation.html
-    - name: Overview
-      url: /adobe/adobe-aem-brightcove-connector-overview.html
-    - name: Using the Connector
-      url: /adobe/adobe-aem-brightcove-connector-using-connector.html
+    - name: 'Getting Started with the Connector for AEM'
+      url: '/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html'
+    - name: 'Configuration'
+      url: '/adobe/adobe-aem-brightcove-connector-configuration.html'
+    - name: 'Installation'
+      url: '/adobe/adobe-aem-brightcove-connector-installation.html'
+    - name: 'Overview'
+      url: '/adobe/adobe-aem-brightcove-connector-overview.html'
+    - name: 'Using the Connector'
+      url: '/adobe/adobe-aem-brightcove-connector-using-connector.html'
 - section: 
   name: 'Drupal'
   url: '/drupal/'
+  icon: '<i class="fab fa-drupal"></i>'
   docs:
-    - name: Getting Started with Brightcove Video Connect
-      url: /drupal/getting-started-brightcove-video-connect-drupal-cms.html
-    - name: Drupal 8 - Configuration
-      url: /drupal/drupal-8-brightcove-connector-configuration.html
-    - name: Drupal 8 - Content Management
-      url: /drupal/drupal-8-brightcove-connector-content-management.html
-    - name: Drupal 8 - Embedding Content
-      url: /drupal/drupal-8-brightcove-connector-embedding-content.html
-    - name: Drupal 8 - Connector Installation
-      url: /drupal/drupal-8-brightcove-connector-installation.html
-    - name: Drupal 7 - Configuration and Usage
-      url: /drupal/drupal-7-brightcove-connector-configuration-and-usage.html
-    - name: Drupal 7 - Installation
-      url: /drupal/drupal-7-brightcove-connector-installation.html
+    - name: 'Getting Started with the Connector for Drupal'
+      url: '/drupal/getting-started-brightcove-video-connect-drupal-cms.html'
+    - name: 'Drupal 8 - Configuration'
+      url: '/drupal/drupal-8-brightcove-connector-configuration.html'
+    - name: 'Drupal 8 - Content Management'
+      url: '/drupal/drupal-8-brightcove-connector-content-management.html'
+    - name: 'Drupal 8 - Embedding Content'
+      url: '/drupal/drupal-8-brightcove-connector-embedding-content.html'
+    - name: 'Drupal 8 - Connector Installation'
+      url: '/drupal/drupal-8-brightcove-connector-installation.html'
+    - name: 'Drupal 7 - Configuration and Usage'
+      url: '/drupal/drupal-7-brightcove-connector-configuration-and-usage.html'
+    - name: 'Drupal 7 - Installation'
+      url: '/drupal/drupal-7-brightcove-connector-installation.html'
+- section: 
+  name: 'Ramp'
+  url: '/ramp/'
+  icon: '<img src="/assets/images/ramp/ramp_logo_grad_white.png">'
+  docs:
+    - name: 'Getting Started with Ramp OmniCache and Video Cloud'
+      url: '/ramp/getting-started-ramp-omnicache-and-video-cloud.html'
+    - name: 'Getting Started with Ramp Multicast+ and Video Cloud'
+      url: '/ramp/getting-started-ramp-multicast-and-video-cloud.html'
 - section: 
   name: 'Salesforce'
   url: '/salesforce/'
+  icon: '<i class="fab fa-salesforce"></i>'
   docs:
     - name: 'Brightcove Custom Cartridge: Installation'
-      url: /salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html
+      url: '/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html'
     - name: 'Brightcove Custom Cartridge: User Guide'
-      url: /salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html
+      url: '/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
 - section: 
   name: 'SharePoint'
   url: '/sharepoint/'
+  icon: '<img src="/assets/images/sharepoint/66px-Microsoft_Office_SharePoint_(2018–present).png">'
   docs:
-    - name: Getting Started with Brightcove Video Connect
-      url: /sharepoint/getting-started-brightcove-video-connect-sharepoint.html
-    - name: Using the Connector
-      url: /sharepoint/sharepoint-brightcove-connector-4041-using-connector.html
+    - name: 'Getting Started with the Connector for Sharepoint'
+      url: '/sharepoint/getting-started-brightcove-video-connect-sharepoint.html'
+    - name: 'Using the Connector'
+      url: '/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html'
 - section: 
   name: 'Sitecore'
   url: '/sitecore/'
+  icon: '<img style="width:2em;" src="/assets/images/sitecore/sitecoreLogo.svg">'
   docs:
-    - name: Getting Started with Brightcove Video Connect
-      url: /sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html
+    - name: 'Getting Started with the Connector for Sitecore'
+      url: '/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
 - section: 
   name: 'WordPress'
   url: '/wordpress/'
+  icon: '<i class="fab fa-wordpress"></i>'
   docs:
-    - name: Getting Started with Brightcove Video Connect
-      url: /wordpress/getting-started-brightcove-video-connect-wordpress-cms.html
-    - name: Configuration
-      url: /wordpress/wordpress-brightcove-connector-configuration.html
-    - name: Frequently Asked Questions
-      url: /wordpress/wordpress-brightcove-connector-frequently-asked-questions.html
-    - name: Installation
-      url: /wordpress/wordpress-brightcove-connector-installation.html
-    - name: Using the Connector
-      url: /wordpress/wordpress-brightcove-connector-using-connector.html
+    - name: 'Getting Started with Brightcove Video Connect'
+      url: '/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html'
+    - name: 'Configuration'
+      url: '/wordpress/wordpress-brightcove-connector-configuration.html'
+    - name: 'Frequently Asked Questions'
+      url: '/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html'
+    - name: 'Installation'
+      url: '/wordpress/wordpress-brightcove-connector-installation.html'
+    - name: 'Using the Connector'
+      url: '/wordpress/wordpress-brightcove-connector-using-connector.html'
 - section: 
   name: 'Support'
   url: '/support/'
