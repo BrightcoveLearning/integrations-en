@@ -1,0 +1,217 @@
+[
+  {
+      "newURL": "https://integrations.support.brightcove.com/404.html",
+      "oldURL": "/404"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-configuration.html",
+      "oldURL": "/adobe-aem-brightcove-connector-configuration"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html",
+      "oldURL": "/adobe-aem-brightcove-connector-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html",
+      "oldURL": "/adobe-aem-brightcove-connector-overview"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html",
+      "oldURL": "/adobe-aem-brightcove-connector-using-connector"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html",
+      "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html",
+      "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/cms-integration-training-videos.html",
+      "oldURL": "/cms-integration-training-videos"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html",
+      "oldURL": "/debugging-network-and-api-connection-issues-cms-and-dam-integrations"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-7-brightcove-connector-configuration-and-usage.html",
+      "oldURL": "/drupal-7-brightcove-connector-configuration-and-usage"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-7-brightcove-connector-installation.html",
+      "oldURL": "/drupal-7-brightcove-connector-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-configuration.html",
+      "oldURL": "/drupal-8-brightcove-connector-configuration"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-content-management.html",
+      "oldURL": "/drupal-8-brightcove-connector-content-management"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-embedding-content.html",
+      "oldURL": "/drupal-8-brightcove-connector-embedding-content"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-installation.html",
+      "oldURL": "/drupal-8-brightcove-connector-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/embedding-brightcove-page-experiences-cms.html",
+      "oldURL": "/embedding-brightcove-page-experiences-cms"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/embedding-brightcove-players-cms.html",
+      "oldURL": "/embedding-brightcove-players-cms"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html",
+      "oldURL": "/getting-started-brightcove-video-connect-adobe-experience-manager"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html",
+      "oldURL": "/getting-started-brightcove-video-connect-drupal-cms"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html",
+      "oldURL": "/getting-started-brightcove-video-connect-sharepoint"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html",
+      "oldURL": "/getting-started-brightcove-video-connect-sitecore-experience-platform"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html",
+      "oldURL": "/getting-started-brightcove-video-connect-wordpress-cms"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ramp/getting-started-ramp-multicast-and-video-cloud.html",
+      "oldURL": "/getting-started-ramp-multicast-and-video-cloud"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ramp/getting-started-ramp-omnicache-and-video-cloud.html",
+      "oldURL": "/getting-started-ramp-omnicache-and-video-cloud"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/icons.html",
+      "oldURL": "/icons"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sitecore/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/salesforce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/integrating-your-cms-video-cloud.html",
+      "oldURL": "/integrating-your-cms-video-cloud"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/opening-case-with-brightcove-support.html",
+      "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html",
+      "oldURL": "/sharepoint-brightcove-connector-4041-using-connector"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
+      "oldURL": "/viewing-brightcove-system-status-page"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-configuration.html",
+      "oldURL": "/wordpress-brightcove-connector-configuration"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html",
+      "oldURL": "/wordpress-brightcove-connector-frequently-asked-questions"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-installation.html",
+      "oldURL": "/wordpress-brightcove-connector-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-using-connector.html",
+      "oldURL": "/wordpress-brightcove-connector-using-connector"
+  },
+]
+
