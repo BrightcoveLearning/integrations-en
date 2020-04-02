@@ -12,59 +12,59 @@ parent: Adobe
   </section>
   <section class="bcls-section">
     <h2 id="installation_steps">Configuration steps</h2>
-    <p>The following sections will walk you through the steps to configure the Adobe-AEM-Brightcove Connector using the classic interface. Note that before completing these steps, the connector must be installed - see <a href="/node/18478">Adobe-AEM-Brightcove Connector: Installation</a></p>
+    <p>The following sections will walk you through the steps to configure the Adobe-AEM-Brightcove Connector using the classic interface. Note that before completing these steps, the connector must be installed - see <a href="/adobe/adobe-aem-brightcove-connector-installation.html">Adobe-AEM-Brightcove Connector: Installation</a></p>
   </section>
   <section class="bcls-section">
     <h2 id="Disable_dam_transcoding">Disable DAM transcoding</h2>
     <p>By default, when you upload video assets to the AEM DAM it will run ffmpeg in the background to transcode the video into a variety of formats.&nbsp; If you do not have a need for the transcoded assets in the DAM, you should turn off the transcoding to save processing time and storage:</p>
     <ol class="bcls-tasklist">
       <li>Open the AEM tools:
-        <figure class="bcls-figure"><img class="bcls-image" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-aemtools.png" />
+        <figure class="bcls-figure"><img class="bcls-image" src="/assets/images/adobe/node18482-1-aemtools.png" />
           <figcaption class="bcls-caption--image">AEM Tools</figcaption>
         </figure>
       </li>
       <li>Select Workflow:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Workflow Tools" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectworkflow.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Workflow Tools" src="/assets/images/adobe/node18482-1-selectworkflow.png" />
           <figcaption class="bcls-caption--image">Workflow Tools</figcaption>
         </figure>
       </li>
       <li>Select Models:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Models Tools" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectmodels.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Models Tools" src="/assets/images/adobe/node18482-1-selectmodels.png" />
           <figcaption class="bcls-caption--image">Models Tools</figcaption>
         </figure>
       </li>
       <li>Select List View:
-        <figure class="bcls-figure"><img class="bcls-image" alt="List View" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectlistview.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="List View" src="/assets/images/adobe/node18482-1-selectlistview.png" />
           <figcaption class="bcls-caption--image">List View</figcaption>
         </figure>
       </li>
       <li>Select DAM Update Asset:
-        <figure class="bcls-figure"><img class="bcls-image" alt="DAM Update Asset Configuration" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectdamupdateasset.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="DAM Update Asset Configuration" src="/assets/images/adobe/node18482-1-selectdamupdateasset.png" />
           <figcaption class="bcls-caption--image">DAM Update Asset Configuration</figcaption>
         </figure>
       </li>
       <li>Select Edit:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select Edit" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectedit.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select Edit" src="/assets/images/adobe/node18482-1-selectedit.png" />
           <figcaption class="bcls-caption--image">Select Edit</figcaption>
         </figure>
       </li>
       <li>Double-Click FFmpeg Transcoding from the workflow to edit it:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select FFmpeg Transcoding" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selecttranscoding.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select FFmpeg Transcoding" src="/assets/images/adobe/node18482-1-selecttranscoding.png" />
           <figcaption class="bcls-caption--image">Select FFmpeg Transcoding</figcaption>
         </figure>
       </li>
       <li>Select the Process tab in the Step Properties dialog:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select Process Tab" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-selectprocesstab.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select Process Tab" src="/assets/images/adobe/node18482-selectprocesstab.png" />
           <figcaption class="bcls-caption--image">Select Process Tab</figcaption>
         </figure>
       </li>
       <li>Change the Process to <strong>No Operation</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Change the Process" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-changeprocess.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Change the Process" src="/assets/images/adobe/node18482-changeprocess.png" />
           <figcaption class="bcls-caption--image">Change the Process</figcaption>
         </figure>
       </li>
       <li>Change Ok to close the dialog and then save the changes
-        <figure class="bcls-figure"><img class="bcls-image" alt="Save Changes" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-saveworkflow.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Save Changes" src="/assets/images/adobe/node18482-saveworkflow.png" />
           <figcaption class="bcls-caption--image">Save Changes</figcaption>
         </figure>
       </li>
@@ -90,17 +90,17 @@ parent: Adobe
     <ol class="bcls-tasklist">
       <li>Open the AEM Web Console configuration manager (http://localhost:4502/system/console/configMgr)</li>
       <li>Search on <strong>Brightcove Service</strong> to locate the service:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Find Brightcove Service" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-findbrightcoveservice.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Find Brightcove Service" src="/assets/images/adobe/node18482-1-findbrightcoveservice.png" />
           <figcaption class="bcls-caption--image">Find Brightcove Service</figcaption>
         </figure>
       </li>
       <li>Click on the <code>+</code> sign to add a new configuration:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Add Configuration" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-addnewconfig.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add Configuration" src="/assets/images/adobe/node18482-1-addnewconfig.png" />
           <figcaption class="bcls-caption--image">Add Configuration</figcaption>
         </figure>
       </li>
-      <li>In the dialog, enter values as shown below. See <a href="/node/14056">Managing API Authentication Credentials</a> for instructions on getting a client id and client secret. The permissions you need here are:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Require API Permissions" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-apipermissions.png" />
+      <li>In the dialog, enter values as shown below. See <a href="https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a> for instructions on getting a client id and client secret. The permissions you need here are:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Require API Permissions" src="/assets/images/adobe/node18482-1-apipermissions.png" />
           <figcaption class="bcls-caption--image">Required API Permissions</figcaption>
         </figure>
         <ul>
@@ -128,7 +128,7 @@ parent: Adobe
           <li>Your API credentials<strong>&nbsp;Account ID</strong>, <strong>Client ID</strong>, and <strong>Client Secret</strong>&nbsp;may have been incorrectly entered in the connector configuration</li>
           <li>Your API credentials were not configured properly in Brightcove</li>
           <li>The currently logged in user is not a member of one of the <strong>Allowed Groups</strong>&nbsp;in the connector configuration</li>
-          <li>Your network configuration is blocking API access to Brightcove's cloud servers. See <a href="https://support.brightcove.com/debugging-network-and-api-connection-issues-cms-and-dam-integrations">"Debugging Network and API Connection Issues"</a> for more information.</li>
+          <li>Your network configuration is blocking API access to Brightcove's cloud servers. See <a href="/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html">"Debugging Network and API Connection Issues"</a> for more information.</li>
         </ol>
       </li>
       <li>If you will be using multiple Video Cloud accounts, repeat the previous steps for each account.</li>
@@ -141,13 +141,13 @@ parent: Adobe
       <li>Navigate to the Site Admin tools (http://localhost:4502/siteadmin#/content in the Classic UI or http://localhost:4502/sites.html/content in the Touch UI)</li>
       <li>In the top-level Websites folder, create new folder that matches the&nbsp;<strong>Players Store Path</strong>&nbsp;in the configuration.&nbsp; The default is a folder&nbsp;name in the configuration is called <strong>brightcovetools</strong>&nbsp;with a folder inside called <strong>players</strong>.&nbsp; If you are connecting to multiple Brightcove accounts, you might want to create a unique players folder for each account.</li>
       <li>Inside the <strong>players</strong> folder create a new Brightcove Player Page:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Player Page Creation" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-playerpage.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Player Page Creation" src="/assets/images/adobe/node18482-1-playerpage.png" />
           <figcaption class="bcls-caption--image">Player Page Creation</figcaption>
         </figure>
       </li>
       <li>After you create the page, right-click on it and select Properties from the menu in the Classic UI; in the Touch UI, select the page and then click on Properties.</li>
       <li>Go the Brightcove Basic tab of the dialog, and the Brightcove account and then select a player from the list:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select Player" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-selectplayer.png" />
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select Player" src="/assets/images/adobe/node18482-1-selectplayer.png" />
           <figcaption class="bcls-caption--image">Select Player</figcaption>
         </figure>
       </li>
@@ -159,41 +159,41 @@ parent: Adobe
     <p>If you are using Touch UI with the v5.4 connector or later, you will need to activate the metadata schema for the Brightcove asset location.&nbsp; &nbsp;This is not necessary if you are only using classic UI.&nbsp; Activate the metadata schema with the following steps:</p>
     <ol class="bcls-tasklist">
       <li>Open the AEM tools:
-        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-1-tools.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="/assets/images/adobe/node18482-1-tools.png" />
           <figcaption class="bcls-caption--image">AEM Tools</figcaption>
         </figure>
       </li>
       <li>Select Assets:
-        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-2-assets.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="/assets/images/adobe/node18482-2-assets.png" />
           <figcaption class="bcls-caption--image">Assets</figcaption>
         </figure>
       </li>
       <li>Select Metadata Schemas:
-        <figure class="bcls-figure"><img class="bcls-image" width="500px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-3-metadata-schemas.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="500px" src="/assets/images/adobe/node18482-3-metadata-schemas.png" />
           <figcaption class="bcls-caption--image">Metadata Schemas</figcaption>
         </figure>
       </li>
       <li>Select brightcove and click Apply to Folders:
-        <figure class="bcls-figure"><img class="bcls-image" width="500px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-4-select-brightcove-apply.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="500px" src="/assets/images/adobe/node18482-4-select-brightcove-apply.png" />
           <figcaption class="bcls-caption--image">Select Brightcove</figcaption>
         </figure>
       </li>
       <li>If the brightcove_assets folder does not exist, create a folder named brightcove_assets:
-        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-5-create.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="/assets/images/adobe/node18482-5-create.png" />
           <figcaption class="bcls-caption--image">Create</figcaption>
         </figure>
       </li>
       <li>Enter the name "brightcove_assets":
-        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-6-brightcove-assets.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="300px" src="/assets/images/adobe/node18482-6-brightcove-assets.png" />
           <figcaption class="bcls-caption--image">Create brightcove_assets Folder</figcaption>
         </figure>
       </li>
       <li>Select brightcove_assets and click Apply:
-        <figure class="bcls-figure"><img class="bcls-image" width="600px" src="//learning-services-media.brightcove.com/doc-assets/node/18482-brightcove-aem-adobe-experience-manager-configuration/node18482-7-select-brightcove-assets-apply.png" />
+        <figure class="bcls-figure"><img class="bcls-image" width="600px" src="/assets/images/adobe/node18482-7-select-brightcove-assets-apply.png" />
           <figcaption class="bcls-caption--image">Select brightcove_assets</figcaption>
         </figure>
       </li>
     </ol>
-    <p>You have now completed the configuration of the AEM-Brightcove Connector. Proceed to <a href="/node/18484">Using the Connector</a>.</p>
+    <p>You have now completed the configuration of the AEM-Brightcove Connector. Proceed to <a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a>.</p>
   </section>
 </article>

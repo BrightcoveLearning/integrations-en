@@ -19,7 +19,7 @@ parent: SharePoint
     <tbody class="bcls-table__body">
       <tr>
         <td>4.1.2.0</td>
-        <td><a href="https://support.brightcove.com/sharepoint-brightcove-connector-4041-using-connector">Documentation</a></td>
+        <td><a href="/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html">Documentation</a></td>
         <td><a href="https://github.com/BrightcoveOS/SharePoint-Connector/releases/tag/4.1.2.0">Plug-in and source</a> *</td>
         <td><p>SharePoint 2016/2019&nbsp;On-premise, SharePoint 2016/2019 Online (Office 365), Brightcove CMS &amp; DI API's, Brightcove HTML5 Player</p>
           <ul>
@@ -28,7 +28,7 @@ parent: SharePoint
       </tr>
       <tr>
         <td>4.0.1.0</td>
-        <td><a href="/node/18745">Documentation</a></td>
+        <td><a href="/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html">Documentation</a></td>
         <td><a href="https://github.com/BrightcoveOS/SharePoint-Connector/releases/tag/v4.0.1.0">Plug-in and source</a> *</td>
         <td><p>SharePoint 2013/2016 On-premise, SharePoint 2016 Online (Office 365), Brightcove CMS &amp; DI API's, Brightcove HTML5 Player</p>
           <ul>
@@ -67,7 +67,7 @@ parent: SharePoint
     <p>* © 2019&nbsp;Brightcove</p>
     <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a style="box-sizing: border-box; background-color: transparent; color: rgb(3, 102, 214);" href="https://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>. &nbsp;Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
   </div>
-  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforSharePointSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://support.brightcove.com/en/contact/create">Brightcove customer support</a>.</p>
+  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforSharePointSupportWorksheet.docx">worksheet</a> and include it with a support ticket to Brightcove customer support.</p>
 </section>
 <section class="bcls-section">
   <h2 id="contents">Contents</h2>
@@ -127,31 +127,31 @@ parent: SharePoint
     <li>The App can be added to a Site one of two ways:
       <ol class="bcls-tasklist">
         <li>On any page, from the <strong>Settings</strong> menu select <strong>Add an app</strong> option.<br />
-          <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-add-an-app.png" /></li>
+          <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-app-add-an-app.png" /></li>
         <li>From <strong>Site Contents</strong> using the <strong>Add an app</strong> option.<br />
-          <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-add-an-app-icon.png" /></li>
+          <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-app-add-an-app-icon.png" /></li>
       </ol>
     </li>
     <li>Next, click "From Your Organization" and then click on the <strong>BrightcoveConnector</strong> App<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-brightcove-connector-icon.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-app-brightcove-connector-icon.png" /></li>
     <li>In the Grant Permission dialog box, click "Trust it".<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-trust-it.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-app-trust-it.png" /></li>
     <li>At this point, the <strong>BrightcoveConnector</strong> App for SharePoint is added and appears in Apps section of your Site Contents list. It is now available for use in the Site.</li>
   </ol>
   <br />
-  <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-complete.png" />
+  <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-app-complete.png" />
   <h4>Provisioning the Default Lists for the Brightcove Video Connect App</h4>
   <p>Before using the Brightcove connector, some required lists need to be provisioned by following the steps below:</p>
   <ul>
     <li>When the App is first instantiated, or if the lists are not present in the local Site, then the user will be presented with up to 3 options to allow for the provisioning of lists inside the Site.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-create.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-lists-create.png" /></li>
     <br />
     <li>When clicked, each button will display a message to the effect:<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-message.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-lists-message.png" /></li>
     <li>When "Create Settings List" is clicked, in addition to creating the Brightcove Settings list, a prompt to edit this list is show to ensure that the proxy URL required for the Brightcove API support is configured.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-videos.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-lists-videos.png" /></li>
     <li>Clicking on this link will open the Brightcove Settings list for immediate edit of the proxy server access information. Title must be set to "Proxy". The ProxyURL is specific to the location of the proxy server you will use to access the Brightcove API. See <a href="#installingproxy">Use of Proxy Server for Brightcove API communication</a> for more details on the use of the proxy server.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-settings-proxy.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-lists-settings-proxy.png" /></li>
     <li>Completing the list provisioning will create the following lists in the Site:
       <ul>
         <li>Accounts - A custom list representing the Account objects.</li>
@@ -159,7 +159,7 @@ parent: SharePoint
         <li>Settings - List to store the proxy server details.</li>
       </ul>
       <br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-complete.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-install-lists-complete.png" /></li>
   </ul>
   <h3 id="sharepointpermissions">Setting up SharePoint Permissions</h3>
   <p>A benefit of integrating the Connector into SharePoint directly is the ability to leverage its permission model. The SharePoint Admin can control which users have access to the various functions of the Connector. The following is the default set of groups which are used by the Connector to control access to the sections of the Connector.</p>
@@ -219,23 +219,23 @@ parent: SharePoint
   <p>NOTE - This section requires the BrightcovePlayer.wsp solution file.</p>
   <ol class="bcls-tasklist">
     <li>In the root Site of the Site collection, where the Brightcove App is installed, navigate to Site Settings -&gt; Site Collection Administrations -&gt; HTML Field Security.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-html-field-security.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-html-field-security.png" /></li>
     <li>Add players.brightcove.net as an allowed iframe domain<br />
-      <img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-add-domain.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="800" src="/assets/images/sharepoint/node16612-embed-player-add-domain.png" /></li>
     <li>In the root Site of the Site collection, where the Brightcove App is installed, navigate to Site Settings -&gt; Web Designer Galleries -&gt; Solutions.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-solution-gallery.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-solution-gallery.png" /></li>
     <li>Upload the "BrightcovePlayer.wsp" file into the Solutions Gallery and activate the file.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcoveplayer-wsp.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-brightcoveplayer-wsp.png" /></li>
     <li>Navigate to Site Settings -&gt; Site Actions -&gt; Manage Site Features.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-manage-site-features.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-manage-site-features.png" /></li>
     <li>Activate the "Brightcove Player" feature.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-activate-brightcove-player.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-activate-brightcove-player.png" /></li>
     <li>Verify that the BrightcoveConnectorResources Document Library was created during installation.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-check-brightcoveconnectorresources.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-check-brightcoveconnectorresources.png" /></li>
     <li>If not, create a new Document Library called BrightcoveConnectorResources<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-add-brightcoveconnectorresources.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-add-brightcoveconnectorresources.png" /></li>
     <li>and upload BrightcovePlayer.css and BrightcovePlayer.js to that Document Library.<br />
-      <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-copy-brightcoveconnectorresources.png" /></li>
+      <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-copy-brightcoveconnectorresources.png" /></li>
   </ol>
 </section>
 <section class="bcls-section">
@@ -248,15 +248,15 @@ parent: SharePoint
         stsadm -o addsolution -filename BrightcoveVideoCloudPlayer.wsp</pre>
     </li>
     <li>Deploy the solution by navigating with your browser to "Central Administration -&gt; System Settings -&gt; Farm Management -&gt; Manage farm solutions":<br />
-      <img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-system-settings.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="800" src="/assets/images/sharepoint/node16612-embed-player-webpart-system-settings.png" /></li>
     <li>You should now see the BrightcoveVideoCloudPlayer.wsp in the farm's solution store. Click on "BrightcoveVideoCloudPlayer.wsp" and then click "Deploy Solution" to deploy the solution:<br />
-      <img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-solution-properties.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="800" src="/assets/images/sharepoint/node16612-embed-player-webpart-solution-properties.png" /></li>
     <br />
     <li>Proceed to activate the feature by clicking on "Site Actions/Site Settings -&gt; Site Collection Administration -&gt; Site collection features":<br />
-      <img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-site-settings.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="800" src="/assets/images/sharepoint/node16612-embed-player-webpart-site-settings.png" /></li>
     <br />
     <li>Activate the "AE Some Web Part" feature:<br />
-      <img class="bcls-image--no-border" alt="" width="200" src="https://img.brightcove.com/node16612-embed-player-webpart-activate.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="200" src="/assets/images/sharepoint/node16612-embed-player-webpart-activate.png" /></li>
   </ol>
 </section>
 <p>&lt; class="bcls-section"&gt;</p>
@@ -264,7 +264,7 @@ parent: SharePoint
 <div><!--
     <iframe class="training-video-player" src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" height="360" width="640"></iframe>
   --></div>
-<p>Since the Connector is a client side JavaScript application, a proxy server is required to broker authenticated communication to the Brightcove API. More information can be found in the <a href="/node/17928">Brightcove API document.</a></p>
+<p>Since the Connector is a client side JavaScript application, a proxy server is required to broker authenticated communication to the Brightcove API. More information can be found in the <a href="https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html">Brightcove API document.</a></p>
 <p>A .net proxy App is provided in the Brightcove Video Connect package. The proxy server should be deployed in a web accessible location such as on Microsoft Azure. For security reasons, the proxy is designed to only allow connections from websites included in the web.config file that is installed with the proxy. The brightcove:origins key in the web.config file should include the SharePoint website URL for the <strong>BrightcoveConnector</strong> App as well as the website URL for the Site on which the <strong>BrightcovePlayer</strong> component will execute. See the example below:</p>
 <p><code class="notranslate">&lt;add key="brightcove:origins" value="https://brightcovecms-a3da847a1c9e33.sharepoint.com, https://brightcovecms.sharepoint.com" /&gt; </code></p>
 <p>Multiple Sites can be listed as a comma separated string.</p>
@@ -284,13 +284,13 @@ parent: SharePoint
     <li><strong>Manage Videos</strong> - Browse and edit existing videos as well as import videos from Video Cloud into SharePoint.</li>
     <li><strong>Manage Playlists</strong> - Create new playlists as well as browse and manage existing playlists.</li>
   </ul>
-  <figure><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" style="width:400px;" src="/assets/images/sharepoint/node16612-launch-main-menu.png" /></figure>
   <p>There are also <strong>Add Video From Brightcove</strong> and <strong>Edit Video</strong> components that will be displayed in the main navigation when performing those operations.</p>
   <table>
     <tbody>
       <tr>
-        <td><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu-add.png" /></td>
-        <td><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu-edit.png" /></td>
+        <td><img class="bcls-image--no-border" alt="" style="width:400px;" src="/assets/images/sharepoint/node16612-launch-main-menu-add.png" /></td>
+        <td><img class="bcls-image--no-border" alt="" style="width:400px;" src="/assets/images/sharepoint/node16612-launch-main-menu-edit.png" /></td>
       </tr>
     </tbody>
   </table>
@@ -303,7 +303,7 @@ parent: SharePoint
             --></div>
   <h3>Account Management Landing Page</h3>
   <p>The Account Management Landing Page displays the current list of configured accounts, along with the assigned groups for Authors and Viewers.</p>
-  <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-landing-page.png" />
+  <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-landing-page.png" />
   <ol>
     <li><strong>Account Title</strong> - Accounts currently configured (or at least created).</li>
     <li><strong>AuthorsGroup</strong> - SharePoint group assigned "Author" rights for the account.</li>
@@ -312,7 +312,7 @@ parent: SharePoint
   </ol>
   <h3>Creating/Editing an Account</h3>
   <p>Whether creating a new account, or editing an existing account, the process and the options are the same. All of the account properties (except for the Author and Viewers groups) needs to be obtained from the Video Cloud account first. The following are the properties required for each account.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-creating-account.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-creating-account.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Account Name</strong> - Name of the account. This name is only used in SharePoint so does not need to be the same as in Video Cloud.</li>
     <li><strong>DefaultVideoPlayerId</strong> - Sets the default player for videos.</li>
@@ -339,24 +339,24 @@ parent: SharePoint
   <p>In order for SharePoint to connect to Brightcove Video Cloud, the account credentials from Brightcove must be added to SharePoint. This section describes how to locate the account credentials in Brightcove. The following section describes how to add those credentials to the SharePoint connector.</p>
   <ol class="bcls-tasklist">
     <li>Log into Brightcove Video Cloud. Note the Publisher ID value.<br />
-      <img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-publisher-id.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="900" src="/assets/images/sharepoint/node16612-accounts-publisher-id.png" /></li>
     <li>Navigate to Admin.<br />
-      <img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="900" src="/assets/images/sharepoint/node16612-accounts-admin.png" /></li>
     <li>Navigate to API Authentication.<br />
-      <img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-api-authentication.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="900" src="/assets/images/sharepoint/node16612-accounts-admin-api-authentication.png" /></li>
     <li>Register a new application.<br />
-      <img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-register-button.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="900" src="/assets/images/sharepoint/node16612-accounts-admin-register-button.png" /></li>
     <li>Name the application, set account access, and enable APIs.<br />
-      <img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-auth-form.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="900" src="/assets/images/sharepoint/node16612-accounts-admin-auth-form.png" /></li>
     <li>Note the Client ID and the Client Secret. You will need to enter them into SharePoint in the following section.<br />
-      <img class="bcls-image--no-border" alt="" width="500" src="https://img.brightcove.com/node16612-accounts-admin-auth-credentials.png" /></li>
+      <img class="bcls-image--no-border" alt="" width="500" src="/assets/images/sharepoint/node16612-accounts-admin-auth-credentials.png" /></li>
   </ol>
   <p>To set the Brightcove Account ID, select "Account ID" button and enter the Brightcove Publisher ID that you saved from the previous step on the following modal:</p>
-  <figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-account-id.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" width="623" src="/assets/images/sharepoint/node16612-account-mgmt-account-id.png" /></figure>
   <p>To set the Brightcove Client ID, select "Client ID" button and enter the Client ID that you saved from the previous step on the following modal:</p>
-  <figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-client-id.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" width="623" src="/assets/images/sharepoint/node16612-account-mgmt-client-id.png" /></figure>
   <p>To set the Brightcove Client Secret, select "Client Secret" button and enter the Client Secret that you saved from the previous step on the following modal:</p>
-  <figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-client-secret.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" width="623" src="/assets/images/sharepoint/node16612-account-mgmt-client-secret.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Value</strong> - Enter the value for the property. The value can be entered using cut and paste from the Video Cloud data, if available.</li>
     <li><strong>Close</strong> - Close the property dialog box without making any changes.</li>
@@ -369,7 +369,7 @@ parent: SharePoint
             <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
             --></div>
   <p>To set the Player ID that should be used as the default single-video player in SharePoint, select the "DefaultVideoPlayerId" button enter the Player ID from Brightcove on the following modal:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-player-id.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-player-id.png" /></figure>
   <ol class="bcls-section">
     <li><strong>Value</strong> - Enter the value for the property. The value can be entered using cut and paste from the Video Cloud data if available.</li>
     <li><strong>Close</strong> - Close the property dialog box without making any changes.</li>
@@ -383,9 +383,9 @@ parent: SharePoint
             <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
             --></div>
   <p>When setting up an account in the Brightcove connector, Custom Fields that have been created in Video Cloud can be added to the account profile in the Connector so that they will appear in the Add Videos and Manage Videos areas, as well as have their values stored in SharePoint for search. When Custom Fields are mapped, they will be listed in the Custom Fields section of the Account Management screen, along with whether or not they are required fields:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-custom-field-mapping.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-custom-field-mapping.png" /></figure>
   <p>To add, delete or edit custom fields, select the "Edit Custom Fields" button. The following modal window is displayed which lists <u>ALL</u> of the custom fields available for the account. NOTE - This list will ONLY be available once the new account is saved for the first time.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-edit-custom-fields.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-edit-custom-fields.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Video Cloud Custom Field</strong> - Names of ALL the custom fields defined in Video Cloud for the selected account.</li>
     <li><strong>Type</strong> - The type of custom field (Text or List).</li>
@@ -401,15 +401,15 @@ parent: SharePoint
   <p>The Brightcove API requires that any files (video files, text track files) to be processed by Video Cloud must be uploaded to an intermediate location accessible by both the Brightcove connector as well as Video Cloud. AWS S3 and Dropbox are two recommended services that are available in the Brightcove connector.</p>
   <p>Guidance on configuring these services to generate the information required in the Account setup section of the Brightcove connector can be found using the following links:</p>
   <ul>
-    <li><a href="/node/17948">Overview: Dynamic Ingest API</a><br />
-      <a href="/node/17934">Using Dynamic Ingest with S3</a><br />
+    <li><a href="https://apis.support.brightcove.com/dynamic-ingest/getting-started/source-file-upload-api-dynamic-ingest.html">Overview: Dynamic Ingest API</a><br />
+      <a href="https://apis.support.brightcove.com/dynamic-ingest/general/using-dynamic-ingest-s3.html">Using Dynamic Ingest with S3</a><br />
       <a href="https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html">http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html</a><br />
       <a href="https://www.dropbox.com/developers">https://www.dropbox.com/developers</a></li>
   </ul>
   <p>NOTE - Files uploaded to AWS S3 or Dropbox are not automatically deleted. It is recommended to set up policies on these services to automatically delete files after a period of time.</p>
   <h4>Temporary Storage Location Popup</h4>
   <p>To set the temporary storage location that should be used upload files, select the "Temporary Storage Location" button and select one of the storage options from the pulldown.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-temp-storage.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-temp-storage.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Value</strong> - Select either Amazon Web Services or Dropbox for the temporary storage location.</li>
     <li><strong>OK</strong> - Record the value in the property list and close the dialog.</li>
@@ -420,14 +420,14 @@ parent: SharePoint
   <h2 id="permissions">Setting SharePoint Permissions</h2>
   <p>To set the SharePoint group that should be authorized as the Author's group, select the "Author's Group" button and select a group from the pulldown as demonstrated in the following modal.</p>
   <h4>Group Property Popup</h4>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-group-property.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-group-property.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select a group</strong> - Display all of the SharePoint groups that are available in the Site in which the Connector is installed.</li>
     <li><strong>OK</strong> - Record the value in the property list and close the dialog.</li>
   </ol>
   <p>To set the SharePoint group that should be authorized as the Viewer's group, select the "Viewer's Group" button and select a group from the pulldown.</p>
   <p><strong>IMPORTANT - The values for an account are not saved until the account "Save" button is clicked. Entering values in the property dialog boxes does not immediately save them in the account.</strong></p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-save-delete.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-account-mgmt-save-delete.png" /></figure>
   <ol>
     <li><strong>Save Account</strong> - Commits all of the values set on the account properties into SharePoint.</li>
     <li><strong>Delete Account</strong> - Removes the account from SharePoint. Warning - when this action is taken, all videos that have been imported to SharePoint under the account will no longer be accessible in SharePoint. It does not, however, delete the videos from Video Cloud.</li>
@@ -444,7 +444,7 @@ parent: SharePoint
   <p>The Add Videos section of the Connector is used to upload new videos into Video Cloud. All of the data that is uploaded to Video Cloud with the exception of the video file itself is also stored in SharePoint, which makes it available for the Connector functions as well as for SharePoint search results. It also provides the SharePoint admin and users native access to the data without having to login to Video Cloud.</p>
   <p>Add Videos supports both a single video as well as multiple videos (batch upload). When a user accesses Add Videos (if they have permission to do so) they are presented with the following fields which enable them to enter the metadata that will be sent to Video Cloud:</p>
   <h4>"Add Single Video " Landing Page</h4>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-add-single.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-add-single.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> (required) - This dropdown list will be populated with all accounts that the user is authorized to add videos to; this is enabled through the Account Groups assignment. The user must select an account to enable upload.</li>
     <li><strong>Name</strong> (required) - Name of the uploaded video.</li>
@@ -461,15 +461,15 @@ parent: SharePoint
     <li><strong>Video File</strong> (required) - Clicking on the "Browse " button will open the local file system explorer to select the video file for upload.</li>
   </ol>
   <p>Once the user clicks on the "Save" button, a validation check is run to verify all required fields are complete and the data is in the correct format. If the validation fails, the user will be prompted to complete the required fields or correct the invalid data. For example:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-error-dialog.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-error-dialog.png" /></figure>
   <p>If there are no validation errors, the upload begins. During the upload, the following status modal is displayed to provide feedback on the upload progress:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-success-upload-dialog.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-success-upload-dialog.png" /></figure>
   <p>Once the process completes, the user can "close" the status dialog and the following message is displayed in the Site:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-success-upload-connector-menu.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-success-upload-connector-menu.png" /></figure>
   <p>The data is transferred to Video Cloud and also saved in SharePoint under the specified account and video name. A unique ID is also generated in SharePoint for each video uploaded. This ID (called the Reference ID) is transferred with the video into Video Cloud as an additional tag on the video.</p>
   <h4>"Add Multiple Video" Landing Page</h4>
   <p>By selecting the "Add Multiple Videos" option, the user can upload more than one video at a time. When this is selected, only the fields that would be shared amongst all the videos are displayed. Note that for multiple video upload, Video Cloud automatically assigns the video file name as the name of the video.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-add-multiple.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-add-multiple.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> (required) - This dropdown list will be populated with all accounts that the user is authorized to add videos to; this is enabled through the Account Groups assignment. The user must select an account to enable upload.</li>
     <li><strong>Related Link URL, Related Link Text</strong> - The associated hyperlink and text displayed in the player for the video</li>
@@ -485,7 +485,7 @@ parent: SharePoint
   <p><strong>IMPORTANT: A single video will NOT support a mix of File Uploads, URL Uploads or Remote URLs. Only one type of text track can be associated with each video.</strong></p>
   <h4>File Upload</h4>
   <p>When "File Upload" is selected for Text Track Files, the following fields are displayed:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-text-tracks-file-upload.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-text-tracks-file-upload.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Type of Text Track</strong> - Allows for the selection of File Upload, URL Upload or Remote URL.</li>
     <li><strong>File Chooser</strong> - Selection of the text track file.</li>
@@ -504,7 +504,7 @@ parent: SharePoint
     <li>URL Upload - Enter the public URL where the text track file resides and then click Upload. The file will be uploaded to Video Cloud.</li>
     <li>Remote URL - Enter the public URL where the text track file resides. The URL must be less than 250 characters. Captions will be loaded from the remote URL.</li>
   </ul>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-text-tracks-url-upload.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-text-tracks-url-upload.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Type of Text Track</strong> - Allows for the selection of File Upload, URL Upload or Remote URL.</li>
     <li><strong>Add URL</strong> - Field to enter the fully qualified URL path to the text track file.</li>
@@ -521,7 +521,7 @@ parent: SharePoint
   <p>The Manage Videos section of the Connector is used to browse and manage existing videos. This includes editing and updating of existing videos as needed. The search functionality is used to find videos by search name, description and tag information.</p>
   <h4>Manage Videos Landing Page</h4>
   <p>The Manage Videos Landing Page displays the list of the fields that can be used to browse or search for videos in the available accounts:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-manage.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> - This dropdown list will be populated with all accounts that the user is authorized to access; this is enabled through the Account Groups assignment. The user must select an account to view any video listings.</li>
     <li><strong>Search</strong> - Filter the video results to those containing the term. Name, tags and description information along with SharePoint metadata fields, if defined, are searched. It is only possible to search in one account at a time; cross account searching is not supported.</li>
@@ -530,7 +530,7 @@ parent: SharePoint
   </ol>
   <h4>Viewing a Video Listing in an Account</h4>
   <p>Once an account is selected, the list of available videos for that account is displayed:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-sharepoint-listing.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-manage-sharepoint-listing.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> - This dropdown list will be populated with all accounts that the user is authorized to access;t his is enabled through the Account Groups assignment. The user must select an account to view any video listings.</li>
     <li><strong>Display SharePoint only or Video Cloud only</strong> - The purpose of this option is to filter the videos to only those that are recorded in SharePoint, or those that are only resident in Video Cloud and have never had their data imported into SharePoint.</li>
@@ -548,14 +548,14 @@ parent: SharePoint
   </ol>
   <h4>Importing a Video Cloud Only Video into SharePoint</h4>
   <p>If there is a video that was uploaded directly into Video Cloud and not through the Connector, it is possible to "import" data for that video into SharePoint so that it can be managed in SharePoint moving forward. To do this, first find the video using the "Video Cloud only" listing option (1):</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-videocloud-listing.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-manage-videocloud-listing.png" /></figure>
   <p>Then click on either the video name or Edit Video link to open the video in edit mode as described in the following sections. Once the video is saved in the edit mode, the data will also be stored in SharePoint and the video will appear in the "SharePoint Only " section.</p>
   <p><strong>IMPORTANT - The SharePoint connector only syncs data from SharePoint to Video Cloud and not Video Cloud to SharePoint. This means once you import a video from Video Cloud to SharePoint, any changes to meta data need to be made in SharePoint and any changes to meta data made in Video Cloud will not be updated in SharePoint and will get overwritten the next time that video is edited in SharePoint.</strong></p>
   <h4>Editing Existing Videos in an Account</h4>
   <p>To edit existing videos in order to update their data fields, the user can click on either the name (1) or the Edit Video link (2) in the video listing:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-edit-listing.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-manage-edit-listing.png" /></figure>
   <p>The Edit Video screen will appear, with the data for the selected video displayed for edit:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-edit.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-videos-manage-edit.png" /></figure>
   <ol class="bcls-tasklist">
     <li>Note that "Edit Video" is displayed in the left main navigation where Add Videos is usually displayed. This is because it uses the same page form, just in a different mode since it is an existing video. This also lets the user easily navigate back to the Manage Videos section if needed.</li>
     <li>There are certain fields that are not available for edit/update during this process:
@@ -577,7 +577,7 @@ parent: SharePoint
   <div><!--
                 <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5078428048001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
 --></div>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-search-listing.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-search-listing.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Search field</strong> - The user can enter the search term(s) here and click the magnifying glass (or hit return) to execute the search.</li>
     <li><strong>Display SharePoint only or Video Cloud only</strong> - Filter the videos to only those that are recorded in SharePoint, or those that are only resident in Video Cloud and have never had their data imported into SharePoint.</li>
@@ -592,14 +592,14 @@ parent: SharePoint
 --></div>
   <h3>Manage Playlists Landing Page</h3>
   <p>The Manage Playlists Landing Page displays the list of the fields that can be used to browse for playlists or create new ones in the available accounts:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-playlist-manage.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> - This dropdown list will be populated with all accounts that the user is authorized to access; this is enabled through the Account Groups assignment. The user must select an account to view any playlist listings.</li>
     <li><strong>Playlist display columns</strong> - Playlist data will be displayed in these columns. The results can be sorted by any column by clicking on the column heading.</li>
     <li><strong>Add New Playlist</strong> - Click this button to create a new playlist in the selected account.</li>
   </ol>
   <p>Once an account is selected, all the playlists for that account are displayed.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-list.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-playlist-manage-list.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Select Account</strong> - This dropdown list will be populated with all accounts that the user is authorized to access; this is enabled through the Account Groups assignment. The user must select an account to view any playlist listings.</li>
     <li><strong>Playlist display columns</strong> - The listings can be sorted by any column by clicking on the column heading. This can help find a playlist if the listing get long.</li>
@@ -608,7 +608,7 @@ parent: SharePoint
         <li>Playlist Name - Clicking on the name will open the playlist for editing of its data.</li>
         <li>A list of video IDs that are active in the playlist.</li>
         <li>Short Description.</li>
-        <li>Type of playlist - <a href="/node/15475">Manual or Smart Playlist</a>.</li>
+        <li>Type of playlist - <a href="https://studio.support.brightcove.com/media/introduction-playlists.html">Manual or Smart Playlist</a>.</li>
         <li>The ID of the playlist (Video Cloud playlist ID).</li>
         <li>The "Edit Playlist " link. This link (or clicking on the Name) is used to open the playlist for edit or to view its details.</li>
       </ol>
@@ -617,14 +617,14 @@ parent: SharePoint
   </ol>
   <h3>Adding a New Playlist</h3>
   <p>To add a new playlist into an account, the user clicks on the "Add New Playlist" button. This opens the Add Playlist form:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-add.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-playlist-manage-add.png" /></figure>
   &nbsp;
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-current-videos.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-playlist-manage-current-videos.png" /></figure>
   <p>Note that videos can be moved up and down in the playlist by selecting the video to move, and enabling the "Move Video" option to use the Up/Down buttons. Multiple videos can be moved at a time.</p>
   <ol class="bcls-tasklist">
     <li><strong>Name</strong> - The name of the new playlist.</li>
     <li><strong>Description</strong> - A brief description for the playlist.</li>
-    <li><strong>Type</strong> - The type of playlist - <a href="/node/15475">Manual or Smart</a>. This example shows a Manual Playlist. The example in the "Editing a Playlist" section shows the options for a Smart Playlist.</li>
+    <li><strong>Type</strong> - The type of playlist - <a href="https://studio.support.brightcove.com/media/introduction-playlists.html">Manual or Smart</a>. This example shows a Manual Playlist. The example in the "Editing a Playlist" section shows the options for a Smart Playlist.</li>
     <li><strong>Available Videos</strong> - In the case of a Manual Playlist, display the search box and the list of videos available in the account. This allows the user to narrow the video choices to add to the playlist.</li>
     <li><strong>Available videos listing</strong> - List available videos in the account or filter based on the search term. One or more videos can be selected by clicking on the videos. Selected videos are highlighted in green. To deselect a video, the user clicks on it again. This allows multiple videos to be moved into the playlist in one action.</li>
     <li><strong>Action Arrows</strong> - Move selected videos in and out of the playlist.</li>
@@ -633,11 +633,11 @@ parent: SharePoint
   </ol>
   <h3>Editing an Existing Playlist</h3>
   <p>Editing an existing playlist is started by clicking either on the name or on the "Edit" link in the playlist listing. This opens the following view to edit the playlist options. This example shows the options for a Smart Playlist. When editing any of the fields, with the exception of the Playlist ID and Account, can be modified:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-edit.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-playlist-manage-edit.png" /></figure>
   <ol bcls-tasklist="">
     <li><strong>Name</strong> - The name of the playlist.</li>
     <li><strong>Description</strong> - A brief description for the playlist.</li>
-    <li><strong>Type</strong> - The type of playlist - <a href="/node/15475">Manual or Smart</a>. This example covers the options for a Smart Playlist.</li>
+    <li><strong>Type</strong> - The type of playlist - <a href="https://studio.support.brightcove.com/media/introduction-playlists.html">Manual or Smart</a>. This example covers the options for a Smart Playlist.</li>
     <li><strong>Tags</strong> - In the case of a Smart Playlist, this field allows the user to specify criteria and the tag(s) to use to identify the videos to be dynamically included in the playlist.
       <ul>
         <li>Criteria dropdown includes "Contain one or more" or "Contain all".</li>
@@ -666,11 +666,11 @@ parent: SharePoint
   <h3>Brightcove Player Web Part for SharePoint On-Premise</h3>
   <p>The Brightcove Player Web Part Sandbox Solution generates a web part that is placed on a Site page in the internal or external website and plays the Brightcove video. SharePoint online restricts the ability of users to add in custom Web Parts so this mechanism for inserting videos is only available for on-premise SharePoint installations.</p>
   <p>The Web Part has also been augmented with some of the same features in the management console including Account Selection and advanced search with sorting and ordering to find videos and playlists faster.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-sharepoint-page.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-sharepoint-page.png" /></figure>
   <p>To view the Player Web Part options, the SharePoint page needs to be in "Edit" mode (1) which will expose the option to edit the Web Part (2). The Web Part specific options are found in the "Brightcove Configuration" section (3) of the Web Part editor.</p>
   <p>Expanding the Brightcove Configuration section reveals the updated features of the Player Web Part Sandbox Solution.</p>
   <h4>Selecting a Video to Play in the Web Part</h4>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-video-chooser.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-video-chooser.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Brightcove Configuration</strong> - This section of the Web Part editor provides access to the parameters for configuring the Web Part and selecting the videos/playlists to be played.</li>
     <li><strong>Player Width, Player Height</strong> - Set the dimensions of the player.</li>
@@ -689,7 +689,7 @@ parent: SharePoint
   <p>Once the Player ID and the Video ID are set, the Web Part is configured and ready to play!</p>
   <h4>Selecting a Playlist to Play in the Web Part</h4>
   <p>The process to select a Playlist to be played is almost identical to selecting a video.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-playlist-chooser.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-playlist-chooser.png" /></figure>
   <ol class="bcls-tasklist">
     <li><strong>Brightcove Configuration</strong> - This section of the Web Part editor provides access to the parameters for configuring the Web Part and selecting the videos/playlists to be played.</li>
     <li><strong>Player Width, Player Height</strong> - Set the dimensions of the player.</li>
@@ -710,13 +710,13 @@ parent: SharePoint
   <h4>Usage</h4>
   <em>SharePoint Buttons</em>
   <p>When editing a SharePoint Site page, the "Brightcove" action group will be displayed on the ribbon:</p>
-  <img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcove-action-group.png" />
+  <img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-brightcove-action-group.png" />
   <p>Select either the Brightcove Video or Brightcove Playlist option.</p>
   <em>Selection Dialog</em>
   <p>The selection dialog will allow the user to select a Video or Playlist (depending on what option was selected in the ribbon). The dialog allows you to search Video Cloud videos and playlists and displays the results in a grid:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-selection-dialog.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-selection-dialog.png" /></figure>
   <p>Upon selection of a video or playlist, the user can optionally change the player, height and width. After clicking "Ok", the script for the brightcove player will be generated and placed in the textarea at the bottom of the dialog.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcove-snippet.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-brightcove-snippet.png" /></figure>
   <p>This script can then be added to the SharePoint page in 2 different ways:</p>
   <ul>
     <li>Directly into a publishing zone</li>
@@ -726,11 +726,10 @@ parent: SharePoint
   <em>Adding the script to a SharePoint page</em>
   <p class="BCL-aside">Note: The procedure described below is for a publishing zone; for a page that allows only Web Parts, once a script editor Web Part is on the page, the procedure is the same.</p>
   <p>To add the script to the page, after obtaining the generated script from the selection dialog, click into a publishing zone. From the "Insert" tab, look for the "Embed Code" button.</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-embed-code.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-embed-code.png" /></figure>
   <p>In the resulting dialog, paste in the player embed script. Click "Ok". This will insert a script editor onto the page:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-script-editor.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-script-editor.png" /></figure>
   <p>After the page is saved, that script editor will render as the Brightcove player:</p>
-  <figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-rendered-player.png" /></figure>
+  <figure><img class="bcls-image--no-border" alt="" src="/assets/images/sharepoint/node16612-embed-player-rendered-player.png" /></figure>
 </section>
-<p><br />
-  <b><a href="mailto:tbaldwin@brightcove.com?subject=Comment%20about%20https://support.brightcove.com/getting-started-brightcove-video-connect-sharepoint">Comments or suggestions?</a> </b></p>
+
