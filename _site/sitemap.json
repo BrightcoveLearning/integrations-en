@@ -125,7 +125,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/general/",
+      "newURL": "https://integrations.support.brightcove.com/salesforce/",
       "oldURL": "/index"
   },
 
@@ -150,7 +150,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -182,6 +182,16 @@
   {
       "newURL": "https://integrations.support.brightcove.com/support/opening-case-with-brightcove-support.html",
       "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/search-test.html",
+      "oldURL": "/search-test"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/search.html",
+      "oldURL": "/search"
   },
 
   {
