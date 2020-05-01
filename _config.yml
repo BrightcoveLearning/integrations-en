@@ -26,6 +26,7 @@ description: |- # this means to ignore newlines until "baseurl:"
   Video Cloud Studio allows you to manage your video publishing workflow across desktop, tablet and mobile devices.
 # baseurl: "" # the subpath of your site, e.g. /blog
 site_url: "https://integrations.support.brightcove.com"
+site_domain: "integrations.support.brightcove.com"
 
 # Build settings
 # theme: minima
