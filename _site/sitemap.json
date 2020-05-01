@@ -125,12 +125,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/",
+      "newURL": "https://integrations.support.brightcove.com/ramp/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -150,7 +150,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/general/",
+      "newURL": "https://integrations.support.brightcove.com/salesforce/",
       "oldURL": "/index"
   },
 
@@ -160,7 +160,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
