@@ -125,12 +125,27 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
@@ -155,22 +170,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/ramp/",
       "oldURL": "/index"
   },
 
@@ -180,8 +180,18 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/support/online-training-courses.html",
+      "oldURL": "/online-training-courses"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/support/opening-case-with-brightcove-support.html",
       "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/register-training.html",
+      "oldURL": "/register-training"
   },
 
   {
