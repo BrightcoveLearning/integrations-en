@@ -54,22 +54,22 @@ parent: 'General Information'
     <h3 id="related_brightcove_documentation">Related Brightcove documentation</h3>
     
     <ul>
-      <li><a href="https://support.brightcove.com/integrating-your-cms-video-cloud">Integrating Your CMS with Video Cloud</a></li>
-      <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#operation/GetExperiences">Get List of Experiences</a>
+      <li><a href="/general/integrating-your-cms-video-cloud.html">Integrating Your CMS with Video Cloud</a></li>
+      <li><a href="https://gallery.support.brightcove.com/develop/reference.html#operation/GetExperiences">Get List of Experiences</a>
       <ul>
         <li>Sort by name in ascending order: <code>?sort=name</code></li>
         <li>Sort by name in descending order: <code>?sort=-name</code></li>
         <li>Search: <code>?q={searchstring}</code></li>
       </ul>
       </li>
-      <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#operation/GetExperience">Get Details for an In-page Experience</a></li>
+      <li><a href="https://gallery.support.brightcove.com/develop/reference.htmll#operation/GetExperience">Get Details for an In-page Experience</a></li>
     </ul>
     </section>
     
     <section class="bcls-subsection">
     <h3 id="example_dialog">Example dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Experience Selection Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-experience-select-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Experience Selection Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-experience-select-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Experience Selection Dialog</figcaption>
     </figure>
     </section>
@@ -153,7 +153,7 @@ parent: 'General Information'
     <section class="bcls-subsection">
     <h3 id="Example_video_override_dialog_implementation">Example video override dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-video-override-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-video-override-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
     </figure>
     </section>
@@ -161,7 +161,7 @@ parent: 'General Information'
     <section class="bcls-subsection">
     <h3 id="Example_playlist_override_dialog_implementation">Example playlist override dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-playlist-override-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-playlist-override-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
     </figure>
     </section>
@@ -200,7 +200,7 @@ parent: 'General Information'
     <h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
     
     <pre>
-    <code class="notranslate">%MAXWIDTH% = ‘’
+    <code>%MAXWIDTH% = ‘’
     %MINWIDTH% = ‘’
     %WIDTH% = Width . ‘px’
     %HEIGHT% = Height . ‘px’</code></pre>
@@ -210,7 +210,7 @@ parent: 'General Information'
     <h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
     
     <pre>
-    <code class="notranslate">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT%"&gt;
+    <code>&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT%"&gt;
       &lt;iframe src="https://players.brightcove.net/%ACCOUNTID%/experience_%EXPERIENCEID%/index.html?videoIds=%VIDEOIDLIST%
         &amp;playlistId=%PLAYLISTID%
         &amp;usage=cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experienceiframe" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="width:100%;height:100%;top:0px;bottom:0px;right:0px;left:0px;border:none;margin-left:auto;margin-right:auto;position:absolute"&gt;
@@ -221,7 +221,7 @@ parent: 'General Information'
     <section class="bcls-subsection">
     <h3 id="example_iframe_video_experience">Example implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-iframe-video-embed-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-iframe-video-embed-dialog.png" />
     <figcaption class="bcls-caption--image">Example Implementation</figcaption>
     </figure>
     </section>
@@ -234,7 +234,7 @@ parent: 'General Information'
     <h3 id="Parameters_for_responsive_sizing">Parameters for responsive sizing</h3>
     
     <pre>
-    <code class="notranslate">
+    <code>
       %WIDTH% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
       %HEIGHT% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
     </code></pre>
@@ -250,7 +250,7 @@ parent: 'General Information'
     <h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
     
     <pre>
-    <code class="notranslate">
+    <code>
       %WIDTH% = Width . ‘px’
       %HEIGHT% = Height . ‘px’
     </code></pre>
@@ -260,7 +260,7 @@ parent: 'General Information'
     <h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
     
     <pre>
-    <code class="notranslate">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT" data-experience="%EXPERIENCEID%" data-video-ids=”%VIDEOIDLIST% "
+    <code>&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT" data-experience="%EXPERIENCEID%" data-video-ids=”%VIDEOIDLIST% "
       data-playlist-id=”%PLAYLISTID%" data-usage="cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experiencejavascript" style="
       display: block;
       position: relative; "&gt;
@@ -271,7 +271,7 @@ parent: 'General Information'
     <section class="bcls-subsection">
     <h3 id="example_inpage_video_experience">Example implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-inpage-video-embed-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-inpage-video-embed-dialog.png" />
     <figcaption class="bcls-caption--image">Example Implementation</figcaption>
     </figure>
     </section>
