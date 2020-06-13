@@ -25,6 +25,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/support/brightcove-answer.html",
+      "oldURL": "/brightcove-answer"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html",
       "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-installation"
   },
@@ -125,31 +130,6 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/sitecore/",
       "oldURL": "/index"
   },
@@ -160,7 +140,17 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -171,6 +161,21 @@
 
   {
       "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
