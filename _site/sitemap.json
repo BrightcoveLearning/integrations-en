@@ -200,6 +200,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/salesforce/salesforce-commerce-cloud-user-guide.html",
+      "oldURL": "/salesforce-commerce-cloud-user-guide"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/search-test.html",
       "oldURL": "/search-test"
   },
