@@ -130,7 +130,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/",
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
@@ -175,7 +175,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/",
       "oldURL": "/index"
   },
 
@@ -197,6 +197,11 @@
   {
       "newURL": "https://integrations.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/salesforce/salesforce-commerce-cloud-installation-guide.html",
+      "oldURL": "/salesforce-commerce-cloud-installation-guide"
   },
 
   {
