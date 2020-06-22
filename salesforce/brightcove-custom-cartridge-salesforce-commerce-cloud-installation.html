@@ -1,143 +1,302 @@
 ---
-title: 'Brightcove Custom Cartridge for Salesforce Commerce Cloud: Installation'
+title: 'Salesforce Commerce Cloud Installation Guide'
+description: 'This document provides technical instructions for installing Brightcove custom cartridge, as well as setting up SFCC Business Manager, for integrating Brightcove Video Cloud with Salesforce Commerce Cloud (SFCC).'
 parent: Salesforce
 ---
+<h1>{{page.title}}</h1>
 <article class="bcls-article">
-  <h1>Brightcove Custom Cartridge for Salesforce Commerce Cloud: Installation</h1>
-  <summary>This topic explains the steps for installing the Brightcove Custom Cartridge for Salesforce Commerce Cloud.</summary>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <h2 id="Overview">Overview</h2>
-    <p>This document provides technical instructions for installing Brightcove custom cartridge, as well as setting up SFCC Business Manager, for integrating Brightcove Cloud video and media files with Salesforce Commerce Cloud (SFCC).</p>
+    <h2 id="upload_cartridges">Upload Cartridges</h2>
+    <ol class="bcls-tasklist">
+      <li>Extract the zipfile.</li>
+      <li>Upload cartridges (<code>bm_brightcove</code>, <code>int_brightcoveandapp_brightcove</code>) to the Salesforce Commerce Cloud instance.</li>
+      <li>Activate the code version with the uploaded cartridges.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="Component_Overview">Component Overview</h2>
-    <section class="bcls-subsection">
-      <h3 id="Functional_Overview">Functional Overview</h3>
-      <p>This custom cartridge enables Salesforce Commerce Cloud business users to upload videos files to the Brightcove Cloud server through SFCC Business Manager and publish these files on the product details page.</p>
-    </section>
-    <section class="bcls-subsection">
-      <h3 id="Compatibility">Compatibility</h3>
-      <p>The custom cartridge is designed for Salesforce Commerce Cloud API with controllers for extended functionality. Custom cartridges are available for SFRA as well as for the Site Genesis architecture. Clients should install version matching with their Salesforce Commerce Cloud architecture.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="Steps_for_Installation">Steps for Installation</h2>
-      <section class="bcls-subsection">
-        <h3 id="Overview_of_the_installation">Overview of the installation</h3>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Installation Overview" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/intallation_flow.svg" />
-          <figcaption class="bcls-caption--image">Installation Overview</figcaption>
+    <h2 id="configure_business_manager">Configure Business Manager</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Business Manager.</li>
+      <li>Navigate to <strong>Administration -&gt; Manage Sites</strong></li>
+      <li>Select the site from the list.</li>
+      <li>Select Settings tab.</li>
+      <li>
+        Add <code>app_brightcove</code> in the cartridge path for the SFRA site as shown below:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/appsaleforce-cartridge-path.png" alt="Add app_brightcove in Path">
+          <figcaption class="bcls-caption--image">Add app_brightcove in Path</figcaption>
         </figure>
-      </section>
-      <section class="bcls-subsection">
-        <h3 id="Install_Custom_Cartridge_in_Business_Manager">Install Custom Cartridge in Business Manager</h3>
-        <ol class="bcls-tasklist">
-          <li>Open Eclipse Studio</li>
-          <li>Import Brightcove cartridges as provided</li>
-          <li>Select on the <strong>Import</strong> box:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Import Box" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/18958.html" />
-              <figcaption class="bcls-caption--image">Import Box</figcaption>
-            </figure>
-            <p>Note: Browse the Local root Directory to the Specific Folder where cartridge library files are located. Select the Cartridges which you want to upload:</p>
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Import Projects" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/import-projects.png" />
-              <figcaption class="bcls-caption--image">Import Projects</figcaption>
-            </figure>
-          </li>
-          <li>Upload cartridge to the sandbox.</li>
-          <li>Select sandbox connection followed by Properties.</li>
-          <li>Select Project Reference and check in the Brightcove Cartridges as it is going to be uploaded to the SFCC Instance.</li>
+      </li>
+      <li>Apply the changes.</li>
+      <li>
+        Add <code>int_brightcove</code> in the cartridge path for the SiteGenesis architecture site as shown below:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/intsaleforce-cartridge-path.png" alt="Add int_brightcove in Path">
+          <figcaption class="bcls-caption--image">Add int_brightcove in Path</figcaption>
+        </figure>
+      </li>
+      <li>Apply the changes.</li>
+      <li>Navigate to <strong>Administration -&gt; Manage Sites</strong></li>
+      <li>
+        Select <strong>Business Manager</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-business-manager.png" alt="Select Business Manager">
+          <figcaption class="bcls-caption--image">Select Business Manager</figcaption>
+        </figure>
+      </li>
+      <li>
+        Add <code>bm_brightcove</code> in the cartridge path for the Business Manager:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/bmbrightcove-in-path.png" alt="Add bm_brightcove in Path">
+          <figcaption class="bcls-caption--image">Add bm_brightcove in Path</figcaption>
+        </figure>
+      </li>
+      <li>Apply the changes.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="import_system_object_extensions_files">Import System Object Extensions Files</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Administration -&gt; Site Development -&gt; Import &amp; Export</strong>.</li>
+      <li>
+        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option.png" alt="Select Upload">
+          <figcaption class="bcls-caption--image">Select Upload</figcaption>
+        </figure>
+      </li>
+      <li>Upload <strong><code>brightcove-objecttype-extensions.xml</code></strong> from the <strong>meta</strong> directory of the zip file.</li>
+      <li>Navigate to <strong>Administration -&gt; Site Development -&gt; Import &amp; Export</strong>.</li>
+      <li>
+        Select the <strong>Import</strong> option under <strong>Meta Data</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-import-option.png" alt="Select Import">
+          <figcaption class="bcls-caption--image">Select Import</figcaption>
+        </figure>
+      </li>
+      <li>Import the <strong>brightcove-objecttype-extensions.xml</strong> file.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="import_service_files">Import Service Files</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong></li>
+      <li>
+        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option2.png" alt="Select Upload">
+          <figcaption class="bcls-caption--image">Select Upload</figcaption>
+        </figure>
+      </li>
+      <li>Upload <strong>brightcove-services.xml</strong> from the <strong>meta</strong> directory of the zip file.</li>
+      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong>.</li>
+      <li>
+        Select the <strong>Import</strong> option under <strong>Services</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-import-option2.png" alt="Select Import">
+          <figcaption class="bcls-caption--image">Select Import</figcaption>
+        </figure>
+      </li>
+      <li>Import the <strong><code>brightcove-services.xml</code></strong> file.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="import_job_file">Import Job Files</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong></li>
+      <li>
+        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option2.png" alt="Select Upload">
+          <figcaption class="bcls-caption--image">Select Upload</figcaption>
+        </figure>
+      </li>
+      <li>Upload <strong>brightcove-jobs.xml</strong> from the <strong>meta</strong> directory of the zip file.</li>
+      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong>.</li>
+      <li>
+        Select the <strong>Import</strong> option under <strong>Jobs</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-import-option3.png" alt="Select Import">
+          <figcaption class="bcls-caption--image">Select Import</figcaption>
+        </figure>
+      </li>
+      <li>Import the <strong><code>brightcove-jobs.xml</code></strong> file.</li>
+      <li>
+        Select <strong>site context</strong> for the jobs listed below:
+        <ul>
+          <li><code>Brightcove-BulkAssign</code></li>
+          <li><code>Brightcove-BulkUpload</code></li>
+        </ul>
+      </li>
+      <li>
+        Create three jobs manually:
+        <ul>
+          <li>Bulk Assign</li>
+          <li>Bulk Upload</li>
+          <li>Clean Brightcove Folder</li>
+        </ul>
+        <p>Information you will need to create the jobs is in the <strong>table below</strong>. Here are the steps for creating each job:</p>
+        <ol>
+          <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
+          <li>Create a New Job.</li>
+          <li>End the <strong>Step ID</strong>.</li>
+          <li>Select the <strong>scope</strong>.</li>
         </ol>
-      </section>
-      <section class="bcls-subsection">
-        <h3 id="Setups_in_SFCC_Business_Manager">Setups in SFCC Business Manager</h3>
-        <ol class="bcls-tasklist">
-          <li>To set up business manager go to Business Manager followed by <strong>Select site &gt; Manage Sites</strong></li>
-          <li>Select the <strong>Site</strong>, then select&nbsp;<strong>Settings</strong>&nbsp;tab. In the cartridge path add the following line:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Cartridge Path" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/cartridge-settings.png" />
-              <figcaption class="bcls-caption--image">Cartridge Path</figcaption>
-            </figure>
-          </li>
-          <li>Add cartridge to the cartridge path in Administration followed by <strong> Sites &gt; Manage Sites &gt; Business Manager Settings</strong>:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Business Manager Settings" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/business-manager-settings.png" />
-              <figcaption class="bcls-caption--image">Business Manager Settings</figcaption>
-            </figure>
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Business Manager Cartridge Path" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/business-manager-cartridge-path.png" />
-              <figcaption class="bcls-caption--image">Business Manager Cartridge Path</figcaption>
-            </figure>
-          </li>
-          <li>Once the path is successfully set, select <strong>Administration</strong> followed by Site Development &gt; Import &amp; Export
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Import &amp; Export" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/import-and-export.png" />
-              <figcaption class="bcls-caption--image">Import &amp; Export</figcaption>
-            </figure>
-          </li>
-          <li>Upload <strong>brightcove-objecttype-extensions.xml</strong> from the metadata folder.</li>
-          <li>Select <strong>Import box</strong> to follow steps to import <strong>brightcove-objecttype-extensions.xml</strong>:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Import Carttridge XML" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/import-xml.png" />
-              <figcaption class="bcls-caption--image">Import Carttridge XML</figcaption>
-            </figure>
-          </li>
-          <li>Once the path is imported, select <strong>Administration</strong> followed by <strong>Operations &gt; Import &amp; Export</strong>:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Operations Import and Export" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/operations-import-export.png" />
-              <figcaption class="bcls-caption--image">Operations Import and Export</figcaption>
-            </figure>
-          </li>
-          <li>Upload <strong>brightcove-objecttype-extensions.xml</strong> from the metadata folder.</li>
-          <li>Click on Import and follow the steps to import <strong>brightcove_services.xml</strong>:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Operations Import XML" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/operations-import-export.png" />
-              <figcaption class="bcls-caption--image">Operations Import XML</figcaption>
-            </figure>
-          </li>
-          <li>To check whether your business manager is all set:
-            <ol style="list-style-type: lower-alpha;">
-              <li>Go to <strong>Administration &gt; Organization &gt; Roles &amp; Permissions</strong></li>
-              <li>Select the specific user role (<strong>Administrator</strong>) followed by <strong>Business Manager Modules &gt; Select Context</strong></li>
-              <li>Select your site and click Apply</li>
-              <li>In the list of <strong>Business Manager Module &gt; Brightcove</strong> and click to update permissions:
-                <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Business Manager Permissions" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/business-manager-permissions.png" />
-                  <figcaption class="bcls-caption--image">Business Manager Permissions</figcaption>
-                </figure>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-      <section class="bcls-subsection">
-        <h3 id="Configure_Custom_Cartridge_via_Custom_site_preferences">Configure Custom Cartridge via Custom site preferences</h3>
-        <ol class="bcls-tasklist">
-          <li>To configure custom cartridge via site preferences, select <strong>Business Manager</strong> followed by <strong>Your Site &gt; Site preferences</strong>.</li>
-          <li>Select <strong>Custom Site Preferences &gt; Brightcove</strong>.</li>
-          <li>Below is an example of how to complete the fields in the administration area:
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sample Site Preferences 1" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/sample-site-preferences-1.png" />
-              <figcaption class="bcls-caption--image">Sample Site Preferences 1</figcaption>
-            </figure>
-            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sample Site Preferences 2" src="https://learning-services-media.brightcove.com/doc-assets/node/18958-brightcove-custom-cartridge-salesforce-commerce-cloud-installation/sample-site-preferences-2.png" />
-              <figcaption class="bcls-caption--image">Sample Site Preferences 2</figcaption>
-            </figure>
-            <p><strong>Field descriptions</strong></p>
-            <ul>
-              <li><strong>Brightcove Enable</strong>: turns on\off the Brightcove integration</li>
-              <li><strong>Brightcove AccountID</strong>: Brightcove Account ID for Configuration</li>
-              <li><strong>Brightcove ClientID</strong>:</li>
-              <li><strong>Brightcove Client Secret Key</strong>: Brightcove client id for API authentication</li>
-              <li><strong>Content Libraries</strong>: Brightcove client secret for API authentication</li>
-              <li><strong>Site Catalogs</strong>: enter all Catalogs used by the site</li>
-            </ul>
-          </li>
-        </ol>
-      </section>
-      <section class="bcls-subsection">
-        <h3 id="Including_Brightcove_Video_Template_in_SFCC_app">Including Brightcove Video Template in SFCC app</h3>
-        <ol class="bcls-tasklist">
-          <li>Add following line in <code>app/cartridge/templates/default/product/productDetails.isml:</code>
-            <p><code>&lt;isinclude template="slots/html/htmlBrightcoveVideo" /&gt;</code></p>
-            <pre class="line-numbers">
-<code class="language-json">&lt;div class="row"&gt;
-  &lt;div class="col-lg-6 sol-sm-12"&gt;
-  &lt;!-- Product Images for Carousel --&gt;
-  &lt;isinclude template="product/components/imageCarousel" /&gt;
-  <span class="bcls-highlight">&lt;isinclude template="slots/html/htmlBrightcoveVideo" /&gt;</span>
-</code></pre>
-          </li>
-        </ol>
-      </section>
-    </section>
+      </li>
+    </ol>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">Jobs Details</caption>
+      <thead class="bcls-table__head">
+          <tr>
+              <th>Job Name</th>
+              <th>Step ID</th>
+              <th>Scope</th>
+          </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+          <tr>
+              <td>Bulk Assign</td>
+              <td><code>custom.bulkAssign</code></td>
+              <td>Specific-site</td>
+          </tr>
+          <tr>
+              <td>Bulk Upload</td>
+              <td><code>custom.bulkUpload</code></td>
+              <td>Specific-site</td>
+          </tr>
+          <tr>
+              <td>Clean Brightcove Folder</td>
+              <td><code>custom.CleanFolderBrightcove</code></td>
+              <td>Organization</td>
+          </tr>
+      </tbody>
+  </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add_brightcove_features_under_roles_permissions">Add Brightcove Features Under Roles &amp; Permissions</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Administration -&gt; Organization -&gt; Roles &amp; Permissions</strong>.</li>
+      <li>Select <strong>role</strong> from the list to grant access to Brightcove features.</li>
+      <li>Select <strong>Business Manager Module</strong>.</li>
+      <li>
+        Select <strong>Site Context</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_15_Image_0001.png" alt="Select Site Context">
+          <figcaption class="bcls-caption--image">Select Site Context</figcaption>
+        </figure>
+      </li>
+      <li>Apply context.</li>
+      <li>Scroll down to the Brightcove section.</li>
+      <li>
+        Select all the features and click <strong>Update</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_15_Image_0002.png" alt="Update Roles and Permissions">
+          <figcaption class="bcls-caption--image">Update Roles and Permissions</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure_custom_site_preferences">Configure Custom Site Preferences</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Select a <strong>Site</strong> from the dropdown menu:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_16_Image_0001.png" alt="Site Menu">
+          <figcaption class="bcls-caption--image">Site Menu</figcaption>
+        </figure>
+      </li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Site Preferences -&gt; Custom Preferences</strong>.</li>
+      <li>Select <strong>Brightcove</strong>.</li>
+      <li>
+        Add the following values:
+        <ul>
+          <li>Brightcove Account ID</li>
+          <li>Brightcove Client ID</li>
+          <li>Brightcove Client Secret</li>
+          <li>Site Catalog</li>
+        </ul>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_16_Image_0002.png" alt="Custom Preference Values - 1">
+          <figcaption class="bcls-caption--image">Custom Preference Values - 1</figcaption>
+        </figure>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_17_Image_0001.png" alt="Custom Preference Values - 2">
+          <figcaption class="bcls-caption--image">Custom Preference Values - 2</figcaption>
+        </figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">
+          See <a href="https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a> for information on how to generate your client id and secret. Your credentials will need these permissions:
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/salesforce/install-images/api-permissions-needed.png" alt="API Permissions Needed">
+            <figcaption class="bcls-caption--image">API Permissions Needed</figcaption>
+          </figure>
+        </aside>
+      </li>
+      <li>
+        Add the Brightcove Slot Limit (1 - 11). The default is 11.
+        <ul>
+          <li>Slots for Master Products (<strong>master</strong> and <strong>m1-m10</strong>)</li>
+          <li>Slots for Variant Products (<strong>v1 - v11</strong>)</li>
+          <li>Slots for Categories (<strong>c1 - c11</strong>)</li>
+        </ul>
+        <p>A Slot limit of 5 will provide these slots for configuration:</p>
+        <ul>
+          <li>Master Products (<strong>master</strong> and <strong>m1-m4</strong>)</li>
+          <li>Variant Products (<strong>v1 - v5</strong>)</li>
+          <li>Categories (<strong>c1 - c5</strong>)</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="include_brightcove_video_rendering_in_isml_files">Include Brightcove Video Rendering in ISML Files</h2>
+    <h3>SFRA Cartridge – <code>app_brightcove</code></h3>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Video rendering is supported for the below ISML files:
+        <ul>
+          <li><code>productDetails.isml</code></li>
+          <li><code>catLanding.isml</code></li>
+          <li><code>searchResultsNoDecorator.isml</code></li>
+        </ul>
+      </li>
+      <li>
+        Include <code>modules.isml</code>:
+        <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
+      </li>
+      <li>
+        Include the tags from <code>modules.isml</code> to render video:
+        <ul>
+          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
+          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
+        </ul>
+      </li>
+    </ol>
+    <h3>SiteGenesis Cartridge – <code>int_brightcove</code></h3>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Video rendering is supported for the below ISML files:
+        <ul>
+          <li><code>productcontents.isml</code></li>
+          <li><code>producttopcontent.isml</code></li>
+          <li><code>categoryproducthits.isml</code></li>
+          <li><code>catlanding.isml</code></li>
+        </ul>
+      </li>
+      <li>
+        Include <code>modules.isml</code>:
+        <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
+      </li>
+      <li>
+        Include the tags from <code>modules.isml</code> to render video:
+        <ul>
+          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
+          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
+        </ul>
+      </li>
+    </ol>
   </section>
 </article>

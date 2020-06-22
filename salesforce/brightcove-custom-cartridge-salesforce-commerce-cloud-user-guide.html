@@ -1,264 +1,520 @@
 ---
-title: 'Brightcove Custom Cartridge for Salesforce Commerce Cloud: User Guide'
+title: 'Salesforce Commerce Cloud User Guide'
+description: 'This document provides step-by-step instructions for using Brightcove Salesforce Commerce Cloud Custom Cartridge to upload video files to the Brightcove Cloud/server and publish these files on the storefront (product details page, category landing page, product listing page, etc.) as needed.'
 parent: Salesforce
 ---
+<h1>{{page.title}}</h1>
 <article class="bcls-article">
-  <h1>Brightcove Custom Cartridge for Salesforce Commerce Cloud: User Guide</h1>
-  <summary>This topic provides a users guide for the Brightcove Custom Cartridge for Salesforce Commerce Cloud.</summary>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>This document provides step-by-step instructions for using Brightcove Salesforce Commerce Cloud Custom Cartridge to upload video files to the Brightcove Cloud/server and publish these files on product details page, as needed.</p>
+    <h2 id="multiple_language_support">Multiple Language Support</h2>
+    <p>The extension provides multiple UI language support for Business Manager Interface. Note: This version of the extension has support for English and French for UI Language.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/org-profile.png" alt="Organization Profile">
+      <figcaption class="bcls-caption--image">Organization Profile</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/business-magager-en.png" alt="Business Manager - English">
+      <figcaption class="bcls-caption--image">Business Manager - English</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/business-magager-fr.png" alt="Business Manager - French">
+      <figcaption class="bcls-caption--image">Business Manager - French</figcaption>
+    </figure>
   </section>
   <section class="bcls-section">
-    <h2 id="terms">Terms</h2>
-    <table class="bcls-table">
-      <caption class="bcls-caption--table">
-      SFCC Terms
-      </caption>
-      <thead class="bcls-table__head">
-        <tr>
-          <th>Term</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>SFCC</td>
-          <td>Salesforce Commerce Cloud</td>
-        </tr>
-        <tr>
-          <td>Business Manager (BM)</td>
-          <td>The primary admin tool used to configure SFCC platform and customer facing storefront</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Instructions">Instructions</h2>
-    <p>The following sections describe details of instructions to add, assign, embed and bulk upload videos to the Brightcove cloud server using SFCC Business Manager.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Add_a_video_to_the_Brightcove_server">Add a video to the Brightcove server</h2>
-    <p>The <strong>Add Video</strong> Module provides the functionality to add videos to the Brightcove Server/Cloud using SFCC Business Manager. Here are the steps:</p>
+    <h2 id="Add_Video">Add Video</h2>
+    <p>Below are the steps for adding videos.</p>
     <ol class="bcls-tasklist">
-      <li>Login to SFCC Business Manager with your valid credentials.</li>
-      <li>Select Merchant Tools from the top-level BM menu and then navigate to the Brightcove section as shown below:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Top-Level BM Menu" src="/assets/images/salesforce/BM-top-level-menu.png" />
-          <figcaption class="bcls-caption--image">Top-Level BM Menu</figcaption>
-        </figure>
-      </li>
-      <li>Under the Brightcove section Select/Click <strong>Add Video</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Add Video" src="/assets/images/salesforce/add-video.png" />
-          <figcaption class="bcls-caption--image">Add Video</figcaption>
-        </figure>
-      </li>
-      <li>The <strong>Add Video Page</strong> will be displayed. Fill out the form details to upload the video to Brightcove Server:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Add Video Page" src="/assets/images/salesforce/add-video-page.png" />
-          <figcaption class="bcls-caption--image">Add Video Page</figcaption>
-        </figure>
-      </li>
-      <li>Make sure that appropriate information is entered in <strong> Name </strong> and <strong>Video</strong> fields (Mandatory fields).
-        <p>Note: You can hover mouse over the tag field (the orange icon), for details on usage of the tag field:</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="Tags Field Info" src="/assets/images/salesforce/tags-field-info.png" />
-          <figcaption class="bcls-caption--image">Tags Field Info</figcaption>
-        </figure>
-      </li>
-      <li>Click on <strong>Select</strong> option as shown below, it will give you a pop-up to select the video from list of files:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select a Video" src="/assets/images/salesforce/select-video.png" />
-          <figcaption class="bcls-caption--image">Select a Video</figcaption>
-        </figure>
-        <figure class="bcls-figure"><img class="bcls-image" alt="File Browser" src="/assets/images/salesforce/file-browser.png" />
-          <figcaption class="bcls-caption--image">File Browser</figcaption>
-        </figure>
-      </li>
-      <li>Likewise, you can select files for the <strong>Poster</strong> and the <strong>Thumbnail</strong>, but these fields are optional.</li>
-      <li>Note that the <strong>Reference ID</strong> field is optional, but if you add one, it must be unique.</li>
-      <li>Now click the <strong>Submit</strong> button to upload the desired video on to the Brightcove Server:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Submit the Form" src="/assets/images/salesforce/submit-form.png" />
-          <figcaption class="bcls-caption--image">Submit the Form</figcaption>
-        </figure>
-      </li>
-      <li>A "Video file ingested Successfully" message is shown:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Ingest Success Message" src="/assets/images/salesforce/ingest-success-message.png" />
-          <figcaption class="bcls-caption--image">Ingest Success Message</figcaption>
-        </figure>
-      </li>
-      <li>Login to <a href="https://signin.brightcove.com/">Brightcove Studio</a> and go to the <strong>Media</strong> module to verify that the video is there:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove Studio Media Module" src="/assets/images/salesforce/studio-media-module.png" />
-          <figcaption class="bcls-caption--image">Brightcove Studio Media Module</figcaption>
-        </figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Assign_a_video_to_a_product_in_SFCC">Assign a video to a product in SFCC</h2>
-    <p>The <strong>Assign Video</strong> Module provides the functionality to assign a video, that has already been uploaded to the Brightcove server, to a product, as in the product catalog, in SFCC. Here are the steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Login to the SFCC Business Manager with your valid credentials.</li>
-      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then under the <strong>Brightcove</strong> section, select <strong>Assign Video</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove - Assign Video" src="/assets/images/salesforce/mechant-tools-brightcove.png" />
-          <figcaption class="bcls-caption--image">Brightcove - Assign Video</figcaption>
-        </figure>
-      </li>
-      <li>On the <strong>Assign Video</strong> page videos can be assigned or unassigned to any product in the catalog:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Assign Video Page" src="/assets/images/salesforce/assign-videos-page.png" />
-          <figcaption class="bcls-caption--image">Assign Video Page</figcaption>
-        </figure>
-      </li>
-      <li>To assign a video to a product, click the <strong>Assign Video</strong> link:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Assign Video Link" src="/assets/images/salesforce/assign-video-link.png" />
-          <figcaption class="bcls-caption--image">Assign Video Link</figcaption>
-        </figure>
-      </li>
-      <li>Now you will see a display of all videos that have been added:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Display of Videos" src="/assets/images/salesforce/display-of-videos.png" />
-          <figcaption class="bcls-caption--image">Display of Videos</figcaption>
-        </figure>
-      </li>
-      <li>Select the video you want, and then click <strong>Select Video</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select a Video" src="/assets/images/salesforce/select-video-to-assign.png" />
-          <figcaption class="bcls-caption--image">Select a Video</figcaption>
-        </figure>
-      </li>
-      <li>After selecting the video, it will be shown as assigned to the product:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Video Assigned to Product" src="/assets/images/salesforce/video-assigned-to-product.png" />
-          <figcaption class="bcls-caption--image">Video Assigned to Product</figcaption>
-        </figure>
-      </li>
-      <li>Next, go to the product you assigned the video to, to verify whether the Brightcove video attribute are being assigned to the correct product or not. Click on <strong>Merchant tools-&gt; Products and Catalogs-&gt; Product</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Go to Products" src="/assets/images/salesforce/go-to-products.png" />
-          <figcaption class="bcls-caption--image">Go to Products</figcaption>
-        </figure>
-      </li>
-      <li>Search for the product using the Product ID and click on it to open the product details:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Product Details" src="/assets/images/salesforce/product-details.png" />
-          <figcaption class="bcls-caption--image">Product Details</figcaption>
-        </figure>
-      </li>
-      <li>All the video attributes should be populated with details from the video:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Video Attributes" src="/assets/images/salesforce/video-attributes.png" />
-          <figcaption class="bcls-caption--image">Video Attributes</figcaption>
-        </figure>
-      </li>
-      <li>Similarly, a video file can be un-assigned or decoupled from a product in SFCC by clicking the <strong>Un-assign video</strong> link located under the video file. You can all change the assigned video by clicking the <strong>Change Video</strong> link:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Remove or Change Video" src="/assets/images/salesforce/change-remove-video.png" />
-          <figcaption class="bcls-caption--image">Remove or Change Video</figcaption>
-        </figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Embed_a_video_in_a_content_slot">Embed a video in a content slot</h2>
-    <p>The <strong>Embed Video</strong> functionality enables an SFCC business user with embedding iFrame or Java script code for any video or media file residing on the Brightcove server, in any of the content slots, to render that video on any of the store pages. Here are the steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Login to the SFCC Business Manager with your valid credentials.</li>
-      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then <strong>Brightcove &gt; Embed Video</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Brightcove &gt; Embed Video" src="/assets/images/salesforce/brightcove-embed-video.png" />
-          <figcaption class="bcls-caption--image">Brightcove &gt; Embed Video</figcaption>
-        </figure>
-      </li>
-      <li>On the <strong>Embed Video</strong> page, search for videos using <strong>tags</strong> or the <strong>Video ID</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Search for Videos" src="/assets/images/salesforce/search-videos.png" />
-          <figcaption class="bcls-caption--image">Search for Videos</figcaption>
-        </figure>
-      </li>
-      <li>When you have found the video you want to publish, select a player from the dropdown menu (or use the default player), and click the <strong>Get Code</strong> button to get the player publishing code:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Select Player and Get Publishing Code" src="/assets/images/salesforce/select-player-get-code.png" />
-          <figcaption class="bcls-caption--image">Select Player and Get Publishing Code</figcaption>
-        </figure>
-      </li>
-      <li>The Standard and Advanced publishing codes are displayed, with the option to make the player responsive (automatically resize according to the size of the browser window) or fixed. Brightcove recommends that in most cases, you should use the responsive Standard publishing code, unless you know the Advanced code is required for some reason.</li>
-      <li>Copy the code you want and paste it into your page HTML code where needed.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="PDP_Rendering">PDP Rendering</h2>
-    <p>The <strong>PDP Rendering</strong> Module provides the functionality to render video corresponding to the product on the PDP page. This requires mapping of a product with video id existing in the local SFCC catalog database. Here are the steps.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: you may need help from an SFCC expert or administrator for PDP Rendering.</aside>
-    <ol class="bcls-tasklist">
-      <li>Follow the steps in the <a href="#Add_a_video_to_the_Brightcove_server">Assign a video to a product in SFCC</a> section to assign a video to the product, if you have not already done so.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Add Video</strong></li>
       <li>
-        <p>Add the following line in <code>app/cartridge/templates/default/product/productDetails.isml</code>:</p>
-        <p><code>
-          &lt;isinclude template=&quot;slots/html/htmlBrightcoveVideo&quot;&gt;&lt;/isinclude&gt;
-          </code></p>
-        <p>The code should then look like this:</p>
-        <figure class="bcls-figure"><img class="bcls-image" alt="isml Code with Brightcove Line" src="/assets/images/salesforce/isml-code-with-brightcove.png" />
-          <figcaption class="bcls-caption--image">isml Code with Brightcove Line</figcaption>
+        Select <strong>Language</strong> from the menu (the default will the default locale selected for the site):
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-video-language.png" alt="Video Language Selector">
+          <figcaption class="bcls-caption--image">Video Language Selector</figcaption>
         </figure>
       </li>
-      <li>Go to storefront and search for the assigned product. You should see the video included in the page:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Product Page with Video" src="/assets/images/salesforce/product-page-video.png" />
-          <figcaption class="bcls-caption--image">Product Page with Video</figcaption>
+      <li>Click the <strong>select</strong> option next to Video field.</li>
+      <li>
+        In the dialog that appears, select the video file:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-video-dialog.png" alt="Select Video Dialog">
+          <figcaption class="bcls-caption--image">Select Video Dialog</figcaption>
         </figure>
       </li>
-      <li>If you want to change the position of the above video template on PDP, you can do that by editing the file <code>app/cartridge/templates/default/product/productDetails.isml</code> and moving the line that includes the Brightcove Video (see above) to a different location.</li>
+      <li>Click the <strong>select</strong> option next to Thumbnail field, and a similar popup dialog will appear where you can select the thumbnail file.</li>
+      <li>Click the <strong>select</strong> option next to Poster field, and a similar popup dialog will appear where you can select the poster file.</li>
+      <li>
+        Submit the form to initiate the ingestion process:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/submit-video-ingest-form.png" alt="Submit Video Ingest Form">
+          <figcaption class="bcls-caption--image">Submit Video Ingest Form</figcaption>
+        </figure>
+      </li>
+      <li>
+        Validate the success message on the form after submission:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/validate-video-ingest.png" alt="Validate Video Ingest Success">
+          <figcaption class="bcls-caption--image">Validate Video Ingest Success</figcaption>
+        </figure>
+      </li>
+      <li>
+        You can verify that in the video was ingested successfully by logging into Brightcove Studio and navigating to the Media module:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/view-video-studio.png" alt="View Video in Studio">
+          <figcaption class="bcls-caption--image">View Video in Studio</figcaption>
+        </figure>
+      </li>
+      <li>
+        You can also click on the video to reveal the details in order to verify the locale code:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-locale-code.png" alt="Verify Locale Code">
+          <figcaption class="bcls-caption--image">Verify Locale Code</figcaption>
+        </figure>
+      </li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="bulk_upload">Bulk Upload</h2>
-    <p>The <strong>Bulk Upload</strong> Module provides the functionality to upload multiple files to the Brightcove server as once. Business users can use a csv file containing details of files to be uploaded (name of file, location of the file etc.) during this process. Here are the steps.</p>
-    <ol class="bcls-tasklist">
-      <li>Login to the SFCC Business Manager with your valid credentials.</li>
-      <li>Login to the SFCC Business Manager with your valid credentials.</li>
-      <li>Select <strong>Merchant Tools</strong> from the top-level BM menu and then <strong>Brightcove &gt; Bulk Upload</strong>:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Bulk Upload Menu Item" src="/assets/images/salesforce/bulk-upload-menu-item.png" />
-          <figcaption class="bcls-caption--image">Bulk Upload Menu Item</figcaption>
+    <h2 id="Assign_Videos">Assign Videos - Categories</h2>
+    <p>First we will look at the steps for assigning videos to categories.</p>
+    <h3>Assign Videos to Categories</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Categories)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
         </figure>
       </li>
-      <li>Select CSV file (that contains files to be uploaded details) and process it by clicking the <strong>Submit</strong> button:
-        <figure class="bcls-figure"><img class="bcls-image" alt="Process CSV File" src="/assets/images/salesforce/process-csv-file.png" />
-          <figcaption class="bcls-caption--image">Process CSV File</figcaption>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
         </figure>
       </li>
-      <li>If you want to check on the progress of adding the videos you can look for them in the Media Module in Brightcove Studio.</li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected videos:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-assignment.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in category object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Catalogs</strong>.</li>
+      <li>Select the catalog.</li>
+      <li>Select the category/sub-category.</li>
+      <li>Select <strong>Edit</strong>.</li>
+      <li>Select <strong>Category Attributes</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-category-attributes.png" alt="Brightcove Category Attributes">
+          <figcaption class="bcls-caption--image">Brightcove Category Attributes</figcaption>
+        </figure>
+      </li>
+      <li>
+        To assign videos to subcategories, click on the category:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/select-category.png" alt="Select Category">
+          <figcaption class="bcls-caption--image">Select Category</figcaption>
+        </figure>
+      </li>
+      <li>
+        The subcategories list will appear:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/subcategories-list.png" alt="Subcategories List">
+          <figcaption class="bcls-caption--image">Subcategories List</figcaption>
+        </figure>
+      </li>
+      <li>Follow steps 3-16 to assign videos to subcategories.</li>
     </ol>
-    <h3>Details of the CSV file</h3>
-    <p>The table below shows the headers you should have in the CSV file, along with a description of the contents for the items under each header/** * @deprecated description */</p>
-    <table class="bcls-table">
-      <caption class="bcls-caption--table">
-      CSV Headers/Fields
-      </caption>
-      <thead class="bcls-table__head">
-        <tr>
-          <th>Table Header</th>
-          <th>Table Header</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td><code>videoname</code></td>
-          <td>A title for the video - REQUIRED</td>
-        </tr>
-        <tr>
-          <td><code>videoreferenceid</code></td>
-          <td>A unique reference id for the video - optional</td>
-        </tr>
-        <tr>
-          <td><code>videotags</code></td>
-          <td>A comma-delimited list of tags for the video - optional</td>
-        </tr>
-        <tr>
-          <td><code>videodescription</code></td>
-          <td>A short description for the video - optional</td>
-        </tr>
-        <tr>
-          <td><code>videofile</code></td>
-          <td>A public URL where the video resides - REQUIRED</td>
-        </tr>
-        <tr>
-          <td><code>videothumbnail</code></td>
-          <td>A public URL where the thumbnail image file resides - optional</td>
-        </tr>
-        <tr>
-          <td><code>videoposter</code></td>
-          <td>A public URL where the poster image file resides - optional</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4>Sample</h4>
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample CSV" src="/assets/images/salesforce/bulk-upload.png" />
-      <figcaption class="bcls-caption--image">Sample CSV</figcaption>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="assign_videos_to_master_products">Assign videos to Master Products</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Products)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-product.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-product.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots-product.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected videos:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-product.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-assignment-product.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in category object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign_videos_to_variant_products">Assign videos to Variant Products</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Products)</strong>.</li>
+      <li>Click on the <strong>Product ID</strong></li>
+      <li>
+        A list of variants for the selected master will appear:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/product-variant-list.png" alt="Product Variants List">
+          <figcaption class="bcls-caption--image">Product Variants List</figcaption>
+        </figure>
+      </li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variant.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variant-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-variant.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-variant.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots-variant.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected videos:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-variant.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-assignment-variant.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in category object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+      <li>We can get a list of all the <strong>Variants</strong> assigned to the catalog for the Site.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Products)</strong>.</li>
+      <li>
+        Select <strong>Variant Products</strong>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/variant-products.png" alt="Variant Products">
+          <figcaption class="bcls-caption--image">Variant Products</figcaption>
+        </figure>
+      </li>
+      <li>Follow the steps from 5 to 17.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="embed_video">Embed Video</h2>
+    <p>The embed video steps allow you to get code to render videos on any ISML page.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Embed Video</strong>.</li>
+      <li>
+        Select the video and player you want and click <strong>Get Code</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/embed-video.png" alt="Embed Video">
+          <figcaption class="bcls-caption--image">Embed Video</figcaption>
+        </figure>
+      </li>
+      <li>
+        A popup dialog will appear with the code - select the code block, and it will be copied to the clipboard:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/embed-video.png" alt="Embed Code">
+          <figcaption class="bcls-caption--image">Embed Code</figcaption>
+        </figure>
+      </li>
+      <li>Paste the code in content asset, content slot or in any ISML template to render video.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bulk_upload">Bulk upload</h2>
+    <p>Bulk upload allows to ingest videos in bulk quantity by uploading .csv files. The job will process the .csv file(s) and ingest the videos to the Brightcove account. A sample bulkUpload file is attached in the zip file under meta directory.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note that the <code>videofile</code>, <code>videoposter</code> and <code>videothumbnail</code> must be available on publicly accessible paths.</aside>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Bulk Upload</strong>.</li>
+      <li>Select .csv file.</li>
+      <li>
+        Click submit:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="" alt="Bulk Upload">
+          <figcaption class="bcls-caption--image">Bulk Upload</figcaption>
+        </figure>
+      </li>
+      <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
+      <li>Select <strong>Bulk-Upload</strong> job and click <strong>Run</strong>.</li>
+      <li>
+        Verify the job completion status.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-bulk-upload-completion.png" alt="Verify Bulk Upload Completion">
+          <figcaption class="bcls-caption--image">Verify Bulk Upload Completion</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the video object in Brightcove account.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-object-brightcove.png" alt="Verify Video Object in Brightcove">
+          <figcaption class="bcls-caption--image">Verify Video Object in Brightcove</figcaption>
+        </figure>
+      </li>
+      <li>
+        The file processed by <strong>Bulk-Upload</strong> job will be moved to <strong>bulkUpload_processed</strong> folder under <strong>Temp</strong> directory.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/processed-bulk-upload-file.png" alt="Processed Bulk Upload File">
+          <figcaption class="bcls-caption--image">Processed Bulk Upload File</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bulk_assign">Bulk assign</h2>
+    <p>Bulk assign allows to assign video(s) to categories, sub-categories and products in bulk quantity by uploading .csv file(s). Bulk assign allows to assign video(s) to categories, sub-categories and products in bulk quantity by uploading .csv file(s). The sample bulkAssign file(s) for category and product are attached in the zip file under the <strong>meta</strong> directory.</p>
+    <p>The category file data looks like this:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/bulkassigndatasample-cateory.png" alt="Bulk Assign Data Sample - Category">
+      <figcaption class="bcls-caption--image">Bulk Assign Data Sample - Category</figcaption>
+    </figure>
+    <p>The product file data looks like this:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/" alt="Bulk Assign Data Sample - Product">
+      <figcaption class="bcls-caption--image">Bulk Assign Data Sample - Product</figcaption>
+    </figure>
+    <p>The job will process csv file(s) for category and product under the same execution. The job checks the directories for product and category and process the file(s).</p>
+    <h3>Category</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Bulk Assign</strong>.</li>
+      <li>Select <strong>Category</strong>.</li>
+      <li>Select .csv file.</li>
+      <li>
+        Click <strong>Submit</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/submit-csv-file-category.png" alt="Submit CSV File - Category">
+          <figcaption class="bcls-caption--image">Submit CSV File - Category</figcaption>
+        </figure>
+      </li>
+      <li>
+        The file will upload in the <strong>Temp</strong> directory under the <strong>bulkAssignCategory</strong> folder.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/bulkassigncategory-folder.png" alt="bulkassigncategory Folder">
+          <figcaption class="bcls-caption--image">bulkassigncategory Folder</figcaption>
+        </figure></li>
+        <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
+        <li>Select the <strong>Bulk-Assign</strong> job and click <strong>Run</strong>.</li>
+        <li>
+          Verify the job completion status.
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/salesforce/Job_Completion_Status_Bulk_Assign_Category.png" alt="Job Completion Status - Bulk Assign Category">
+            <figcaption class="bcls-caption--image">Job Completion Status - Bulk Assign Category</figcaption>
+          </figure>
+        </li>
+        <li>
+          Verify the video(s) assigned.
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/salesforce/verify_videos_assign_category.png" alt="Verify Videos Assign - Category">
+            <figcaption class="bcls-caption--image">Verify Videos Assign - Category</figcaption>
+          </figure>
+        </li>
+        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignCategory_processed</strong> folder under the Temp directory.</li>
+    </ol>
+    <h3>Product</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Bulk Assign</strong>.</li>
+      <li>Select <strong>Product</strong>.</li>
+      <li>Select .csv file.</li>
+      <li>
+        Click <strong>Submit</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/submitbulkassignproduct.png" alt="Submit CSV File - Product">
+          <figcaption class="bcls-caption--image">Submit CSV File - Product</figcaption>
+        </figure>
+      </li>
+      <li>
+        The file will upload in the <strong>Temp</strong> directory under the <strong>bulkAssignProduct</strong> folder.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/bulkassignProduct-folder.png" alt="bulkassignProduct Folder">
+          <figcaption class="bcls-caption--image">bulkassignProduct Folder</figcaption>
+        </figure></li>
+        <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
+        <li>Select the <strong>Bulk-Assign</strong> job and click <strong>Run</strong>.</li>
+        <li>
+          Verify the job completion status.
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/salesforce/Job_Completion_Status_Bulk_Assign_Product.png" alt="Job Completion Status - Bulk Assign Product">
+            <figcaption class="bcls-caption--image">Job Completion Status - Bulk Assign Product</figcaption>
+          </figure>
+        </li>
+        <li>
+          Verify the video(s) assigned.
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/salesforce/verify_videos_assign_Product.png" alt="Verify Videos Assign - Product">
+            <figcaption class="bcls-caption--image">Verify Videos Assign - Product</figcaption>
+          </figure>
+        </li>
+        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignProduct_processed</strong> folder under the Temp directory.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sample_implementation">Sample implementations</h2>
+    <p>Below are some pages for a sample implementation of Brightcove videos.</p>
+    <h3>Storefront Reference Architecture (SFRA)</h3>
+    <h4>Category (catlanding, searchResultsNoDecorator)</h4>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/category_sample.png" alt="Category Sample">
+      <figcaption class="bcls-caption--image">Category Sample</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/category_sample2.png" alt="Category Sample Detail">
+      <figcaption class="bcls-caption--image">Category Sample Detail</figcaption>
+    </figure>
+    <h4>Product Page (productDetails)</h4>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/product-sample1.png" alt="Product Sample 1">
+      <figcaption class="bcls-caption--image">Product Sample 1</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/product-sample2.png" alt="Product Sample 2">
+      <figcaption class="bcls-caption--image">Product Sample 2</figcaption>
+    </figure>
+    <h3>SiteGenesis Architecture</h3>
+    <h4>Category Page (catlanding, categoryproducthits)</h4>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/category-sample3.png" alt="Category Landing Page">
+      <figcaption class="bcls-caption--image">Category Landing Page</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/category-sample4.png" alt="Category Detail Page">
+      <figcaption class="bcls-caption--image">Category Detail Page</figcaption>
+    </figure>
+    <h4>Product Pages (productcontent, producttopcontent)</h4>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/product-sample3.png" alt="Product Page Sample">
+      <figcaption class="bcls-caption--image">Product Page Sample</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/salesforce/product-sample4.png" alt="Product Page Sample">
+      <figcaption class="bcls-caption--image">Product Page Sample</figcaption>
     </figure>
   </section>
 </article>
