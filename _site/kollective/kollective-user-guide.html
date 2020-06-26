@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This document provides technical instructions for installing Brightcove custom cartridge, as well as setting up SFCC Business Manager, for integrating Brightcove Video Cloud with Salesforce Commerce Cloud (SFCC).">
+  <meta name="description" content="In this topic, you will learn the how to synchronize your VOD and Live content with the Kollective syndicator application.">
   
-  <title>Salesforce Commerce Cloud Installation Guide</title>
+  <title>Kollective Deployment Guide</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -119,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/salesforce/">Salesforce</a></li>
+      <li class="breadcrumb-item"><a href="/kollective/">Kollective</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Salesforce Commerce Cloud Installation Guide</li>
+      <li class="breadcrumb-item active" aria-current="page">Kollective Deployment Guide</li>
     </ol>
   </nav>
 </header>
@@ -336,302 +337,506 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Salesforce Commerce Cloud Installation Guide</h1>
+<h1>Kollective Deployment Guide</h1>
 <article class="bcls-article">
-  <summary>This document provides technical instructions for installing Brightcove custom cartridge, as well as setting up SFCC Business Manager, for integrating Brightcove Video Cloud with Salesforce Commerce Cloud (SFCC).</summary>
-  <section class="bcls-section">
-    <h2 id="upload_cartridges">Upload Cartridges</h2>
-    <ol class="bcls-tasklist">
-      <li>Extract the zipfile.</li>
-      <li>Upload cartridges (<code>bm_brightcove</code>, <code>int_brightcoveandapp_brightcove</code>) to the Salesforce Commerce Cloud instance.</li>
-      <li>Activate the code version with the uploaded cartridges.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure_business_manager">Configure Business Manager</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Business Manager.</li>
-      <li>Navigate to <strong>Administration -&gt; Manage Sites</strong></li>
-      <li>Select the site from the list.</li>
-      <li>Select Settings tab.</li>
+  <summary>In this topic, you will learn the how to synchronize your VOD and Live content with the Kollective syndicator application.</summary>
+
+<section class="bcls-section">
+<h2 id="Overview">Overview</h2>
+
+<p>
+  Brightcove has created an integration to deliver Video On Demand (VOD) and Brightcove Live events to Brightcove Players using the <a href="https://kollective.com/ECDN-solutions/">Kollective eCDN</a>. 
+</p>
+<p>
+  This integration consists of two parts:
+</p>
+<ul>
+  <li>
+    <p>
+      The backend application used to synchronize videos from Brightcove to Kollective
+    </p>
+  </li>
+  <li>
+    <p>
+      The Kollective plugin for Brightcove Player that allows playback of video assets using the Kollective eCDN
+    </p>
+  </li>
+</ul>
+
+<p>
+  This topic focuses on Kollective's server-side app used to synchronize your content.
+</p>
+
+</section>
+
+<section class="bcls-section">
+<h2 id="Process_flow">Process flow</h2>
+  <p>
+    To play VOD or Live content, use the following process flow:
+  </p>
+  <ol class="bcls-tasklist">
+    <li>
+      <p>
+        Select either the VOD or Live asset in the Syndicator app.
+      </p>
+    </li>
+    <li>
+      <p>
+        Synchronize the your content assets to Kollective using the Syndicator app.
+      </p>
+    </li>
+    <li>
+      <p>
+        Embed the Brightcove Player with the Kollective plugin in your web page to play your content.
+      </p>
+    </li>
+
+  </ol>
+  
+  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Workflow" src="/assets/images/plugins/kollective/app/workflow.png" />
+    <figcaption class="bcls-caption--image">Workflow</figcaption>
+  </figure> 
+</section>
+
+<section class="bcls-section">
+<h2 id="Getting_started">Getting started</h2>
+<p>
+  To synchronize content, follow these steps:  
+</p>
+<ol class="bcls-tasklist-restart">
+  <li>
+    <p>
+      If you haven't done so already, follow the setup instructions in the <a href="/plugins/kollective-plugin.html">Kollective Plugin with Brightcove Player</a> document:
+    </p>
+  </li>
+  <li>
+    <a href="#Reviewing_user_roles">Reviewing user roles</a>
+  </li>
+  <li>
+    <a href="#Synchronizing_videos">Synchronizing videos</a>
+  </li>
+  <li>
+    <a href="#Synchronizing_live_events">Synchronizing live events</a>
+  </li>
+  <li>
+    <a href="#Checking_syndicator_logs">Checking syndicator logs</a>
+  </li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Reviewing_user_roles">Reviewing user roles</h2>
+<p>
+  The Kollective backend syndicator application supports two different user roles: 
+</p>
+<ul>
+  <li>
+    <p>
+      Admin role - Admin users can create other users (admin and user roles), access company settings, run the syndicator tool and check the synchronization logs. They have access to all sections of the syndicator app.
+    </p>
+  </li>
+  <li>
+    <p>
+      User role - These users can run the syndicator tool and check the synchronization logs, but cannot edit company settings. They have access to the <strong>Video Syndicator, Live Events Syndicator</strong> and the <strong>Syndicator Logs</strong>, but they don’t have access to the <strong>Manage Users</strong> or <strong>Settings</strong> pages.
+    </p>
+  </li>
+</ul>
+
+<h3>Admin User</h3>
+<p>
+  The admin user can create other users (admin and user roles), access company settings, run the syndicator tool and check the synchronization logs.
+</p>
+<h4>Account Settings</h4>
+<p>
+  The admin user has access to the <strong>Settings</strong> section to set account information. To manage account settings, follow these steps:
+</p>
+<ol class="bcls-tasklist-restart">
+  <li>
+    <p>
+      Login to the Kollective syndicator app as an admin user.
+    </p>
+  </li>
+  <li>
+    <p>
+      In the left-side navigation, select <strong>Settings</strong>.
+    </p>
+    <!-- <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Policy key" src="/assets/images/plugins/kollective/policy-key.png" />
+      <figcaption class="bcls-caption--image">Policy key</figcaption>
+    </figure> -->
+  </li>
+  <li>
+    <p>
+      In the <strong>Settings</strong> section, you can enter information about your company's account.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Settings" src="/assets/images/plugins/kollective/app/settings.png" />
+      <figcaption class="bcls-caption--image">Settings</figcaption>
+    </figure>
+    <p>Here are the field details:</p>
+    <ul>
       <li>
-        Add <code>app_brightcove</code> in the cartridge path for the SFRA site as shown below:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/appsaleforce-cartridge-path.png" alt="Add app_brightcove in Path">
-          <figcaption class="bcls-caption--image">Add app_brightcove in Path</figcaption>
-        </figure>
+        <p>
+          <strong>Tenant Name</strong> - Your company name
+        </p>
       </li>
-      <li>Apply the changes.</li>
       <li>
-        Add <code>int_brightcove</code> in the cartridge path for the SiteGenesis architecture site as shown below:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/intsaleforce-cartridge-path.png" alt="Add int_brightcove in Path">
-          <figcaption class="bcls-caption--image">Add int_brightcove in Path</figcaption>
-        </figure>
-      </li>
-      <li>Apply the changes.</li>
-      <li>Navigate to <strong>Administration -&gt; Manage Sites</strong></li>
-      <li>
-        Select <strong>Business Manager</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-business-manager.png" alt="Select Business Manager">
-          <figcaption class="bcls-caption--image">Select Business Manager</figcaption>
-        </figure>
+        <p>
+          <strong>Description</strong> - Your description
+        </p>
       </li>
       <li>
-        Add <code>bm_brightcove</code> in the cartridge path for the Business Manager:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/bmbrightcove-in-path.png" alt="Add bm_brightcove in Path">
-          <figcaption class="bcls-caption--image">Add bm_brightcove in Path</figcaption>
-        </figure>
+        <p>
+          <strong>Contact Name</strong> - Your contact name
+        </p>
       </li>
-      <li>Apply the changes.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="import_system_object_extensions_files">Import System Object Extensions Files</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>Navigate to <strong>Administration -&gt; Site Development -&gt; Import &amp; Export</strong>.</li>
       <li>
-        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option.png" alt="Select Upload">
-          <figcaption class="bcls-caption--image">Select Upload</figcaption>
-        </figure>
+        <p>
+          <strong>Contact Email</strong> - Your contact email address
+        </p>
       </li>
-      <li>Upload <strong><code>brightcove-objecttype-extensions.xml</code></strong> from the <strong>meta</strong> directory of the zip file.</li>
-      <li>Navigate to <strong>Administration -&gt; Site Development -&gt; Import &amp; Export</strong>.</li>
       <li>
-        Select the <strong>Import</strong> option under <strong>Meta Data</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-import-option.png" alt="Select Import">
-          <figcaption class="bcls-caption--image">Select Import</figcaption>
-        </figure>
+        <p>
+          <strong>Brightcove Account ID</strong> - You can get this from Brightcove's Video Cloud Studio
+        </p>
       </li>
-      <li>Import the <strong>brightcove-objecttype-extensions.xml</strong> file.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="import_service_files">Import Service Files</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong></li>
       <li>
-        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option2.png" alt="Select Upload">
-          <figcaption class="bcls-caption--image">Select Upload</figcaption>
-        </figure>
-      </li>
-      <li>Upload <strong>brightcove-services.xml</strong> from the <strong>meta</strong> directory of the zip file.</li>
-      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong>.</li>
-      <li>
-        Select the <strong>Import</strong> option under <strong>Services</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-import-option2.png" alt="Select Import">
-          <figcaption class="bcls-caption--image">Select Import</figcaption>
-        </figure>
-      </li>
-      <li>Import the <strong><code>brightcove-services.xml</code></strong> file.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="import_job_file">Import Job Files</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong></li>
-      <li>
-        Select <strong>Upload</strong> under <strong>Import &amp; Export Files</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-upload-option2.png" alt="Select Upload">
-          <figcaption class="bcls-caption--image">Select Upload</figcaption>
-        </figure>
-      </li>
-      <li>Upload <strong>brightcove-jobs.xml</strong> from the <strong>meta</strong> directory of the zip file.</li>
-      <li>Navigate to <strong>Administration -&gt; Operations -&gt; Import &amp; Export</strong>.</li>
-      <li>
-        Select the <strong>Import</strong> option under <strong>Jobs</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/select-import-option3.png" alt="Select Import">
-          <figcaption class="bcls-caption--image">Select Import</figcaption>
-        </figure>
-      </li>
-      <li>Import the <strong><code>brightcove-jobs.xml</code></strong> file.</li>
-      <li>
-        Select <strong>site context</strong> for the jobs listed below:
+        <p>
+          <strong>Brightcove Client Key</strong> - You can get this from Brightcove's Video Cloud Studio 
+        </p>
+        <p>
+          <strong>Brightcove Client Secret</strong> - You can get this from Brightcove's Video Cloud Studio 
+        </p>
+        <p>
+          For Kollective to access your content in Brightcove, you need to provide your client credentials. You can generate them in the Admin section of Video Cloud Studio. You need to select the following permissions:
+        </p>
         <ul>
-          <li><code>Brightcove-BulkAssign</code></li>
-          <li><code>Brightcove-BulkUpload</code></li>
+          <li>
+            CMS : Playlist Read, Playlist Read/Write, Video Read, Video Read/Write
+          </li>
+          <li>
+            Dynamic Ingest : Create, Push Files
+          </li>
+          <li>
+            Players : Read, Read/Write 
+          </li>
+          <li>
+            SSAI : Read, Read/Write 
+          </li>
+        </ul>
+        <p>
+          For details about getting your Brightcove Client Key and Client Secret, see the following:
+        </p>
+        <ul>
+          <li>
+            <a href="https://studio.support.brightcove.com/admin/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a>
+          </li>
+          <li>
+            Alternatively, you can use this tool: <a href="https://apis.support.brightcove.com/oauth/code-samples/oauth-api-sample-create-client-credentials.html">Create Client Credentials</a>
+          </li>
         </ul>
       </li>
       <li>
-        Create three jobs manually:
-        <ul>
-          <li>Bulk Assign</li>
-          <li>Bulk Upload</li>
-          <li>Clean Brightcove Folder</li>
-        </ul>
-        <p>Information you will need to create the jobs is in the <strong>table below</strong>. Here are the steps for creating each job:</p>
-        <ol>
-          <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
-          <li>Create a New Job.</li>
-          <li>End the <strong>Step ID</strong>.</li>
-          <li>Select the <strong>scope</strong>.</li>
-        </ol>
-      </li>
-    </ol>
-    <table class="bcls-table">
-      <caption class="bcls-caption--table">Jobs Details</caption>
-      <thead class="bcls-table__head">
-          <tr>
-              <th>Job Name</th>
-              <th>Step ID</th>
-              <th>Scope</th>
-          </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-          <tr>
-              <td>Bulk Assign</td>
-              <td><code>custom.bulkAssign</code></td>
-              <td>Specific-site</td>
-          </tr>
-          <tr>
-              <td>Bulk Upload</td>
-              <td><code>custom.bulkUpload</code></td>
-              <td>Specific-site</td>
-          </tr>
-          <tr>
-              <td>Clean Brightcove Folder</td>
-              <td><code>custom.CleanFolderBrightcove</code></td>
-              <td>Organization</td>
-          </tr>
-      </tbody>
-  </table>
-  </section>
-  <section class="bcls-section">
-    <h2 id="add_brightcove_features_under_roles_permissions">Add Brightcove Features Under Roles &amp; Permissions</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>Navigate to <strong>Administration -&gt; Organization -&gt; Roles &amp; Permissions</strong>.</li>
-      <li>Select <strong>role</strong> from the list to grant access to Brightcove features.</li>
-      <li>Select <strong>Business Manager Module</strong>.</li>
-      <li>
-        Select <strong>Site Context</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_15_Image_0001.png" alt="Select Site Context">
-          <figcaption class="bcls-caption--image">Select Site Context</figcaption>
-        </figure>
-      </li>
-      <li>Apply context.</li>
-      <li>Scroll down to the Brightcove section.</li>
-      <li>
-        Select all the features and click <strong>Update</strong>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_15_Image_0002.png" alt="Update Roles and Permissions">
-          <figcaption class="bcls-caption--image">Update Roles and Permissions</figcaption>
-        </figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure_custom_site_preferences">Configure Custom Site Preferences</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>
-        Select a <strong>Site</strong> from the dropdown menu:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_16_Image_0001.png" alt="Site Menu">
-          <figcaption class="bcls-caption--image">Site Menu</figcaption>
-        </figure>
-      </li>
-      <li>Navigate to <strong>Merchant Tools -&gt; Site Preferences -&gt; Custom Preferences</strong>.</li>
-      <li>Select <strong>Brightcove</strong>.</li>
-      <li>
-        Add the following values:
-        <ul>
-          <li>Brightcove Account ID</li>
-          <li>Brightcove Client ID</li>
-          <li>Brightcove Client Secret</li>
-          <li>Site Catalog</li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_16_Image_0002.png" alt="Custom Preference Values - 1">
-          <figcaption class="bcls-caption--image">Custom Preference Values - 1</figcaption>
-        </figure>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/salesforce/install-images/brightcove-sfcc-install-guide-20200612_Page_17_Image_0001.png" alt="Custom Preference Values - 2">
-          <figcaption class="bcls-caption--image">Custom Preference Values - 2</figcaption>
-        </figure>
-        <aside class="bcls-aside bcls-aside--information language-editable">
-          See <a href="https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a> for information on how to generate your client id and secret. Your credentials will need these permissions:
-          <figure class="bcls-figure">
-            <img class="bcls-image" src="/assets/images/salesforce/install-images/api-permissions-needed.png" alt="API Permissions Needed">
-            <figcaption class="bcls-caption--image">API Permissions Needed</figcaption>
-          </figure>
-        </aside>
+        <p>
+          <strong>Brightcove Live API Key</strong> - Contact Brightcove support to get this 
+        </p>
       </li>
       <li>
-        Add the Brightcove Slot Limit (1 - 11). The default is 11.
-        <ul>
-          <li>Slots for Master Products (<strong>master</strong> and <strong>m1-m10</strong>)</li>
-          <li>Slots for Variant Products (<strong>v1 - v11</strong>)</li>
-          <li>Slots for Categories (<strong>c1 - c11</strong>)</li>
-        </ul>
-        <p>A Slot limit of 5 will provide these slots for configuration:</p>
-        <ul>
-          <li>Master Products (<strong>master</strong> and <strong>m1-m4</strong>)</li>
-          <li>Variant Products (<strong>v1 - v5</strong>)</li>
-          <li>Categories (<strong>c1 - c5</strong>)</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="include_brightcove_video_rendering_in_isml_files">Include Brightcove Video Rendering in ISML Files</h2>
-    <h3>SFRA Cartridge – <code>app_brightcove</code></h3>
-    <ol class="bcls-tasklist-restart">
-      <li>
-        Video rendering is supported for the below ISML files:
-        <ul>
-          <li><code>productDetails.isml</code></li>
-          <li><code>catLanding.isml</code></li>
-          <li><code>searchResultsNoDecorator.isml</code></li>
-        </ul>
+        <p>
+          <strong>Kollective Tenant ID</strong> -  You will get this from your account manager
+        </p>
       </li>
       <li>
-        Include <code>modules.isml</code>:
-        <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
+        <p>
+          <strong>Kollective Service Token</strong> -  You will get this from your account manager
+        </p>
       </li>
       <li>
-        Include the tags from <code>modules.isml</code> to render video:
-        <ul>
-          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
-          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
-          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
-        </ul>
+        <p>
+          <strong>Allow Automatic Synchronization</strong> -  If you want all of your content synced at a specific time, check this. Otherwise, leave it unchecked. For details, see the next step.
+        </p>
       </li>
-    </ol>
-    <h3>SiteGenesis Cartridge – <code>int_brightcove</code></h3>
-    <ol class="bcls-tasklist-restart">
+    </ul>
+  </li>
+  <li>
+    <p>
+      If you select <strong>Allow Automatic Synchronization</strong>, then you will see the following details:
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Automatic Synchronization" src="/assets/images/plugins/kollective/app/auto-sync.png" />
+      <figcaption class="bcls-caption--image">Automatic Synchronization</figcaption>
+    </figure>
+    <p>This allows the synchronization job to run automatically at the configurable time interval.</p>
+    <ul>
       <li>
-        Video rendering is supported for the below ISML files:
-        <ul>
-          <li><code>productcontents.isml</code></li>
-          <li><code>producttopcontent.isml</code></li>
-          <li><code>categoryproducthits.isml</code></li>
-          <li><code>catlanding.isml</code></li>
-        </ul>
-      </li>
-      <li>
-        Include <code>modules.isml</code>:
-        <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
+        Enter a time interval for the job to run. (example: run the job every 1 hour).
       </li>
       <li>
-        Include the tags from <code>modules.isml</code> to render video:
-        <ul>
-          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
-          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
-          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
-        </ul>
+        Select the time for the job to run for the first time.
       </li>
-    </ol>
-  </section>
+      <li>
+        Enter the <strong>Max Videos To Synchronize</strong> each time the job runs.
+      </li>
+      <li>
+        You can click on the <strong>Run Job Now</strong> button to run the job immediately.
+      </li>
+    </ul>  
+  </li>
+  <li>
+    <p>
+      Select the <strong>Update</strong> button to save the settings.
+    </p>
+  </li>
+</ol>
+
+<h4>Managing users</h4>
+<p>
+  With an admin account, you can create, edit and delete users.
+</p>
+<ol class="bcls-tasklist-restart">
+  <li>
+    <p>
+      Login to the Kollective syndicator app as an admin user.
+    </p>
+  </li>
+  <li>
+    <p>
+      In the left-side navigation, select <strong>Manage Users</strong>.
+    </p>
+  </li>
+  <li>
+    <p>
+      You will see a list of all users in the company account.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="List users" src="/assets/images/plugins/kollective/app/manage-users.png" />
+      <figcaption class="bcls-caption--image">List users</figcaption>
+    </figure>
+  </li>
+  </ol>
+
+  <h4>Adding users</h4>
+  <p>
+    You can add a user with either an admin or a user role.
+  </p>
+  <ol class="bcls-tasklist-restart">
+    <li>
+      <p>
+        From the <strong>Manage Users</strong> page, select the <strong>Add User</strong> button.
+      </p>
+    </li>
+    <li>
+      <p>
+        Enter the information to create a user with either an admin or user role.
+      </p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Create user" src="/assets/images/plugins/kollective/app/create-user.png" />
+        <figcaption class="bcls-caption--image">Create user</figcaption>
+      </figure>
+    </li>
+  </ol>
+
+  <h4>Editing users</h4>
+  <p>
+    You can edit the information for an existing user.
+  </p>
+  <ol class="bcls-tasklist-restart">
+    <li>
+      <p>
+        From the <strong>Manage Users</strong> page, select a user from the list.
+      </p>
+    </li>
+    <li>
+      <p>
+        You can update any of the user fields except for <strong>Email</strong>.
+      </p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Edit user" src="/assets/images/plugins/kollective/app/edit-user.png" />
+        <figcaption class="bcls-caption--image">Edit user</figcaption>
+      </figure>
+    </li>
+  </ol>
+
+  <h4>Deleting users</h4>
+  <p>
+    You can delete users from the users list.
+  </p>
+  <ol class="bcls-tasklist-restart">
+    <li>
+      <p>
+        From the <strong>Manage Users</strong> page, select a user from the list (except for the one you logged in with).
+      </p>
+    </li>
+    <li>
+      <p>
+        Select the <strong>Delete</strong> button.
+      </p>
+    </li>
+    <li>
+      <p>
+        From the <strong>Delete User</strong> dialog, select the <strong>Delete</strong> button.
+      </p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Delete user" src="/assets/images/plugins/kollective/app/delete-user.png" />
+        <figcaption class="bcls-caption--image">Delete user</figcaption>
+      </figure>
+    </li>
+  </ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Synchronizing_videos">Synchronizing videos</h2>
+<p>
+  Synchronize videos under the current account from Brightcove to Kollective.  
+</p>
+<h3>Video List</h3>
+<ol class="bcls-tasklist-restart">
+   <li>
+    <p>
+      In the left-side navigation, select <strong>Content Syndicator</strong>, and then select <strong>Videos Syndicator</strong>.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sync videos" src="/assets/images/plugins/kollective/app/sync-videos.png" />
+        <figcaption class="bcls-caption--image">Sync videos</figcaption>
+      </figure> 
+      <p>
+        You should see a list all videos in your Video Cloud account with most recent added/updated videos on top.
+      </p>
+  </li>
+  <li>
+    <p>
+      In the video list, you can filter for <strong>All, Synchronized,</strong> or <strong>Non-Synchronized</strong> videos.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter videos" src="/assets/images/plugins/kollective/app/sync-video-filter.png" />
+        <figcaption class="bcls-caption--image">Filter videos</figcaption>
+      </figure> 
+  </li>
+  <li>
+    <p>
+      Select one or more videos in the list and select the <strong>Synchronize</strong> button to synchronize from Brightcove to Kollective.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Synchronize multiple videos" src="/assets/images/plugins/kollective/app/sync-multiple-videos.png" />
+        <figcaption class="bcls-caption--image">Synchronize multiple videos</figcaption>
+      </figure> 
+  </li>
+</ol>
+
+<h3>Video Detail</h3>
+<ol class="bcls-tasklist-restart">
+   <li>
+    <p>
+      Select any video in the list to display the video details page.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Video details" src="/assets/images/plugins/kollective/app/video-details.png" />
+        <figcaption class="bcls-caption--image">Video details</figcaption>
+      </figure> 
+  </li>
+  <li>
+    <p>
+      From the video details page, you can do the following:
+    </p>
+    <ul>
+      <li>
+        Synchronize the video
+      </li>
+      <li>
+        Update video status
+      </li>
+      <li>
+        Delete the video 
+      </li>
+    </ul>
+  </li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Synchronizing_live_events">Synchronizing live events</h2>
+<p>
+  Synchronize live events under the current account from Brightcove to Kollective.  
+</p>
+<h3>Video List</h3>
+<ol class="bcls-tasklist-restart">
+   <li>
+    <p>
+      In the left-side navigation, select <strong>Content Syndicator</strong>, and then select <strong>Live Events Syndicator</strong>.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sync live events" src="/assets/images/plugins/kollective/app/sync-live.png" />
+        <figcaption class="bcls-caption--image">Sync live events</figcaption>
+      </figure> 
+      <p>
+        You should see a list of all live events in your Video Cloud account with the most recent added/updated videos on top.
+      </p>
+  </li>
+  <li>
+    <p>
+      In the live event list, you can filter for <strong>All, Live, Standby</strong> or <strong>Completed</strong> live events.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter live events" src="/assets/images/plugins/kollective/app/sync-live-filter.png" />
+        <figcaption class="bcls-caption--image">Filter live events</figcaption>
+      </figure> 
+  </li>
+  <li>
+    <p>
+      Select one or more live events in the list and select the <strong>Synchronize</strong> button to synchronize from Brightcove to Kollective.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Synchronize multiple events" src="/assets/images/plugins/kollective/app/sync-live-events.png" />
+        <figcaption class="bcls-caption--image">Synchronize multiple events</figcaption>
+      </figure> 
+  </li>
+</ol>
+
+<h3>Live Event Detail</h3>
+<ol class="bcls-tasklist-restart">
+   <li>
+    <p>
+      Select any live event in the list to display the details page.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Live event details" src="/assets/images/plugins/kollective/app/live-details.png" />
+        <figcaption class="bcls-caption--image">Live event details</figcaption>
+      </figure> 
+  </li>
+  <li>
+    <p>
+      From the live event details page, you can do the following:
+    </p>
+    <ul>
+      <li>
+        Synchronize the live event
+      </li>
+      <li>
+        Update live event status
+      </li>
+      <li>
+        Delete the live event
+      </li>
+    </ul>
+  </li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Checking_syndicator_logs">Checking syndicator logs</h2>
+<p>
+  The syndicator logs provide success, error and warning details about video and live event synchronizations for your account.  
+</p>
+<ol class="bcls-tasklist-restart">
+   <li>
+    <p>
+      In the left-side navigation, select <strong>Syndicator Logs</strong>.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Syndicator logs" src="/assets/images/plugins/kollective/app/syndicator-logs.png" />
+        <figcaption class="bcls-caption--image">Syndicator logs</figcaption>
+      </figure> 
+      <p>
+        You should see a list of synchronization logs for the current account with the most recent on top.
+      </p>
+  </li>
+  <li>
+    <p>
+      In the synchronization logs list, you can filter for <strong>All, Error, Info</strong> or <strong>Warning</strong>.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter syndicator logs" src="/assets/images/plugins/kollective/app/syndicator-log-filter.png" />
+        <figcaption class="bcls-caption--image">Filter syndicator logs</figcaption>
+      </figure> 
+  </li>
+</ol>
+
+</section>
+
+
 </article>
 <!-- complete bootstrap layout -->
     </div>
@@ -648,7 +853,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 22 Jun 2020
+  Page last updated on 26 Jun 2020
 </div>
 
 
