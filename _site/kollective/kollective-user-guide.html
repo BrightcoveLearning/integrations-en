@@ -406,20 +406,28 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <ol class="bcls-tasklist-restart">
   <li>
     <p>
-      If you haven't done so already, follow the setup instructions in the <a href="/plugins/kollective-plugin.html">Kollective Plugin with Brightcove Player</a> document:
+      If you haven't done so already, follow the setup instructions in the <a href="/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a>.
     </p>
   </li>
   <li>
     <a href="#Reviewing_user_roles">Reviewing user roles</a>
   </li>
   <li>
-    <a href="#Synchronizing_videos">Synchronizing videos</a>
-  </li>
-  <li>
-    <a href="#Synchronizing_live_events">Synchronizing live events</a>
+    <p>To synchronize your VOD and live content, see the following:</p>
+    <ul>
+      <li>
+        <a href="#Synchronizing_videos">Synchronizing videos</a>
+      </li>
+      <li>
+        <a href="#Synchronizing_live_events">Synchronizing live events</a>
+      </li>
+    </ul>  
   </li>
   <li>
     <a href="#Checking_syndicator_logs">Checking syndicator logs</a>
+  </li>
+  <li>
+    <a href="#Embedding_the_player_code">Embedding the player code</a>
   </li>
 </ol>
 </section>
@@ -833,7 +841,38 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </figure> 
   </li>
 </ol>
+</section>
 
+<section class="bcls-section">
+<h2 id="Embedding_the_player_code">Embedding the player code</h2>
+<p>
+  There is no change to how you embed the player and associated content asset on your web page. 
+</p>
+<ol class="bcls-tasklist-restart">
+  <li>
+    <p>
+      In Brightcove's Video Cloud Studio, navigate to the Media module.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the video you want to use and select the <strong>Publish and Embed</strong> button.
+    </p>
+  </li>
+  <li>
+    <p>
+      Select the player that has been configured to use the Kollective plugin.
+    </p>
+  </li>
+  <li>
+    <p>
+      Copy either the <strong>Standard</strong> or <strong>Advanced</strong> code and add it to your web page.
+    </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Embed code" src="/assets/images/kollective/embed-code.png" />
+      <figcaption class="bcls-caption--image">Embed code</figcaption>
+    </figure>
+  </li>
+</ol>
 </section>
 
 
