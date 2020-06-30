@@ -51,6 +51,15 @@
     - name: 'Drupal 7 - Installation'
       url: '/drupal/drupal-7-brightcove-connector-installation.html'
 - section: 
+  name: 'Kollective'
+  url: '/kollective/'
+  icon: '<img src="/assets/images/kollective/logo.png">'
+  docs:
+    - name: 'Kollective eCDN Deployment Guide'
+      url: '/kollective/kollective-deployment-guide.html'
+    - name: 'Kollective eCDN User Guide'
+      url: '/kollective/kollective-user-guide.html'
+- section: 
   name: 'Ramp'
   url: '/ramp/'
   icon: '<img src="/assets/images/ramp/ramp_logo_grad_white.png">'
