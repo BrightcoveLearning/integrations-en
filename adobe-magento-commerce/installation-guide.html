@@ -1,0 +1,30 @@
+---
+title: 'Adobe Magento Commerce Extension Installation Guide'
+description: 'This document provides step-by-step instructions for installing Brightcove extension for Adobe Magento Commerce.'
+parent: Adobe Magento Commerce
+---
+<h1>{{page.title}}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Prepare_for_installation">Prepare for installation</h2>
+    <h3>Extract Files and Folders and copy to the working folder</h3>
+<ol class="bcls-tasklist">
+    <li>Create a folder <code>[Magento_Root]/app/code/Brightcove/Upload</code></li>
+    <li>Download the archive file (code files).</li>
+    <li>Unzip the files/folders</li>
+    <li>Drop/move contents of the unzipped files to the directory in step 1</li>
+</ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="enable_extensions_and_plugins">Enable Extensions and Plugins</h2>
+    <p>Enable the following:</p>
+    <ul>
+      <li><code>php bin/magento module:enable Brigtcove_Upload</code></li>
+      <li><code>php bin/magento setup:upgrade</code></li>
+      <li><code>php bin/magento cache:clean</code></li>
+      <li><code>php bin/magento setup:static-content:deploy</code></li>
+      <li><code>php bin/magento cache:flush</code></li>
+    </ul>
+  </section>
+</article>
