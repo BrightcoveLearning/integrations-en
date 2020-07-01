@@ -1,0 +1,72 @@
+---
+title: 'Adobe Magento Commerce Extension User Guide'
+description: 'This document provides step-by-step instructions for using the Brightcove extension for Adobe Magento Commerce.'
+parent: Adobe Magento Commerce
+---
+<h1>{{page.title}}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="getting_started"></h2>
+    <ol class="bcls-tasklist">
+        <li>
+          Login to Magento Commerce:
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/adobe-magento-commerce/magento-login.png" alt="Magento Login">
+            <figcaption class="bcls-caption--image">Magento Login</figcaption>
+          </figure>
+        </li>
+        <li>
+          Note the Brightcove Module link in the left-side navigation:
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/adobe-magento-commerce/magento-navigation.png" alt="Magento Navigation">
+            <figcaption class="bcls-caption--image">Magento Navigation</figcaption>
+          </figure>
+        </li>
+        <li>
+          Click the Brightcove icon to reveal the Brightcove Module menu:
+          <figure class="bcls-figure">
+            <img class="bcls-image" id="brightcove_module_menu" src="/assets/images/adobe-magento-commerce/brightcove-module-menu.png" alt="Brightcove Module Menu">
+            <figcaption class="bcls-caption--image">Brightcove Module Menu</figcaption>
+          </figure>
+        </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="uploading_videos">Uploading Videos</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        From the <a href="#brightcove_module_menu">Brightcove Module Menu</a>, open the <strong>Add Videos</strong> page.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/add-video-page.png" alt="Add Videos Page">
+          <figcaption class="bcls-caption--image">Add Videos Page</figcaption>
+        </figure>
+      </li>
+      <li>Select the Store View to add the video to.</li>
+      <li>Add the Video Title (required).</li>
+      <li>Browse to find the local video file (required).</li>
+      <li>Browse to find the local thumbnail image file (required).</li>
+      <li>Browse to find the local poster image file (optional).</li>
+      <li>Enter comma-separated tags for the video (optional).</li>
+      <li>Enter a description for the video (optional).</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <p>Note: the Store View will be stored in the video metadata as a tag. This tag will be used for implementing Localization in the Assign page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="">Assign Video to Category</h2>
+    <p>Videos can be assigned to Categories and Products. In this section we will look at how to assign videos to Categories, and then how to assign them to Products in the following section.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        From the <a href="#brightcove_module_menu">Brightcove Module Menu</a>, open the <strong>Assign Videos to Categories</strong> page.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/category-list-with-assigned-videos.png" alt="Assign Videos to Categories Page">
+          <figcaption class="bcls-caption--image">Assign Videos to Categories Page</figcaption>
+        </figure>
+      </li>
+      <li>
+        The initial page presents a list of categories, showing videos that are currently assigned to them 
+      </li>
+    </ol>
+  </section>
+</article>
