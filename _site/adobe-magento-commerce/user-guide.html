@@ -402,8 +402,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Note: the Store View will be stored in the video metadata as a tag. This tag will be used for implementing Localization in the Assign page.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="">Assign Video to Category</h2>
+    <h2 id="assign_videos_to_categories_and_products">Assign Videos to Categories and Products</h2>
     <p>Videos can be assigned to Categories and Products. In this section we will look at how to assign videos to Categories, and then how to assign them to Products in the following section.</p>
+    <h3>Assigning to Categories</h3>
     <ol class="bcls-tasklist-restart">
       <li>
         From the <a href="#brightcove_module_menu">Brightcove Module Menu</a>, open the <strong>Assign Videos to Categories</strong> page.
@@ -413,8 +414,123 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </figure>
       </li>
       <li>
-        The initial page presents a list of categories, showing videos that are currently assigned to them 
+        The initial page presents a list of categories, showing videos that are currently assigned to them, and there are links to <strong>Unassign</strong> or <strong>Change</strong> existing video assignments, as well as <strong>Assign</strong> videos to a category.
+        <p>Also note:</p>
+        <ul>
+          <li>The Scope selector, allowing you to implement the localization filter</li>
+          <li>When you hover over a video ID, a thumbnail image of the video will appear</li>
+        </ul>
       </li>
+      <li>
+        Click <strong>Assign</strong> beside a category to assign to open a grid of videos to be assigned:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/video-grid-for-category-assignment.png" alt="Video Grid for Category Assignment">
+          <figcaption class="bcls-caption--image">Video Grid for Category Assignment</figcaption>
+        </figure>
+      </li>
+      <li>If you don't see the video you are looking for, you can search by video title to find it.</li>
+      <li>Use the localization dropdown menu to get the language you want.</li>
+      <li>
+        In the <strong>Video</strong> column:
+        <ul>
+          <li>Choose the player for the selected video</li>
+          <li>Use the selector to choose the video slot</li>
+        </ul>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note that the number of slot values is generated from the configuration values.</aside>
+        .</li>
+        <li>If the video is already assigned to this category, it will display an orange border and an <strong>Unassign</strong> option.</li>
+      </ol>
+      <h3>Assigning to Products</h3>
+      <ol class="bcls-tasklist-restart">
+        <li>
+          From the <a href="#brightcove_module_menu">Brightcove Module Menu</a>, open the <strong>Assign Videos to Products</strong> page.
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/adobe-magento-commerce/product-list-with-assigned-videos.png" alt="Assign Videos to Products Page">
+            <figcaption class="bcls-caption--image">Assign Videos to Products Page</figcaption>
+          </figure>
+        </li>
+        <li>As with Categories, you can <strong>Assign</strong> videos, or <strong>Unassign</strong> or <strong>Change</strong> already assigned videos. You can also hover over a video ID to display the thumbnail.</li>
+        <li>
+          Click of the <strong>Assign</strong> links to assign a video. This will bring up the video grid:
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/adobe-magento-commerce/video-grid-for-product-assignment.png" alt="Video Grid for Product Assignment">
+            <figcaption class="bcls-caption--image">Video Grid for Product Assignment</figcaption>
+          </figure>
+        </li>
+        <li>If you don't see the video you are looking for, you can search by video title to find it.</li>
+        <li>Use the localization dropdown menu to get the language you want.</li>
+        <li>
+          In the <strong>Video</strong> column:
+          <ul>
+            <li>Choose the player for the selected video</li>
+            <li>Use the selector to choose the video slot</li>
+          </ul>
+          <aside class="bcls-aside bcls-aside--information language-editable">Note that the number of slot values is generated from the configuration values.</aside>
+          .</li>
+          <li>If the video is already assigned to this product, it will display an orange border and an <strong>Unassign</strong> option.</li>
+      </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="generate_embed_code">Generate Embed Code</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        From the <a href="#brightcove_module_menu">Brightcove Module Menu</a>, go to the Generate Embed Code page:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/" alt="Generate Embed Code Page">
+          <figcaption class="bcls-caption--image">Generate Embed Code Page</figcaption>
+        </figure>
+      </li>
+      <li>Select the player you want to use and a video, and then click <strong>Get Code</strong> to see and copy either the Basic (iframe) or Advanced (in-page) code for the player.</li>
+      <li>We recommend that you use the Basic embed code unless you are customizing the player in some way that requires and in-page script.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="brightcove_configuration">Brightcove Configuration</h2>
+    <p>You can update or add to the Brightcove configuration.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Go to <strong>Stored -&gt; Brightcove Video Configuration</strong>:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/brightcove-configuration-page.png" alt="Brightcove Configuration Page">
+          <figcaption class="bcls-caption--image">Brightcove Configuration Page</figcaption>
+        </figure>
+      </li>
+      <li>The client id, client secret, API Base URL (for getting access tokens), and the Store ID should already have been filled in during installation, but you can update these values if needed.</li>
+      <li>You can also set the number of video slots for Categories, Masters, and Variants.</li>
+      <li>Finally, if you want to use the Bulk Data Import option (descibed in the following section), enter a comma-separated list of email addresses to receive notifications related to bulk imports.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bulk_import_data">Bulk import data</h2>
+    <p>There are several kinds of data you can bulk import, including a list of videos to upload to Brightcove, video Category assignments, and video Product assignments.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Go to <strong>System -&gt; Import</strong> open the Bulk Import page:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/bulk-import-page.png" alt="Bulk Import Page">
+          <figcaption class="bcls-caption--image">Bulk Import Page</figcaption>
+        </figure>
+      </li>
+      <li>Select the kind of import you want to do.</li>
+      <li>
+        Here is a sample of the Bulk Upload Videos to Brightcove page:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/bulk-upload-video-page.png" alt="Bulk Upload Video Page">
+          <figcaption class="bcls-caption--image">Bulk Upload Video Page</figcaption>
+        </figure>
+      </li>
+      <li>If you don't have a sample CSV file for the import, you can download one using the sample download link.</li>
+      <li>
+        Select the <strong>Import Behavior</strong>:
+        <ul>
+          <li><strong>Add/Update</strong> - Add and replace existing records</li>
+          <li><strong>Replace</strong> - Replace the existing records</li>
+          <li><strong>Delete</strong> - Delete the existing records</li>
+        </ul>
+      </li>
+      <li>Using the <strong>Browse</strong> button, select your CSV file.</li>
+      <li>Click <strong>Check Data</strong> to ensure the data is valid. (If the CSV file does not contain any valid records, the import option won't be shown).</li>
+      <li>Click the <strong>Import</strong> button to import the data. You should see a success message.</li>
     </ol>
   </section>
 </article>
@@ -434,7 +550,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Jun 2020
+  Page last updated on 01 Jul 2020
 </div>
 
 
