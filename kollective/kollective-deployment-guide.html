@@ -11,7 +11,7 @@ parent: Kollective
 <h2 id="Overview">Overview</h2>
 
 <p>
-  Brightcove has created an integration to deliver Video On Demand (VOD) and Brightcove Live events to Brightcove Players using the <a href="https://kollective.com/ECDN-solutions/">Kollective eCDN</a>.  
+  Brightcove has created an integration to deliver Video On Demand (VOD) and Brightcove Live events to Brightcove Players using the <a href="https://kollective.com/ECDN-solutions/">Kollective eCDN</a>.
 </p>
 
 <p>An eCDN solution helps with content delivery to corporate networks. They relieve network bottlenecks when you have a large number of concurrent viewers watching the same content, such as in corporate offices. With eCDN, you download video content from the origin server once for each eCDN server instance. Viewers in the corporate network receive the content from the eCDN server over the LAN. </p>
@@ -53,7 +53,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Getting_started">Getting started</h2>
 <p>
-  To use the kollective plugin, you will need some initial setup:  
+  To use the kollective plugin, you will need some initial setup:
 </p>
 <ol class="bcls-tasklist">
   <li>
@@ -74,7 +74,7 @@ parent: Kollective
           <a href="/kollective/kollective-user-guide.html">Kollective eCDN User Guide</a>
       </li>
     </ul>
-    
+
   </li>
 </ol>
 </section>
@@ -137,7 +137,7 @@ parent: Kollective
   </li>
    <li>
     <p>
-      <strong>Database</strong> - The backend application requires a MongoDB database. 
+      <strong>Database</strong> - The backend application requires a MongoDB database.
     </p>
     <p>
       You can specify the database connection with the following format:
@@ -164,9 +164,8 @@ parent: Kollective
     <p>
       <strong>Email service</strong> - The backend application requires an email service setting to send notification emails.
     </p>
-    <ul>
-      <li>
-        <p>
+    <h5>SendGrid</h5>
+    <p>
       To send emails using SendGrid email service, use the following with your SendGrid username and password:
     </p>
     <pre>
@@ -177,9 +176,8 @@ EMAIL_SERVICE=SendGrid
 SENDGRID_USERNAME=<span class="bcls-input">your SendGrid username</span>
 SENDGRID_PASSWORD=<span class="bcls-input">your SendGrid password</span>
 </code></pre>
-      </li>
-      <li>
-        <p>
+    <h5>Other</h5>
+    <p>
       To send emails using other email services, use the following with your email server host, port and username, password:
     </p>
     <pre>
@@ -193,8 +191,6 @@ EMAIL_USERNAME=<span class="bcls-input">your email username</span>
 EMAIL_PASSWORD=<span class="bcls-input">your email password</span>
 EMAIL_FROM=<span class="bcls-input">your email from address</span>
 </code></pre>
-      </li>
-    </ul> 
   </li>
   <li>
     <p>
@@ -302,7 +298,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
         Leave the <strong>Type</strong> as <strong>Text</strong>
       </li>
       <li>
-        Enter a <strong>Description</strong> 
+        Enter a <strong>Description</strong>
       </li>
       <li>
         Leave the <strong>Make this Field Required</strong> option NOT selected
@@ -376,7 +372,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
 <section class="bcls-section">
 <h2 id="Installing_the_player_plugin">Installing the player plugin</h2>
 <p>
-  The Kollective plugin is a javascript file, so you can deploy it on any server that allows access to the file from outside using a public address.  
+  The Kollective plugin is a javascript file, so you can deploy it on any server that allows access to the file from outside using a public address.
 </p>
 <ol class="bcls-tasklist-restart">
   <li>
@@ -389,7 +385,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
   </li>
   <li>
     <p>
-      Deploy the Kollective plugin JavaScript file to your sever. 
+      Deploy the Kollective plugin JavaScript file to your sever.
     </p>
     <p>
       Example:
@@ -473,7 +469,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
     </ul>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Plugin details" src="/assets/images/kollective/plugin-details.png" />
       <figcaption class="bcls-caption--image">Plugin details</figcaption>
-    </figure>  
+    </figure>
   </li>
   <li>
     Select the <strong>Save</strong> button.
@@ -494,7 +490,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
     Select the <strong>Save</strong> button.
   </li>
   <li>
-    Publish your player. 
+    Publish your player.
   </li>
 </ol>
 </section>
