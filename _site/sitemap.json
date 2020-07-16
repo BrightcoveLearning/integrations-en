@@ -45,6 +45,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/support/contact-sales.html",
+      "oldURL": "/contact-sales"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html",
       "oldURL": "/debugging-network-and-api-connection-issues-cms-and-dam-integrations"
   },
@@ -130,7 +135,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/support/",
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
@@ -150,7 +155,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/",
       "oldURL": "/index"
   },
 
@@ -160,7 +165,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/",
+      "newURL": "https://integrations.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
