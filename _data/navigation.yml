@@ -31,15 +31,15 @@
       url: '/adobe/adobe-aem-brightcove-connector-overview.html'
     - name: 'Using the Connector'
       url: '/adobe/adobe-aem-brightcove-connector-using-connector.html'
-- section: 
-  name: 'Adobe Magento Commerce'
-  url: '//Users/rcrooks/GitHub/docs-cms-connectors/adobe-magento-commerce/'
-  icon: '<img src=/assets/images/adobe-magento-commerce/magento-logo.png>'
-  docs:
-    - name: 'Installation Guide'
-      url: '/adobe-magento-commerce/installation-guide.html'
-    - name: 'User Guide'
-      url: '/adobe-magento-commerce/user-guide.html'
+# - section: 
+#   name: 'Adobe Magento Commerce'
+#   url: '//Users/rcrooks/GitHub/docs-cms-connectors/adobe-magento-commerce/'
+#   icon: '<img src=/assets/images/adobe-magento-commerce/magento-logo.png>'
+#   docs:
+#     - name: 'Installation Guide'
+#       url: '/adobe-magento-commerce/installation-guide.html'
+#     - name: 'User Guide'
+#       url: '/adobe-magento-commerce/user-guide.html'
 - section: 
   name: 'Drupal'
   url: '/drupal/'
