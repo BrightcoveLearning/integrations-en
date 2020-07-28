@@ -33,7 +33,7 @@
       url: '/adobe/adobe-aem-brightcove-connector-using-connector.html'
 # - section: 
 #   name: 'Adobe Magento Commerce'
-#   url: '//Users/rcrooks/GitHub/docs-cms-connectors/adobe-magento-commerce/'
+#   url: '/adobe-magento-commerce/index.html'
 #   icon: '<img src=/assets/images/adobe-magento-commerce/magento-logo.png>'
 #   docs:
 #     - name: 'Installation Guide'
