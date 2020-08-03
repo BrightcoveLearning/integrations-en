@@ -6,7 +6,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -14,7 +14,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/general/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -23,7 +23,7 @@
           
             <loc>https://integrations.support.brightcove.com/general/cms-integration-training-videos.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -33,7 +33,7 @@
           
             <loc>https://integrations.support.brightcove.com/general/integrating-your-cms-video-cloud.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -43,7 +43,7 @@
           
             <loc>https://integrations.support.brightcove.com/general/embedding-brightcove-players-cms.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -53,7 +53,7 @@
           
             <loc>https://integrations.support.brightcove.com/general/embedding-brightcove-page-experiences-cms.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -63,7 +63,7 @@
           
             <loc>https://integrations.support.brightcove.com/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -72,7 +72,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/adobe/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -81,7 +81,7 @@
           
             <loc>https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -91,7 +91,7 @@
           
             <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-configuration.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -101,7 +101,7 @@
           
             <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -111,7 +111,7 @@
           
             <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-overview.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -121,7 +121,35 @@
           
             <loc>https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://integrations.support.brightcove.com/adobe-magento-commerce/index.html</loc>
+        <lastmod>2020-08-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://integrations.support.brightcove.com/adobe-magento-commerce/installation-guide.html</loc>
+          
+            <lastmod>2020-08-03</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://integrations.support.brightcove.com/adobe-magento-commerce/user-guide.html</loc>
+          
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -130,7 +158,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/drupal/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -139,7 +167,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/getting-started-brightcove-video-connect-drupal-cms.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -149,7 +177,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-configuration.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -159,7 +187,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-content-management.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -169,7 +197,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-embedding-content.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -179,7 +207,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-8-brightcove-connector-installation.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -189,7 +217,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-7-brightcove-connector-configuration-and-usage.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -199,7 +227,7 @@
           
             <loc>https://integrations.support.brightcove.com/drupal/drupal-7-brightcove-connector-installation.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -208,7 +236,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/kollective/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -217,7 +245,7 @@
           
             <loc>https://integrations.support.brightcove.com/kollective/kollective-deployment-guide.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -227,7 +255,7 @@
           
             <loc>https://integrations.support.brightcove.com/kollective/kollective-user-guide.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -236,7 +264,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/ramp/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -245,7 +273,7 @@
           
             <loc>https://integrations.support.brightcove.com/ramp/getting-started-ramp-omnicache-and-video-cloud.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -255,7 +283,7 @@
           
             <loc>https://integrations.support.brightcove.com/ramp/getting-started-ramp-multicast-and-video-cloud.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -264,7 +292,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/salesforce/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -273,7 +301,7 @@
           
             <loc>https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -283,7 +311,7 @@
           
             <loc>https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -292,7 +320,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/sharepoint/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -301,7 +329,7 @@
           
             <loc>https://integrations.support.brightcove.com/sharepoint/getting-started-brightcove-video-connect-sharepoint.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -311,7 +339,7 @@
           
             <loc>https://integrations.support.brightcove.com/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -320,7 +348,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/sitecore/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -329,7 +357,7 @@
           
             <loc>https://integrations.support.brightcove.com/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -338,7 +366,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/wordpress/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -347,7 +375,7 @@
           
             <loc>https://integrations.support.brightcove.com/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -357,7 +385,7 @@
           
             <loc>https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-configuration.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -367,7 +395,7 @@
           
             <loc>https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -377,7 +405,7 @@
           
             <loc>https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-installation.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -387,7 +415,7 @@
           
             <loc>https://integrations.support.brightcove.com/wordpress/wordpress-brightcove-connector-using-connector.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -396,7 +424,7 @@
     
       <url>
         <loc>https://integrations.support.brightcove.com/support/</loc>
-        <lastmod>2020-07-28</lastmod>
+        <lastmod>2020-08-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -405,7 +433,7 @@
           
             <loc>https://integrations.support.brightcove.com/support/brightcove-answer.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -415,7 +443,7 @@
           
             <loc>https://integrations.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -425,7 +453,7 @@
           
             <loc>https://integrations.support.brightcove.com/support/contact-sales.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -435,7 +463,7 @@
           
             <loc>https://integrations.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
           
-            <lastmod>2020-07-28</lastmod>
+            <lastmod>2020-08-03</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
