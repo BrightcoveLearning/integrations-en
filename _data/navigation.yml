@@ -1,9 +1,9 @@
 - section: 
   name: 'Home'
-  url: '/'
+  url: '/index.html'
 - section: 
   name: 'General Information'
-  url: '/general/'
+  url: '/general/index.html'
   icon: '<i class="far fa-info-circle"></i>'
   docs:
     - name: 'CMS Integration Training Videos'
@@ -18,7 +18,7 @@
       url: '/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html'
 - section: 
   name: 'Adobe'
-  url: '/adobe/'
+  url: '/adobe/index.html'
   icon: '<i class="fab fa-adobe"></i>'
   docs:
     - name: 'Getting Started with the Connector for AEM'
@@ -42,7 +42,7 @@
       url: '/adobe-magento-commerce/user-guide.html'
 - section: 
   name: 'Drupal'
-  url: '/drupal/'
+  url: '/drupal/index.html'
   icon: '<i class="fab fa-drupal"></i>'
   docs:
     - name: 'Getting Started with the Connector for Drupal'
@@ -61,7 +61,7 @@
       url: '/drupal/drupal-7-brightcove-connector-installation.html'
 - section: 
   name: 'Kollective'
-  url: '/kollective/'
+  url: '/kollective/index.html'
   icon: '<img src="/assets/images/kollective/logo.png">'
   docs:
     - name: 'Kollective eCDN Deployment Guide'
@@ -70,7 +70,7 @@
       url: '/kollective/kollective-user-guide.html'
 - section: 
   name: 'Ramp'
-  url: '/ramp/'
+  url: '/ramp/index.html'
   icon: '<img src="/assets/images/ramp/ramp_logo_grad_white.png">'
   docs:
     - name: 'Getting Started with Ramp OmniCache and Video Cloud'
@@ -79,7 +79,7 @@
       url: '/ramp/getting-started-ramp-multicast-and-video-cloud.html'
 - section: 
   name: 'Salesforce'
-  url: '/salesforce/'
+  url: '/salesforce/index.html'
   icon: '<i class="fab fa-salesforce"></i>'
   docs:
     - name: 'Brightcove Custom Cartridge: Installation'
@@ -88,7 +88,7 @@
       url: '/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
 - section: 
   name: 'SharePoint'
-  url: '/sharepoint/'
+  url: '/sharepoint/index.html'
   icon: '<img src="/assets/images/sharepoint/66px-Microsoft_Office_SharePoint_(2018–present).png">'
   docs:
     - name: 'Getting Started with the Connector for Sharepoint'
@@ -97,14 +97,14 @@
       url: '/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html'
 - section: 
   name: 'Sitecore'
-  url: '/sitecore/'
+  url: '/sitecore/index.html'
   icon: '<img style="width:2em;" src="/assets/images/sitecore/sitecoreLogo.svg">'
   docs:
     - name: 'Getting Started with the Connector for Sitecore'
       url: '/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
 - section: 
   name: 'WordPress'
-  url: '/wordpress/'
+  url: '/wordpress/index.html'
   icon: '<i class="fab fa-wordpress"></i>'
   docs:
     - name: 'Getting Started with Brightcove Video Connect'
@@ -119,7 +119,7 @@
       url: '/wordpress/wordpress-brightcove-connector-using-connector.html'
 - section: 
   name: 'Support'
-  url: '/support/'
+  url: '/support/index.html'
   icon: '<i class="far fa-question-circle"></i>'
   docs:
     - name: 'Brightcove Answers'
