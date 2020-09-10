@@ -378,7 +378,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <article class="bcls-article">
   <h1>Getting Started with Brightcove Video Connect for Adobe Experience Manager</h1>
-  <summary>This topic provides an overview of Brightcove Video Connect for the Adobe Experience Manager.</summary>
+  <summary>This topic provides an overview of Brightcove Video Connect for Adobe Experience Manager.</summary>
   <aside class="bcls-aside bcls-aside--information language-editable">Note: Support for AEM v6.2 will End as of January 1, 2021</aside>
   <table class="bcls-table">
     <thead>
@@ -394,10 +394,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <tr>
         <td>5.5.4</td>
         <td>
+		<ul>
           <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
           <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
           <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
           <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
+        <ul>
         </td>
         <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.4">Plugin with Source</a></td>
         <td>
@@ -414,65 +416,59 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </tr>
       <tr>
         <td>
-          <p>5.5.0 (EOL)</p>
+          5.5.0
         </td>
         <td>
-          <ul compact="compact">
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          </ul>
+          (EOL)
         </td>
         <td>EOL</td>
         <td>
-          <ul>
-            <li><strong>End of Life as of January 1, 2020 </strong></li>
-            <li>Supports AEM 6.2 and AEM 6.3 </li>
+          <strong>End of Life as of January 1, 2020 </strong></li>
+            <!-- <li>Supports AEM 6.2 and AEM 6.3 </li>
             <li>Uses Brightcove CMS &amp; Dynamic Ingest API </li>
             <li>Embeds Brightcove HTML5 Player</li>
             <li>Supports Classic UI and Touch UI </li>
-            <li>Uses AEM asset manager</li>
-          </ul>
+            <li>Uses AEM asset manager</li> -->
+          
         </td>
       </tr>
       <tr>
-        <td>4.2.0 (EOL)</td>
-        <td><a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> </td>
+        <td>4.2.0</td>
+        <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL </td>
         <td>EOL</td>
         <td>
-          <ul>
-            <li><strong>End of Life as of December 31, 2017 </strong></li>
-            <li>Supports AEM 6.2 </li>
+          
+            <strong>End of Life as of December 31, 2017 </strong>
+            <!-- <li>Supports AEM 6.2 </li>
             <li>Uses Brightcove Media API for video management</li>
             <li>Uses Brightcove CMS API for player embed</li>
             <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
             <li>Embeds Brightcove HTML5 Player </li>
-            <li>Supports Classic UI</li>
-          </ul>
+            <li>Supports Classic UI</li> -->
+         
         </td>
       </tr>
       <tr>
-        <td>4.1.2 (EOL)</td>
-        <td><a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a></td>
+        <td>4.1.2</td>
+        <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL</td>
         <td>EOL</td>
         <td>
-          <ul>
-            <li><strong>End of Life as of December 31, 2017 </strong></li>
-            <li>Supports AEM 6.1 </li>
+         
+            <strong>End of Life as of December 31, 2017 </strong>
+            <!-- <li>Supports AEM 6.1 </li>
             <li>Uses Brightcove Media API for video management</li>
             <li>Uses Brightcove CMS API for player embed</li>
             <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
             <li>Embeds Brightcove HTML5 Player </li>
-            <li>Supports Classic UI</li>
-          </ul>
+            <li>Supports Classic UI</li> -->
+         
         </td>
       </tr>
     </tbody>
   </table>
-  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforAEMSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://support.brightcove.com/en/contact/create">Brightcove customer support</a>.</p>
+  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforAEMSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://supportportal.brightcove.com/">Brightcove customer support</a>.</p>
   <p> </p>
-  <h2>AEM Mandatory Upgrade Explanation</h2>
+  <!-- <h2>AEM Mandatory Upgrade Explanation</h2>
   <p>The Brightcove Connector for AEM, v4.2 and previous versions, ceased to function at the end of 2017 because we retired the underlying APIs and Flash Player used by the Connector.  We updated the Brightcove Connector in the v5.0 release to use our current APIs and HTML5 player.  The 5.0 Brightcove Connector supports AEM versions 6.2, 6.3 and 6.4 in both Classic UI and Touch UI modes and now synchronizes video assets between Brightcove and the AEM Digital Asset Manager (DAM).  </p>
   <h3>Actions Required</h3>
   <p>If you are currently using an AEM/CQ release prior to AEM 6.0 and are also using the Brightcove Connector, you will need to upgrade to a newer version of AEM and the Connector per the discussion below.</p>
@@ -483,7 +479,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <p>You will need to upgrade to AEM 6.2 or AEM 6.3 or AEM 6.4 and you will need to use the new v5.0 Connector under any of the following three conditions:</p>
   <p>1. You require Touch UI support<br />
     2. You use the Connector to upload videos and/or edit metadata <br />
-    3. You need to keep a copy of your master video in the AEM DAM</p>
+    3. You need to keep a copy of your master video in the AEM DAM</p> -->
   <p> </p>
 </article>
 <!-- complete bootstrap layout -->
