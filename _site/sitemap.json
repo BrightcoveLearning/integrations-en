@@ -40,6 +40,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/assets/images/peer5/brightcove-with-peer5-integration.html",
+      "oldURL": "/brightcove-with-peer5-integration"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/general/cms-integration-training-videos.html",
       "oldURL": "/cms-integration-training-videos"
   },
@@ -135,7 +140,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/",
       "oldURL": "/index"
   },
 
@@ -155,7 +160,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/",
+      "newURL": "https://integrations.support.brightcove.com/peer5/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
