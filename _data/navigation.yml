@@ -1,7 +1,7 @@
-- section: 
+- section:
   name: 'Home'
   url: '/index.html'
-- section: 
+- section:
   name: 'General Information'
   url: '/general/index.html'
   icon: '<i class="far fa-info-circle"></i>'
@@ -16,7 +16,7 @@
       url: '/general/embedding-brightcove-page-experiences-cms.html'
     - name: 'Debugging Network and API Connection Issues'
       url: '/general/debugging-network-and-api-connection-issues-cms-and-dam-integrations.html'
-- section: 
+- section:
   name: 'Adobe'
   url: '/adobe/index.html'
   icon: '<i class="fab fa-adobe"></i>'
@@ -31,7 +31,7 @@
       url: '/adobe/adobe-aem-brightcove-connector-overview.html'
     - name: 'Using the Connector'
       url: '/adobe/adobe-aem-brightcove-connector-using-connector.html'
-- section: 
+- section:
   name: 'Adobe Magento Commerce'
   url: '/adobe-magento-commerce/index.html'
   icon: '<img src=/assets/images/adobe-magento-commerce/magento-logo.png>'
@@ -40,7 +40,7 @@
       url: '/adobe-magento-commerce/installation-guide.html'
     - name: 'User Guide'
       url: '/adobe-magento-commerce/user-guide.html'
-- section: 
+- section:
   name: 'Drupal'
   url: '/drupal/index.html'
   icon: '<i class="fab fa-drupal"></i>'
@@ -59,7 +59,7 @@
       url: '/drupal/drupal-7-brightcove-connector-configuration-and-usage.html'
     - name: 'Drupal 7 - Installation'
       url: '/drupal/drupal-7-brightcove-connector-installation.html'
-- section: 
+- section:
   name: 'Kollective'
   url: '/kollective/index.html'
   icon: '<img src="/assets/images/kollective/logo.png">'
@@ -68,7 +68,14 @@
       url: '/kollective/kollective-deployment-guide.html'
     - name: 'Kollective eCDN User Guide'
       url: '/kollective/kollective-user-guide.html'
-- section: 
+- section:
+  name: 'Peer5'
+  url: '/peer5/index.html'
+  icon: '<img src="/assets/images/peer5/peer5-logo.png">'
+  docs:
+    - name: 'Brightcove with Peer5 Integration'
+      url: '/peer5/brightcove-with-peer5-integration.html'
+- section:
   name: 'Ramp'
   url: '/ramp/index.html'
   icon: '<img src="/assets/images/ramp/ramp_logo_grad_white.png">'
@@ -77,7 +84,7 @@
       url: '/ramp/getting-started-ramp-omnicache-and-video-cloud.html'
     - name: 'Getting Started with Ramp Multicast+ and Video Cloud'
       url: '/ramp/getting-started-ramp-multicast-and-video-cloud.html'
-- section: 
+- section:
   name: 'Salesforce'
   url: '/salesforce/index.html'
   icon: '<i class="fab fa-salesforce"></i>'
@@ -86,7 +93,7 @@
       url: '/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html'
     - name: 'Brightcove Custom Cartridge: User Guide'
       url: '/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
-- section: 
+- section:
   name: 'SharePoint'
   url: '/sharepoint/index.html'
   icon: '<img src="/assets/images/sharepoint/66px-Microsoft_Office_SharePoint_(2018–present).png">'
@@ -95,14 +102,14 @@
       url: '/sharepoint/getting-started-brightcove-video-connect-sharepoint.html'
     - name: 'Using the Connector'
       url: '/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html'
-- section: 
+- section:
   name: 'Sitecore'
   url: '/sitecore/index.html'
   icon: '<img style="width:2em;" src="/assets/images/sitecore/sitecoreLogo.svg">'
   docs:
     - name: 'Getting Started with the Connector for Sitecore'
       url: '/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
-- section: 
+- section:
   name: 'WordPress'
   url: '/wordpress/index.html'
   icon: '<i class="fab fa-wordpress"></i>'
@@ -117,7 +124,7 @@
       url: '/wordpress/wordpress-brightcove-connector-installation.html'
     - name: 'Using the Connector'
       url: '/wordpress/wordpress-brightcove-connector-using-connector.html'
-- section: 
+- section:
   name: 'Support'
   url: '/support/index.html'
   icon: '<i class="far fa-question-circle"></i>'
