@@ -40,7 +40,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/assets/images/peer5/brightcove-with-peer5-integration.html",
+      "newURL": "https://integrations.support.brightcove.com/peer5/brightcove-with-peer5-integration.html",
       "oldURL": "/brightcove-with-peer5-integration"
   },
 
@@ -145,32 +145,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/peer5/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -190,7 +175,17 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
@@ -201,6 +196,11 @@
 
   {
       "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
