@@ -30,12 +30,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html",
       "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-installation"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html",
       "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide"
   },
 
@@ -125,12 +125,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ramp/getting-started-ramp-multicast-and-video-cloud.html",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html",
       "oldURL": "/getting-started-ramp-multicast-and-video-cloud"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ramp/getting-started-ramp-omnicache-and-video-cloud.html",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html",
       "oldURL": "/getting-started-ramp-omnicache-and-video-cloud"
   },
 
@@ -140,47 +140,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/peer5/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ramp/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
       "oldURL": "/index"
   },
 
@@ -190,12 +155,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/kollective/",
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/peer5/",
       "oldURL": "/index"
   },
 
@@ -205,7 +175,37 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
       "oldURL": "/installation-guide"
   },
 
@@ -215,12 +215,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/kollective/kollective-deployment-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/kollective-deployment-guide.html",
       "oldURL": "/kollective-deployment-guide"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/kollective/kollective-user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/kollective-user-guide.html",
       "oldURL": "/kollective-user-guide"
   },
 
@@ -240,12 +240,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/salesforce-commerce-cloud-installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/salesforce-commerce-cloud-installation-guide.html",
       "oldURL": "/salesforce-commerce-cloud-installation-guide"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/salesforce/salesforce-commerce-cloud-user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/salesforce-commerce-cloud-user-guide.html",
       "oldURL": "/salesforce-commerce-cloud-user-guide"
   },
 
@@ -265,7 +265,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe-magento-commerce/user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/user-guide.html",
       "oldURL": "/user-guide"
   },
 
