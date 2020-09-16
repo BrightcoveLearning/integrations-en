@@ -11,7 +11,7 @@ parent: Kollective
 <h2 id="Overview">Overview</h2>
 
 <p>
-  Brightcove has created an integration to deliver Video On Demand (VOD) and Brightcove Live events to Brightcove Players using the <a href="https://kollective.com/ECDN-solutions/">Kollective eCDN</a>. 
+  Brightcove has created an integration to deliver Video On Demand (VOD) and Brightcove Live events to Brightcove Players using the <a href="https://kollective.com/ECDN-solutions/">Kollective eCDN</a>.
 </p>
 <p>
   This integration consists of two parts:
@@ -58,21 +58,21 @@ parent: Kollective
     </li>
 
   </ol>
-  
+
   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Workflow" src="/assets/images/kollective/app/workflow.png" />
     <figcaption class="bcls-caption--image">Workflow</figcaption>
-  </figure> 
+  </figure>
 </section>
 
 <section class="bcls-section">
 <h2 id="Getting_started">Getting started</h2>
 <p>
-  To synchronize content, follow these steps:  
+  To synchronize content, follow these steps:
 </p>
 <ol class="bcls-tasklist-restart">
   <li>
     <p>
-      If you haven't done so already, follow the setup instructions in the <a href="/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a>.
+      If you haven't done so already, follow the setup instructions in the <a href="/ecdn/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a>.
     </p>
   </li>
   <li>
@@ -87,7 +87,7 @@ parent: Kollective
       <li>
         <a href="#Synchronizing_live_events">Synchronizing live events</a>
       </li>
-    </ul>  
+    </ul>
   </li>
   <li>
     <a href="#Checking_syndicator_logs">Checking syndicator logs</a>
@@ -101,7 +101,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Reviewing_user_roles">Reviewing user roles</h2>
 <p>
-  The Kollective backend syndicator application supports two different user roles: 
+  The Kollective backend syndicator application supports two different user roles:
 </p>
 <ul>
   <li>
@@ -174,10 +174,10 @@ parent: Kollective
       </li>
       <li>
         <p>
-          <strong>Brightcove Client Key</strong> - You can get this from Brightcove's Video Cloud Studio 
+          <strong>Brightcove Client Key</strong> - You can get this from Brightcove's Video Cloud Studio
         </p>
         <p>
-          <strong>Brightcove Client Secret</strong> - You can get this from Brightcove's Video Cloud Studio 
+          <strong>Brightcove Client Secret</strong> - You can get this from Brightcove's Video Cloud Studio
         </p>
         <p>
           For Kollective to access your content in Brightcove, you need to provide your client credentials. You can generate them in the Admin section of Video Cloud Studio. You need to select the following permissions:
@@ -190,10 +190,10 @@ parent: Kollective
             Dynamic Ingest : Create, Push Files
           </li>
           <li>
-            Players : Read, Read/Write 
+            Players : Read, Read/Write
           </li>
           <li>
-            SSAI : Read, Read/Write 
+            SSAI : Read, Read/Write
           </li>
         </ul>
         <p>
@@ -210,7 +210,7 @@ parent: Kollective
       </li>
       <li>
         <p>
-          <strong>Brightcove Live API Key</strong> - Contact Brightcove support to get this 
+          <strong>Brightcove Live API Key</strong> - Contact Brightcove support to get this
         </p>
       </li>
       <li>
@@ -251,7 +251,7 @@ parent: Kollective
       <li>
         You can click on the <strong>Run Job Now</strong> button to run the job immediately.
       </li>
-    </ul>  
+    </ul>
   </li>
   <li>
     <p>
@@ -354,7 +354,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Synchronizing_videos">Synchronizing videos</h2>
 <p>
-  Synchronize videos under the current account from Brightcove to Kollective.  
+  Synchronize videos under the current account from Brightcove to Kollective.
 </p>
 <h3>Video List</h3>
 <ol class="bcls-tasklist-restart">
@@ -364,7 +364,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sync videos" src="/assets/images/kollective/app/sync-videos.png" />
         <figcaption class="bcls-caption--image">Sync videos</figcaption>
-      </figure> 
+      </figure>
       <p>
         You should see a list all videos in your Video Cloud account with most recent added/updated videos on top.
       </p>
@@ -375,7 +375,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter videos" src="/assets/images/kollective/app/sync-video-filter.png" />
         <figcaption class="bcls-caption--image">Filter videos</figcaption>
-      </figure> 
+      </figure>
   </li>
   <li>
     <p>
@@ -383,7 +383,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Synchronize multiple videos" src="/assets/images/kollective/app/sync-multiple-videos.png" />
         <figcaption class="bcls-caption--image">Synchronize multiple videos</figcaption>
-      </figure> 
+      </figure>
   </li>
 </ol>
 
@@ -395,7 +395,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Video details" src="/assets/images/kollective/app/video-details.png" />
         <figcaption class="bcls-caption--image">Video details</figcaption>
-      </figure> 
+      </figure>
   </li>
   <li>
     <p>
@@ -409,7 +409,7 @@ parent: Kollective
         Update video status
       </li>
       <li>
-        Delete the video 
+        Delete the video
       </li>
     </ul>
   </li>
@@ -419,7 +419,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Synchronizing_live_events">Synchronizing live events</h2>
 <p>
-  Synchronize live events under the current account from Brightcove to Kollective.  
+  Synchronize live events under the current account from Brightcove to Kollective.
 </p>
 <h3>Video List</h3>
 <ol class="bcls-tasklist-restart">
@@ -429,7 +429,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Sync live events" src="/assets/images/kollective/app/sync-live.png" />
         <figcaption class="bcls-caption--image">Sync live events</figcaption>
-      </figure> 
+      </figure>
       <p>
         You should see a list of all live events in your Video Cloud account with the most recent added/updated videos on top.
       </p>
@@ -440,7 +440,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter live events" src="/assets/images/kollective/app/sync-live-filter.png" />
         <figcaption class="bcls-caption--image">Filter live events</figcaption>
-      </figure> 
+      </figure>
   </li>
   <li>
     <p>
@@ -448,7 +448,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Synchronize multiple events" src="/assets/images/kollective/app/sync-live-events.png" />
         <figcaption class="bcls-caption--image">Synchronize multiple events</figcaption>
-      </figure> 
+      </figure>
   </li>
 </ol>
 
@@ -460,7 +460,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Live event details" src="/assets/images/kollective/app/live-details.png" />
         <figcaption class="bcls-caption--image">Live event details</figcaption>
-      </figure> 
+      </figure>
   </li>
   <li>
     <p>
@@ -484,7 +484,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Checking_syndicator_logs">Checking syndicator logs</h2>
 <p>
-  The syndicator logs provide success, error and warning details about video and live event synchronizations for your account.  
+  The syndicator logs provide success, error and warning details about video and live event synchronizations for your account.
 </p>
 <ol class="bcls-tasklist-restart">
    <li>
@@ -493,7 +493,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Syndicator logs" src="/assets/images/kollective/app/syndicator-logs.png" />
         <figcaption class="bcls-caption--image">Syndicator logs</figcaption>
-      </figure> 
+      </figure>
       <p>
         You should see a list of synchronization logs for the current account with the most recent on top.
       </p>
@@ -504,7 +504,7 @@ parent: Kollective
     </p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Filter syndicator logs" src="/assets/images/kollective/app/syndicator-log-filter.png" />
         <figcaption class="bcls-caption--image">Filter syndicator logs</figcaption>
-      </figure> 
+      </figure>
   </li>
 </ol>
 </section>
@@ -512,7 +512,7 @@ parent: Kollective
 <section class="bcls-section">
 <h2 id="Embedding_the_player_code">Embedding the player code</h2>
 <p>
-  There is no change to how you embed the player and associated content asset on your web page. 
+  There is no change to how you embed the player and associated content asset on your web page.
 </p>
 <ol class="bcls-tasklist-restart">
   <li>

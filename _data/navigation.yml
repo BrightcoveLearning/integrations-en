@@ -91,17 +91,17 @@
       icon: '<i class="fab fa-salesforce"></i>'
       docs:
         - name: 'Salesforce Commerce Cloud: Installation'
-          url: '/ecommerce//salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html'
+          url: '/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html'
         - name: 'Salesforce Commerce Cloud: User Guide'
-          url: '/ecommerce//salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
+          url: '/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
     - name: 'Adobe Magento Commerce'
-      url: '/adobe-magento-commerce/index.html'
+      url: '/ecommerce/adobe-magento-commerce/index.html'
       icon: '<img src=/assets/images/adobe-magento-commerce/magento-logo.png>'
       docs:
         - name: 'Installation Guide'
-          url: '/adobe-magento-commerce/installation-guide.html'
+          url: '/ecommerce/adobe-magento-commerce/installation-guide.html'
         - name: 'User Guide'
-          url: '/adobe-magento-commerce/user-guide.html'
+          url: '/ecommerce/adobe-magento-commerce/user-guide.html'
 - section:
   name: 'eCDN'
   url: '/ecdn/index.html'
@@ -128,7 +128,14 @@
   url: '/web-conferencing/index.html'
   icon: '<i class="fal fa-users"></i>'
   docs:
-    - name: 
+    - name: Zoom Conference on Brightcove Live
+      url: '/web-conferencing/host-zoom-conference-brightcove-live.html'
+    - name: Cisco Webex Conference to Brightcove Live
+      url: '/web-conferencing/host-cisco-webex-conference-brightcove-live.html'
+    - name: Avaya Conference on Brightcove Live
+      url: '/web-conferencing/host-avaya-conference-brightcove-live.html'
+    - name: INXPO Event on Brightcove Live
+      url: '/web-conferencing/host-inxpo-live.html'
 - section:
   name: 'Peer5'
   url: '/peer5/index.html'

@@ -135,17 +135,42 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/host-avaya-conference-brightcove-live.html",
+      "oldURL": "/host-avaya-conference-brightcove-live"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/host-cisco-webex-conference-brightcove-live.html",
+      "oldURL": "/host-cisco-webex-conference-brightcove-live"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/host-inxpo-live.html",
+      "oldURL": "/host-inxpo-live"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/host-zoom-conference-brightcove-live.html",
+      "oldURL": "/host-zoom-conference-brightcove-live"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/icons.html",
       "oldURL": "/icons"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
       "oldURL": "/index"
   },
 
@@ -185,12 +210,22 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
       "oldURL": "/index"
   },
 
