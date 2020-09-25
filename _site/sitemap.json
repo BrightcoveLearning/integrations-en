@@ -40,7 +40,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/peer5/brightcove-with-peer5-integration.html",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/brightcove-with-peer5-integration.html",
       "oldURL": "/brightcove-with-peer5-integration"
   },
 
@@ -190,11 +190,6 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/peer5/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
@@ -206,6 +201,11 @@
 
   {
       "newURL": "https://integrations.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
       "oldURL": "/index"
   },
 

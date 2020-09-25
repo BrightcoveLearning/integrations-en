@@ -115,6 +115,12 @@
           url: '/ecdn/kollective/kollective-deployment-guide.html'
         - name: 'Kollective eCDN User Guide'
           url: '/ecdn/kollective/kollective-user-guide.html'
+    - name: 'Peer5'
+      url: '/ecdn//peer5/index.html'
+      icon: '<img src="/assets/images/peer5/peer5-logo.png">'
+      docs:
+        - name: 'Brightcove with Peer5 Integration'
+          url: '/ecdn/peer5/brightcove-with-peer5-integration.html'
     - name: 'Ramp'
       url: '/ecdn/ramp/index.html'
       icon: '<img src="/assets/images/ramp/ramp_logo_grad_white.png">'
@@ -136,13 +142,6 @@
       url: '/web-conferencing/host-avaya-conference-brightcove-live.html'
     - name: INXPO Event on Brightcove Live
       url: '/web-conferencing/host-inxpo-live.html'
-- section:
-  name: 'Peer5'
-  url: '/peer5/index.html'
-  icon: '<img src="/assets/images/peer5/peer5-logo.png">'
-  docs:
-    - name: 'Brightcove with Peer5 Integration'
-      url: '/peer5/brightcove-with-peer5-integration.html'
 - section:
   name: 'Support'
   url: '/support/index.html'
