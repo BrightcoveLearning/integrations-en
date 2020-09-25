@@ -116,7 +116,7 @@
         - name: 'Kollective eCDN User Guide'
           url: '/ecdn/kollective/kollective-user-guide.html'
     - name: 'Peer5'
-      url: '/ecdn//peer5/index.html'
+      url: '/ecdn/peer5/index.html'
       icon: '<img src="/assets/images/peer5/peer5-logo.png">'
       docs:
         - name: 'Brightcove with Peer5 Integration'
