@@ -470,9 +470,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><a href="/general/integrating-your-cms-video-cloud.html">Integrating Your CMS with Video Cloud</a></li>
       <li><a href="https://gallery.support.brightcove.com/develop/reference.html#operation/GetExperiences">Get List of Experiences</a>
       <ul>
-        <li>Sort by name in ascending order: <code>?sort=name</code></li>
-        <li>Sort by name in descending order: <code>?sort=-name</code></li>
-        <li>Search: <code>?q={searchstring}</code></li>
+        <li>Sort by name in ascending order: <code translate="No">?sort=name</code></li>
+        <li>Sort by name in descending order: <code translate="No">?sort=-name</code></li>
+        <li>Search: <code translate="No">?q={searchstring}</code></li>
       </ul>
       </li>
       <li><a href="https://gallery.support.brightcove.com/develop/reference.htmll#operation/GetExperience">Get Details for an In-page Experience</a></li>
@@ -583,19 +583,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-section">
     <h2 id="Embed_parameters_and_code">Embed parameters and code</h2>
     
-    <p>The section describes how to generate the Experience embed code based on user selections. The <code>%XYZ%</code> values are substituted into the embed code as described below.</p>
+    <p>The section describes how to generate the Experience embed code based on user selections. The <code translate="No">%XYZ%</code> values are substituted into the embed code as described below.</p>
     
     <section class="bcls-subsection">
     <h3 id="commong_parameters">Common parameters</h3>
     
     <ul>
-      <li><code>%ACCOUNTID%</code> = User selected Brightcove account ID</li>
-      <li><code>%VIDEOIDLIST%</code> = User selected video ID’s, comma delimited with no spaces</li>
-      <li><code>%PLAYLISTID%</code> = User selected playlist ID</li>
-      <li><code>%EXPERIENCEID%</code> = User selected Video player ID or Playlist player ID</li>
-      <li><code>%CMS%</code> = Name of CMS</li>
-      <li><code>%CMSVERSION%</code> = Version of CMS</li>
-      <li><code>%CONNECTORVERSION%</code> = Version of connector</li>
+      <li><code translate="No">%ACCOUNTID%</code> = User selected Brightcove account ID</li>
+      <li><code translate="No">%VIDEOIDLIST%</code> = User selected video ID’s, comma delimited with no spaces</li>
+      <li><code translate="No">%PLAYLISTID%</code> = User selected playlist ID</li>
+      <li><code translate="No">%EXPERIENCEID%</code> = User selected Video player ID or Playlist player ID</li>
+      <li><code translate="No">%CMS%</code> = Name of CMS</li>
+      <li><code translate="No">%CMSVERSION%</code> = Version of CMS</li>
+      <li><code translate="No">%CONNECTORVERSION%</code> = Version of connector</li>
     </ul>
     </section>
     </section>
@@ -613,7 +613,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
     
     <pre>
-    <code>%MAXWIDTH% = ‘’
+    <code translate="No">%MAXWIDTH% = ‘’
     %MINWIDTH% = ‘’
     %WIDTH% = Width . ‘px’
     %HEIGHT% = Height . ‘px’</code></pre>
@@ -623,7 +623,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
     
     <pre>
-    <code>&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT%"&gt;
+    <code translate="No">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT%"&gt;
       &lt;iframe src="https://players.brightcove.net/%ACCOUNTID%/experience_%EXPERIENCEID%/index.html?videoIds=%VIDEOIDLIST%
         &amp;playlistId=%PLAYLISTID%
         &amp;usage=cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experienceiframe" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="width:100%;height:100%;top:0px;bottom:0px;right:0px;left:0px;border:none;margin-left:auto;margin-right:auto;position:absolute"&gt;
@@ -647,7 +647,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="Parameters_for_responsive_sizing">Parameters for responsive sizing</h3>
     
     <pre>
-    <code>
+    <code translate="No">
       %WIDTH% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
       %HEIGHT% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
     </code></pre>
@@ -663,7 +663,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
     
     <pre>
-    <code>
+    <code translate="No">
       %WIDTH% = Width . ‘px’
       %HEIGHT% = Height . ‘px’
     </code></pre>
@@ -673,7 +673,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
     
     <pre>
-    <code>&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT" data-experience="%EXPERIENCEID%" data-video-ids=”%VIDEOIDLIST% "
+    <code translate="No">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT" data-experience="%EXPERIENCEID%" data-video-ids=”%VIDEOIDLIST% "
       data-playlist-id=”%PLAYLISTID%" data-usage="cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experiencejavascript" style="
       display: block;
       position: relative; "&gt;

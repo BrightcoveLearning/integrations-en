@@ -435,7 +435,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="video_player_publishing">Video player publishing</h2>
     <p>Video player publishing allows the user to drag a Brightcove Player component onto a web page and then select the Brightcove account, video, and player for that component. This component was available in the v4.2 Connector in Classic UI mode only. In the v5.1 Connector, this component is available in both Classic UI mode and Touch UI mode. Another change from v4.2 is the legacy Smartplayer components are no longer available; only the HTML5 Brightcove Player components are available now. Existing web pages with the legacy SmartPlayer components may still contain those components, but new legacy SmartPlayer components cannot be added to a web page.</p>
     <ol class="bcls-tasklist">
-      <li>Browse to a site page such as <code>/editor.html/content/we-retail/us/en.html</code></li>
+      <li>Browse to a site page such as <code translate="No">/editor.html/content/we-retail/us/en.html</code></li>
     </ol>
     <p>Enable the Brightcove Player components for this site page.</p>
     <ol class="bcls-tasklist">
@@ -482,11 +482,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           </figcaption>
         </figure>
         <p>Below is sample CSS to format the playlist. Note that you will need to calculate your desired thumbnail height and width. You can use the formulas below as a starting point:</p>
-        <code>THUMBNAILWIDTH = Round((PLAYERWIDTH - NUMTHUMBNAILS * 4)/ NUMTHUMBNAILS);<br />
+        <code translate="No">THUMBNAILWIDTH = Round((PLAYERWIDTH - NUMTHUMBNAILS * 4)/ NUMTHUMBNAILS);<br />
         THUMBNAILHEIGHT = Round(THUMBNAILWIDTH * PLAYERHEIGHT / PLAYERWIDTH); </code>
         <p>CSS Example:</p>
         <pre>
-<code><xmp>
+<code translate="No"><xmp>
         <style type="text/css">
 .vjs-playlist {
     background-color: #000000;
@@ -561,11 +561,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="video_content_management">Video content management
       <meta charset="utf-8" />
     </h2>
-    <p>Video content management in the v5.x Connector uses the AEM DAM to upload&nbsp;videos to Brightcove and update metadata in Brightcove. In previous versions of the connector the administrative page at <code>/brightcove/admin</code> was used to upload videos to Brightcove.</p>
+    <p>Video content management in the v5.x Connector uses the AEM DAM to upload&nbsp;videos to Brightcove and update metadata in Brightcove. In previous versions of the connector the administrative page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove.</p>
     <h4>AEM DAM Setup</h4>
-    <p>Before using the AEM DAM with Brightcove for the first time, the DAM Integration Path folder structure as specified on the Brightcove configuration page at <code>/system/console/configMgr</code> needs to be created. The default is <code>/content/dam/brightcove_assets</code> if you do not change it on the configuration page.&nbsp; Under this folder a folder should be created for each Brightcove account; the folder name should be the numeric Account ID from the Brightcove configuration and the folder title should be the Account Alias from the Brightcove configuration.</p>
-    <p>In Classic UI the folders can be created at <code>/damadmin#/content/dam</code>. In Touch UI the folders are created at <code>/assets.html/content/dam</code>. Alternatively, the <strong>SYNC DATABASE</strong> button on the administrative page at <code>/brightcove/admin</code> will create the necessary folders in the AEM DAM for each configured Brightcove account and import all videos that already exist in the Brightcove account. If you do not want to sync some or all videos in Brightcove, those videos with the Brightcove&nbsp;tag AEM_NO_DAM will not be synced into the AEM DAM.</p>
-    <p>Also, if you are using the AEM DAM in Classic UI, enable the Title field as shown below when viewing <code>/damadmin#/content/dam</code>:</p>
+    <p>Before using the AEM DAM with Brightcove for the first time, the DAM Integration Path folder structure as specified on the Brightcove configuration page at <code translate="No">/system/console/configMgr</code> needs to be created. The default is <code translate="No">/content/dam/brightcove_assets</code> if you do not change it on the configuration page.&nbsp; Under this folder a folder should be created for each Brightcove account; the folder name should be the numeric Account ID from the Brightcove configuration and the folder title should be the Account Alias from the Brightcove configuration.</p>
+    <p>In Classic UI the folders can be created at <code translate="No">/damadmin#/content/dam</code>. In Touch UI the folders are created at <code translate="No">/assets.html/content/dam</code>. Alternatively, the <strong>SYNC DATABASE</strong> button on the administrative page at <code translate="No">/brightcove/admin</code> will create the necessary folders in the AEM DAM for each configured Brightcove account and import all videos that already exist in the Brightcove account. If you do not want to sync some or all videos in Brightcove, those videos with the Brightcove&nbsp;tag AEM_NO_DAM will not be synced into the AEM DAM.</p>
+    <p>Also, if you are using the AEM DAM in Classic UI, enable the Title field as shown below when viewing <code translate="No">/damadmin#/content/dam</code>:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Enable Title" src="/assets/images/adobe/node18484-enabletitle.png" />
       <figcaption class="bcls-caption--image">Enable Title</figcaption>
     </figure>
@@ -573,7 +573,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Note also that if you upload a video via the AEM DAM and publish to Brightcove and then, at a later time,&nbsp;replace the source file for that video in Brightcove Studio, it will create a new asset in the AEM DAM during the next <strong>SYNC DATABASE</strong>&nbsp;operation because a new videoID is created in Brightcove when the source file is replaced. &nbsp;You can, however, update metadata in Brightcove Studio for a video published from the AEM DAM&nbsp;and it will update the metadata for the existing asset in the AEM DAM as would be expected.</p>
     <h4>Uploading New Videos in Classic UI</h4>
     <ol class="bcls-tasklist">
-      <li>To upload a new video in the Classic UI, browse to <code>/damadmin#/content/dam/brightcove_assets</code>, open the folder for the Brightcove account you wish to use, and click <strong>New&gt;New File</strong>:
+      <li>To upload a new video in the Classic UI, browse to <code translate="No">/damadmin#/content/dam/brightcove_assets</code>, open the folder for the Brightcove account you wish to use, and click <strong>New&gt;New File</strong>:
         <figure class="bcls-figure"><img class="bcls-image" alt="Add New Video" src="/assets/images/adobe/node18484-addnewvideo.png" />
           <figcaption class="bcls-caption--image">Add New Video</figcaption>
         </figure>
@@ -597,7 +597,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
     <h4>Uploading files in the Touch UI</h4>
     <ol class="bcls-tasklist">
-      <li>To upload a new video in the Touch UI, browse to <code>/assets.html/content/dam/brightcove_assets/</code>, open the folder for the Brightcove account you wish to use, and click <strong>Create&gt;Files</strong>
+      <li>To upload a new video in the Touch UI, browse to <code translate="No">/assets.html/content/dam/brightcove_assets/</code>, open the folder for the Brightcove account you wish to use, and click <strong>Create&gt;Files</strong>
         <figure class="bcls-figure"><img class="bcls-image" alt="Add Video Touch UI" src="/assets/images/adobe/node18484-addnewvideo-touchui.png" />
           <figcaption class="bcls-caption--image">Add Video Touch UI</figcaption>
         </figure>
@@ -629,7 +629,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <figure class="bcls-figure"><img class="bcls-image" alt="Replace Thumbail/Poster" src="/assets/images/adobe/node18484-replacethumbnailposter.png" />
       <figcaption class="bcls-caption--image">Replace Thumbnail/Poster</figcaption>
     </figure>
-    <p>After uploading brc_thumbnail.png or brc_poster.png, <strong>Save</strong> and <strong>Activate</strong> the asset to upload the new thumbnail and poster images to Brightcove. In Touch UI browse to <code>/assets.html/content/dam/brightcove_assets/</code> and open a video asset. Click <strong>Renditions</strong> as shown below:</p>
+    <p>After uploading brc_thumbnail.png or brc_poster.png, <strong>Save</strong> and <strong>Activate</strong> the asset to upload the new thumbnail and poster images to Brightcove. In Touch UI browse to <code translate="No">/assets.html/content/dam/brightcove_assets/</code> and open a video asset. Click <strong>Renditions</strong> as shown below:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Activating New Images" src="/assets/images/adobe/node18484-clickrenditions.png" />
       <figcaption class="bcls-caption--image">Activating New Images</figcaption>
     </figure>
@@ -638,8 +638,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <figcaption class="bcls-caption--image">Upload Images to Brightcove</figcaption>
     </figure>
     <h4>Importing Videos&nbsp;from AEM to Brightcove</h4>
-    <p>If new videos are being uploaded directly in Brightcove Studio and/or if metadata is being edited directly in Brightcove Studio,&nbsp;the <strong>SYNC DATABASE</strong> button on the Brightcove administration page at <code>/brightcove/admin</code> is used to synchronize new videos or updated metadata from Brightcove into the AEM DAM.&nbsp; &nbsp;Note that video assets imported from Brightcove into the DAM will not copy the original video file into the AEM DAM but instead will use the Brightcove thumbnail as a placeholder for the asset. Thus, the AEM database size will not grow substantially when importing videos from Brightcove.</p>
-    <p>The database sync can be setup to execute on a schedule as well. Open the configuration console at <code>/system/console/configMgr</code> and then find and open "Brightcove Asset Integration Cronjob Scheduler Configuration".</p>
+    <p>If new videos are being uploaded directly in Brightcove Studio and/or if metadata is being edited directly in Brightcove Studio,&nbsp;the <strong>SYNC DATABASE</strong> button on the Brightcove administration page at <code translate="No">/brightcove/admin</code> is used to synchronize new videos or updated metadata from Brightcove into the AEM DAM.&nbsp; &nbsp;Note that video assets imported from Brightcove into the DAM will not copy the original video file into the AEM DAM but instead will use the Brightcove thumbnail as a placeholder for the asset. Thus, the AEM database size will not grow substantially when importing videos from Brightcove.</p>
+    <p>The database sync can be setup to execute on a schedule as well. Open the configuration console at <code translate="No">/system/console/configMgr</code> and then find and open "Brightcove Asset Integration Cronjob Scheduler Configuration".</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Enable Title" src="/assets/images/adobe/node18484-openbrightcoveschedulerconfig.png" />
       <figcaption class="bcls-caption--image">Open Scheduler Configuration</figcaption>
     </figure>
@@ -652,7 +652,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <meta charset="utf-8" /><b id="docs-internal-guid-03de6d0a-467d-81d3-deba-50596fc15c62">/usr/bin/curl --anyauth --user &lt;USERNAME&gt;:&lt;PASSWORD&gt; --silent --compressed &lt;INSTANCE&gt;/bin/brightcove/dataload.html</b></pre>
     <p>Note that <b id="docs-internal-guid-03de6d0a-467d-81d3-deba-50596fc15c62">&lt;USERNAME&gt;:&lt;PASSWORD&gt;</b> must be of a valid AEM user with access to the Brightcove accounts and rights to create tags and content.</p>
     <h2 id="administrative_page">Brightcove administration</h2>
-    <p>In previous versions of the Connector, the Brightcove Administration page at <code>/brightcove/admin</code> was used to upload videos to Brightcove and edit metadata for those videos. With the new support for the AEM DAM, the Brightcove Admin page is now generally used to only view data in the Brightcove account. For example, the Brightcove admin page shows the videos in the Brightcove account in real-time using direct API calls to Brightcove and could be used to confirm that a new video was uploaded to Brightcove or that metadata was synchronized to Brightcove by the publish process in the AEM DAM.</p>
+    <p>In previous versions of the Connector, the Brightcove Administration page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove and edit metadata for those videos. With the new support for the AEM DAM, the Brightcove Admin page is now generally used to only view data in the Brightcove account. For example, the Brightcove admin page shows the videos in the Brightcove account in real-time using direct API calls to Brightcove and could be used to confirm that a new video was uploaded to Brightcove or that metadata was synchronized to Brightcove by the publish process in the AEM DAM.</p>
     <p>To verify playback from Brightcove, videos can be previewed on this Brightcove Admin page using the default video and playlist players specified on the Brightcove configuration page at /system/console/configMgr:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Preview Video" src="/assets/images/adobe/node18484-videopreview.png" />
       <figcaption class="bcls-caption--image">Preview Video</figcaption>
@@ -663,7 +663,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </figure>
     <p>This synchronization process can be automated via a cron job so that the manual operation is not necessary.</p>
     <h3>Adding text tracks to a video</h3>
-    <p>Currently text tracks can only be added to a video via the Brightcove Admin page at <code>/brightcove/admin</code>. Text tracks are added via the <strong>Upload New Text Track</strong> button:</p>
+    <p>Currently text tracks can only be added to a video via the Brightcove Admin page at <code translate="No">/brightcove/admin</code>. Text tracks are added via the <strong>Upload New Text Track</strong> button:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Add Text Tracks" src="/assets/images/adobe/node18484-addtexttracks.png" />
       <figcaption class="bcls-caption--image">Add Text Tracks</figcaption>
     </figure>
@@ -672,7 +672,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <figure class="bcls-figure">
       <figcaption class="bcls-caption--image">&nbsp;</figcaption>
     </figure>
-    <p>In addition to updating poster and thumbnail images in the AEM DAM, they&nbsp;can also be uploaded to Brightcove from a remote HTTP URL via the Brightcove Admin page at <code>/brightcove/admin</code>:</p>
+    <p>In addition to updating poster and thumbnail images in the AEM DAM, they&nbsp;can also be uploaded to Brightcove from a remote HTTP URL via the Brightcove Admin page at <code translate="No">/brightcove/admin</code>:</p>
     <figure class="bcls-figure"><img class="bcls-image" alt="Upload Images from Brightcove Admin Page" src="/assets/images/adobe/node18484-uploadimagesfrombrightcoveadmin.png" />
       <figcaption class="bcls-caption--image">Upload Images from Brightcove Admin Page</figcaption>
     </figure>

@@ -424,7 +424,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="upload_cartridges">Upload Cartridges</h2>
     <ol class="bcls-tasklist">
       <li>Extract the zipfile.</li>
-      <li>Upload cartridges (<code>bm_brightcove</code>, <code>int_brightcoveandapp_brightcove</code>) to the Salesforce Commerce Cloud instance.</li>
+      <li>Upload cartridges (<code translate="No">bm_brightcove</code>, <code translate="No">int_brightcoveandapp_brightcove</code>) to the Salesforce Commerce Cloud instance.</li>
       <li>Activate the code version with the uploaded cartridges.</li>
     </ol>
   </section>
@@ -436,7 +436,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Select the site from the list.</li>
       <li>Select Settings tab.</li>
       <li>
-        Add <code>app_brightcove</code> in the cartridge path for the SFRA site as shown below:
+        Add <code translate="No">app_brightcove</code> in the cartridge path for the SFRA site as shown below:
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/appsaleforce-cartridge-path.png" alt="Add app_brightcove in Path">
           <figcaption class="bcls-caption--image">Add app_brightcove in Path</figcaption>
@@ -444,7 +444,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li>Apply the changes.</li>
       <li>
-        Add <code>int_brightcove</code> in the cartridge path for the SiteGenesis architecture site as shown below:
+        Add <code translate="No">int_brightcove</code> in the cartridge path for the SiteGenesis architecture site as shown below:
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/intsaleforce-cartridge-path.png" alt="Add int_brightcove in Path">
           <figcaption class="bcls-caption--image">Add int_brightcove in Path</figcaption>
@@ -460,7 +460,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </figure>
       </li>
       <li>
-        Add <code>bm_brightcove</code> in the cartridge path for the Business Manager:
+        Add <code translate="No">bm_brightcove</code> in the cartridge path for the Business Manager:
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/bmbrightcove-in-path.png" alt="Add bm_brightcove in Path">
           <figcaption class="bcls-caption--image">Add bm_brightcove in Path</figcaption>
@@ -480,7 +480,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           <figcaption class="bcls-caption--image">Select Upload</figcaption>
         </figure>
       </li>
-      <li>Upload <strong><code>brightcove-objecttype-extensions.xml</code></strong> from the <strong>meta</strong> directory of the zip file.</li>
+      <li>Upload <strong><code translate="No">brightcove-objecttype-extensions.xml</code></strong> from the <strong>meta</strong> directory of the zip file.</li>
       <li>Navigate to <strong>Administration -&gt; Site Development -&gt; Import &amp; Export</strong>.</li>
       <li>
         Select the <strong>Import</strong> option under <strong>Meta Data</strong>:
@@ -512,7 +512,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           <figcaption class="bcls-caption--image">Select Import</figcaption>
         </figure>
       </li>
-      <li>Import the <strong><code>brightcove-services.xml</code></strong> file.</li>
+      <li>Import the <strong><code translate="No">brightcove-services.xml</code></strong> file.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -535,12 +535,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           <figcaption class="bcls-caption--image">Select Import</figcaption>
         </figure>
       </li>
-      <li>Import the <strong><code>brightcove-jobs.xml</code></strong> file.</li>
+      <li>Import the <strong><code translate="No">brightcove-jobs.xml</code></strong> file.</li>
       <li>
         Select <strong>site context</strong> for the jobs listed below:
         <ul>
-          <li><code>Brightcove-BulkAssign</code></li>
-          <li><code>Brightcove-BulkUpload</code></li>
+          <li><code translate="No">Brightcove-BulkAssign</code></li>
+          <li><code translate="No">Brightcove-BulkUpload</code></li>
         </ul>
       </li>
       <li>
@@ -571,17 +571,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <tbody class="bcls-table__body">
           <tr>
               <td>Bulk Assign</td>
-              <td><code>custom.bulkAssign</code></td>
+              <td><code translate="No">custom.bulkAssign</code></td>
               <td>Specific-site</td>
           </tr>
           <tr>
               <td>Bulk Upload</td>
-              <td><code>custom.bulkUpload</code></td>
+              <td><code translate="No">custom.bulkUpload</code></td>
               <td>Specific-site</td>
           </tr>
           <tr>
               <td>Clean Brightcove Folder</td>
-              <td><code>custom.CleanFolderBrightcove</code></td>
+              <td><code translate="No">custom.CleanFolderBrightcove</code></td>
               <td>Organization</td>
           </tr>
       </tbody>
@@ -665,50 +665,50 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="include_brightcove_video_rendering_in_isml_files">Include Brightcove Video Rendering in ISML Files</h2>
-    <h3>SFRA Cartridge – <code>app_brightcove</code></h3>
+    <h3>SFRA Cartridge – <code translate="No">app_brightcove</code></h3>
     <ol class="bcls-tasklist-restart">
       <li>
         Video rendering is supported for the below ISML files:
         <ul>
-          <li><code>productDetails.isml</code></li>
-          <li><code>catLanding.isml</code></li>
-          <li><code>searchResultsNoDecorator.isml</code></li>
+          <li><code translate="No">productDetails.isml</code></li>
+          <li><code translate="No">catLanding.isml</code></li>
+          <li><code translate="No">searchResultsNoDecorator.isml</code></li>
         </ul>
       </li>
       <li>
-        Include <code>modules.isml</code>:
+        Include <code translate="No">modules.isml</code>:
         <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
       </li>
       <li>
-        Include the tags from <code>modules.isml</code> to render video:
+        Include the tags from <code translate="No">modules.isml</code> to render video:
         <ul>
-          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
-          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
-          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
+          <li>Master Product Video <code translate="No">&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
+          <li>Variant Product Video <code translate="No">&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Category Video <code translate="No">&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
         </ul>
       </li>
     </ol>
-    <h3>SiteGenesis Cartridge – <code>int_brightcove</code></h3>
+    <h3>SiteGenesis Cartridge – <code translate="No">int_brightcove</code></h3>
     <ol class="bcls-tasklist-restart">
       <li>
         Video rendering is supported for the below ISML files:
         <ul>
-          <li><code>productcontents.isml</code></li>
-          <li><code>producttopcontent.isml</code></li>
-          <li><code>categoryproducthits.isml</code></li>
-          <li><code>catlanding.isml</code></li>
+          <li><code translate="No">productcontents.isml</code></li>
+          <li><code translate="No">producttopcontent.isml</code></li>
+          <li><code translate="No">categoryproducthits.isml</code></li>
+          <li><code translate="No">catlanding.isml</code></li>
         </ul>
       </li>
       <li>
-        Include <code>modules.isml</code>:
+        Include <code translate="No">modules.isml</code>:
         <pre class="line-numbers"><code class="language-html">&ltisinclude template="modules"&gt;</code></pre>
       </li>
       <li>
-        Include the tags from <code>modules.isml</code> to render video:
+        Include the tags from <code translate="No">modules.isml</code> to render video:
         <ul>
-          <li>Master Product Video <code>&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
-          <li>Variant Product Video <code>&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
-          <li>Category Video <code>&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
+          <li>Master Product Video <code translate="No">&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
+          <li>Variant Product Video <code translate="No">&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Category Video <code translate="No">&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
         </ul>
       </li>
     </ol>
