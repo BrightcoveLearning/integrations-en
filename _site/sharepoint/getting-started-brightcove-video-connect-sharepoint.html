@@ -681,7 +681,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   --></div>
 <p>Since the Connector is a client side JavaScript application, a proxy server is required to broker authenticated communication to the Brightcove API. More information can be found in the <a href="https://apis.support.brightcove.com/oauth/getting-started/overview-oauth-api-v4.html">Brightcove API document.</a></p>
 <p>A .net proxy App is provided in the Brightcove Video Connect package. The proxy server should be deployed in a web accessible location such as on Microsoft Azure. For security reasons, the proxy is designed to only allow connections from websites included in the web.config file that is installed with the proxy. The brightcove:origins key in the web.config file should include the SharePoint website URL for the <strong>BrightcoveConnector</strong> App as well as the website URL for the Site on which the <strong>BrightcovePlayer</strong> component will execute. See the example below:</p>
-<p><code class="notranslate">&lt;add key="brightcove:origins" value="https://brightcovecms-a3da847a1c9e33.sharepoint.com, https://brightcovecms.sharepoint.com" /&gt; </code></p>
+<p><code translate="No">&lt;add key="brightcove:origins" value="https://brightcovecms-a3da847a1c9e33.sharepoint.com, https://brightcovecms.sharepoint.com" /&gt; </code></p>
 <p>Multiple Sites can be listed as a comma separated string.</p>
 <section class="bcls-section">
   <h2 id="launching">Launching Brightcove Video Connect for SharePoint</h2>
