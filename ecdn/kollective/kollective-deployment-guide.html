@@ -118,12 +118,12 @@ parent: Kollective
       Either
     </p>
     <pre>
-<code class="notranslate language-bash">NODE_ENV=production</code></pre>
+<code class="language-bash" translate="No">NODE_ENV=production</code></pre>
 <p>
   or
 </p>
 <pre>
-<code class="notranslate language-bash">NODE_ENV=development</code></pre>
+<code class="language-bash" translate="No">NODE_ENV=development</code></pre>
   </li>
   <li>
     <p>
@@ -133,7 +133,7 @@ parent: Kollective
       Example:
     </p>
     <pre>
-<code class="notranslate language-bash">PORT=3000</code></pre>
+<code class="language-bash" translate="No">PORT=3000</code></pre>
   </li>
    <li>
     <p>
@@ -143,22 +143,22 @@ parent: Kollective
       You can specify the database connection with the following format:
     </p>
      <pre>
-<code class="notranslate language-bash">DATABASE=mongodb://{host}:{port}/{databaseName}</code></pre>
+<code class="language-bash" translate="No">DATABASE=mongodb://{host}:{port}/{databaseName}</code></pre>
     <p>
       Example:
     </p>
     <pre>
-<code class="notranslate language-bash">DATABASE=mongodb://localhost:27017/Brightcove</code></pre>
+<code class="language-bash" translate="No">DATABASE=mongodb://localhost:27017/Brightcove</code></pre>
     <p>
       If you want to use a MongoDB Atlas cloud database, you can set it as follows:
     </p>
     <pre>
-<code class="notranslate language-bash">DATABASE=mongodb+srv://{user}:{password}@{cluster}/{databaseName}?retryWrites=true&amp;w=majority</code></pre>
+<code class="language-bash" translate="No">DATABASE=mongodb+srv://{user}:{password}@{cluster}/{databaseName}?retryWrites=true&amp;w=majority</code></pre>
 <p>
       Example:
     </p>
     <pre>
-<code class="notranslate language-bash">DATABASE=mongodb+srv://myuser:mypassword@cluster0-xafsz.mongodb.net/MyDatabase?retryWrites=true&amp;w=majority</code></pre>
+<code class="language-bash" translate="No">DATABASE=mongodb+srv://myuser:mypassword@cluster0-xafsz.mongodb.net/MyDatabase?retryWrites=true&amp;w=majority</code></pre>
   </li>
   <li>
     <p>
@@ -169,7 +169,7 @@ parent: Kollective
       To send emails using SendGrid email service, use the following with your SendGrid username and password:
     </p>
     <pre>
-<code class="notranslate language-bash"># Send email using Sendgrid email service.
+<code class="language-bash" translate="No"># Send email using Sendgrid email service.
 EMAIL_SERVICE=SendGrid
 
 # Send email using Sendgrid email service.
@@ -181,7 +181,7 @@ SENDGRID_PASSWORD=<span class="bcls-input">your SendGrid password</span>
       To send emails using other email services, use the following with your email server host, port and username, password:
     </p>
     <pre>
-<code class="notranslate language-bash"># Set EMAIL_SERVICE=Other to send email using normal email service using host and port
+<code class="language-bash" translate="No"># Set EMAIL_SERVICE=Other to send email using normal email service using host and port
 EMAIL_SERVICE=Other
 
 # Send email using host and port
@@ -197,7 +197,7 @@ EMAIL_FROM=<span class="bcls-input">your email from address</span>
       <strong>Kollective Publish API base URL</strong> - The server-side application calls the Kollective publish API to publish a video from Brightcove with video sources to Kollective and get back a content token. Here, you specify the Kollective publish API base url:
     </p>
     <pre>
-<code class="notranslate language-bash"># Kollective publish API base url
+<code class="language-bash" translate="No"># Kollective publish API base url
 KOLLECTIVE_PUBLISH_API_BASE_URL=https://content.stage.kollective.app/api
 </code></pre>
   </li>
@@ -206,7 +206,7 @@ KOLLECTIVE_PUBLISH_API_BASE_URL=https://content.stage.kollective.app/api
       <strong>Brightcove API Base URLs</strong> - The server-side application needs the following Brightcove API base URLs:
     </p>
     <pre>
-<code class="notranslate language-bash"># Brightcove API base URLs
+<code class="language-bash" translate="No"># Brightcove API base URLs
 BRIGHTCOVE_ACCESS_TOKEN_BASE_URL=https://oauth.brightcove.com/v4/access_token
 BRIGHTCOVE_CMS_API_BASE_URL=https://cms.api.brightcove.com/v1
 BRIGHTCOVE_LIVE_API_BASE_URL=https://api.bcovlive.io/v1
@@ -217,7 +217,7 @@ BRIGHTCOVE_LIVE_API_BASE_URL=https://api.bcovlive.io/v1
       <strong>Custom Field Names</strong> - The following custom fields name settings cannot be changed:
     </p>
     <pre>
-<code class="notranslate language-bash"># Required custom field names for each Brightcove Account ID
+<code class="language-bash" translate="No"># Required custom field names for each Brightcove Account ID
 CUSTOM_FIELD_KOLLECTIVE_CONTENT_TOKEN=kollective_content_token
 CUSTOM_FIELD_KOLLECTIVE_IS_SYNCHRONIZED=kollective_is_synchronized
 CUSTOM_FIELD_KOLLECTIVE_SYNCHRONIZED_TIME=kollective_synchronized_time
@@ -320,7 +320,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       Open a console application and go to the root folder of the application package in the previous step. Execute the following command to install all the required Node packages:
     </p>
     <pre>
-<code class="notranslate language-bash"># npm install --production
+<code class="language-bash" translate="No"># npm install --production
 </code></pre>
   </li>
   <li>
@@ -328,7 +328,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       Execute the command below to import default super-admin user:
     </p>
     <pre>
-<code class="notranslate language-bash"># npm run import-users
+<code class="language-bash" translate="No"># npm run import-users
 </code></pre>
   </li>
   <li>
@@ -336,7 +336,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       To start the backend application, execute the following command:
     </p>
     <pre>
-<code class="notranslate language-bash"># npm run start
+<code class="language-bash" translate="No"># npm run start
 </code></pre>
   </li>
   <li>
@@ -347,7 +347,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       Example:
     </p>
     <pre>
-<code class="notranslate language-bash">http://localhost:3000/login
+<code class="language-bash" translate="No">http://localhost:3000/login
 </code></pre>
   </li>
   <li>
@@ -380,7 +380,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       In the Kollective Integration github repository, locate the Kollective plugin in the <strong>kollective-player-plugin</strong> folder.
     </p>
     <pre>
-<code class="notranslate language-bash">[backend-application-root-folder]/kollective-player-plugin/k-plugin.js
+<code class="language-bash" translate="No">[backend-application-root-folder]/kollective-player-plugin/k-plugin.js
 </code></pre>
   </li>
   <li>
@@ -391,7 +391,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       Example:
     </p>
     <pre>
-<code class="notranslate language-bash">https://my-server/k-plugin-1.0.6.js
+<code class="language-bash" translate="No">https://my-server/k-plugin-1.0.6.js
 </code></pre>
   </li>
   <li>
@@ -444,7 +444,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
           Example:
         </p>
     <pre>
-<code class="notranslate language-bash">https://my-server/k-plugin-1.0.6.js
+<code class="language-bash" translate="No">https://my-server/k-plugin-1.0.6.js
 </code></pre>
       </li>
       <li>
@@ -460,7 +460,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
           </li>
         </ul>
     <pre>
-<code class="notranslate language-bash">{
+<code class="language-bash" translate="No">{
     &quot;ksdk_url&quot;: &quot;https://cdn.kollective.app/ksdk/ksdk-2.1.9.min.js&quot;,
     &quot;policy_key&quot;: &ldquo;<span class="bcls-input">your policy key</span>&rdquo;
 }
@@ -479,7 +479,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
       The Kollective plugin requires a specific version of jQuery. For the <strong>Scripts</strong> tab, select the <strong>Add a Script</strong> button and enter the following:
     </p>
     <pre>
-<code class="notranslate language-bash">https://code.jquery.com/jquery-3.5.1.min.js
+<code class="language-bash" translate="No">https://code.jquery.com/jquery-3.5.1.min.js
 </code></pre>
 
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Script details" src="/assets/images/kollective/script-details.png" />
