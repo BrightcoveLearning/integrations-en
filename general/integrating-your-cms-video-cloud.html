@@ -73,14 +73,14 @@ parent: General Information
     <section class="bcls-section">
     <h2 id="addingVideos">Adding Videos</h2>
     
-    <p>If you wish to let users add videos to Video Cloud from your CMS, you can do that using the <a href="https://apis.support.brightcove.com/dynamic-ingest/getting-started/overview-dynamic-ingest-api-dynamic-delivery.html"> Dynamic Ingest API </a>. We recommend that you have users upload videos to your repository, which could be an S3 bucket or just a public-facing server. The Dynamic Ingest system can pull in the videos and add them to the Video Cloud system through a two-step process outlined below.</p>
+    <p>If you wish to let users add videos to Video Cloud from your CMS, you can do that using the <a href="https://apis.support.brightcove.com/dynamic-ingest/getting-started/overview-dynamic-ingest-api-dynamic-delivery.html"> <span translate="No">Dynamic Ingest API</span> </a>. We recommend that you have users upload videos to your repository, which could be an S3 bucket or just a public-facing server. The Dynamic Ingest system can pull in the videos and add them to the Video Cloud system through a two-step process outlined below.</p>
     
     <h3>Adding a video object to Video Cloud</h3>
     
     <p>The first step is to create a video object in the Video Cloud system by making a <code translate="No">POST</code> request to the CMS API:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/:account_id/videos
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/:account_id/videos
     </code>
     </pre>
     
@@ -100,10 +100,10 @@ parent: General Information
     
     <h3>Ingesting the video</h3>
     
-    <p>When you create the video object, the CMS API will return a JSON object containing the video properties. You will extract the video <code translate="No">id</code> from the JSON, and use it to make a call to the Dynamic Ingest API to request ingestion and transcoding of the video:</p>
+    <p>When you create the video object, the <span translate="No">CMS API</span> will return a JSON object containing the video properties. You will extract the video <code translate="No">id</code> from the JSON, and use it to make a call to the <span translate="No">Dynamic Ingest API</span> to request ingestion and transcoding of the video:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://ingest.api.brightcove.com/v1/accounts/<strong><em>ACCOUNT_ID</em></strong>/videos/<strong><em>VIDEO_ID</em></strong>/ingest-requests
+    <code class="language-http" translate="No">https://ingest.api.brightcove.com/v1/accounts/<strong><em>ACCOUNT_ID</em></strong>/videos/<strong><em>VIDEO_ID</em></strong>/ingest-requests
     </code>
     </pre>
     
@@ -220,11 +220,11 @@ parent: General Information
     </code>
     </pre>
     
-    <p>See <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/images-and-dynamic-ingest-api.html">Images and the Dynamic Ingest API </a> for more details.</p>
+    <p>See <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/images-and-dynamic-ingest-api.html">Images and the <span translate="No">Dynamic Ingest API</span> </a> for more details.</p>
     
     <h4>Adding text tracks for captions or chapters</h4>
     
-    <p>You can also use the Dynamic Ingest API to add text tracks in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format">WebVTT</a> files to videos, either at the time of ingestion or later. Text tracks are used to add <a href="https://player.support.brightcove.com/general/adding-captions-videos-programmatically.html">captions</a> or <a href="https://studio.support.brightcove.com/media/adding-chapters-video.html">chapters</a> to a video.</p>
+    <p>You can also use the <span translate="No">Dynamic Ingest API</span> to add text tracks in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Video_Text_Tracks_Format">WebVTT</a> files to videos, either at the time of ingestion or later. Text tracks are used to add <a href="https://player.support.brightcove.com/general/adding-captions-videos-programmatically.html">captions</a> or <a href="https://studio.support.brightcove.com/media/adding-chapters-video.html">chapters</a> to a video.</p>
     
     <pre class="line-numbers">
     <code class="language-json" translate="No">{
@@ -262,10 +262,10 @@ parent: General Information
     <section class="bcls-section" id="manangingVideos">
     <h2>Managing Videos</h2>
     
-    <p>The CMS API allows you to get back video data for an account. (As shown above, it is also used to create video objects as part of the video ingestion process.) The most basic request is as follows:</p>
+    <p>The <span translate="No">CMS API</span> allows you to get back video data for an account. (As shown above, it is also used to create video objects as part of the video ingestion process.) The most basic request is as follows:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/videos
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/videos
     </code>
     </pre>
     
@@ -282,14 +282,14 @@ parent: General Information
       <dd>this determines the video metadata field to sort the result by - by default, results are sorted by <code translate="No">updated_at</code> (descending, to show the most recently updated videos first)</dd>
     </dl>
     
-    <p>See <a href="https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html#parameters"> CMS API Overview - Parameters</a> for detailed information on these parameters.</p>
+    <p>See <a href="https://apis.support.brightcove.com/cms/getting-started/overview-cms-api.html#parameters"> <span translate="No">CMS API</span> Overview - Parameters</a> for detailed information on these parameters.</p>
     
     <h3>Searching for videos</h3>
     
     <p>You can also search for videos by a wide range of criteria using the <code translate="No">q</code> parameter. You can search by specific fields such as name, description, and tags, as well as dates and the status of the videos:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/videos?q=tags:sea,mammal
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/videos?q=tags:sea,mammal
     </code>
     </pre>
     
@@ -300,7 +300,7 @@ parent: General Information
     <p>To retrieve a specific video by its id or reference id:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/videos/<strong><em>id</em></strong>
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/videos/<strong><em>id</em></strong>
     or
     https://cms.api.brightcove.com/v1/accounts/account_id/videos/<strong><em>ref:reference_id</em></strong>
     </code>
@@ -314,7 +314,7 @@ parent: General Information
     <section class="bcls-section" id="playlists">
     <h2>Playlists</h2>
     
-    <p>Playlist information is also managed using the CMS API in much the same way as video information. Note that Video Cloud supports eight types of playlists in two categories:</p>
+    <p>Playlist information is also managed using the <span translate="No">CMS API</span> in much the same way as video information. Note that Video Cloud supports eight types of playlists in two categories:</p>
     
     <dl>
       <dt>Manual (or <code translate="No">EXPLICIT</code>) playlists</dt>
@@ -340,28 +340,28 @@ parent: General Information
     <p>As with videos, you can retrieve all playlists, using <code translate="No">limit</code> and <code translate="No">offset</code> to page through results if the account has a large number of playlists:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/<strong><em>playlists</em></strong>
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/<strong><em>playlists</em></strong>
     </code>
     </pre>
     
     <p>The returned array of playlist objects will include metadata for the playlist, including the <code translate="No">type</code> corresponding to the one of the types described above. If the type is <code translate="No">EXPLICIT</code>, there will also be a <code translate="No">video_ids</code> array containing the ids of the included videos. If the type is one of the smart playlist types, there will be a <code translate="No">search</code> property containing the search string that retrieves the videos, something like this:</p>
     
     <pre>
-    <code class="language-http">q=tags:fish,birds
+    <code class="language-http" translate="No">q=tags:fish,birds
     </code>
     </pre>
     
     <p>You can also retrieve a single playlist by its <code translate="No">id</code>:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/playlists/<strong><em>playlist_id</em></strong>
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/playlists/<strong><em>playlist_id</em></strong>
     </code>
     </pre>
     
     <p>If you need to retrieve the full video objects for a playlist (to display information about the videos on a page), you simply add <code translate="No">/videos</code> to that URL:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://cms.api.brightcove.com/v1/accounts/account_id/playlists/<strong><em>playlist_id/videos</em></strong>
+    <code class="language-http" translate="No">https://cms.api.brightcove.com/v1/accounts/account_id/playlists/<strong><em>playlist_id/videos</em></strong>
     </code>
     </pre>
     
@@ -378,7 +378,7 @@ parent: General Information
     <p>To create a player, you simply make a <code translate="No">POST</code> request to the Player Management API:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://players.api.brightcove.com/v2/accounts/account_id/players
+    <code class="language-http" translate="No">https://players.api.brightcove.com/v2/accounts/account_id/players
     </code>
     </pre>
     
@@ -408,7 +408,7 @@ parent: General Information
     <p>To get the full player configuration, you make a request to the <code translate="No">/players</code> endpoint, but add the player ID that is returned in the response above:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://players.api.brightcove.com/v2/accounts/account_id/players/de055fa4-4f09-45af-8531-419c6794ad04
+    <code class="language-http" translate="No">https://players.api.brightcove.com/v2/accounts/account_id/players/de055fa4-4f09-45af-8531-419c6794ad04
     </code>
     </pre>
     
@@ -417,7 +417,7 @@ parent: General Information
     <p>You'll notice in the response above, the <code translate="No">preview_embed_code</code> and <code translate="No">preview_url</code>. To allow testing of new players or player updates, newly created or updated players are set in preview mode to allow you to see it before pushing changes out to existing players. To push changes into production, you need to <strong>publish</strong> the player with this request:</p>
     
     <pre class="line-numbers">
-    <code class="language-http">https://players.api.brightcove.com/v2/accounts/account_id/players/de055fa4-4f09-45af-8531-419c6794ad04/<strong><em>publish</em></strong>
+    <code class="language-http" translate="No">https://players.api.brightcove.com/v2/accounts/account_id/players/de055fa4-4f09-45af-8531-419c6794ad04/<strong><em>publish</em></strong>
     </code>
     </pre>
     </section>
