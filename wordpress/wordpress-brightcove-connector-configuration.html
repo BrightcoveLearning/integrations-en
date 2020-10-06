@@ -47,15 +47,15 @@ parent: WordPress
       </li>
     </ol>
     <ol class="bcls-tasklist">
-      <li>On the WordPress server, edit <code>wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and change the profile from the default profile name of 'videocloud-default-v1' to the desired profile name.&nbsp; For example, change<br />
-        <code>public function video_upload( $video_id, $video_url, $profile = 'videocloud-default-v1' ) {</code><br />
+      <li>On the WordPress server, edit <code translate="No">wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and change the profile from the default profile name of 'videocloud-default-v1' to the desired profile name.&nbsp; For example, change<br />
+        <code translate="No">public function video_upload( $video_id, $video_url, $profile = 'videocloud-default-v1' ) {</code><br />
         to<br />
-        <code>public function video_upload( $video_id, $video_url, $profile = 'multi-platform-standard-static' ) {</code></li>
+        <code translate="No">public function video_upload( $video_id, $video_url, $profile = 'multi-platform-standard-static' ) {</code></li>
     </ol>
     <ol class="bcls-tasklist">
-      <li>Or modify the connector to use the default ingest profile in the Video Cloud account. To do this, edit <code>wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and comment out the line:<br />
-        <code>$data = array( 'profile' =&gt; sanitize_text_field( $profile ) );</code><br />
-        with <code>/* */</code>.</li>
+      <li>Or modify the connector to use the default ingest profile in the Video Cloud account. To do this, edit <code translate="No">wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and comment out the line:<br />
+        <code translate="No">$data = array( 'profile' =&gt; sanitize_text_field( $profile ) );</code><br />
+        with <code translate="No">/* */</code>.</li>
     </ol>
     <p>You have now completed configuration of the WordPress-Brightcove connector. Proceed to <a href="/wordpress/wordpress-brightcove-connector-using-connector.html">Using the Connector.</a></p>
   </section>

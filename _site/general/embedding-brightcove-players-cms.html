@@ -12,15 +12,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
   <link rel="stylesheet" href="/assets/css/local.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
   <script src="/assets/js/sajari-head.js"></script>
 </head>
 
@@ -28,9 +28,9 @@
 
 <header>
   <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-video-cloud.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/logo-bc-video-cloud.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
 <!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en">English</option><option value="en|zh-TW">繁體中文</option><option value="en|fr">Français</option><option value="en|de">Deutsch</option><option value="en|ja">日本語</option><option value="en|ko">한국어</option><option value="en|es">Español</option></select>
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
 
 <script>
 /* <![CDATA[ */
@@ -94,11 +94,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         
       
         
-          <option value="https://integrations.support.brightcove.com">Integration / CMS Connectors</option>
+          <option value="https://integrations.support.brightcove.com">Integrations and CMS Connectors</option>
         
       
         
-          <option value="https://general.support.brightcove.com">Video Cloud General</option>
+          <option value="https://general.support.brightcove.com">Video Cloud General Information</option>
         
       
         
@@ -108,7 +108,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </select>
 
 
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
     <br>
     
   </div>
@@ -128,14 +128,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
-        <nav class="sidenav">
+        <nav class="sidenav" id="side_nav">
           
             
             <h5><a href="/index.html">Home</a></h5>
             
           
             
-              <h5 class="submenu-header"><a href="/general/index.html">General Information <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/general/index.html">General Information <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
@@ -162,49 +162,34 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/adobe/index.html">Adobe <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/wordpress/index.html">WordPress <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html">Getting Started with the Connector for AEM</a></li>
+                    <li><a href="/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html">Getting Started with Brightcove Video Connect</a></li>
                   
                 
                   
-                    <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
+                    <li><a href="/wordpress/wordpress-brightcove-connector-configuration.html">Configuration</a></li>
                   
                 
                   
-                    <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
+                    <li><a href="/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html">Frequently Asked Questions</a></li>
                   
                 
                   
-                    <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
+                    <li><a href="/wordpress/wordpress-brightcove-connector-installation.html">Installation</a></li>
                   
                 
                   
-                    <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
+                    <li><a href="/wordpress/wordpress-brightcove-connector-using-connector.html">Using the Connector</a></li>
                   
                 
               </ul>
             
           
             
-              <h5 class="submenu-header"><a href="/adobe-magento-commerce/index.html">Adobe Magento Commerce <strong>+</strong></a></h5>            
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/adobe-magento-commerce/installation-guide.html">Installation Guide</a></li>
-                  
-                
-                  
-                    <li><a href="/adobe-magento-commerce/user-guide.html">User Guide</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/drupal/index.html">Drupal <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/drupal/index.html">Drupal <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
@@ -239,63 +224,45 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/kollective/index.html">Kollective <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/adobe/index.html">Adobe <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a></li>
+                    <li><a href="/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html">Getting Started with the Connector for AEM</a></li>
                   
                 
                   
-                    <li><a href="/kollective/kollective-user-guide.html">Kollective eCDN User Guide</a></li>
+                    <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
+                  
+                
+                  
+                    <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
+                  
+                
+                  
+                    <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
                   
                 
               </ul>
             
           
             
-              <h5 class="submenu-header"><a href="/peer5/index.html">Peer5 <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/sitecore/index.html">Sitecore <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/peer5/brightcove-with-peer5-integration.html">Brightcove with Peer5 Integration</a></li>
+                    <li><a href="/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html">Getting Started with the Connector for Sitecore</a></li>
                   
                 
               </ul>
             
           
             
-              <h5 class="submenu-header"><a href="/ramp/index.html">Ramp <strong>+</strong></a></h5>            
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/ramp/getting-started-ramp-omnicache-and-video-cloud.html">Getting Started with Ramp OmniCache and Video Cloud</a></li>
-                  
-                
-                  
-                    <li><a href="/ramp/getting-started-ramp-multicast-and-video-cloud.html">Getting Started with Ramp Multicast+ and Video Cloud</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/salesforce/index.html">Salesforce <strong>+</strong></a></h5>            
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html">Brightcove Custom Cartridge: Installation</a></li>
-                  
-                
-                  
-                    <li><a href="/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html">Brightcove Custom Cartridge: User Guide</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/sharepoint/index.html">SharePoint <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/sharepoint/index.html">SharePoint <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
@@ -310,45 +277,107 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/sitecore/index.html">Sitecore <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/ecommerce/index.html">eCommerce <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html">Getting Started with the Connector for Sitecore</a></li>
+                    <li class="submenu-header">
+                      <a href="/ecommerce/salesforce/index.html">Salesforce Commerce Cloud <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html">Salesforce Commerce Cloud: Installation</a></li>
+                        
+                        <li><a href="/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html">Salesforce Commerce Cloud: User Guide</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/ecommerce/adobe-magento-commerce/index.html">Adobe Magento Commerce <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/ecommerce/adobe-magento-commerce/installation-guide.html">Installation Guide</a></li>
+                        
+                        <li><a href="/ecommerce/adobe-magento-commerce/user-guide.html">User Guide</a></li>
+                        
+                      </ul>
+                    </li>
                   
                 
               </ul>
             
           
             
-              <h5 class="submenu-header"><a href="/wordpress/index.html">WordPress <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/ecdn/index.html">eCDN <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html">Getting Started with Brightcove Video Connect</a></li>
+                    <li class="submenu-header">
+                      <a href="/ecdn/kollective/index.html">Kollective <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/ecdn/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a></li>
+                        
+                        <li><a href="/ecdn/kollective/kollective-user-guide.html">Kollective eCDN User Guide</a></li>
+                        
+                      </ul>
+                    </li>
                   
                 
                   
-                    <li><a href="/wordpress/wordpress-brightcove-connector-configuration.html">Configuration</a></li>
+                    <li class="submenu-header">
+                      <a href="/ecdn/peer5/index.html">Peer5 <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/ecdn/peer5/brightcove-with-peer5-integration.html">Brightcove with Peer5 Integration</a></li>
+                        
+                      </ul>
+                    </li>
                   
                 
                   
-                    <li><a href="/wordpress/wordpress-brightcove-connector-frequently-asked-questions.html">Frequently Asked Questions</a></li>
-                  
-                
-                  
-                    <li><a href="/wordpress/wordpress-brightcove-connector-installation.html">Installation</a></li>
-                  
-                
-                  
-                    <li><a href="/wordpress/wordpress-brightcove-connector-using-connector.html">Using the Connector</a></li>
+                    <li class="submenu-header">
+                      <a href="/ecdn/ramp/index.html">Ramp <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html">Getting Started with Ramp OmniCache and Video Cloud</a></li>
+                        
+                        <li><a href="/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html">Getting Started with Ramp Multicast+ and Video Cloud</a></li>
+                        
+                      </ul>
+                    </li>
                   
                 
               </ul>
             
           
             
-              <h5 class="submenu-header"><a href="/support/index.html">Support <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="/web-conferencing/index.html">Web Conferencing <strong>+</strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/web-conferencing/host-zoom-conference-brightcove-live.html">Zoom Conference on Brightcove Live</a></li>
+                  
+                
+                  
+                    <li><a href="/web-conferencing/host-cisco-webex-conference-brightcove-live.html">Cisco Webex Conference to Brightcove Live</a></li>
+                  
+                
+                  
+                    <li><a href="/web-conferencing/host-avaya-conference-brightcove-live.html">Avaya Conference on Brightcove Live</a></li>
+                  
+                
+                  
+                    <li><a href="/web-conferencing/host-inxpo-live.html">INXPO Event on Brightcove Live</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">Support <strong>+</strong></a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
@@ -375,14 +404,28 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
   <!-- bootstrap layout -->
 
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+<ul id="in_prod_nav" class="pager" style="display: none;">
+  <li><a id="back_button" href="#" class="nav-icon"><img src="/assets/images/feather/chevron-left.svg" alt="back"></a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;Beacon Documentation&nbsp;&nbsp;&nbsp;&nbsp;</li>
+  <li><a id="forward_button" href="#" class="nav-icon"><img src="/assets/images/feather/chevron-right.svg" alt="forward"></a></li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;<img src="/assets/images/feather/x.svg" alt="Close" class="nav-icon"></li>
+</ul>
+
 <!-- search bar -->
 <div id="nav-search-box" style="margin-top: 1rem;"></div>
 <!-- in-page navigation for narrow screens -->
 <details class="centered-inpage-nav" id="centered_inpage_nav">
   <summary><h6 class="toc">Page Contents</h6></summary>
-    <nav id="centered_toc"></nav>
-    <ul id="centered_in_page_toc" class="list-none"></ul>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
 </details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="open in new tab" style="margin-top:4em;width: 1.5em;"></a>
+
+
+
   
     
 
@@ -433,18 +476,18 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <ol type="a">
           <li>The choices are:
             <ul>
-              <li><code>16:9</code></li>
-              <li><code>4:3</code></li>
-              <li><code>Custom</code></li>
+              <li><code translate="No">16:9</code></li>
+              <li><code translate="No">4:3</code></li>
+              <li><code translate="No">Custom</code></li>
             </ul>
           </li>
-          <li>Default should be <code>16:9</code>.</li>
+          <li>Default should be <code translate="No">16:9</code>.</li>
         </ol>
       </li>
       <li><strong>Width, Height</strong>:The user should be able to enter Width and Height<sup><strong><a href="#note1-1">[1-1]</a></strong></sup>.
         <ol type="a">
           <li>If Aspect Ratio is <strong>16:9</strong> or <strong>4:3</strong>, the <strong>Height</strong> field should be greyed out and automatically calculated based on <strong>Width</strong> and <strong>Aspect Ratio</strong>.</li>
-          <li>Default values should be <code>640</code> for <strong>Width</strong> and <code>360</code> for <strong>Height</strong> when Aspect Ratio is Custom.</li>
+          <li>Default values should be <code translate="No">640</code> for <strong>Width</strong> and <code translate="No">360</code> for <strong>Height</strong> when Aspect Ratio is Custom.</li>
         </ol>
       </li>
     </ol>
@@ -463,15 +506,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3>Identifying playlist players</h3>
     <ol>
       <li>Iterate over the list of players returned by the Player Management API request referenced above.</li>
-      <li>Look for the <code>playlist</code> field:
+      <li>Look for the <code translate="No">playlist</code> field:
         <ol type="a">
-          <li>If the field is present and the value is <code>true</code>, it is a playlist player</li>
-          <li>If the value is <code>false</code> or the <code>playlist</code> does not exist, do the next step.</li>
+          <li>If the field is present and the value is <code translate="No">true</code>, it is a playlist player</li>
+          <li>If the value is <code translate="No">false</code> or the <code translate="No">playlist</code> does not exist, do the next step.</li>
         </ol>
       </li>
-      <li>Iterate through the <code>plugins</code> list (if present) and look for a <code>registry_id</code> field equal to <code>@brightcove/videojs-bc-playlist-ui</code>; if that is present, it is a playlist player; if not, it is not. Here is a sample of what is return in the players list:
+      <li>Iterate through the <code translate="No">plugins</code> list (if present) and look for a <code translate="No">registry_id</code> field equal to <code translate="No">@brightcove/videojs-bc-playlist-ui</code>; if that is present, it is a playlist player; if not, it is not. Here is a sample of what is return in the players list:
         <pre class="line-numbers">
-<code class="language-json notranslate">"items": [
+<code class="language-json" translate="No">"items": [
    {
       {
       "account_id": "4031511818001",
@@ -507,25 +550,25 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="Embed_parameters_and_code">Embed parameters and code</h2>
-    <p>The sections below describe how to generate the Brightcove player embed code based on user selections. The <code>%XYZ%</code> values are substituted into the embed code as described below.</p>
+    <p>The sections below describe how to generate the Brightcove player embed code based on user selections. The <code translate="No">%XYZ%</code> values are substituted into the embed code as described below.</p>
     <h3>Common parameters</h3>
     <ul>
-      <li><code>%AUTOPLAY%</code> = autoplay if <code>Autoplay</code> enabled, else it is a <code>null</code> string</li>
-      <li><code>%MUTED%</code> = muted if <code>Muted</code> enabled, else it is a <code>null</code> string</li>
-      <li><code>%ACCOUNTID%</code> = User selected Brightcove account ID</li>
-      <li><code>%VIDEOID%</code> = User selected video ID</li>
-      <li><code>%PLAYLISTID%</code> = User selected playlist ID</li>
-      <li><code>%PLAYERID%</code> = User selected Video player ID or Playlist player ID</li>
-      <li><code>%CMS%</code> = Name of CMS</li>
-      <li><code>%CMSVERSION%</code> = Version of CMS</li>
-      <li><code>%CONNECTORVERSION%</code> = Version of connector</li>
+      <li><code translate="No">%AUTOPLAY%</code> = autoplay if <code translate="No">Autoplay</code> enabled, else it is a <code translate="No">null</code> string</li>
+      <li><code translate="No">%MUTED%</code> = muted if <code translate="No">Muted</code> enabled, else it is a <code translate="No">null</code> string</li>
+      <li><code translate="No">%ACCOUNTID%</code> = User selected Brightcove account ID</li>
+      <li><code translate="No">%VIDEOID%</code> = User selected video ID</li>
+      <li><code translate="No">%PLAYLISTID%</code> = User selected playlist ID</li>
+      <li><code translate="No">%PLAYERID%</code> = User selected Video player ID or Playlist player ID</li>
+      <li><code translate="No">%CMS%</code> = Name of CMS</li>
+      <li><code translate="No">%CMSVERSION%</code> = Version of CMS</li>
+      <li><code translate="No">%CONNECTORVERSION%</code> = Version of connector</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="iFrame_video_player_embed">iFrame video player embed</h2>
     <h3>Parameters for responsive sizing (with max size)</h3>
     <pre>
-<code class="notranslate">%MAXWIDTH% = Width . ‘px’
+<code translate="No">%MAXWIDTH% = Width . ‘px’
 %MINWIDTH% = 0px
 %WIDTH% = 100% %HEIGHT% = 100%
 %PADDINGTOP%
@@ -538,7 +581,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h4>Parameters for fixed sizing</h4>
     <pre>
-<code class="notranslate">%MINWIDTH% = Width . ‘px’
+<code translate="No">%MINWIDTH% = Width . ‘px’
 %WIDTH% = Width . ‘px’
 %HEIGHT% = Height . ‘px’
 %PADDINGTOP%
@@ -551,7 +594,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h3>Brightcove embed code</h3>
     <pre>
-<code class="notranslate">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
+<code translate="No">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
   &lt;div style="padding-top: %PADDINGTOP%;"&gt;
     &lt;iframe src="//players.brightcove.net/%ACCOUNTID%/%PLAYERID%_default/index.html?videoId=%VIDEOID%
       &amp;usage=cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:iframe
@@ -573,7 +616,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="JavaScript_player_embed">JavaScript (in-page) player embed</h2>
     <h3>Parameters for responsive sizing (with max size)</h3>
     <pre>
-<code class="notranslate">%MAXWIDTH% = Width . ‘px’
+<code translate="No">%MAXWIDTH% = Width . ‘px’
 %MINWIDTH% = 0px
 %WIDTH% = 100% %HEIGHT% = 100%
 %PADDINGTOP%
@@ -586,7 +629,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h3>Parameters for fixed sizing</h3>
     <pre>
-<code class="notranslate">%MINWIDTH% = Width . ‘px’
+<code translate="No">%MINWIDTH% = Width . ‘px’
 %WIDTH% = Width . ‘px’
 %HEIGHT% = Height . ‘px’
 %PADDINGTOP%
@@ -599,7 +642,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h3>Brightcove embed code</h3>
     <pre>
-<code class="notranslate">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
+<code translate="No">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
   &lt;div style="padding-top: %PADDINGTOP%; "&gt;
     &lt;video-js data-video-id="%VIDEOID%"
       data-account="%ACCOUNTID%"
@@ -621,7 +664,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="iframe_playlist_player_embed">iFrame Playlist Player Embed</h2>
     <h3>Parameters for responsive sizing (with max size)</h3>
     <pre>
-<code class="notranslate">%MAXWIDTH% = Width . ‘px’
+<code translate="No">%MAXWIDTH% = Width . ‘px’
 %MINWIDTH% = 0px
 %WIDTH% = 100% %HEIGHT% = 100%
 %PADDINGTOP%
@@ -634,7 +677,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h3>Parameters for fixed sizing</h3>
     <pre>
-<code class="notranslate">%MINWIDTH% = Width . ‘px’
+<code translate="No">%MINWIDTH% = Width . ‘px’
 %WIDTH% = Width . ‘px’
 %HEIGHT% = Height . ‘px’
 %PADDINGTOP%
@@ -647,7 +690,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   }</code></pre>
     <h3>Brightcove embed code</h3>
     <pre>
-<code class="notranslate">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
+<code translate="No">&lt;div style="display: block; position: relative; min-width: %MINWIDTH%; max-width: %MAXWIDTH%;"&gt;
   &lt;div style="padding-top: %PADDINGTOP%;"&gt;
     &lt;iframe src="//players.brightcove.net/%ACCOUNTID%/%PLAYERID%_default/index.html?playlistId=%PLAYLISTID%
       &amp;usage=cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:iframe
@@ -669,7 +712,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="javascript_playlist_player_embed">JavaScript (in-page) playlist player embed</h2>
     <h3>Parameters for responsive sizing (with max size)</h3>
     <pre>
-<code class="notranslate">%MAXWIDTH% = Width . ‘px’
+<code translate="No">%MAXWIDTH% = Width . ‘px’
 %MINWIDTH% = 0px
 %PADDINGTOP% = na
 %WIDTH% = 100%
@@ -678,7 +721,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 %THUMBNAILHEIGHT% = Round(%THUMBNAILWIDTH% * %HEIGHT% / %WIDTH%);</code></pre>
     <h3>Parameters for fixed sizing</h3>
     <pre>
-<code class="notranslate">%MAXWIDTH% = Width . ‘px’
+<code translate="No">%MAXWIDTH% = Width . ‘px’
 %MINWIDTH% = Width . ‘px’
 %PADDINGTOP% = na
 %WIDTH% = Width . ‘px’
@@ -687,7 +730,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 %THUMBNAILHEIGHT% =Round(%THUMBNAILWIDTH% * %HEIGHT% / %WIDTH%);</code></pre>
     <h3>Brightcove embed code</h3>
     <pre>
-<code class="notranslate">&lt;style type="text/css"&gt;
+<code translate="No">&lt;style type="text/css"&gt;
   .vjs-playlist {
     background-color: #000000;
     width: %WIDTH%;
@@ -822,24 +865,24 @@ src="https://players.brightcove.net/%ACCOUNTID%/%PLAYERID%_default/index .min.js
     <h3>URI encoding examples</h3>
     <ol>
       <li>
-        <p>Search string: <code>great+blue</code></p>
-        <p>String in CMS API call should be: <code>great%2Bblue</code></p>
-        <p>Videos returned: all that include the words: <code>great</code> AND <code>blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
+        <p>Search string: <code translate="No">great+blue</code></p>
+        <p>String in <span translate="No">CMS API</span> call should be: <code translate="No">great%2Bblue</code></p>
+        <p>Videos returned: all that include the words: <code translate="No">great</code> AND <code translate="No">blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
       </li>
       <li>
-        <p>Search string: <code>great blue</code></p>
-        <p>String in CMS API call should be: <code>great%20blue</code></p>
-        <p>Videos returned are all that include the words: <code>great</code> OR <code>blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
+        <p>Search string: <code translate="No">great blue</code></p>
+        <p>String in <span translate="No">CMS API</span> call should be: <code translate="No">great%20blue</code></p>
+        <p>Videos returned are all that include the words: <code translate="No">great</code> OR <code translate="No">blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
       </li>
       <li>
-        <p>Search string: <code>"great blue"</code></p>
-        <p>String in CMS API call should be: <code>%22great%20blue%22</code></p>
-        <p>Videos returned are all that includes the complete phrase: <code>great blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
+        <p>Search string: <code translate="No">"great blue"</code></p>
+        <p>String in <span translate="No">CMS API</span> call should be: <code translate="No">%22great%20blue%22</code></p>
+        <p>Videos returned are all that includes the complete phrase: <code translate="No">great blue</code><sup><strong><a href="#note2-1">[2-1]</a></strong></sup></p>
       </li>
     </ol>
     <h4>Notes</h4>
     <ul>
-      <li id="note2-1"><sup><strong>[2-1]</strong></sup> <a href="https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html#Stemming">Stemming</a> applies in all cases. Searches like those shown above would match videos titled <code>Great Blues</code> as well as <code>Great Blue Heron</code>.</li>
+      <li id="note2-1"><sup><strong>[2-1]</strong></sup> <a href="https://apis.support.brightcove.com/cms/searching/cms-and-playback-apis-video-search-v2.html#Stemming">Stemming</a> applies in all cases. Searches like those shown above would match videos titled <code translate="No">Great Blues</code> as well as <code translate="No">Great Blue Heron</code>.</li>
     </ul>
   </section>
 </article>
@@ -858,7 +901,7 @@ src="https://players.brightcove.net/%ACCOUNTID%/%PLAYERID%_default/index .min.js
 
 <hr>
 <div class="last-updated">
-  Page last updated on 12 Jun 2020
+  Page last updated on 28 Sep 2020
 </div>
 
 
@@ -962,19 +1005,17 @@ src="https://players.brightcove.net/%ACCOUNTID%/%PLAYERID%_default/index .min.js
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
   
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
   
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
-  
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
-  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
   <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/local-link-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
   <script src="/assets/js/feedback.js"></script>
   
   <script src="/assets/js/sajari-search-foot.js"></script>

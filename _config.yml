@@ -18,12 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Video Cloud Integration Documentation
+title: Brightcove Integrations Support Documentation
 email: training@brightcove.com
 description: |- # this means to ignore newlines until "baseurl:"
-  With Video Cloud you can deliver fast, innovative, TV-like experiences out-of-the-box, dynamically insert server-side ads to maximize revenue, and reach your audiences wherever they are.
-
-  Video Cloud Studio allows you to manage your video publishing workflow across desktop, tablet and mobile devices.
+  Brightcove is proud to offer a suite of integrations to meet you where you work.  These integrations allow you to manage your video publishing workflow and harness the power of video.
 # baseurl: "" # the subpath of your site, e.g. /blog
 site_url: "https://integrations.support.brightcove.com"
 site_domain: "integrations.support.brightcove.com"

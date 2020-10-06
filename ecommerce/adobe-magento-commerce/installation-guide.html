@@ -1,0 +1,79 @@
+---
+title: 'Adobe Magento Commerce Extension Installation Guide'
+description: 'This document provides step-by-step instructions for installing the Brightcove extension for Adobe Magento Commerce.'
+parent: Adobe Magento Commerce
+layout: staging
+---
+<h1>{{page.title}}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Prepare_for_installation">Prepare for installation</h2>
+    <h3>Extract Files and Folders and copy to the working folder</h3>
+<ol class="bcls-tasklist">
+    <li>Create a folder <code translate="No">[Magento_Root]/app/code/Brightcove/Upload</code></li>
+    <li>Download the archive file (code files).</li>
+    <li>Unzip the files/folders</li>
+    <li>Drop/move contents of the unzipped files to the directory in step 1</li>
+</ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="enable_extensions_and_plugins">Enable Extensions and Plugins</h2>
+    <p>Enable the following:</p>
+    <ul>
+      <li><code translate="No">php bin/magento module:enable Brigtcove_Upload</code></li>
+      <li><code translate="No">php bin/magento setup:upgrade</code></li>
+      <li><code translate="No">php bin/magento cache:clean</code></li>
+      <li><code translate="No">php bin/magento setup:static-content:deploy</code></li>
+      <li><code translate="No">php bin/magento cache:flush</code></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure_brightcove_module_credentials">Configure Brightcove Module Credentials</h2>
+    <p>To complete this part, you will need to get Client Credentials for the APIs that the extension uses. For details on how to create credentials see <a href="https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a>. The minimum permissions you will need for the credentials are shown below:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe-magento-commerce/api-permissions.png" alt="API Permissions">
+      <figcaption class="bcls-caption--image">API Permissions</figcaption>
+    </figure>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Navigate to <strong>Store -&gt; Configuration -&gt; Brightcove (left tab) -&gt; Brightcove Video Configuration</strong>
+      </li>
+      <li>
+        Enter the details for the Brightcove configuration:
+        <ul>
+          <li><strong>Client ID</strong>: REST Client / User ID</li>
+          <li><strong>Client Secret</strong>: REST Client Secret / password.</li>
+          <li><strong>API Base URL</strong>: <Link></li>
+          <li><strong>ID</strong>: Brightcove Store ID </li>
+          <li><strong>Category Video Slot</strong>:  To set the number of video slots to Category Column</li>
+          <li><strong>Master Video Slot</strong>: To set the number of video slots to Master Column</li>
+          <li>Variant Video Slot: To set the number of video slots to Variant Column</li>
+          <li>Email ID: To send email related to bulk upload status</li>
+          </ul>
+          <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/configuration-page.png" alt="Configuration Page">
+          <figcaption class="bcls-caption--image">Configuration Page</figcaption>
+        </figure>
+      </li>
+      <li>
+        Once all details are provided correctly, then <strong>Save</strong> the configuration page. Now users should be able to access the Brightcove custom module.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/brightcove-custom-module.png" alt="Brightcove Custom Module">
+          <figcaption class="bcls-caption--image">Brightcove Custom Module</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="disable_extension">Disable Extension</h2>
+    <p>If you ever need to disable the Brightcove extension, use the following commands:</p>
+    <ol>
+      <li><code translate="No">php bin/magento module:disable Brightcove_Upload</code></li>
+      <li><code translate="No">php bin/magento setup:upgrade</code></li>
+      <li><code translate="No">php bin/magento cache:clean</code></li>
+      <li><code translate="No">php bin/magento setup:static-content:deploy</code></li>
+      <li><code translate="No">php bin/magento cache:flush</code></li>
+    </ol>
+  </section>
+</article>
