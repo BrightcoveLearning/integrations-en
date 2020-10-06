@@ -799,119 +799,74 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
 <section class="bcls-section">
 <h2 id="Installing_the_player_plugin">Installing the player plugin</h2>
 <p>
-  The Kollective plugin is a javascript file, so you can deploy it on any server that allows access to the file from outside using a public address.
+  To integrate Kollective with Brightcove Player, add the Kollective plugin to your player.
 </p>
-<ol class="bcls-tasklist-restart">
-  <li>
-    <p>
-      In the Kollective Integration github repository, locate the Kollective plugin in the <strong>kollective-player-plugin</strong> folder.
+
+	<aside class="bcls-aside bcls-aside--tip">
+      The Kollective Plugin is supported with the Brightcove Player
+      version v6.45+.
+    </aside>
+<p>
+      The following steps detail using Video Cloud Studio to load the plugin.
     </p>
-    <pre>
-<code class="language-bash" translate="No">[backend-application-root-folder]/kollective-player-plugin/k-plugin.js
-</code></pre>
-  </li>
-  <li>
-    <p>
-      Deploy the Kollective plugin JavaScript file to your sever.
-    </p>
-    <p>
-      Example:
-    </p>
-    <pre>
-<code class="language-bash" translate="No">https://my-server/k-plugin-1.0.6.js
-</code></pre>
-  </li>
-  <li>
-    <p>
-      Login to Brightcove's <a href="https://signin.brightcove.com/">Video Cloud Studio</a>.
-    </p>
-  </li>
-  <li>
-    <p>
-      Navigate to the Players module. Either create a new player or use an existing one.
-    </p>
-  </li>
-  <li>
-    <p>
-      Select the link for your player to go to the player details page.
-    </p>
-  </li>
-  <li>
-    <p>
-      In the left-side navigation, select <strong>JSON Editor</strong> and copy the value of your <code translate="No">policy_key</code>. You will need this for the plugin configuration in a later step.
-    </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Policy key" src="/assets/images/kollective/policy-key.png" />
-      <figcaption class="bcls-caption--image">Policy key</figcaption>
-    </figure>
-  </li>
-  <li>
-    <p>
-      In the left-side navigation, select <strong>Plugins</strong>. Expand the <strong>Add a Plugin</strong> dropdown menu and select <strong>Custom Plugin</strong>.
-    </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Custom plugin" src="/assets/images/kollective/custom-plugin.png" />
-      <figcaption class="bcls-caption--image">Custom plugin</figcaption>
-    </figure>
-  </li>
-  <li>
-    <p>
-      For the <strong>Plugins</strong> tab, enter the following values:
-    </p>
-    <ul>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        In Video Cloud Studio, open the <strong>PLAYERS</strong> module and either create a new player
+        or locate the player to which you wish to add the plugin.
+      </li>
+      <li>Select the link for the player to open the player's properties.</li>
+      <li>Select <strong>Plugins</strong> in the left navigation menu.</li>
       <li>
         <p>
-          <strong>Plugin Name</strong>: Enter the value <strong>kollective</strong>
+          Next, select the <strong>Add a Plugin</strong> button, and then select
+          <strong>Brightcove Plugin</strong>.
         </p>
-        <aside class="bcls-aside bcls-aside--warning">The plugin name is case sensitive, and the name <strong>Kollective</strong> must be all lowercase.</aside>
+
+        <figure class="bcls-figure">
+          <img
+            class="bcls-image--no-border"
+            alt="Add a Plugin button"
+            src="/assets/images/ecdn/kollective/add-a-plugin.png"
+          />
+          <figcaption class="bcls-caption--image">
+            Add a Plugin button
+          </figcaption>
+        </figure>
       </li>
       <li>
         <p>
-          <strong>JavaScript URL</strong>: The address where you deployed the Kollective plugin file
+          Expand the <strong>Brightcove Plugin</strong> dropdown and select
+          <strong>kollective</strong>.
         </p>
-        <p>
-          Example:
-        </p>
-    <pre>
-<code class="language-bash" translate="No">https://my-server/k-plugin-1.0.6.js
-</code></pre>
+
+        <figure class="bcls-figure">
+          <img
+            class="bcls-image--no-border"
+            alt="Kollective plugin"
+            src="/assets/images/ecdn/kollective/kollective_plugin.png"
+          />
+          <figcaption class="bcls-caption--image">
+            Kollective plugin
+          </figcaption>
+        </figure>
       </li>
-      <li>
-        <p>
-          <strong>Options(JSON)</strong>: Enter the following:
+  <li>
+    <p>
+      For the <strong>Options(JSON)</strong>: Enter the following:
         </p>
         <ul>
           <li>
-            <code translate="No">ksdk_url</code> - Points to the <code translate="No">ksdk</code> library from Kollective
-          </li>
-          <li>
-            <code translate="No">policy_key</code> - Use the value of your Policy key that we copied from a previous step
+            <code translate="No">ksdkUrl</code> - Points to the <code translate="No">ksdk</code> library from Kollective -- use the version of your choice
           </li>
         </ul>
     <pre>
 <code class="language-bash" translate="No">{
-    &quot;ksdk_url&quot;: &quot;https://cdn.kollective.app/ksdk/ksdk-2.1.9.min.js&quot;,
-    &quot;policy_key&quot;: &ldquo;<span class="bcls-input">your policy key</span>&rdquo;
+    &quot;ksdkUrl&quot;: &quot;<span class="bcls-input">ksdk URL</span>&rdquo;
 }
 </code></pre>
       </li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Plugin details" src="/assets/images/kollective/plugin-details.png" />
-      <figcaption class="bcls-caption--image">Plugin details</figcaption>
-    </figure>
-  </li>
-  <li>
-    Select the <strong>Save</strong> button.
-  </li>
-  <li>
-    <p>
-      The Kollective plugin requires a specific version of jQuery. For the <strong>Scripts</strong> tab, select the <strong>Add a Script</strong> button and enter the following:
-    </p>
-    <pre>
-<code class="language-bash" translate="No">https://code.jquery.com/jquery-3.5.1.min.js
-</code></pre>
-
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Script details" src="/assets/images/kollective/script-details.png" />
-      <figcaption class="bcls-caption--image">Script details</figcaption>
-    </figure>
   </li>
   <li>
     Select the <strong>Save</strong> button.
@@ -919,6 +874,12 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
   <li>
     Publish your player.
   </li>
+  <li>
+	Update/change the embed code from <span class="bcls-input">data-video-id</span> to <span class="bcls-input">data-kollective-video-id</span>.
+  </li>
+<aside class="bcls-aside bcls-aside--warning">
+    When embedding a player for use with the Kollective integration, you must update/change the embed code from <span class="bcls-input">data-video-id</span> to <span class="bcls-input">data-kollective-video-id</span>.
+  </aside>
 </ol>
 </section>
 
