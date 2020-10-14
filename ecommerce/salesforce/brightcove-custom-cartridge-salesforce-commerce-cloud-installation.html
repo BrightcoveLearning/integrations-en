@@ -239,15 +239,22 @@ parent: Salesforce
           <li>Slots for Master Products (<strong>master</strong> and <strong>m1-m10</strong>)</li>
           <li>Slots for Variant Products (<strong>v1 - v11</strong>)</li>
           <li>Slots for the Standard Product (<strong>v1 - v11</strong>)</li>
+          <li>Slots for Product Sets (<strong>ps1-ps11</strong>)</li>
+          <li>Slots for Product Bundles (<strong>pb1-pb11</strong>)</li>
+          <li>Slots for Variation Groups (<strong>vg1-vg11</strong>)</li>
           <li>Slots for Categories (<strong>c1 - c11</strong>)</li>
         </ul>
-        <p>A Slot limit of 5 will provide these slots for configuration:</p>
-        <ul>
-          <li>Master Products (<strong>master</strong> and <strong>m1-m4</strong>)</li>
-          <li>Variant Products (<strong>v1 - v5</strong>)</li>
-          <li>Categories (<strong>c1 - c5</strong>)</li>
-        </ul>
       </li>
+          <li>A Slot limit of 5 will provide these slots for configuration:
+          <ul>
+            <li>Master Products (<strong>master</strong> and <strong>m1-m4</strong>)</li>
+            <li>Variant and Standard Products (<strong>v1 - v5</strong>)</li>
+            <li>Product Sets (<strong>ps1-ps5</strong>)</li>
+            <li>Product Bundles (<strong>pb1-pb5</strong>)</li>
+            <li>Variation Groups (<strong>vg1-vg5</strong>)</li>
+            <li>Categories (<strong>c1 - c5</strong>)</li>
+          </ul>
+        </li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -260,6 +267,8 @@ parent: Salesforce
           <li><code translate="No">productDetails.isml</code></li>
           <li><code translate="No">catLanding.isml</code></li>
           <li><code translate="No">searchResultsNoDecorator.isml</code></li>
+          <li><code translate="No">bundleDetails.isml</code></li>
+          <li><code translate="No">setDetails.isml</code></li>
         </ul>
       </li>
       <li>
@@ -271,6 +280,10 @@ parent: Salesforce
         <ul>
           <li>Master Product Video <code translate="No">&lt;isM1&gt;</code> - this will render the video assigned to the <strong>m1</strong> slot</li>
           <li>Variant Product Video <code translate="No">&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Standard Product Video <code translate="No">&lt;isV1&gt;</code> - this will render the video assigned to the <strong>v1</strong> slot</li>
+          <li>Product Set Video <code translate="No">&lt;isPS1&gt;</code> - this will render the video assigned to the <strong>ps1</strong> slot</li>
+          <li>Product Bundle Video <code translate="No">&lt;isPB1&gt;</code> - this will render the video assigned to the <strong>pb1</strong> slot</li>
+          <li>Variation Group Video <code translate="No">&lt;isVG1&gt;</code> - this will render the video assigned to the <strong>vg1</strong> slot</li>
           <li>Category Video <code translate="No">&lt;isC1&gt;</code> - this will render the video assigned to the <strong>C1</strong> slot</li>
         </ul>
       </li>
