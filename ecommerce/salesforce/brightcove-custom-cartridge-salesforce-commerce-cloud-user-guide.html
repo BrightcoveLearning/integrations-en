@@ -8,7 +8,7 @@ parent: Salesforce
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <h2 id="multiple_language_support">Multiple Language Support</h2>
-    <p>The extension provides multiple UI language support for Business Manager Interface. Note: This version of the extension has support for English and French for UI Language.</p>
+    <p>The extension provides multiple UI language support for Business Manager Interface.</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/salesforce/org-profile.png" alt="Organization Profile">
       <figcaption class="bcls-caption--image">Organization Profile</figcaption>
@@ -77,6 +77,7 @@ parent: Salesforce
   <section class="bcls-section">
     <h2 id="Assign_Videos">Assign Videos - Categories</h2>
     <p>First we will look at the steps for assigning videos to categories.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Video(s) will be assigned to the Primary Category and Primary Category video data will render video(s) on storefront.</aside>
     <h3>Assign Videos to Categories</h3>
     <ol class="bcls-tasklist-restart">
       <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Categories)</strong>.</li>
@@ -88,7 +89,6 @@ parent: Salesforce
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu.png" alt="Locale Menu - English">
               <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
             </figure>
-            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
             <figure class="bcls-figure">
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu-fr.png" alt="Locale Menu - French">
               <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
@@ -177,7 +177,6 @@ parent: Salesforce
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product.png" alt="Locale Menu - English">
               <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
             </figure>
-            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
             <figure class="bcls-figure">
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product-fr.png" alt="Locale Menu - French">
               <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
@@ -257,7 +256,6 @@ parent: Salesforce
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variant.png" alt="Locale Menu - English">
               <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
             </figure>
-            <p>Note that the only locales currently supported are <strong>English (United States)</strong> and <strong>francais (France)</strong></p>
             <figure class="bcls-figure">
               <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variant-fr.png" alt="Locale Menu - French">
               <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
@@ -325,6 +323,163 @@ parent: Salesforce
         </figure>
       </li>
       <li>Follow the steps from 5 to 17.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign_videos_to_standard_products">Assign videos to Standard Products</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Standard Products)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/business-magager-en.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/business-magager-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-standard-product.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-standard-product.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-standard-product.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected video(s):
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-standard-product.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-assignment-standard-product.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in product object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes-standard-product.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign_videos_to_variation_groups">Assign videos to Variation Groupss</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Variation Groups)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variation-group.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-variation-group-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-variation-group.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-variation-group.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots-variation-group.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected video(s):
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-standard-product.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify-video-assignment-variation-group.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in product object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes-standard-product.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+      <li>We can navigate to assigned variants of the Variation Group.</li>
+      <li>
+        Select Variation Group ID.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/variation-group-details.png" alt="Variation Group Videos">
+          <figcaption class="bcls-caption--image">Variation Group Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        A list of variants for the selected variation group will appear.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/variation-group-variant-list.png" alt="List of Variants">
+          <figcaption class="bcls-caption--image">List of Variants</figcaption>
+        </figure>
+      </li>
     </ol>
   </section>
   <section class="bcls-section">
