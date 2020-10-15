@@ -397,7 +397,7 @@ parent: Salesforce
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="assign_videos_to_variation_groups">Assign videos to Variation Groupss</h2>
+    <h2 id="assign_videos_to_variation_groups">Assign videos to Variation Groups</h2>
     <ol class="bcls-tasklist-restart">
       <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Variation Groups)</strong>.</li>
       <li>Videos are assigned to locales.
@@ -478,6 +478,92 @@ parent: Salesforce
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/variation-group-variant-list.png" alt="List of Variants">
           <figcaption class="bcls-caption--image">List of Variants</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign_videos_to_product_sets">Assign videos to Product Sets</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Product Sets)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locales-product-sets.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locales-product-sets-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-product-set.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-product-set.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots-product-set.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected video(s):
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-product-set.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify_videos_assign_product-set.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in product object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes-standard-product.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+      <li>We can navigate to assigned products of the Product Set.</li>
+      <li>
+        Select Product Set ID.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/product-set-details.png" alt="Product Set Videos">
+          <figcaption class="bcls-caption--image">Product Set Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        A list of products for the selected Product Set will appear.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/product-list-for-product-set.png" alt="List of Products">
+          <figcaption class="bcls-caption--image">List of Products</figcaption>
         </figure>
       </li>
     </ol>
