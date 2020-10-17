@@ -569,6 +569,92 @@ parent: Salesforce
     </ol>
   </section>
   <section class="bcls-section">
+    <h2 id="assign_videos_to_product_bundles">Assign videos to Product Bundles</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Navigate to <strong>Merchant Tools -&gt; Brightcove -&gt; Assign Video (Product Bundles)</strong>.</li>
+      <li>Videos are assigned to locales.
+        <ul>
+          <li>
+            Locale related data can be viewed by changing the locale from the dropdown:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product-bundles.png" alt="Locale Menu - English">
+              <figcaption class="bcls-caption--image">Locale Menu - English</figcaption>
+            </figure>
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/locale-menu-product-bundles-fr.png" alt="Locale Menu - French">
+              <figcaption class="bcls-caption--image">Locale Menu - French</figcaption>
+            </figure>
+          </li>
+          <li>
+            Video thumbnails can be viewed by hovering the cursor on Video ID:
+            <figure class="bcls-figure">
+              <img class="bcls-image" src="/assets/images/salesforce/view-video-thumbnail-product-bundles.png" alt="View Video Thumbnail">
+              <figcaption class="bcls-caption--image">View Video Thumbnail</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Assign Video</strong> option to assign one or more videos.</li>
+      <li>
+        Already assigned videos will appear as selected on the assign video grid:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-product-bundle.png" alt="Assigned Videos">
+          <figcaption class="bcls-caption--image">Assigned Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        Assigned slot cannot be used for the other videos for same locale:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/assigned-videos-slots-product-bundle.png" alt="Assigned Video Slots">
+          <figcaption class="bcls-caption--image">Assigned Video Slots</figcaption>
+        </figure>
+      </li>
+      <li>Players and slots can be changed by using the respective dropdowns available in each video tile.</li>
+      <li>Select another video with the different slot.</li>
+      <li>
+        Click the Save Video button to assign the selected video(s):
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/save-video-assignment-product-bundle.png" alt="Save Video Assignment">
+          <figcaption class="bcls-caption--image">Save Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>
+        Verify the assigned video and the slot.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/verify_videos_assign_product-bundle.png" alt="Verify Video Assignment">
+          <figcaption class="bcls-caption--image">Verify Video Assignment</figcaption>
+        </figure>
+      </li>
+      <li>Verify the data in product object.</li>
+      <li>Navigate to <strong>Merchant Tools -&gt; Products</strong>.</li>
+      <li>Search the <strong>product ID</strong>.</li>
+      <li>Select the product.</li>
+      <li>Select <strong>General</strong>.</li>
+      <li>
+        Scroll down to the Brightcove section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/brightcove-product-attributes-standard-product.png" alt="Product Details Brightcove Section">
+          <figcaption class="bcls-caption--image">Product Details Brightcove Section</figcaption>
+        </figure>
+      </li>
+      <li>We can navigate to assigned products of the Product Bundle.</li>
+      <li>
+        Select Product Bundle ID.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/product-bundle-details.png" alt="Product Set Videos">
+          <figcaption class="bcls-caption--image">Product Bundle Videos</figcaption>
+        </figure>
+      </li>
+      <li>
+        A list of products for the selected Product Bundle will appear.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/product-list-for-product-set.png" alt="List of Products">
+          <figcaption class="bcls-caption--image">List of Products</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
     <h2 id="embed_video">Embed Video</h2>
     <p>The embed video steps allow you to get code to render videos on any ISML page.</p>
     <ol class="bcls-tasklist-restart">
@@ -600,8 +686,22 @@ parent: Salesforce
       <li>
         Click submit:
         <figure class="bcls-figure">
-          <img class="bcls-image" src="" alt="Bulk Upload">
+          <img class="bcls-image" src="/assets/images/salesforce/bulk-upload2.png" alt="Bulk Upload">
           <figcaption class="bcls-caption--image">Bulk Upload</figcaption>
+        </figure>
+      </li>
+      <li>
+        The file will upload in <strong>Temp</strong> directory under <strong>bulkUpload</strong> folder.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/bulk-upload-folder.png" alt="Bulk Upload Folder">
+          <figcaption class="bcls-caption--image">Bulk Upload Folder</figcaption>
+        </figure>
+      </li>
+      <li>
+        File data:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/salesforce/bulk-upload-file-data.png" alt="File Data">
+          <figcaption class="bcls-caption--image">File Data</figcaption>
         </figure>
       </li>
       <li>Navigate to <strong>Administration -&gt; Jobs</strong>.</li>
@@ -632,6 +732,8 @@ parent: Salesforce
   <section class="bcls-section">
     <h2 id="bulk_assign">Bulk assign</h2>
     <p>Bulk assign allows to assign video(s) to categories, sub-categories and products in bulk quantity by uploading .csv file(s). Bulk assign allows to assign video(s) to categories, sub-categories and products in bulk quantity by uploading .csv file(s). The sample bulkAssign file(s) for category and product are attached in the zip file under the <strong>meta</strong> directory.</p>
+    <p>The job will process csv file(s) for category and product under during the same execution. The job checks the directories for product and category, and processes the file(s).</p>
+    <aside class="bcls-aside--information"> Note: If the locale provided in csv file is not available for the site, video(s) will beassigned to the default locale of the site.</aside>
     <p>The category file data looks like this:</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/salesforce/bulkassigndatasample-cateory.png" alt="Bulk Assign Data Sample - Category">
@@ -656,7 +758,7 @@ parent: Salesforce
         </figure>
       </li>
       <li>
-        The file will upload in the <strong>Temp</strong> directory under the <strong>bulkAssignCategory</strong> folder.
+        The file will upload in the <strong>Temp</strong> directory under the <strong>{SITE-ID}/bulkAssignCategory</strong> folder.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/bulkassigncategory-folder.png" alt="bulkassigncategory Folder">
           <figcaption class="bcls-caption--image">bulkassigncategory Folder</figcaption>
@@ -677,7 +779,7 @@ parent: Salesforce
             <figcaption class="bcls-caption--image">Verify Videos Assign - Category</figcaption>
           </figure>
         </li>
-        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignCategory_processed</strong> folder under the Temp directory.</li>
+        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignCategory_processed</strong> folder under the <strong>Temp</strong> directory.</li>
     </ol>
     <h3>Product</h3>
     <ol class="bcls-tasklist-restart">
@@ -692,7 +794,7 @@ parent: Salesforce
         </figure>
       </li>
       <li>
-        The file will upload in the <strong>Temp</strong> directory under the <strong>bulkAssignProduct</strong> folder.
+        The file will upload in the <strong>Temp</strong> directory under the <strong>{SITE-ID}/bulkAssignProduct</strong> folder.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/salesforce/bulkassignProduct-folder.png" alt="bulkassignProduct Folder">
           <figcaption class="bcls-caption--image">bulkassignProduct Folder</figcaption>
@@ -713,7 +815,7 @@ parent: Salesforce
             <figcaption class="bcls-caption--image">Verify Videos Assign - Product</figcaption>
           </figure>
         </li>
-        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignProduct_processed</strong> folder under the Temp directory.</li>
+        <li>The file processed by Bulk-Assign job will be moved to the <strong>bulkAssignProduct_processed</strong> folder under the <strong>Temp</strong> directory.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -729,7 +831,7 @@ parent: Salesforce
       <img class="bcls-image" src="/assets/images/salesforce/category_sample2.png" alt="Category Sample Detail">
       <figcaption class="bcls-caption--image">Category Sample Detail</figcaption>
     </figure>
-    <h4>Product Page (productDetails)</h4>
+    <h4>Product Page Master/Variant Products (productDetails)</h4>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/salesforce/product-sample1.png" alt="Product Sample 1">
       <figcaption class="bcls-caption--image">Product Sample 1</figcaption>
@@ -738,6 +840,8 @@ parent: Salesforce
       <img class="bcls-image" src="/assets/images/salesforce/product-sample2.png" alt="Product Sample 2">
       <figcaption class="bcls-caption--image">Product Sample 2</figcaption>
     </figure>
+    <h3>Product Page - Standard Products (product details)</h3>
+    
     <h3>SiteGenesis Architecture</h3>
     <h4>Category Page (catlanding, categoryproducthits)</h4>
     <figure class="bcls-figure">
