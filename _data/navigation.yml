@@ -4,7 +4,7 @@
 - section:
   name: 'General Information'
   url: '/general/index.html'
-  icon: '<i class="far fa-info-circle"></i>'
+  icon: '<img class="bcls-icon" src="/assets/images/feather/info.svg">'
   docs:
     - name: 'CMS Integration Training Videos'
       url: '/general/cms-integration-training-videos.html'
@@ -145,7 +145,7 @@
 - section:
   name: 'Support'
   url: '/support/index.html'
-  icon: '<i class="far fa-question-circle"></i>'
+  icon: '<img class="bcls-icon" src="/assets/images/feather/help-circle.svg">'
   docs:
     - name: 'Brightcove Answers'
       url: '/support/brightcove-answer.html'
