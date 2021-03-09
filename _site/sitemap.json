@@ -160,32 +160,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/general/",
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
@@ -200,12 +185,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "newURL": "https://integrations.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -215,17 +195,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
+      "newURL": "https://integrations.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -235,8 +205,48 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
       "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/inplayer.html",
+      "oldURL": "/inplayer"
   },
 
   {

@@ -506,6 +506,24 @@
       
     
       <url>
+        <loc>https://integrations.support.brightcove.com/non-brightcove-players/index.html</loc>
+        <lastmod>2021-03-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://integrations.support.brightcove.com/non-brightcove-players/inplayer.html</loc>
+          
+            <lastmod>2021-03-09</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
         <loc>https://integrations.support.brightcove.com/support/index.html</loc>
         <lastmod>2021-03-09</lastmod>
         <changefreq>daily</changefreq>
