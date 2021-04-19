@@ -25,11 +25,6 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/support/brightcove-answer.html",
-      "oldURL": "/brightcove-answer"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html",
       "oldURL": "/brightcove-custom-cartridge-salesforce-commerce-cloud-installation"
   },
@@ -160,7 +155,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
@@ -170,52 +165,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/sitecore/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/",
       "oldURL": "/index"
   },
 
@@ -230,17 +185,57 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
       "oldURL": "/index"
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
