@@ -155,7 +155,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
@@ -235,7 +235,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
@@ -287,11 +287,6 @@
   {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/salesforce-commerce-cloud-user-guide.html",
       "oldURL": "/salesforce-commerce-cloud-user-guide"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/search-test.html",
-      "oldURL": "/search-test"
   },
 
   {
