@@ -230,6 +230,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/teams/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
       "oldURL": "/index"
   },
@@ -252,6 +257,11 @@
   {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
       "oldURL": "/installation-guide"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/teams/installation.html",
+      "oldURL": "/installation"
   },
 
   {
@@ -307,6 +317,11 @@
   {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/user-guide.html",
       "oldURL": "/user-guide"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/teams/using.html",
+      "oldURL": "/using"
   },
 
   {
