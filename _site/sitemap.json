@@ -295,6 +295,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/support/reset-support-portal-password.html",
+      "oldURL": "/reset-support-portal-password"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/salesforce-commerce-cloud-installation-guide.html",
       "oldURL": "/salesforce-commerce-cloud-installation-guide"
   },
