@@ -590,7 +590,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     }
     </code>
     </pre>
-    
+    <aside class="bcls-aside bcls-aside--information language-editable">Note that the code above assumes you provide an ingest profile picker to users. If not, the <code translate="No">profile</code> field should be omitted from the request body, in which case the account default profile will be used. This is what Brightcove recommends unless multiple ingest profiles are needed, which is uncommon.</aside>
+
     <p>The <code translate="No">profile</code> here is the Ingest Profile that specifies what renditions should be created in the transcoding process. In most cases, one of the following standard profiles should be adequate:</p>
     
     <h4>Dynamic Delivery profiles</h4>
