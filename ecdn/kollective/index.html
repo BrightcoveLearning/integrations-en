@@ -3,27 +3,16 @@ title: Kollective
 description: This section contains topics on the Brightcove custom integration with Kollective eCDN.
 parent: Home
 ---
-  <h1>{{ page.title }}</h1>
-  <article class="bcls-article">
-    <summary>{{ page.description }}</summary>
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
   <section class="card-wrapper">
     <section class="bcls-card">
       <div class="card-content">
         <h2 id="Topics_in_this_section">Topics in this section</h2>
         <ul>
-          {% for item in site.data.navigation %}
-          {% if item.name == page.title %}
-          {% for entry in item.docs %}
-          <li><a href="{{ entry.url }}">{{ entry.name }}</a> {% if entry.docs %}
-            <ul>
-              {% for subentry in entry.docs %}
-              <li><a href="{{ subentry.url }}">{{ subentry.name }}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %} </li>
-          {% endfor %}
-          {% endif %}
-          {% endfor %}
+          <li><a href="/ecdn/kollective/kollective-deployment-guide.html">Kollective eCDN Deployment Guide</a></li>
+          <li><a href="/ecdn/kollective/kollective-user-guide.html">Kollective eCDN User Guide</a></li>
         </ul>
       </div>
     </section>
