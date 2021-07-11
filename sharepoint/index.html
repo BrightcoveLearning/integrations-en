@@ -9,21 +9,10 @@ parent: Home
   <section class="card-wrapper">
     <section class="bcls-card">
       <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics in this section</h2>
+        <h2 id="Topics_in_this_section">Topics</h2>
         <ul>
-          {% for item in site.data.navigation %}
-          {% if item.name == page.title %}
-          {% for entry in item.docs %}
-          <li><a href="{{ entry.url }}">{{ entry.name }}</a> {% if entry.docs %}
-            <ul>
-              {% for subentry in entry.docs %}
-              <li><a href="{{ subentry.url }}">{{ subentry.name }}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %} </li>
-          {% endfor %}
-          {% endif %}
-          {% endfor %}
+          <li><a href="/sharepoint/getting-started-brightcove-video-connect-sharepoint.html">Getting Started with Brightcove Video Connect for SharePoint</a></li>
+          <li><a href="/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html">SharePoint-Brightcove Connector 4.0/4.1: Using the Connector</a></li>
         </ul>
       </div>
     </section>
