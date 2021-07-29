@@ -47,6 +47,8 @@ parent: Kollective
   <li>
     Videos must be ingested for Dynamic Delivery
   </li>
+  <li>An HLSv3 stream is required for seamless delivery of the video stream for customers on legacy versions of the Kollective eCDN platform (v10.x)
+  </li>
 </ul>
 </section>
 
@@ -62,9 +64,9 @@ parent: Kollective
   <li>
     <a href="#Installing_the_player_plugin">Installing the player plugin</a>
   </li>
-  <li>
+  <!-- <li>
     <a href="#Whitelisting_domain_names">Whitelisting domain names</a>
-  </li>
+  </li> -->
   <li>
     <p>
       Now that you have completed the deployment steps, you are ready to synchronize your content and embed the player code. For details, see the following:
@@ -198,7 +200,7 @@ EMAIL_FROM=<span class="bcls-input">your email from address</span>
     </p>
     <pre>
 <code class="language-bash" translate="No"># Kollective publish API base url
-KOLLECTIVE_PUBLISH_API_BASE_URL=https://content.stage.kollective.app/api
+KOLLECTIVE_PUBLISH_API_BASE_URL=https://content.kollective.app/api
 </code></pre>
   </li>
   <li>
@@ -456,7 +458,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
 </ol>
 </section>
 
-<section class="bcls-section">
+<!-- <section class="bcls-section">
 <h2 id="Whitelisting_domain_names">Whitelisting domain names</h2>
 <p>
   Kollective needs to add your domain names to their whitelist so that don't get a CORS error. Provide the following domain names to Kollective:
@@ -476,7 +478,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
 <p>
   For example, if you have a page at <strong>https://my-server.com/my-video-page</strong> that uses Brightcove Player with the Kollective plugin, then the <strong>my-server.com</strong> domain needs to be added to the Kollective whitelist. This will allow playback on the page without returning a CORS error.
 </p>
-</section>
+</section> -->
 
 
 <!-- <section class="bcls-section">
