@@ -519,7 +519,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Version 1.4.1 of the connector and previous hardcode the Video Cloud ingest profile to be "videocloud-default-v1".&nbsp; If the Brightcove account only has Dynamic Delivery or CAE enabled, this ingest profile will not exist and video upload will fail.&nbsp; Below are several option to work around this behavior in the connector.</p>
     <p>&nbsp;</p>
     <ol class="bcls-tasklist">
-      <li>Create a new ingest profile in the Video Cloud account with the default profile name used in the connector. &nbsp;Navigate to Admin-&gt;Ingest Profiles and create a new profile or duplicate an existing profile and name it “videocloud-default-v1”. &nbsp;
+      <li>Create a new ingest profile in the Video Cloud account with the default profile name used in the connector. &nbsp;Navigate to Admin-&gt;Ingest Profiles and create a new profile or duplicate an existing profile (multi-platform-extended-static-with-mp4 is recommended as good and versatile profile) and name it “videocloud-default-v1”. &nbsp;
         <figure class="bcls-figure"><img class="bcls-image" alt="Add profile with default name." src="/assets/images/wordpress/add-videocloud-default-v1-profile.png" /></figure>
       </li>
     </ol>
@@ -534,7 +534,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>On the WordPress server, edit <code translate="No">wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and change the profile from the default profile name of 'videocloud-default-v1' to the desired profile name.&nbsp; For example, change<br />
         <code translate="No">public function video_upload( $video_id, $video_url, $profile = 'videocloud-default-v1' ) {</code><br />
         to<br />
-        <code translate="No">public function video_upload( $video_id, $video_url, $profile = 'multi-platform-standard-static' ) {</code></li>
+        <code translate="No">public function video_upload( $video_id, $video_url, $profile = 'multi-platform-standard-static-with-mp4' ) {</code></li>
     </ol>
     <ol class="bcls-tasklist">
       <li>Or modify the connector to use the default ingest profile in the Video Cloud account. To do this, edit <code translate="No">wp-content/plugins/brightcove-video-connect/includes/api/class-bc-cms-api.php</code> and comment out the line:<br />
