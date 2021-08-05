@@ -117,7 +117,7 @@
         - name: 'Getting Started with Ramp Multicast+ and Video Cloud'
           url: '/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html'
 - section:
-  name: 'Brightcove Video Connect for Teams'
+  name: 'Brightcove Video Connect for Microsoft Teams'
   url: '/teams/index.html'
   docs:
     - name: Installing the Connector for Teams
