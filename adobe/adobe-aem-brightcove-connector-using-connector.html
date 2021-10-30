@@ -11,14 +11,14 @@ parent: Adobe
     <aside class="bcls-aside bcls-aside--information">Note that this guide uses AEM 6.3. The connector also works with AEM 6.2&nbsp;and&nbsp;AEM 6.4, and the steps are similar.</aside>
     <p>The Brightcove AEM Connector consists of following components:</p>
     <ul>
-      <li><a href="#video_player_publishing">Video player publishing</a></li>
+      <li><a href="#video_player_publishing">Video player and in-page experience publishing/a></li>
       <li><a href="#video_content_management">Video content management</a></li>
       <li><a href="#administrative_page">Brightcove administration</a></li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="video_player_publishing">Video player publishing</h2>
-    <p>Video player publishing allows the user to drag a Brightcove Player component onto a web page and then select the Brightcove account, video, and player for that component. This component was available in the v4.2 Connector in Classic UI mode only. In the v5.1 Connector, this component is available in both Classic UI mode and Touch UI mode. Another change from v4.2 is the legacy Smartplayer components are no longer available; only the HTML5 Brightcove Player components are available now. Existing web pages with the legacy SmartPlayer components may still contain those components, but new legacy SmartPlayer components cannot be added to a web page.</p>
+    <h2 id="video_player_publishing">Video player and in-page experience publishing</h2>
+    <p>Video player publishing allows the user to drag a Brightcove Player component onto a web page and then select the Brightcove account, video, and player for that component. An In-Page Experience is just a Brightcove Player enhanced with additional styling and features. Therefore the process of adding a regular player or an in-page experience to a page is the same.</p>
     <ol class="bcls-tasklist">
       <li>Browse to a site page such as <code translate="No">/editor.html/content/we-retail/us/en.html</code></li>
     </ol>
@@ -39,13 +39,13 @@ parent: Adobe
           <figcaption class="bcls-caption--image">Open Layout Container Menu</figcaption>
         </figure>
       </li>
-      <li>Under the Allowed Components list, search for <strong>Brightcove</strong> and select the Brightcove Video Player and Playlist Player components:
+      <li>Under the Allowed Components list, search for <strong>Brightcove</strong> and select the In-Page Experience, Brightcove Video Player, and Playlist Player components:
         <figure class="bcls-figure"><img class="bcls-image" alt="Allow Brightcove Player Components" src="/assets/images/adobe/node18484-addbrightcoveplayercomponents.png" />
           <figcaption class="bcls-caption--image">Allow Brightcove Player Components</figcaption>
         </figure>
       </li>
       <li>Click the <img alt="Check icon" src="/assets/images/adobe/node18484-checkicon.png" /> icon to save changes.</li>
-      <li>You can now drag Brightcove players from the <strong>Components list</strong> on the left into the template:
+      <li>You can now drag Brightcove players or in-page experiences from the <strong>Components list</strong> on the left into the template:
         <figure class="bcls-figure"><img class="bcls-image" alt="Add Brightcove Player to Template" src="/assets/images/adobe/node18484-usecomponent.gif" />
           <figcaption class="bcls-caption--image">Add Brightcove Player to Template</figcaption>
         </figure>
@@ -55,7 +55,7 @@ parent: Adobe
           <figcaption class="bcls-caption--image">Configure Component Icon</figcaption>
         </figure>
       </li>
-      <li>In the Configure dialog, select the account, video, and player, and then click the <img alt="Save" src="/assets/images/adobe/node18484-checkicon.png" /> :
+      <li>In the Media tab of the Configure dialog, select the account, video, and player, and then click the <img alt="Save" src="/assets/images/adobe/node18484-checkicon.png" /> :
         <figure class="bcls-figure"><img class="bcls-image" alt="Configure Player Dialog" src="/assets/images/adobe/node18484-configureplayercomponent.png" />
           <figcaption class="bcls-caption--image">Configure Player Dialog</figcaption>
         </figure>
@@ -71,8 +71,7 @@ parent: Adobe
         THUMBNAILHEIGHT = Round(THUMBNAILWIDTH * PLAYERHEIGHT / PLAYERWIDTH); </code>
         <p>CSS Example:</p>
         <pre>
-<code translate="No"><xmp>
-        <style type="text/css">
+<code translate="No">
 .vjs-playlist {
     background-color: #000000;
     width: PLAYERWIDTH;
@@ -131,9 +130,7 @@ parent: Adobe
   }
   li.vjs-playlist-item:hover {
     border-color: #FFFFFF;
-  }
-</style>
-        </xmp> </code></pre>
+  }</code></pre>
       </li>
       <li>You may initially see an error indicating the video is not playable - this just results from the fact that the player cannot function properly in Edit mode.&nbsp; Switch to Preview mode to play the video.
         <figure class="bcls-figure"><img class="bcls-image" alt="Video Cloud Error" src="/assets/images/adobe/node18484-videoclouderror.png" />
@@ -142,6 +139,7 @@ parent: Adobe
       </li>
     </ol>
   </section>
+  
   <section class="bcls-section">
     <h2 id="video_content_management">Video content management
       <meta charset="utf-8" />
