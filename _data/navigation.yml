@@ -67,6 +67,12 @@
   docs:
     - name: 'Getting Started with the Connector for Sitecore'
       url: '/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
+    - name: 'Installation Guide: Brightcove Video Connect for Sitecore'
+      url: '/sitecore/installation-guide.html'
+    - name: 'Configuration Guide: Brightcove Video Connect for Sitecore'
+      url: '/sitecore/configuration.html'
+    - name: 'User Guide: Brightcove Video Connect for Sitecore'
+      url: '/sitecore/user-guide.html'
 - section:
   name: 'SharePoint'
   url: '/sharepoint/index.html'
