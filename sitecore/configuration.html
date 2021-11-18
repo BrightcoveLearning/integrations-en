@@ -1,0 +1,138 @@
+---
+title: 'Configuration Guide: Brightcove Video Connect for Sitecore'
+description: This topic covers the configuration process for the Brightcove Video Connect module on the Sitecore CMS.
+parent: Sitecore
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="introduction">Introduction</h2>
+    <p>After installation of the Brightcove Video Connect for Sitecore, you must create and configure the Brightcove Tenant in Data Exchange Framework that will allow the synchronization of data between your Sitecore environment and the Brightcove Video Cloud. The sections below will walk you through the various parts of the configuration.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Create_Brightcove_Tenant">Create Brightcove Tenant</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Link your Brightcove Video Cloud account to the Sitecore environment as described in the <a href="#Linking_Video_Cloud_Accounts">Linking Video Cloud Accounts</a> section below.</li>
+      <li>In the Sitecore Launchpad, open the Content Editor.</li>
+      <li>Go to <code translate="No">/sitecore/system/Data</code> Exchange and right-click on Data Exchange.</li>
+      <li>In the Insert menu, click <strong>Brightcove Tenant</strong>.</li>
+      <li>Go to <code translate="No">/sitecore/system/Data Exchange/&lt;tenant name&gt;&lt;/tenant&gt;</code>. On the Content tab, in the Administration section, click Enabled.</li>
+      <li>Save the item.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Configure_a_Brightcove_Endpoint">Configure a Brightcove Endpoint</h2>
+    <p>To configure an endpoint for the tenant:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the <strong>Content Editor</strong>, go to <code translate="No">/sitecore/system/Data Exchange /Brightcove Tenant/Endpoints/Providers/Brightcove/Web API Endpoint</code>.</li>
+      <li>In the <strong>Settings</strong> section, under <strong>Account</strong>, select the linked <strong>Brightcove Video Cloud</strong> account from the dropdown control.</li>
+      <li>Save the item.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Run_Sync_Pipeline_Batch_to_Sync_with_Video_Cloud">Run Sync Pipeline Batch to Sync with Video Cloud</h2>
+    <p>After creating and configuring the Brightcove Tenant, you are ready to sync your Sitecore 10.1 environment with the Brightcove Video Cloud to populate Sitecore with your media assets – videos and playlists – from your Brightcove account. To do so, follow the steps below.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the <strong>Content Editor</strong>, go to <code translate="No">/sitecore/system/Data Exchange /Brightcove Tenant/Pipeline Batches</code>.</li>
+      <li>Select the <strong>Sync Pipeline Batch</strong>.</li>
+      <li>On the Data Exchange tab, click Run Pipeline Batch.</li>
+      <li>Confirm the sync by going to <code translate="No">/sitecore/Media Library/Brightcove/&lt;name of account&gt;</code>.</li>
+      <li>Right-click the <code translate="No">&lt;name of account&gt;</code> and click the <strong>Refresh</strong> menu item.</li>
+      <li>Confirm that the <strong>Videos</strong> and <strong>Playlists</strong> folders are now populated. You can also confirm a successful sync by searching for videos and playlists and confirming that you get positive search results.</li>
+  </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Release_Page_Events_from_Workflow">Release Page Events from Workflow</h2>
+    <p>The Brightcove Video Connector for Sitecore includes a number of page events that must be released from workflow and published before they can be used.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/page-events-to-release.png" alt="Page Events to Release">
+      <figcaption class="bcls-caption--image">Page Events to Release</figcaption>
+    </figure>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Sitecore Workbox</strong>.</li>
+      <li>Select the <strong>Analytics Workflow</strong>.</li>
+      <li>
+        Deploy the following page events:
+        <ul>
+          <li>Playback Changed</li>
+          <li>Playback Completed</li>
+          <li>Playback Error</li>
+          <li>Playback Started</li>
+        </ul>
+      </li>
+      <li>Publish the page events.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Configure_Reporting_Database">Configure Reporting Database</h2>
+    <p>For the Sitecore reports to work, a new fact table must be added to the Experience Database (xDB) reporting database. A script that will create this new table is available on SDN. You must run this script on your xDB reporting database. This step should be completed by your database administrator.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: It is possible to install multiple Sitecore connectors. This script only needs to be run one time per reporting database, regardless of how many different connectors you have installed.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Linking_Video_Cloud_Accounts">Linking Video Cloud Accounts</h2>
+    <p>The following sections walk you through how to create an account in Sitecore that corresponds with a Brightcove Video Cloud account.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Get_Account_Credentials_from_Brightcove">Get Account Credentials from Brightcove</h2>
+    <p>For Sitecore Data Exchange Framework (DEF) to connect to Brightcove Video Cloud, the account credentials from Brightcove must be added to Sitecore. This section describes how to locate the account credentials in Brightcove. The following steps describe how to add those credentials to Sitecore.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Log into Brightcove Video Cloud. Note the <strong>Account ID</strong> value. You will need to enter this into Sitecore in the following section.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/video-cloud-account-id.png" alt="Account ID">
+          <figcaption class="bcls-caption--image">Account ID</figcaption>
+        </figure>
+      </li>
+      <li>
+        Select <strong>API Authentication</strong> under <strong>Admin</strong>.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/navigate-to-admin-api-authentication.png" alt="Go to API Authentication">
+          <figcaption class="bcls-caption--image">Go to API Authentication</figcaption>
+        </figure>
+      </li>
+      <li>
+        Click <strong>Register New Application</strong>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/register-new-app.png" alt="Register New Application">
+          <figcaption class="bcls-caption--image">Register New Application</figcaption>
+        </figure>
+      </li>
+      <li>
+        In the dialog that opens, enter a <strong>Name</strong>, select the <strong>Account</strong>, select the APIs as shown below, and then click <strong>Save</strong>.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/register-new-app-dialog.png" alt="Registar Application Dialog">
+          <figcaption class="bcls-caption--image">Registar Application Dialog</figcaption>
+        </figure>
+      </li>
+      <li>
+        A new dialog will appear with your <strong>Client ID</strong> and <strong>Client Secret</strong>. Be sure to copy and save these - there is no way to retrieve the client secret again once this dialog is closed.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/client-id-and-secret.png" alt="Client Credentials">
+          <figcaption class="bcls-caption--image">Client Credentials</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <h3>Add Brightcove Account to Sitecore</h3>
+    <p>Now you will add the Brightcove credentials to Sitecore to enable the connection between them.</p>
+    <ol class="bcls-tasklist">
+      <li>Log into the Sitecore Desktop.</li>
+      <li>Open <strong>Media Library</strong>.</li>
+      <li>Navigate to <strong>Media Library &gt; Brightcove</strong>.</li>
+      <li>Add a new Brightcove Account item.</li>
+      <li>
+        Enter the following values obtained from Brightcove in the earlier steps:
+        <ul>
+          <li><code translate="No">Account ID</code></li>
+          <li><code translate="No">Client ID</code></li>
+          <li><code translate="No">Client Secret</code></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="next_steps">Next steps</h2>
+    <p>The configuration of the Brightcove-Sitecore connection is now complete. You can proceed to the <a href="/sitecore/user-guide.html">User Guide</a>.</p>
+  </section>
+</article>

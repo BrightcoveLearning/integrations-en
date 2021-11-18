@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Manage and Use Your Brightcove Video Assets Within Sitecore 10.1">
   
-  <title>Getting Started with Brightcove Video Connect for Adobe Experience Manager</title>
+  <title>User Guide: Brightcove Video Connect for Sitecore</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/adobe/">Adobe</a></li>
+      <li class="breadcrumb-item"><a href="/sitecore/">Sitecore</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Getting Started with Brightcove Video Connect for Adobe Experience Manager</li>
+      <li class="breadcrumb-item active" aria-current="page">User Guide: Brightcove Video Connect for Sitecore</li>
     </ol>
   </nav>
 </header>
@@ -487,195 +487,232 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>User Guide: Brightcove Video Connect for Sitecore</h1>
 <article class="bcls-article">
-  <h1>Getting Started with Brightcove Video Connect for Adobe Experience Manager</h1>
-  <summary>This topic provides an overview of Brightcove Video Connect for Adobe Experience Manager.</summary>
-  <aside class="bcls-aside bcls-aside--information">
-    Notes: 
+  <summary>Manage and Use Your Brightcove Video Assets Within Sitecore 10.1</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>Note that you must complete the <a href="/sitecore/installation-guide.html">installation</a> and <a href="/sitecore/configuration.html">configuration</a> of the Brightcove-Sitecore connector before performing the tasks described in this topic.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Defining_Video_Cloud_Players">Defining Video Cloud Players</h2>
+    <p>A player is needed to display a single video or a playlist of videos. A player defines what kind of capabilities are available to the visitor who wants to watch a video. Content authors can add new players, edit existing players and delete existing players.</p>
+    <h3 id="Add_Player">Add Player</h3>
+    <p>This section describes how to manually create the Sitecore item that corresponds to a player.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        In Brightcove Video Cloud, navigate to the Players section.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/go-to-players-module.png" alt="Navigate to Players">
+          <figcaption class="bcls-caption--image">Navigate to Players</figcaption>
+        </figure>
+      </li>
+      <li>
+        Select a player you want to create in Sitecore. Note the <strong>Player ID</strong> value beneath the player name. You will need to enter this into Sitecore in the following section.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/select-player.png" alt="Player ID">
+          <figcaption class="bcls-caption--image">Player ID</figcaption>
+        </figure>
+      </li>
+      <li>In Sitecore, in the <strong>Media Library</strong>, select the <strong>Brightcove Account</strong> item.</li>
+      <li>Select the <strong>Accounts</strong> item.</li>
+      <li>Select the <strong>Players</strong> item.</li>
+      <li>Right-click Players and click the Insert and Brightcove Video Player</li>
+      <li>Add a new <strong>Brightcove Video Player</strong> item. You will be prompted to enter the <strong>player ID</strong>. Enter the value from Brightcove Video Cloud.</li>
+      <li>You will want to be sure you add both single video and playlist-enabled players.</li>
+    </ol>
+    <h3 id="set_default_players">Set Default Players</h3>
+    <p>For videos and playlists to be previewed in Sitecore, the default players must be specified. This section describes how to set the default players.</p>
+    <ol class="bcls-tasklist">
+      <li>In Sitecore, in the <strong>Media Library</strong>, select the <strong>Brightcove Account</strong> item.</li>
+      <li>Select the <strong>Accounts</strong> item.</li>
+      <li>
+        In the Settings section, set the values for the Default Video Player field and the Default Playlist Player field.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/set-default-players.png" alt="Set Default Players">
+          <figcaption class="bcls-caption--image">Set Default Players</figcaption>
+        </figure>
+      </li>
+      <li>Save the item.</li>
+    </ol>
+    <h3 id="editing_and_deleting_players">Editing and Deleting Players</h3>
+    <p>Player items can be edited or deleted just like any other Sitecore items.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Deleting a player from Sitecore will not result in the player being deleted from Brightcove Video Cloud.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Working_with_Brightcove_videos">Working with Brightcove videos</h2>
+    <h3 id="Importing_Adding_Previewing_and_Deleting_Videos">Importing, Adding, Previewing and Deleting Videos</h3>
+    <p>Sitecore Data Exchange Framework is used to synchronize content between Sitecore and the Brightcove cloud. Content authors can also upload new videos to the Brightcove cloud using the upload option in the Brightcove ribbon in the Content Editor (see <a href="#Add_Video">Add Video</stron> below).</p>
+      <h4 id="importing_video">Importing video</h4>
+      <p>A Sitecore content author or administrator can trigger the video import process by running the pull or sync pipeline batches in the Brightcove DEF tenant. Note that the sync pipeline batch will export any pending edits to Brightcove as well as import pending changes from Brightcove.</p>
+      <h4 id="Add_Video">Add Video</h4>
+      <p>Brightcove Video Connect for Sitecore allows content authors to add new videos. Content Authors can upload a new video to the Brightcove cloud by clicking the upload button in the Brightcove ribbon in the Content Editor.</p>
+      <h4 id="Edit_Video">Edit Video</h4>
+      <p>Video items are edited just like any other Sitecore items, but the changes must be synchronized with Brightcove using the push or sync pipeline batches.</p>
+      <h4 id="Delete_Video">Delete Video</h4>
+      <p>Deleting a video item will NOT delete it from the Brightcove cloud. If you want to delete the video item as well as remove it from the Brightcove cloud you must check the <strong>Delete</strong> checkbox under the <strong>Synchronization</strong> tab on the video item and then run the push or sync pipeline batch.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Search_for_Videos_and_Playlists">Search for Videos and Playlists</h2>
+    <p>To search for videos or playlists, click the magnifying glass icon to open the <strong>Search</strong> tab.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/start-search.png" alt="Search Tab">
+      <figcaption class="bcls-caption--image">Search Tab</figcaption>
+    </figure>
+    <p>Enter search terms in the field and click the search icon.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/search.png" alt="Searching Media">
+      <figcaption class="bcls-caption--image">Searching Media</figcaption>
+    </figure>
+    <p>You can select filters on the right to narrow the search results.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/filter-search.png" alt="Filtering Searched">
+      <figcaption class="bcls-caption--image">Filtering Searched</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Importing_Adding_Previewing_and_Deleting_Playlists">Importing, Adding, Previewing and Deleting Playlists</h2>
+    <p>A playlist is a collection of videos in a single player. Sitecore Data Exchange Framework is used to synchronize content between Sitecore and the Brightcove cloud.</p>
+    <h3 id="Add_Playlist">Add Playlist</h3>
+    <p>Brightcove Video Connect for Sitecore allows content authors to add new playlists.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Sitecore Media Library.</li>
+      <li>Navigate to the account with the videos you want to create a playlist for.</li>
+      <li>Navigate to the Media Library item.</li>
+      <li>Navigate to the Playlists folder and right-click on it.</li>
+      <li>
+        Add a new Brightcove Playlist item.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/brightcove-playlist-item.png" alt="Brightcove Playlist Item">
+          <figcaption class="bcls-caption--image">Brightcove Playlist Item</figcaption>
+        </figure>
+      </li>
+      <li>For the Name field, enter a descriptive name for the video.</li>
+      <li>For the Video Ids field, select the videos you want to include in the playlist.</li>
+    </ol>
+    <h3 id="edit_playlist">Edit Playlist</h3>
+    <p>Playlist items are edited just like any other Sitecore items.</p>
+    <h3 id="delete_playlist">Delete Playlist</h3>
+    <p>Deleting a playlist item will <strong>NOT</strong> delete it from the Brightcove cloud. If you want to delete the playlist item as well as remove it from the Brightcove cloud you must check the <strong>Delete</strong> checkbox under the <strong>Synchronization</strong> tab on the playlist item and then run the push or sync pipeline batch.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Add_Video_to_Pages">Add Video to Pages</h2>
+    <p>Brightcove Video Connect for Sitecore allows content authors to insert media into their pages in a variety of ways. This section covers the options that are available.</p>
+    <h3 id="Rich_Text_Editor"><Rich Text Editor</h3>
+      <p>Rich text fields allow content authors to insert formatted content into their pages. Content authors use the rich text editor to create and edit this formatted content. This section covers the features that Brightcove Video Connect for Sitecore adds to the rich text editor.</p>
+    <h4 id="Embed_Media">Embed Media</h4>
+    <p>Media can be embedded directly in a rich text field.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the rich text editor, click the <strong>Embed Media</strong> button.</li>
+      <li>Use the search screen to find the media you want to insert. Click the row that represents the media you want to insert. Click the <strong>Next ></strong> button.</li>
+      <li>iii.	Depending on the type of media you select, you will see additional options. For example, if you select a video, you must specify the player that should be used to display the video, along with the dimensions for the player. Click Finish.</li>
+      <li>The media is embedded in the rich text field.</li>
+    </ol>
+    <h3 id="rendering">Rendering</h3>
+    <p>Sitecore renderings allow content to be positioned at a specific location on a page. Sitecore allows two kinds of renderings: Brightcove Video Connect for Sitecore includes a rendering that allows content authors to insert media in pages.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Use Page Editor to add a rendering to a placeholder.</li>
+      <li>Select the <strong>Embed Media</strong> rendering.</li>
+      <li>The rendering has been added to the placeholder. Now click the <strong>Embed Media Element</strong> button.</li>
+      <li>Use the search screen to find the media you want to insert. Click the row that represents the media you want to insert. Click the Next > button.</li>
+      <li>Depending on the type of media you select, you will see additional options. For example, if you select a video, you must specify the player that should be used to display the video, along with the dimensions for the player. Click <strong>Finish</strong>.</li>
+      <li>The media has been selected for the rendering.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Synchronization_Between_Sitecore_and_Video_Cloud">Synchronization Between Sitecore and Video Cloud</h2>
+    <p>This section covers keeping videos and playlists synchronized between Sitecore for the following scenarios:</p>
     <ul>
-      <li>Brightcove offers an onboarding package to help you with the initial installation and configuration of the connector - we strongly encourage you to take advantage of this to insure that the implementation goes smoothly. Contact your account manager for details.</li>
-      <li>Version 5.7 of the connector is now available with support for AEM Cloud as a Service</li>
-      <li>Version 5.5.4 of the connector will no longer be supported as of January 1, 2022</li>
-      <li>Support for AEM v6.2 ended as of January 1, 2021</li>
+      <li>When videos and playlists are deleted from Brightcove</li>
+      <li>When videos and playlists added in Sitecore</li>
+      <li>When videos and playlists are deleted from Sitecore</li>
     </ul>
-  </aside>
-  <div style="overflow-x: scroll;">
-    <table class="bcls-table">
-      <thead>
-        <tr class="bcls-table__head">
-          <th scope="col">Plug-in Version</th>
-          <th scope="col">Documentation</th>
-          <th scope="col">Download</th>
-          <th scope="col">Compatibility Notes</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>5.7</td>
-          <td>
+    <p>Importing from Brightcove to Sitecore was covered previously <a href="/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html#videos">here</a>.</p>
+    <h3 id="Playback_Event_Analytics">Playback Event Analytics</h3>
+    <p>The Brightcove Video Connect for Sitecore allows video playback events to be recorded for use in the Sitecore Digital Marketing System (DMS). This section covers the options that are available.</p>
+    <h3 id="Playback_Events">Playback Events</h3>
+    <p>Playback events are used to record DMS page events as the result of video player actions. For example, when video playback starts, a DMS page event can be written.</p>
+    <h4>Default Playback Events</h4>
+    <p>Brightcove Video Connect for Sitecore comes with the following playback events:</p>
+    <ul>
+      <li>Playback Started</li>
+      <li>Playback Completed</li>
+      <li>Playbacd Error</li>
+    </ul>
+    <h4>Configure Playback Events for Account</h4>
+    <p>By default, the playback started, and playback completed events are recorded. This is enabled on the Settings section of the Brightcove Account item.</p>
+    <p>By default, the playback started, and playback completed events are recorded. This is enabled on the Settings section of the Brightcove Account item.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/playback-events-per-account.png" alt="Plaubacl Evemts">
+      <figcaption class="bcls-caption--image">Plaubacl Evemts</figcaption>
+    </figure>
+    <h4>Disable Playback Events for Account</h4>
+    <p>All playback events can be disabled for a specific account.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Content Editor navigate to the account under Media Library > Brightcove > [Account Name].</li>
+      <li>
+        The Playback Events Rules field describes the conditions that must be met for playback events to be registered. By default, the condition is <code translate="No">where true</code>, meaning <code translate="No">always</code>. Click the Edit Rule button to change the condition, or to remove the existing rule.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/playback-event-rules.png" alt="Playback Event Rules">
+          <figcaption class="bcls-caption--image">Playback Event Rules</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <h4>Specify Playback Events for Media</h4>
+    <p>Each playlist and video item has a field named Events. This field determines which playback events will be handled for the specified item.</p>
+    <p>The following screenshot indicates that playback events have been specified for the video:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/specify-playback-events-for-media.png" alt="Specify Playback Events for Media">
+      <figcaption class="bcls-caption--image">Specify Playback Events for Media</figcaption>
+    </figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Notes:
       <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.7">Plugin with Source</a></td>
-          <td>
-            <aside class="bcls-aside bcls-aside--information language-editable">
-              <strong>Version 5.7 is functionally identical to 5.6</strong>. The only difference between the two is:
-              <ul>
-                <li>v5.7 of the connector only works with AEM Cloud as a Service.</li>
-                <li>v5.6 is only for AEM on-prem/managed service.</li>
-              </ul>
-              </aside>
-            <ul>
-              <li>Supports AEM Cloud as a Service</li>
-              <li>Major revamp of AEM Authoring</li>
-              <li>Updated Brightcove landing page for Touch UI</li>
-              <li>Updated Brightcove component library for Touch UI</li>
-              <li>Updated Brightcove components to include in-place editing and asset drag and drop functionalities</li>
-              <li>Implementing latest OSGi annotations and model classes where required</li>
-              <li>Ability to sync, manage folders</li>
-              <li>Major improvements to Metadata editing and management</li>
-              <li>Ability to create, manage and delete playlists</li>
-              <li>Support for iFrame embeds</li>
-              <li>Support for In-Page Experiences (IPX)</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>5.6</td>
-          <td>
-      <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.6">Plugin with Source</a></td>
-          <td>
-            <ul>
-              <li>Supports AEM 6.5.x <u>only</u></li>
-              <li>Major revamp of AEM Authoring</li>
-              <li>Updated Brightcove landing page for Touch UI</li>
-              <li>Updated Brightcove component library for Touch UI</li>
-              <li>Updated Brightcove components to include in-place editing and asset drag and drop functionalities</li>
-              <li>Implementing latest OSGi annotations and model classes where required</li>
-              <li>Ability to sync, manage folders</li>
-              <li>Major improvements to Metadata editing and management</li>
-              <li>Ability to create, manage and delete playlists</li>
-              <li>Support for iFrame embeds</li>
-              <li>Support for In-Page Experiences (IPX)</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>5.5.4</td>
-          <td>
-      <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.4">Plugin with Source</a></td>
-          <td>
-            <ul>
-              <li>Supports AEM 6.4, 6.3</li>
-              <li>Removes hardcoded ingest profile if no value selected in the AEM OSGi config</li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li>
-              <li>Added UTF-8 multi-language support</li>
-              <li>Extended Proxy support for S3 video upload</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            5.5.0
-          </td>
-          <td>
-            EOL
-          </td>
-          <td>EOL</td>
-          <td>
-            <strong>End of Life as of January 1, 2020 </strong></li>
-              <!-- <li>Supports AEM 6.2 and AEM 6.3 </li>
-              <li>Uses Brightcove CMS &amp; <span translate="No">Dynamic Ingest API</span> </li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li> -->
-            
-          </td>
-        </tr>
-        <tr>
-          <td>
-            5.1.1
-          </td>
-          <td>
-            EOL
-          </td>
-          <td>EOL</td>
-          <td>
-            <strong>End of Life as of January 1, 2019 </strong></li>
-              <!-- <li>Supports AEM 6.2 and AEM 6.3 </li>
-              <li>Uses Brightcove CMS &amp; <span translate="No">Dynamic Ingest API</span> </li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li> -->
-            
-          </td>
-        </tr>	  
-        <tr>
-          <td>4.2.0</td>
-          <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL </td>
-          <td>EOL</td>
-          <td>
-            
-              <strong>End of Life as of December 31, 2017 </strong>
-              <!-- <li>Supports AEM 6.2 </li>
-              <li>Uses Brightcove Media API for video management</li>
-              <li>Uses Brightcove <span translate="No">CMS API</span> for player embed</li>
-              <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
-              <li>Embeds Brightcove HTML5 Player </li>
-              <li>Supports Classic UI</li> -->
-          </td>
-        </tr>
-        <tr>
-          <td>4.1.2</td>
-          <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL</td>
-          <td>EOL</td>
-          <td>
-              <strong>End of Life as of December 31, 2017 </strong>
-              <!-- <li>Supports AEM 6.1 </li>
-              <li>Uses Brightcove Media API for video management</li>
-              <li>Uses Brightcove <span translate="No">CMS API</span> for player embed</li>
-              <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
-              <li>Embeds Brightcove HTML5 Player </li>
-              <li>Supports Classic UI</li> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforAEMSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://supportportal.brightcove.com/">Brightcove customer support</a>.</p>
-  <!-- <h2>AEM Mandatory Upgrade Explanation</h2>
-  <p>The Brightcove Connector for AEM, v4.2 and previous versions, ceased to function at the end of 2017 because we retired the underlying APIs and Flash Player used by the Connector.  We updated the Brightcove Connector in the v5.0 release to use our current APIs and HTML5 player.  The 5.0 Brightcove Connector supports AEM versions 6.2, 6.3 and 6.4 in both Classic UI and Touch UI modes and now synchronizes video assets between Brightcove and the AEM Digital Asset Manager (DAM).  </p>
-  <h3>Actions Required</h3>
-  <p>If you are currently using an AEM/CQ release prior to AEM 6.0 and are also using the Brightcove Connector, you will need to upgrade to a newer version of AEM and the Connector per the discussion below.</p>
-  <p>If you are currently using AEM 6.0/6.1 with the v4.1 Connector or if you are currently using AEM 6.2 with the v4.2 Connector you may to continue using your existing Connector version under the following three conditions:</p>
-  <p>1. You do not require Touch UI support<br />
-    2. You only use the Connector to embed video and you are managing your video content directly in Brightcove Studio and are not using the Video Manager (/brightcove/admin) in the Brightcove Connector.<br />
-    3. You are not moving to AEM 6.3 or AEM 6.4</p>
-  <p>You will need to upgrade to AEM 6.2 or AEM 6.3 or AEM 6.4 and you will need to use the new v5.0 Connector under any of the following three conditions:</p>
-  <p>1. You require Touch UI support<br />
-    2. You use the Connector to upload videos and/or edit metadata <br />
-    3. You need to keep a copy of your master video in the AEM DAM</p> -->
-  <p> </p>
+        <li>Standard Values can be used to ensure certain events are recorded for all playlists and videos, but the field also allows individual playlists and videos to have their own events selected.</li>
+        <li>These events will only be recorded if the Settings item under the Brightcove account item has its Playback Events Rules field configured to with the <strong>add media item events</strong> action.</li>
+      </ul>
+    </aside>
+    <h4>Create New Playback Events</h4>
+    <p>You can add new playback events in order to capture more detailed information about video playback metrics.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Content Editor navigate to <strong>Media Library > Brightcove &gt; [Account Name]</strong>.</li>
+      <li>Add a new item using the template Playback Event.</li>
+      <li>For the Page Event field select <strong>Playback Changed</strong></li>
+      <li>
+        For the Parameter field you can enter a value in one of the following formats:
+        <ul>
+          <li>Number - after the video is played this number of seconds, the page event is recorded. An example of a valid value is 15</li>
+          <li>Percent - after the video is played this amount, the page event is recorded. An example of a valid value is 50%</li>
+        </ul>
+      </li>
+      <li>Save the item.</li>
+      <li>Publish the item.</li>
+      <li>Now you can add the new page event to your playlist and videos.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Remember to assign the new playback event to your playlist and videos. Otherwise, the event will not get recorded.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Reports">Reports</h2>
+    <p>Brightcove Video Connect for Sitecore includes several reports that pertain to video playback.</p>
+    <h3>Started Playback</h3>
+    <p>This report shows a list of the videos that have triggered the video started event.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/most-started-videos.png" alt="most started videoes">
+      <figcaption class="bcls-caption--image">Most Started Videos</figcaption>
+    </figure>
+    <h3>Completed Playback</h3>
+    <p>This report shows a list of the videos that have triggered the video completed event.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/videos-completed-report.png" alt="most completed videoes">
+      <figcaption class="bcls-caption--image">Most Completed Videos</figcaption>
+    </figure>
+    <h3>Incomplete Playback</h3>
+    <p>This report shows a list of the videos that have triggered the video started event but not the video completed event.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/videos-completed-report.png" alt="incomletely played videoes">
+      <figcaption class="bcls-caption--image">Incomletely Played Videoes</figcaption>
+    </figure>
+  </section>
 </article>
 <!-- complete bootstrap layout -->
     </div>
@@ -692,7 +729,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 31 Oct 2021
+  Page last updated on 17 Nov 2021
 </div>
 
 

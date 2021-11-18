@@ -1,0 +1,82 @@
+---
+title: 'Installation Guide: Brightcove Video Connect for Sitecore'
+description: This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.
+parent: Sitecore
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Pre_requisites">Pre-requisites</h2>
+    <p>Before you install Brightcove Video Connect for Sitecore, you must have:</p>
+    <ul>
+      <li>Sitecore Experience Platform 10.1</li>
+      <li>Sitecore Data Exchange Framework 6.0</li>
+      <li>Access to a Brightcove Account along with an API key and secret. At a minimum this account must have rights to read and write video and playlist data to/from Brightcove Studio</li>
+      <li>Network connectivity – you must install on a Sitecore server that has network connectivity to the Brightcove API. This can require configuration based on your network setup.</li>
+      <li>To track Brightcove Player analytics within xDB, a Sitecore Experience Platform license must be available, and the environment must be configured according to Sitecore’s documentation to enable xDB and to allow session tracking.</li>
+    </ul>
+    <p>Please refer to Sitecore’s documentation and support for the Sitecore Data Exchange Framework - <a href="https://dev.sitecore.net/Downloads/Data_Exchange_Framework.aspx">https://dev.sitecore.net/Downloads/Data_Exchange_Framework.aspx</a></p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Preparation">Preparation</h2>
+    <p>With Brightcove Video Connect for Sitecore 10.1, the connector now utilizes the Data Exchange Framework (DEF) at its core. This is a welcome change that aligns Brightcove Video Connect for Sitecore with other Sitecore connectors such as Dynamics 365 and Salesforce Marketing Cloud. With this change, the Brightcove Video Connect for Sitecore no longer requires the Sitecore Media Framework to be installed but does require the Sitecore Data Exchange Framework.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Important notes:
+      <ul>
+        <li>The installation process outlined here assumes that you have a Sitecore 10.1 environment that does not have any artifacts from previous Brightcove Video Connect versions on it.</li>
+        <li>If your organization is upgrading from a previous Sitecore version (prior to v10.1) on which you had installed the Brightcove Video Connect for Sitecore, you would need to do a cleanup of the old Brightcove Video Connect for Sitecore files and .dll assemblies. To do so, use the cleanup script that is included as part of the release package.</li>
+      </ul>
+    </aside>
+    <p>Once you have prepped your Sitecore 10.1 environment, you can proceed to the installation process.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Sitecore Media Framework was depreciated and not carried forward into 9.x and later releases of Sitecore. Previous versions of the Brightcove Video Connect for Sitecore utilized a fork of the Media Connect code. Brightcove Video Connect for Sitecore 10.1 now uses the Data Exchange Framework.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Installation">Installation</h2>
+    <p>To install Brightcove Video Connect for Sitecore, download and install the following package from the <a href="https://github.com/BrightcoveOS/Sitecore-Connector/releases/tag/10.1.0.0">Brightcove Releases Page</a>.</p>
+    <p>The Brightcove Video Connect for Sitecore package is installed using the Sitecore Installation Wizard. Follow the instructions displayed by the installation wizard. The Video Connect for Sitecore plug-in is available for download via a link in the table above. Unzip it first and then upload the plug-in zip package to your Sitecore instance.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/install-a-package.png" alt="Install a Package">
+      <figcaption class="bcls-caption--image">Install a Package</figcaption>
+    </figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Notes:
+      <ul>
+        <li>When deploying packages in containerized environments, the IIS account must be granted the ability to write to the wwwroot folder on CM servers.</li>
+        <li>Additionally, the Content Security Policy (CSP) of the site on CM and CD servers must be updated to allow content from Brightcove.</li>
+      </ul>
+    </aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Installation_in_Scaled_Environments">Installation in Scaled Environments</h2>
+    <p>In scaled environments, installation must also include updating any CD servers to include files that Brightcove Video Connect for Sitecore renderings utilize to display video content.</p>
+    <p>Before you install Brightcove Video Connect for Sitecore on your content delivery (CD) server, you must have:</p>
+    <ul>
+      <li>Sitecore Experience Platform 10.1</li>
+      <li>Data Exchange Framework 6.0</li>
+    </ul>
+    <p>The CD server does not have an interface to install Sitecore update packages, so you must update the OS manually.</p>
+    <h3>Steps</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Download the Sitecore Connect for Brightcove Video Connect for Sitecore package.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Note:
+      <p>For all the following file operations you must preserve the folder structure from the zip file folders. For example, if the <code translate="No">changedfiles</code> folder in the zip contains a bin subfolder, the files from this folder must go in the &<code translate="No">lt;website&gt;\bin</code> folder on your CD server.</p>
+    </aside>
+    <p>In the update package file, open the package.zip file. The files in the package.zip file need to be added to your CD server in the following way:</p>
+    <ol class="bcls-tasklist">
+      <li>Add the folders in the <code translate="No">addedfolder</code> folder into the website root folder of your CD server.</li>
+      <li>Add the files in the <code translate="No">addedfiles</code> folder into the website root folder of your CD server.</li>
+      <li>Delete the folders in the <code translate="No">deletedfolder</code> folder from the website root folder of your CD server.</li>
+      <li>Delete the files in the <code translate="No">deletedfiles</code> folder from the website root folder of your CD server.</li>
+      <li>Add the files in the <code translate="No">changedfiles</code> folder into the website root folder of your CD server, overwriting the existing files.</li>
+      <li>Restart the CD server.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="next_steps">Next steps</h2>
+    <p>After completing the installation, proceed to the <a href="/sitecore/configuration.html">Configuration Guide</a></p>
+  </section>
+</article>

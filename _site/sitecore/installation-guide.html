@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.">
   
-  <title>Getting Started with Brightcove Video Connect for Adobe Experience Manager</title>
+  <title>Installation Guide: Brightcove Video Connect for Sitecore</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/adobe/">Adobe</a></li>
+      <li class="breadcrumb-item"><a href="/sitecore/">Sitecore</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Getting Started with Brightcove Video Connect for Adobe Experience Manager</li>
+      <li class="breadcrumb-item active" aria-current="page">Installation Guide: Brightcove Video Connect for Sitecore</li>
     </ol>
   </nav>
 </header>
@@ -487,195 +487,81 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Installation Guide: Brightcove Video Connect for Sitecore</h1>
 <article class="bcls-article">
-  <h1>Getting Started with Brightcove Video Connect for Adobe Experience Manager</h1>
-  <summary>This topic provides an overview of Brightcove Video Connect for Adobe Experience Manager.</summary>
-  <aside class="bcls-aside bcls-aside--information">
-    Notes: 
+  <summary>This topic covers the installation process for the Brightcove Video Connect module on the Sitecore CMS.</summary>
+  <section class="bcls-section">
+    <h2 id="Pre_requisites">Pre-requisites</h2>
+    <p>Before you install Brightcove Video Connect for Sitecore, you must have:</p>
     <ul>
-      <li>Brightcove offers an onboarding package to help you with the initial installation and configuration of the connector - we strongly encourage you to take advantage of this to insure that the implementation goes smoothly. Contact your account manager for details.</li>
-      <li>Version 5.7 of the connector is now available with support for AEM Cloud as a Service</li>
-      <li>Version 5.5.4 of the connector will no longer be supported as of January 1, 2022</li>
-      <li>Support for AEM v6.2 ended as of January 1, 2021</li>
+      <li>Sitecore Experience Platform 10.1</li>
+      <li>Sitecore Data Exchange Framework 6.0</li>
+      <li>Access to a Brightcove Account along with an API key and secret. At a minimum this account must have rights to read and write video and playlist data to/from Brightcove Studio</li>
+      <li>Network connectivity – you must install on a Sitecore server that has network connectivity to the Brightcove API. This can require configuration based on your network setup.</li>
+      <li>To track Brightcove Player analytics within xDB, a Sitecore Experience Platform license must be available, and the environment must be configured according to Sitecore’s documentation to enable xDB and to allow session tracking.</li>
     </ul>
-  </aside>
-  <div style="overflow-x: scroll;">
-    <table class="bcls-table">
-      <thead>
-        <tr class="bcls-table__head">
-          <th scope="col">Plug-in Version</th>
-          <th scope="col">Documentation</th>
-          <th scope="col">Download</th>
-          <th scope="col">Compatibility Notes</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>5.7</td>
-          <td>
+    <p>Please refer to Sitecore’s documentation and support for the Sitecore Data Exchange Framework - <a href="https://dev.sitecore.net/Downloads/Data_Exchange_Framework.aspx">https://dev.sitecore.net/Downloads/Data_Exchange_Framework.aspx</a></p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Preparation">Preparation</h2>
+    <p>With Brightcove Video Connect for Sitecore 10.1, the connector now utilizes the Data Exchange Framework (DEF) at its core. This is a welcome change that aligns Brightcove Video Connect for Sitecore with other Sitecore connectors such as Dynamics 365 and Salesforce Marketing Cloud. With this change, the Brightcove Video Connect for Sitecore no longer requires the Sitecore Media Framework to be installed but does require the Sitecore Data Exchange Framework.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Important notes:
       <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.7">Plugin with Source</a></td>
-          <td>
-            <aside class="bcls-aside bcls-aside--information language-editable">
-              <strong>Version 5.7 is functionally identical to 5.6</strong>. The only difference between the two is:
-              <ul>
-                <li>v5.7 of the connector only works with AEM Cloud as a Service.</li>
-                <li>v5.6 is only for AEM on-prem/managed service.</li>
-              </ul>
-              </aside>
-            <ul>
-              <li>Supports AEM Cloud as a Service</li>
-              <li>Major revamp of AEM Authoring</li>
-              <li>Updated Brightcove landing page for Touch UI</li>
-              <li>Updated Brightcove component library for Touch UI</li>
-              <li>Updated Brightcove components to include in-place editing and asset drag and drop functionalities</li>
-              <li>Implementing latest OSGi annotations and model classes where required</li>
-              <li>Ability to sync, manage folders</li>
-              <li>Major improvements to Metadata editing and management</li>
-              <li>Ability to create, manage and delete playlists</li>
-              <li>Support for iFrame embeds</li>
-              <li>Support for In-Page Experiences (IPX)</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>5.6</td>
-          <td>
+        <li>The installation process outlined here assumes that you have a Sitecore 10.1 environment that does not have any artifacts from previous Brightcove Video Connect versions on it.</li>
+        <li>If your organization is upgrading from a previous Sitecore version (prior to v10.1) on which you had installed the Brightcove Video Connect for Sitecore, you would need to do a cleanup of the old Brightcove Video Connect for Sitecore files and .dll assemblies. To do so, use the cleanup script that is included as part of the release package.</li>
+      </ul>
+    </aside>
+    <p>Once you have prepped your Sitecore 10.1 environment, you can proceed to the installation process.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Sitecore Media Framework was depreciated and not carried forward into 9.x and later releases of Sitecore. Previous versions of the Brightcove Video Connect for Sitecore utilized a fork of the Media Connect code. Brightcove Video Connect for Sitecore 10.1 now uses the Data Exchange Framework.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Installation">Installation</h2>
+    <p>To install Brightcove Video Connect for Sitecore, download and install the following package from the <a href="https://github.com/BrightcoveOS/Sitecore-Connector/releases/tag/10.1.0.0">Brightcove Releases Page</a>.</p>
+    <p>The Brightcove Video Connect for Sitecore package is installed using the Sitecore Installation Wizard. Follow the instructions displayed by the installation wizard. The Video Connect for Sitecore plug-in is available for download via a link in the table above. Unzip it first and then upload the plug-in zip package to your Sitecore instance.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/sitecore/install-a-package.png" alt="Install a Package">
+      <figcaption class="bcls-caption--image">Install a Package</figcaption>
+    </figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Notes:
       <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.6">Plugin with Source</a></td>
-          <td>
-            <ul>
-              <li>Supports AEM 6.5.x <u>only</u></li>
-              <li>Major revamp of AEM Authoring</li>
-              <li>Updated Brightcove landing page for Touch UI</li>
-              <li>Updated Brightcove component library for Touch UI</li>
-              <li>Updated Brightcove components to include in-place editing and asset drag and drop functionalities</li>
-              <li>Implementing latest OSGi annotations and model classes where required</li>
-              <li>Ability to sync, manage folders</li>
-              <li>Major improvements to Metadata editing and management</li>
-              <li>Ability to create, manage and delete playlists</li>
-              <li>Support for iFrame embeds</li>
-              <li>Support for In-Page Experiences (IPX)</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>5.5.4</td>
-          <td>
-      <ul>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-            <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-          <ul>
-          </td>
-          <td><a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/tag/5.5.4">Plugin with Source</a></td>
-          <td>
-            <ul>
-              <li>Supports AEM 6.4, 6.3</li>
-              <li>Removes hardcoded ingest profile if no value selected in the AEM OSGi config</li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li>
-              <li>Added UTF-8 multi-language support</li>
-              <li>Extended Proxy support for S3 video upload</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            5.5.0
-          </td>
-          <td>
-            EOL
-          </td>
-          <td>EOL</td>
-          <td>
-            <strong>End of Life as of January 1, 2020 </strong></li>
-              <!-- <li>Supports AEM 6.2 and AEM 6.3 </li>
-              <li>Uses Brightcove CMS &amp; <span translate="No">Dynamic Ingest API</span> </li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li> -->
-            
-          </td>
-        </tr>
-        <tr>
-          <td>
-            5.1.1
-          </td>
-          <td>
-            EOL
-          </td>
-          <td>EOL</td>
-          <td>
-            <strong>End of Life as of January 1, 2019 </strong></li>
-              <!-- <li>Supports AEM 6.2 and AEM 6.3 </li>
-              <li>Uses Brightcove CMS &amp; <span translate="No">Dynamic Ingest API</span> </li>
-              <li>Embeds Brightcove HTML5 Player</li>
-              <li>Supports Classic UI and Touch UI </li>
-              <li>Uses AEM asset manager</li> -->
-            
-          </td>
-        </tr>	  
-        <tr>
-          <td>4.2.0</td>
-          <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL </td>
-          <td>EOL</td>
-          <td>
-            
-              <strong>End of Life as of December 31, 2017 </strong>
-              <!-- <li>Supports AEM 6.2 </li>
-              <li>Uses Brightcove Media API for video management</li>
-              <li>Uses Brightcove <span translate="No">CMS API</span> for player embed</li>
-              <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
-              <li>Embeds Brightcove HTML5 Player </li>
-              <li>Supports Classic UI</li> -->
-          </td>
-        </tr>
-        <tr>
-          <td>4.1.2</td>
-          <td><!-- <a href="https://files.brightcove.com/bc-adobe-experience-manager.pdf">Click Here</a> -->EOL</td>
-          <td>EOL</td>
-          <td>
-              <strong>End of Life as of December 31, 2017 </strong>
-              <!-- <li>Supports AEM 6.1 </li>
-              <li>Uses Brightcove Media API for video management</li>
-              <li>Uses Brightcove <span translate="No">CMS API</span> for player embed</li>
-              <li>Embeds Brightcove Legacy Flash SmartPlayer</li>
-              <li>Embeds Brightcove HTML5 Player </li>
-              <li>Supports Classic UI</li> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p>For help with this connector, please fill out this <a href="https://files.brightcove.com/BrightcoveConnectforAEMSupportWorksheet.docx">worksheet</a> and include it with a support ticket to <a href="https://supportportal.brightcove.com/">Brightcove customer support</a>.</p>
-  <!-- <h2>AEM Mandatory Upgrade Explanation</h2>
-  <p>The Brightcove Connector for AEM, v4.2 and previous versions, ceased to function at the end of 2017 because we retired the underlying APIs and Flash Player used by the Connector.  We updated the Brightcove Connector in the v5.0 release to use our current APIs and HTML5 player.  The 5.0 Brightcove Connector supports AEM versions 6.2, 6.3 and 6.4 in both Classic UI and Touch UI modes and now synchronizes video assets between Brightcove and the AEM Digital Asset Manager (DAM).  </p>
-  <h3>Actions Required</h3>
-  <p>If you are currently using an AEM/CQ release prior to AEM 6.0 and are also using the Brightcove Connector, you will need to upgrade to a newer version of AEM and the Connector per the discussion below.</p>
-  <p>If you are currently using AEM 6.0/6.1 with the v4.1 Connector or if you are currently using AEM 6.2 with the v4.2 Connector you may to continue using your existing Connector version under the following three conditions:</p>
-  <p>1. You do not require Touch UI support<br />
-    2. You only use the Connector to embed video and you are managing your video content directly in Brightcove Studio and are not using the Video Manager (/brightcove/admin) in the Brightcove Connector.<br />
-    3. You are not moving to AEM 6.3 or AEM 6.4</p>
-  <p>You will need to upgrade to AEM 6.2 or AEM 6.3 or AEM 6.4 and you will need to use the new v5.0 Connector under any of the following three conditions:</p>
-  <p>1. You require Touch UI support<br />
-    2. You use the Connector to upload videos and/or edit metadata <br />
-    3. You need to keep a copy of your master video in the AEM DAM</p> -->
-  <p> </p>
+        <li>When deploying packages in containerized environments, the IIS account must be granted the ability to write to the wwwroot folder on CM servers.</li>
+        <li>Additionally, the Content Security Policy (CSP) of the site on CM and CD servers must be updated to allow content from Brightcove.</li>
+      </ul>
+    </aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Installation_in_Scaled_Environments">Installation in Scaled Environments</h2>
+    <p>In scaled environments, installation must also include updating any CD servers to include files that Brightcove Video Connect for Sitecore renderings utilize to display video content.</p>
+    <p>Before you install Brightcove Video Connect for Sitecore on your content delivery (CD) server, you must have:</p>
+    <ul>
+      <li>Sitecore Experience Platform 10.1</li>
+      <li>Data Exchange Framework 6.0</li>
+    </ul>
+    <p>The CD server does not have an interface to install Sitecore update packages, so you must update the OS manually.</p>
+    <h3>Steps</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Download the Sitecore Connect for Brightcove Video Connect for Sitecore package.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">
+      Note:
+      <p>For all the following file operations you must preserve the folder structure from the zip file folders. For example, if the <code translate="No">changedfiles</code> folder in the zip contains a bin subfolder, the files from this folder must go in the &<code translate="No">lt;website&gt;\bin</code> folder on your CD server.</p>
+    </aside>
+    <p>In the update package file, open the package.zip file. The files in the package.zip file need to be added to your CD server in the following way:</p>
+    <ol class="bcls-tasklist">
+      <li>Add the folders in the <code translate="No">addedfolder</code> folder into the website root folder of your CD server.</li>
+      <li>Add the files in the <code translate="No">addedfiles</code> folder into the website root folder of your CD server.</li>
+      <li>Delete the folders in the <code translate="No">deletedfolder</code> folder from the website root folder of your CD server.</li>
+      <li>Delete the files in the <code translate="No">deletedfiles</code> folder from the website root folder of your CD server.</li>
+      <li>Add the files in the <code translate="No">changedfiles</code> folder into the website root folder of your CD server, overwriting the existing files.</li>
+      <li>Restart the CD server.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="next_steps">Next steps</h2>
+    <p>After completing the installation, proceed to the <a href="/sitecore/configuration.html">Configuration Guide</a></p>
+  </section>
 </article>
 <!-- complete bootstrap layout -->
     </div>
@@ -692,7 +578,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 31 Oct 2021
+  Page last updated on 17 Nov 2021
 </div>
 
 
