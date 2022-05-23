@@ -84,6 +84,12 @@
     - name: 'Using the Connector'
       url: '/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html'
 - section:
+  name: 'Hootsuite'
+  url: '/hootsuite/index.html'
+  docs:
+    - name: 'Publishing Brightcove Videos from Hootsuite'
+      url: '/hootsuite/publishing-brightcove-video-hootsuite.html'
+- section:
   name: 'eCommerce'
   url: '/ecommerce/index.html'
   docs:
