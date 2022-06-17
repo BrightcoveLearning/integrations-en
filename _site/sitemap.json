@@ -175,42 +175,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/hootsuite/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -230,7 +200,17 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
@@ -250,6 +230,16 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/sharepoint/",
       "oldURL": "/index"
   },
@@ -260,7 +250,17 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 
@@ -270,12 +270,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/installation-guide.html",
       "oldURL": "/installation-guide"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
       "oldURL": "/installation-guide"
   },
 
@@ -350,12 +350,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/user-guide.html",
       "oldURL": "/user-guide"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/user-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/user-guide.html",
       "oldURL": "/user-guide"
   },
 
