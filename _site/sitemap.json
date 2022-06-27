@@ -5,6 +5,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connection-installation-cloud.html",
+      "oldURL": "/adobe-aem-brightcove-connection-installation-cloud"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-configuration-stage.html",
       "oldURL": "/adobe-aem-brightcove-connector-configuration-stage"
   },
