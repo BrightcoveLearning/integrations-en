@@ -10,6 +10,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/adobe-aem-brightcove-connection-installation-cloud.html",
+      "oldURL": "/adobe-aem-brightcove-connection-installation-cloud"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-configuration-stage.html",
       "oldURL": "/adobe-aem-brightcove-connector-configuration-stage"
   },
@@ -20,8 +25,23 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/adobe-aem-brightcove-connector-configuration.html",
+      "oldURL": "/adobe-aem-brightcove-connector-configuration"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/adobe-aem-brightcove-connector-installation.html",
+      "oldURL": "/adobe-aem-brightcove-connector-installation"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-installation.html",
       "oldURL": "/adobe-aem-brightcove-connector-installation"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/adobe-aem-brightcove-connector-overview.html",
+      "oldURL": "/adobe-aem-brightcove-connector-overview"
   },
 
   {
@@ -31,6 +51,11 @@
 
   {
       "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connector-using-connector.html",
+      "oldURL": "/adobe-aem-brightcove-connector-using-connector"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/adobe-aem-brightcove-connector-using-connector.html",
       "oldURL": "/adobe-aem-brightcove-connector-using-connector"
   },
 
@@ -115,6 +140,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/getting-started-brightcove-video-connect-adobe-experience-manager.html",
+      "oldURL": "/getting-started-brightcove-video-connect-adobe-experience-manager"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html",
       "oldURL": "/getting-started-brightcove-video-connect-adobe-experience-manager"
   },
@@ -175,32 +205,27 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
@@ -210,12 +235,42 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sitecore/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/adobe-stage/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/",
       "oldURL": "/index"
   },
 
@@ -235,16 +290,6 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/sharepoint/",
       "oldURL": "/index"
   },
@@ -255,17 +300,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
       "oldURL": "/index"
   },
 

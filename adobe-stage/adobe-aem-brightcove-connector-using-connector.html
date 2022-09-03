@@ -1,0 +1,327 @@
+---
+title: 'Adobe-AEM-Brightcove Connector: Using the Connector'
+parent: Adobe
+---
+<article class="bcls-article">
+  <h1>Adobe-AEM-Brightcove Connector: Using the Connector</h1>
+  <!-- TO DO -->
+  <summary>This topic explains usage of the Adobe-AEM-Brightcove Connector 6.x to manage and publish videos in AEM.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
+    <aside class="bcls-aside bcls-aside--information">Note that this guide uses AEM 6.3. The connector also works with AEM 6.2&nbsp;and&nbsp;AEM 6.4, and the steps are similar.</aside>
+    <p>The Brightcove AEM Connector consists of following components:</p>
+    <ul>
+      <li><a href="#video_player_publishing">Video player and in-page experience publishing</a></li>
+      <li><a href="#video_content_management">Video content management</a></li>
+      <li><a href="#administrative_page">Brightcove administration</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="video_player_publishing">Video player and in-page experience publishing</h2>
+    <p>Video player publishing allows the user to drag a Brightcove Player component onto a web page and then select the Brightcove account, video, and player for that component. An In-Page Experience is just a Brightcove Player enhanced with additional styling and features. Therefore the process of adding a regular player or an in-page experience to a page is the same.</p>
+    <ol class="bcls-tasklist">
+      <li>Browse to a site page such as <code translate="No">/editor.html/content/we-retail/us/en.html</code></li>
+    </ol>
+    <p>Enable the Brightcove Player components for this site page.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the Edit Template dialog:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Open Edit Template" src="/assets/images/adobe/node18484-opentemplatesettings.png" />
+          <figcaption class="bcls-caption--image">Open Edit Template</figcaption>
+        </figure>
+      </li>
+      <li>From the Structure menu in the upper right corner, select Structure:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Select Structure" src="/assets/images/adobe/node18484-selectstructure.png" />
+          <figcaption class="bcls-caption--image">Select Structure</figcaption>
+        </figure>
+      </li>
+      <li>Click the Layout Container with <strong>Drag Components Here</strong> area to reveal the menu at the top, and then click the Policy Icon:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Open Layout Container Menu" src="/assets/images/adobe/node18484-policyicon.png" />
+          <figcaption class="bcls-caption--image">Open Layout Container Menu</figcaption>
+        </figure>
+      </li>
+      <li>Under the Allowed Components list, search for <strong>Brightcove</strong> and select the In-Page Experience, Brightcove Video Player, and Playlist Player components:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Allow Brightcove Player Components" src="/assets/images/adobe/node18484-addbrightcoveplayercomponents.png" />
+          <figcaption class="bcls-caption--image">Allow Brightcove Player Components</figcaption>
+        </figure>
+      </li>
+      <li>Click the <img alt="Check icon" src="/assets/images/adobe/node18484-checkicon.png" /> icon to save changes.</li>
+      <li>You can now drag Brightcove players or in-page experiences from the <strong>Components list</strong> on the left into the template:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add Brightcove Player to Template" src="/assets/images/adobe/node18484-usecomponent.gif" />
+          <figcaption class="bcls-caption--image">Add Brightcove Player to Template</figcaption>
+        </figure>
+      </li>
+      <li>Select the embedded Player component and click the <strong>Configure</strong> icon:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Configure Component Icon" src="/assets/images/adobe/node18484-configurecomponent.png" />
+          <figcaption class="bcls-caption--image">Configure Component Icon</figcaption>
+        </figure>
+      </li>
+      <li>In the Media tab of the Configure dialog, select the account, video, and player, and then click the <img alt="Save" src="/assets/images/adobe/node18484-checkicon.png" /> :
+        <figure class="bcls-figure"><img class="bcls-image" alt="Configure Player Dialog" src="/assets/images/adobe/node18484-configureplayercomponent.png" />
+          <figcaption class="bcls-caption--image">Configure Player Dialog</figcaption>
+        </figure>
+      </li>
+      <li>In some cases you may need to set advanced options for the Brightcove player.&nbsp; The most common situation is when using a Brightcove playlist player, CSS needs to be added to configure the look and feel of the playlist.
+        <figure class="bcls-figure"><img class="bcls-image" alt="Configure Player Dialog" src="/assets/images/adobe/node18484-configureplayercomponentadvanced.png" />
+          <figcaption class="bcls-caption--image">
+            <p>Configure Player Dialog Advanced Options</p>
+          </figcaption>
+        </figure>
+        <p>Below is sample CSS to format the playlist. Note that you will need to calculate your desired thumbnail height and width. You can use the formulas below as a starting point:</p>
+        <code translate="No">THUMBNAILWIDTH = Round((PLAYERWIDTH - NUMTHUMBNAILS * 4)/ NUMTHUMBNAILS);<br />
+        THUMBNAILHEIGHT = Round(THUMBNAILWIDTH * PLAYERHEIGHT / PLAYERWIDTH); </code>
+        <p>CSS Example:</p>
+        <pre>
+<code translate="No">
+.vjs-playlist {
+    background-color: #000000;
+    width: PLAYERWIDTH;
+    height: calc (THUMBNAILHEIGHT + 16px);
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+  .vjs-playlist-title-container {
+    color: #FFFFFF;
+    /*display: none;*/
+    opacity: 1;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .vjs-playlist-now-playing-text {
+    color: #FFFFFF;
+    /*display: none;*/
+    opacity: 1;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .vjs-up-next-text {
+    color: #FFFFFF;
+    /*display: none;*/
+    opacity: 1;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: right;
+  }
+  .vjs-playlist-duration {
+    color: #FFFFFF;
+    /*display: none;*/
+    opacity: 1;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .vjs-mouse.vjs-playlist {
+    background-color: #000000;
+  }
+  li.vjs-playlist-item {
+    background-color: #000000;
+    height: THUMBNAILHEIGHT;
+    width: THUMBNAILWIDTH;
+    display: inline-block;
+    border: 2px solid #000000;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  li.vjs-playlist-item:hover {
+    border-color: #FFFFFF;
+  }</code></pre>
+      </li>
+      <li>You may initially see an error indicating the video is not playable - this just results from the fact that the player cannot function properly in Edit mode.&nbsp; Switch to Preview mode to play the video.
+        <figure class="bcls-figure"><img class="bcls-image" alt="Video Cloud Error" src="/assets/images/adobe/node18484-videoclouderror.png" />
+          <figcaption class="bcls-caption--image">Video Cloud Error</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="video_content_management">Video content management</h2>
+    <p>Video content management in the v6.x Connector uses the AEM DAM to upload&nbsp;videos to Brightcove and update metadata in Brightcove. In versions of the connector before v5.x the administrative page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove.</p>
+    <h4>AEM DAM Setup</h4>
+    <p>Before using the AEM DAM with Brightcove for the first time, the DAM Integration Path folder structure as specified on the Brightcove configuration page at <code translate="No">/system/console/configMgr</code> needs to be created. The default is <code translate="No">/content/dam/brightcove_assets</code> if you do not change it on the configuration page.&nbsp; Under this folder a folder should be created for each Brightcove account; the folder name should be the numeric Account ID from the Brightcove configuration and the folder title should be the Account Alias from the Brightcove configuration.</p>
+    <p>In Classic UI the folders can be created at <code translate="No">/damadmin#/content/dam</code>. In Touch UI the folders are created at <code translate="No">/assets.html/content/dam</code>. Alternatively, the <strong>SYNC DATABASE</strong> button on the administrative page at <code translate="No">/brightcove/admin</code> will create the necessary folders in the AEM DAM for each configured Brightcove account and import all videos that already exist in the Brightcove account. If you do not want to sync some or all videos in Brightcove, those videos with the Brightcove&nbsp;tag AEM_NO_DAM will not be synced into the AEM DAM.</p>
+    <p>Also, if you are using the AEM DAM in Classic UI, enable the Title field as shown below when viewing <code translate="No">/damadmin#/content/dam</code>:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Enable Title" src="/assets/images/adobe/node18484-enabletitle.png" />
+      <figcaption class="bcls-caption--image">Enable Title</figcaption>
+    </figure>
+    <p>When a video is uploaded to the AEM DAM and then published to Brightcove, the&nbsp;original video file is maintained in the AEM DAM. For some implementations it is preferred to keep the "master" video in the AEM database while for other implementations it is not preferred because the size of the AEM database will grow too quickly. If you do not want the original video stored in the AEM DAM but do not want to use the Brightcove Studio interface to upload videos, you can simply delete the video in the AEM DAM after it has been published&nbsp;to Brightcove once and it will be imported back from Brightcove with a thumbnail image placeholder during the next synchronization, triggered by the <strong>SYNC DATABASE</strong> operation.</p>
+    <p>Note also that if you upload a video via the AEM DAM and publish to Brightcove and then, at a later time,&nbsp;replace the source file for that video in Brightcove Studio, it will create a new asset in the AEM DAM during the next <strong>SYNC DATABASE</strong>&nbsp;operation because a new videoID is created in Brightcove when the source file is replaced. &nbsp;You can, however, update metadata in Brightcove Studio for a video published from the AEM DAM&nbsp;and it will update the metadata for the existing asset in the AEM DAM as would be expected.</p>
+    <h4>Uploading New Videos in Classic UI</h4>
+    <ol class="bcls-tasklist">
+      <li>To upload a new video in the Classic UI, browse to <code translate="No">/damadmin#/content/dam/brightcove_assets</code>, open the folder for the Brightcove account you wish to use, and click <strong>New&gt;New File</strong>:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add New Video" src="/assets/images/adobe/node18484-addnewvideo.png" />
+          <figcaption class="bcls-caption--image">Add New Video</figcaption>
+        </figure>
+      </li>
+      <li>After uploading, edit the Title field or, if left blank, it will be set to the name of the video file uploaded to the DAM upon publishing the asset which will upload it&nbsp;to Brightcove. The Title field can be edited in the DAM asset list view by clicking on the Title field for the new asset:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Edit video Title" src="/assets/images/adobe/node18484-edittitle.png" />
+          <figcaption class="bcls-caption--image">Edit video Title</figcaption>
+        </figure>
+      </li>
+      <li>Alternatively, you can open the new asset and edit the <strong>Title</strong> field and save changes:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Edit Title in Asset Properties" src="/assets/images/adobe/node18484-edittitle2.png" />
+          <figcaption class="bcls-caption--image">Edit Title in Asset Properties</figcaption>
+        </figure>
+      </li>
+      <li>Other metadata fields are optional, except possibly Brightcove Custom Fields. However, due to a limitation in the AEM Classic UI, Brightcove Custom Fields, for which support was added in the 5.x version of the Connector, cannot be edited in the Classic UI and you must use Touch UI instead.</li>
+      <li>At this point the video exists in the AEM DAM only. To synchronize the video to Brightcove, select the new asset in the asset list view and click Activate to publish the video to Brightcove:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Send Video to Brightcove" src="/assets/images/adobe/node18484-sendvideotobrightcove.png" />
+          <figcaption class="bcls-caption--image">Send Video to Brightcove</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <h4>Uploading files in the Touch UI</h4>
+    <ol class="bcls-tasklist">
+      <li>To upload a new video in the Touch UI, browse to <code translate="No">/assets.html/content/dam/brightcove_assets/</code>, open the folder for the Brightcove account you wish to use, and click <strong>Create&gt;Files</strong>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Add Video Touch UI" src="/assets/images/adobe/node18484-addnewvideo-touchui.png" />
+          <figcaption class="bcls-caption--image">Add Video Touch UI</figcaption>
+        </figure>
+      </li>
+      <li>After you upload the video, edit the <strong>Title</strong> field if desired. The Title field is edited by opening the new asset, selecting <strong>View Properties</strong> and editing the Title on the Basic properties page:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Asset Properties" src="/assets/images/adobe/node18484-edittproperties-touchui.png" />
+          <figcaption class="bcls-caption--image">Asset Properties</figcaption>
+        </figure>
+        <figure class="bcls-figure"><img class="bcls-image" alt="Edit Title - Touch UI" src="/assets/images/adobe/node18484-edittitle-touchui.png" />
+          <figcaption class="bcls-caption--image">Edit Title - Touch UI</figcaption>
+        </figure>
+      </li>
+      <li>Other metadata fields are optional, except possibly Brightcove Custom Fields.</li>
+      <li>To synchronize the video to Brightcove, select Publish inside the asset view:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Send Video to Brightcove - Asset View" src="/assets/images/adobe/node18484-sendvideotobrightcove-assetview-touchui.png" />
+          <figcaption class="bcls-caption--image">Send Video to Brightcove - Asset View</figcaption>
+        </figure>
+      </li>
+      <li>Alternatively, you can select the new asset in the List, Card, or Column view and click Publish to publish the video to Brightcove:
+        <figure class="bcls-figure"><img class="bcls-image" alt="Send Video to Brightcove - Asset List" src="/assets/images/adobe/node18484-sendvideotobrightcove-touchui.png" />
+          <figcaption class="bcls-caption--image">Send Video to Brightcove - Asset List</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h4>Changing thumbnail and poster images in the AEM DAM</h4>
+    <p>Thumbnail and poster images can be updated in Brightcove by overwriting the renditions named brc_thumbnail.png and brc_poster.png in a video asset in the DAM. In the Classic UI, browse to /damadmin#/content/dam/brightcove_assets and open a video asset and click Upload under the Renditions tab:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Replace Thumbail/Poster" src="/assets/images/adobe/node18484-replacethumbnailposter.png" />
+      <figcaption class="bcls-caption--image">Replace Thumbnail/Poster</figcaption>
+    </figure>
+    <p>After uploading brc_thumbnail.png or brc_poster.png, <strong>Save</strong> and <strong>Activate</strong> the asset to upload the new thumbnail and poster images to Brightcove. In Touch UI browse to <code translate="No">/assets.html/content/dam/brightcove_assets/</code> and open a video asset. Click <strong>Renditions</strong> as shown below:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Activating New Images" src="/assets/images/adobe/node18484-clickrenditions.png" />
+      <figcaption class="bcls-caption--image">Activating New Images</figcaption>
+    </figure>
+    <p>Next click Add Rendition and upload a file named brc_thumbnail.png or brc_poster.png and then Publish the asset to upload the new thumbnail and poster images to Brightcove:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Upload Images to Brightcove" src="/assets/images/adobe/node18484-uploadimagestobrightcove.png" />
+      <figcaption class="bcls-caption--image">Upload Images to Brightcove</figcaption>
+    </figure>
+    <h4>Importing Videos&nbsp;from AEM to Brightcove</h4>
+    <p>If new videos are being uploaded directly in Brightcove Studio and/or if metadata is being edited directly in Brightcove Studio,&nbsp;the <strong>SYNC DATABASE</strong> button on the Brightcove administration page at <code translate="No">/brightcove/admin</code> is used to synchronize new videos or updated metadata from Brightcove into the AEM DAM.&nbsp; &nbsp;Note that video assets imported from Brightcove into the DAM will not copy the original video file into the AEM DAM but instead will use the Brightcove thumbnail as a placeholder for the asset. Thus, the AEM database size will not grow substantially when importing videos from Brightcove.</p>
+    <p>The database sync can be setup to execute on a schedule as well. Open the configuration console at <code translate="No">/system/console/configMgr</code> and then find and open "Brightcove Asset Integration Cronjob Scheduler Configuration".</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Enable Title" src="/assets/images/adobe/node18484-openbrightcoveschedulerconfig.png" />
+      <figcaption class="bcls-caption--image">Open Scheduler Configuration</figcaption>
+    </figure>
+    <p>Click CRON Enable and enter a valid CRON expression in the CRON Scheduler field.</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Enable Title" src="/assets/images/adobe/node18484-setbrightcoveschedulerconfig.png" />
+      <figcaption class="bcls-caption--image">Configure Scheduler</figcaption>
+    </figure>
+    <p>The following command can also be used manually from the OS to trigger the synchronization process.</p>
+    <pre>
+<meta charset="utf-8" /><b id="docs-internal-guid-03de6d0a-467d-81d3-deba-50596fc15c62">/usr/bin/curl --anyauth --user &lt;USERNAME&gt;:&lt;PASSWORD&gt; --silent --compressed &lt;INSTANCE&gt;/bin/brightcove/dataload.html</b></pre>
+    <p>Note that <b id="docs-internal-guid-03de6d0a-467d-81d3-deba-50596fc15c62">&lt;USERNAME&gt;:&lt;PASSWORD&gt;</b> must be of a valid AEM user with access to the Brightcove accounts and rights to create tags and content.</p>
+    <h2 id="administrative_page">Brightcove administration</h2>
+    <p>In previous versions of the Connector, the Brightcove Administration page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove and edit metadata for those videos. With the new support for the AEM DAM, the Brightcove Admin page is now generally used to only view data in the Brightcove account. For example, the Brightcove admin page shows the videos in the Brightcove account in real-time using direct API calls to Brightcove and could be used to confirm that a new video was uploaded to Brightcove or that metadata was synchronized to Brightcove by the publish process in the AEM DAM.</p>
+    <p>To verify playback from Brightcove, videos can be previewed on this Brightcove Admin page using the default video and playlist players specified on the Brightcove configuration page at /system/console/configMgr:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Preview Video" src="/assets/images/adobe/node18484-videopreview.png" />
+      <figcaption class="bcls-caption--image">Preview Video</figcaption>
+    </figure>
+    <p>The Brightcove Admin page also contains a <strong>SYNC DATABASE</strong> button which will initiate the synchronization process from Brightcove to the AEM DAM. Press the <strong>SYNC DATABASE</strong> button to synchronize all configured Brightcove accounts to the AEM DAM.&nbsp;&nbsp;If you do not want to sync some or all videos in Brightcove, those videos with the Brightcove&nbsp;tag AEM_NO_DAM will not be synced into the AEM DAM.</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sync Database" src="/assets/images/adobe/node18484-syncdatabase.png" />
+      <figcaption class="bcls-caption--image">Sync Database</figcaption>
+    </figure>
+    <p>This synchronization process can be automated via a cron job so that the manual operation is not necessary.</p>
+    <h3>Adding text tracks to a video</h3>
+    <p>Currently text tracks can only be added to a video via the Brightcove Admin page at <code translate="No">/brightcove/admin</code>. Text tracks are added via the <strong>Upload New Text Track</strong> button:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Add Text Tracks" src="/assets/images/adobe/node18484-addtexttracks.png" />
+      <figcaption class="bcls-caption--image">Add Text Tracks</figcaption>
+    </figure>
+    <p>Supporting text tracks uploaded as renditions in the DAM is on the roadmap to be implemented at a later time..</p>
+    <h3>Updating poster images</h3>
+    <figure class="bcls-figure">
+      <figcaption class="bcls-caption--image">&nbsp;</figcaption>
+    </figure>
+    <p>In addition to updating poster and thumbnail images in the AEM DAM, they&nbsp;can also be uploaded to Brightcove from a remote HTTP URL via the Brightcove Admin page at <code translate="No">/brightcove/admin</code>:</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="Upload Images from Brightcove Admin Page" src="/assets/images/adobe/node18484-uploadimagesfrombrightcoveadmin.png" />
+      <figcaption class="bcls-caption--image">Upload Images from Brightcove Admin Page</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Labels">Labels</h2>
+    <p>Labels can now be applied to videos within Adobe Experience Manager (AEM) and are synced with Brightcove Studio upon activation. The Brightcove Admin console also provides the ability to create new labels and filter assets by label.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/apply-labels.png" alt="Apply Labels">
+      <figcaption class="bcls-caption--image">Apply Labels</figcaption>
+    </figure>
+    <p>To create a new label, use the dropdown in the filter header and select <strong>+ Create New Label</strong>. Labels are also visible in the metadata preview when you select an asset within the admin console. If you click on the label link, it will trigger a search for all assets with that label (similar behavior to tags).</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/create-or-sort-labels.png" alt="Create or Sort Labels">
+      <figcaption class="bcls-caption--image">Create or Sort Labels</figcaption>
+    </figure>
+    <h3>Notes</h3>
+    <ol>
+      <li>New labels need to adhere to the conventions supported by Brightcove. For example, they must start with a “/” (forward slash).</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Subfolders">Subfolders</h2>
+    <p>Subfolders created in Brightcove Studio are now created within AEM upon sync. AEM user permissions can be applied to these folders using the standard practices for AEM access control to limit who can see what videos within AEM.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/folder-sync.png" alt="Folder Sync">
+      <figcaption class="bcls-caption--image">Folder Sync</figcaption>
+    </figure>
+    <h3>Notes</h3>
+    <ol>
+      <li>We recommended that you delete and re-sync your video library to use this feature.</li>
+      <li>Folders created in AEM are not created within Brightcove Studio.</li>
+      <li>Applying permissions to videos or their folders does not exclude those videos from the admin console OR the video player since both UI elements make on-demand calls to Brightcove’s API.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clips">Clips</h2>
+    <p>Clips (a type of video created by extracting a portion of another video) are filterable on each page of search results within the admin console. They are also denoted with the “CLIP” marker within all search results.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/filter-clips.png" alt="Filter Clips">
+      <figcaption class="bcls-caption--image">Filter Clips</figcaption>
+    </figure>
+    <p>Clips are also available via the video player and playlist components for playback on any AEM page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Scheduled_Activation">Scheduled Activation</h2>
+    <p>Videos can utilize the out-of-the-box AEM functionality to schedule activation for a future date and time. This will then trigger replication only at the time specified in the dialog.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/scheduled-activation.png" alt="Scheduled Activation">
+      <figcaption class="bcls-caption--image">Scheduled Activation</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Playlist_Creation">Playlist Creation</h2>
+    <p>Playlists can now be created within the AEM environment by selecting one or more videos and clicking <strong>Create Playlist</strong>.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/create-playlists.png" alt="Create Playlist">
+      <figcaption class="bcls-caption--image">Create Playlist</figcaption>
+    </figure>
+    <p>Playlists have always been editable (ability to add, sort, and delete videos) and that functionality has not changed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Multilingual_Metadata">Multilingual Metadata</h2>
+    <p>Multilingual metadata – or metadata variants – are now visible within the admin console when you select a video from the search results. Each variant link triggers a modal dialog that displays all metadata values as well as any custom fields that have been translated.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/variant-sync.png" alt="Multilingual Variant Sync">
+      <figcaption class="bcls-caption--image">Multilingual Variant Sync</figcaption>
+    </figure>
+  </section>
+</article>
