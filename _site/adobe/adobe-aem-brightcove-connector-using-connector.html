@@ -516,7 +516,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <article class="bcls-article">
   <h1>Adobe-AEM-Brightcove Connector: Using the Connector</h1>
-  <summary>This topic explains usage of the Adobe-AEM-Brightcove Connector 5.5.x to manage and publish videos in AEM.</summary>
+  <!-- TO DO -->
+  <summary>This topic explains usage of the Adobe-AEM-Brightcove Connector 6.x to manage and publish videos in AEM.</summary>
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
     <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
@@ -653,10 +654,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   
   <section class="bcls-section">
-    <h2 id="video_content_management">Video content management
-      <meta charset="utf-8" />
-    </h2>
-    <p>Video content management in the v5.x Connector uses the AEM DAM to upload&nbsp;videos to Brightcove and update metadata in Brightcove. In previous versions of the connector the administrative page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove.</p>
+    <h2 id="video_content_management">Video content management</h2>
+    <p>Video content management in the v6.x Connector uses the AEM DAM to upload&nbsp;videos to Brightcove and update metadata in Brightcove. In versions of the connector before v5.x the administrative page at <code translate="No">/brightcove/admin</code> was used to upload videos to Brightcove.</p>
     <h4>AEM DAM Setup</h4>
     <p>Before using the AEM DAM with Brightcove for the first time, the DAM Integration Path folder structure as specified on the Brightcove configuration page at <code translate="No">/system/console/configMgr</code> needs to be created. The default is <code translate="No">/content/dam/brightcove_assets</code> if you do not change it on the configuration page.&nbsp; Under this folder a folder should be created for each Brightcove account; the folder name should be the numeric Account ID from the Brightcove configuration and the folder title should be the Account Alias from the Brightcove configuration.</p>
     <p>In Classic UI the folders can be created at <code translate="No">/damadmin#/content/dam</code>. In Touch UI the folders are created at <code translate="No">/assets.html/content/dam</code>. Alternatively, the <strong>SYNC DATABASE</strong> button on the administrative page at <code translate="No">/brightcove/admin</code> will create the necessary folders in the AEM DAM for each configured Brightcove account and import all videos that already exist in the Brightcove account. If you do not want to sync some or all videos in Brightcove, those videos with the Brightcove&nbsp;tag AEM_NO_DAM will not be synced into the AEM DAM.</p>
@@ -771,6 +770,75 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <figure class="bcls-figure"><img class="bcls-image" alt="Upload Images from Brightcove Admin Page" src="/assets/images/adobe/node18484-uploadimagesfrombrightcoveadmin.png" />
       <figcaption class="bcls-caption--image">Upload Images from Brightcove Admin Page</figcaption>
     </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Labels">Labels</h2>
+    <p>Labels can now be applied to videos within Adobe Experience Manager (AEM) and are synced with Brightcove Studio upon activation. The Brightcove Admin console also provides the ability to create new labels and filter assets by label.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/apply-labels.png" alt="Apply Labels">
+      <figcaption class="bcls-caption--image">Apply Labels</figcaption>
+    </figure>
+    <p>To create a new label, use the dropdown in the filter header and select <strong>+ Create New Label</strong>. Labels are also visible in the metadata preview when you select an asset within the admin console. If you click on the label link, it will trigger a search for all assets with that label (similar behavior to tags).</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/create-or-sort-labels.png" alt="Create or Sort Labels">
+      <figcaption class="bcls-caption--image">Create or Sort Labels</figcaption>
+    </figure>
+    <h3>Notes</h3>
+    <ol>
+      <li>New labels need to adhere to the conventions supported by Brightcove. For example, they must start with a “/” (forward slash).</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Subfolders">Subfolders</h2>
+    <p>Subfolders created in Brightcove Studio are now created within AEM upon sync. AEM user permissions can be applied to these folders using the standard practices for AEM access control to limit who can see what videos within AEM.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/folder-sync.png" alt="Folder Sync">
+      <figcaption class="bcls-caption--image">Folder Sync</figcaption>
+    </figure>
+    <h3>Notes</h3>
+    <ol>
+      <li>We recommended that you delete and re-sync your video library to use this feature.</li>
+      <li>Folders created in AEM are not created within Brightcove Studio.</li>
+      <li>Applying permissions to videos or their folders does not exclude those videos from the admin console OR the video player since both UI elements make on-demand calls to Brightcove’s API.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clips">Clips</h2>
+    <p>Clips (a type of video created by extracting a portion of another video) are filterable on each page of search results within the admin console. They are also denoted with the “CLIP” marker within all search results.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/filter-clips.png" alt="Filter Clips">
+      <figcaption class="bcls-caption--image">Filter Clips</figcaption>
+    </figure>
+    <p>Clips are also available via the video player and playlist components for playback on any AEM page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Scheduled_Activation">Scheduled Activation</h2>
+    <p>Videos can utilize the out-of-the-box AEM functionality to schedule activation for a future date and time. This will then trigger replication only at the time specified in the dialog.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/scheduled-activation.png" alt="Scheduled Activation">
+      <figcaption class="bcls-caption--image">Scheduled Activation</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Playlist_Creation">Playlist Creation</h2>
+    <p>Playlists can now be created within the AEM environment by selecting one or more videos and clicking <strong>Create Playlist</strong>.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/create-playlists.png" alt="Create Playlist">
+      <figcaption class="bcls-caption--image">Create Playlist</figcaption>
+    </figure>
+    <p>Playlists have always been editable (ability to add, sort, and delete videos) and that functionality has not changed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Multilingual_Metadata">Multilingual Metadata</h2>
+    <p>Multilingual metadata – or metadata variants – are now visible within the admin console when you select a video from the search results. Each variant link triggers a modal dialog that displays all metadata values as well as any custom fields that have been translated.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/adobe/variant-sync.png" alt="Multilingual Variant Sync">
+      <figcaption class="bcls-caption--image">Multilingual Variant Sync</figcaption>
+    </figure>
+    <h3>Notes</h3>
+    <ol>
+      <li>It is not currently possible to edit this metadata within AEM, but this is on our roadmap.</li>
+    </ol>
   </section>
 </article>
 
