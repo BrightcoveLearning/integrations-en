@@ -952,9 +952,113 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Confirm that the sync ran successfully by reviewing the Updated date and time for the video you just created the multi lingual metadata for. It should reflect the recently updated date and time.</li>
     </ol>
   </section>
-  
   <section class="bcls-section">
-    <h2 id="Search_for_Videos_and_Playlists">Search for Videos and Playlists</h2>
+    <h2 id="Working_with_Labels">Working with Labels</h2>
+    <h3>Create Labels</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest}</strong>. You should see a “Labels” folder underneath the expanded Brightcove account node.</li>
+      <li>
+        Right-click the Labels folder, then select Insert > Brightcove Video Label as shown below:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/labels-right-clidk-menu.png" alt="Labels Right-Click Menu">
+          <figcaption class="bcls-caption--image">Labels Right-Click Menu</figcaption>
+        </figure>
+      </li>
+      <li>Enter a name for the label.</li>
+      <li>Click the Save button.</li>
+      <li>Perform a Push and Pull sync for the label (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+    <h3>Updating Labels</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest} > Labels</strong>.</li>
+      <li>Click the label you want to update.</li>
+      <li>Specify the new name as described next to the “New Name” field.</li>
+      <li>Click Save.</li>
+      <li>Perform a Push and Pull sync for the label (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+    <h3>Deleting Labels</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest} > Labels</strong>.</li>
+      <li>Click the label you want to delete.</li>
+      <li>Click the Delete icon on the menu bar.</li>
+      <li>Click Save.</li>
+      <li>Perform a Push and Pull sync for the label (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Working_with_Folders">Working with Folders</h2>
+    <h3>Create Folders</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest}</strong>. You should see a “Folders” folder underneath the expanded Brightcove account node.</li>
+      <li>
+        Right-click the Folders folder, then select Insert > Brightcove Video Folder as shown below:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/folders-right-click-menu.png" alt="Folders Right-Click Menu">
+          <figcaption class="bcls-caption--image">Folders Right-Click Menu</figcaption>
+        </figure>
+      </li>
+      <li>Enter a name for the folder.</li>
+      <li>Click the Save button.</li>
+      <li>Perform a Push and Pull sync for the folder (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+    <h3>Updating Folders</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest} > Folders</strong>.</li>
+      <li>Click the folder you want to update.</li>
+      <li>Specify the new name as described next to the “New Name” field.</li>
+      <li>Click Save.</li>
+      <li>Perform a Push and Pull sync for the folder (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+    <h3>Deleting Folders</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest} > Folders</strong>.</li>
+      <li>Click the folder you want to delete.</li>
+      <li>Click the Delete icon on the menu bar.</li>
+      <li>Click Save.</li>
+      <li>Perform a Push and Pull sync for the folder (as described in <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">using the push/pull pipelines</a>).</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Associating_Videos_With_Labels_and_Folders">Associating Videos With Labels and Folders</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>In Sitecore, select the <strong>Content Editor</strong>.</li>
+      <li>In the Content Editor, select the <strong>Media Library</strong> item.</li>
+      <li>Expand <strong>Brightcove > {Brightcove Account of interest} > Folders</strong>.</li>
+      <li>Perform a <a href="#Search_for_Videos_and_Playlists">search</a> to find the video of your choice, open the video details.</li>
+      <li>Scroll to the <strong>Brightcove Video Data</strong> section of the video details</li>
+      <li>
+        You should see both Labels and Brightcove Folder fields:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/label-and-folder-fields.png" alt="Label and Folder Fields for Video">
+          <figcaption class="bcls-caption--image">Label and Folder Fields for Video</figcaption>
+        </figure>
+      </li>
+      <li>Select the desired labels, or use the Brightcove folders dropdown to select a desired folder to associate.</li>
+      <li>Click Save.</li>
+      <li>Perform a <a href="#Synchronization_Between_Sitecore_and_Video_Cloud">Sync</a>.</li>
+      <li>
+        After the Sync, open and view the video in Brightcove Studio, observe that the associated folder is also reflected in the Brightcove Video on Video Cloud under the Categorization section:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/sitecore/folder-associated-with-video.png" alt="Folder Associated with Video">
+          <figcaption class="bcls-caption--image">Folder Associated with Video</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Search_for_Videos_and_Playlists">Searching for Videos and Playlists</h2>
     <p>To search for videos or playlists, click the magnifying glass icon to open the <strong>Search</strong> tab.</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/sitecore/start-search.png" alt="Search Tab">
@@ -1130,7 +1234,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 22 Jul 2022
+  Page last updated on 16 Oct 2022
 </div>
 
 
