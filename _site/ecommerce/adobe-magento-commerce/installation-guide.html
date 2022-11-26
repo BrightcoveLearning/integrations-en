@@ -3,31 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This document provides step-by-step instructions for installing the Brightcove extension for Adobe Magento Commerce.">
+  <meta name="description" content="This document provides technical instructions for installing Brightcove custom Module, as well as setting up Magento 2.x, for integrating Brightcove Cloud video and media files with Magento 2.x.">
   
   <title>Adobe Magento Commerce Extension Installation Guide</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
-  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/styles.css">
-  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/landing-page.css">
-  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/tabs.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/s-site-assets-favicons/site.webmanifest">  
   <link href="/assets/s-site-assets-stylesheets/fonts/public-sans.css" rel="stylesheet">
   <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
   <link href="assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
-
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/learning-paths/learning-paths.css">
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBJC11HF8Z"></script>
 <script translate="no">
@@ -38,9 +36,8 @@
   gtag('config', 'G-XBJC11HF8Z');
 </script>
   <script src="/assets/s-site-assets-scripts/sajari-head.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="/assets/s-site-assets-scripts/feather.min.js"></script>
 </head>
-
 
 <body class="body">
 
@@ -651,17 +648,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Adobe Magento Commerce Extension Installation Guide</h1>
 <article class="bcls-article">
-  <summary>This document provides step-by-step instructions for installing the Brightcove extension for Adobe Magento Commerce.</summary>
+  <summary>This document provides technical instructions for installing Brightcove custom Module, as well as setting up Magento 2.x, for integrating Brightcove Cloud video and media files with Magento 2.x.</summary>
   <aside class="bcls-aside bcls-aside--information">Note: if you are interested in obtaining the integration files, contact your account manager.</aside>
   <section class="bcls-section">
-    <h2 id="Prepare_for_installation">Prepare for installation</h2>
+    <h2 id="Overview">Overview</h2>
+    <h3>Functional overview</h3>
+    <p>This custom Module is developed based on specifications provided by Brightcove. It enables Magento admin users, to upload videos files to the Brightcove Cloud server through SFCC Business Manager, and publish these files on the product details page.</p>
+    <h3>Compatibility</h3>
+    <p>The custom Module is designed for Magento 2.x API with controllers for extended functionality. Clients should install version matching with their Magento architecture.</p>
+    <h3>Limitations / Constraints</h3>
+    <p>As mentioned above, Brightcove Custom Module designed to meet Brightcove’s specific requirements to integrate video files residing on Brightcove cloud server with Magento. To make use of this custom plugin, one must contact Brightcove and signup for these services.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Prepare_for_installation">Download and move to right path</h2>
     <h3>Extract Files and Folders and copy to the working folder</h3>
-<ol class="bcls-tasklist">
-    <li>Create a folder <code translate="No">[Magento_Root]/app/code/Brightcove/Upload</code></li>
-    <li>Download the archive file (code files).</li>
-    <li>Unzip the files/folders</li>
-    <li>Drop/move contents of the unzipped files to the directory in step 1</li>
-</ol>
+    <ol class="bcls-tasklist">
+        <li>Create a folder <code translate="No">[Magento_Root]/app/code/Brightcove/Upload</code></li>
+        <li>Download the archive file (code files).</li>
+        <li>Unzip the files/folders</li>
+        <li>Drop/move contents of the unzipped files to the directory in step 1</li>
+    </ol>
+    <p>Note: Download the archive files and paste into working copy folder under app/code/Brightcove/ folder. After pasting the below code we need to enable the module using the following CLI commands.</p>
   </section>
   <section class="bcls-section">
     <h2 id="enable_extensions_and_plugins">Enable Extensions and Plugins</h2>
@@ -678,38 +685,39 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="configure_brightcove_module_credentials">Configure Brightcove Module Credentials</h2>
     <p>To complete this part, you will need to get Client Credentials for the APIs that the extension uses. For details on how to create credentials see <a href="https://apis.support.brightcove.com/general/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a>. The minimum permissions you will need for the credentials are shown below:</p>
     <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/adobe-magento-commerce/api-permissions.png" alt="API Permissions">
+      <img class="bcls-image" src="/assets/images/adobe-magento-commerce/api-permissions.webp" alt="API Permissions">
       <figcaption class="bcls-caption--image">API Permissions</figcaption>
     </figure>
     <ol class="bcls-tasklist-restart">
       <li>
-        Navigate to <strong>Store -&gt; Configuration -&gt; Brightcove (left tab) -&gt; Brightcove Video Configuration</strong>
+        Navigate to <strong>Store =&gt; Configuration =&gt; Brightcove (left tab) =&gt; Brightcove Video Configuration</strong>
       </li>
       <li>
         Enter the details for the Brightcove configuration:
         <ul>
           <li><strong>Client ID</strong>: REST Client / User ID</li>
           <li><strong>Client Secret</strong>: REST Client Secret / password.</li>
-          <li><strong>API Base URL</strong>: <Link></li>
+          <li><strong>API Base URL</strong>: <code translate="no" class="language-http">https://oauth.brightcove.com/v4/access_token?grant_type=client_credentials</code></li>
           <li><strong>ID</strong>: Brightcove Store ID </li>
-          <li><strong>Category Video Slot</strong>:  To set the number of video slots to Category Column</li>
+          <!-- <li><strong>Category Video Slot</strong>:  To set the number of video slots to Category Column</li>
           <li><strong>Master Video Slot</strong>: To set the number of video slots to Master Column</li>
           <li>Variant Video Slot: To set the number of video slots to Variant Column</li>
-          <li>Email ID: To send email related to bulk upload status</li>
+          <li>Email ID: To send email related to bulk upload status</li> -->
           </ul>
           <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/configuration-page.png" alt="Configuration Page">
+          <img class="bcls-image" src="/assets/images/adobe-magento-commerce/configuration-page.webp" alt="Configuration Page">
           <figcaption class="bcls-caption--image">Configuration Page</figcaption>
         </figure>
       </li>
       <li>
-        Once all details are provided correctly, then <strong>Save</strong> the configuration page. Now users should be able to access the Brightcove custom module.
-        <figure class="bcls-figure">
+        Once all details are provided correctly, click <strong>Save Config</strong>.
+        <!-- <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/adobe-magento-commerce/brightcove-custom-module.png" alt="Brightcove Custom Module">
           <figcaption class="bcls-caption--image">Brightcove Custom Module</figcaption>
-        </figure>
+        </figure> -->
       </li>
     </ol>
+    <p>The Brightcove extension is now ready to use.</p>
   </section>
   <section class="bcls-section">
     <h2 id="disable_extension">Disable Extension</h2>
