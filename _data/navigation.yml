@@ -83,8 +83,6 @@
   docs:
     - name: 'Getting Started with the Connector for Sharepoint'
       url: '/sharepoint/getting-started-brightcove-video-connect-sharepoint.html'
-    - name: 'Using the Connector'
-      url: '/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html'
 - section:
   name: 'Hootsuite'
   url: '/hootsuite/index.html'
