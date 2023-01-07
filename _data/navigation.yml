@@ -4,6 +4,8 @@
 - section:
   name: 'General Information'
   url: '/general/index.html'
+  icon: fa-regular fa-circle-info
+  description: This section contains topics that apply generally to integrating Video Cloud with a CMS or other systems.
   docs:
     - name: 'CMS Integration Training Videos'
       url: '/general/cms-integration-training-videos.html'
@@ -18,6 +20,8 @@
 - section:
   name: 'WordPress'
   url: '/wordpress/index.html'
+  icon: fa-brands fa-wordpress
+  description: This section contains topics on the Wordpress connector for Video Cloud. The Connector supports Wordpress 6.1.
   docs:
     - name: 'Getting Started with Brightcove Video Connect'
       url: '/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html'
@@ -32,6 +36,8 @@
 - section:
   name: 'Drupal'
   url: '/drupal/index.html'
+  icon: fa-brands fa-drupal
+  description: This section contains topics on the Drupal Connector for Video Cloud.
   docs:
     - name: 'Getting Started with the Connector for Drupal'
       url: '/drupal/getting-started-brightcove-video-connect-drupal-cms.html'
@@ -52,6 +58,8 @@
 - section:
   name: 'Adobe'
   url: '/adobe/index.html'
+  icon: fa-regular fa-a
+  description: This section contains topics on the Adobe Experience Manager connector for Video Cloud.
   docs:
     - name: 'Getting Started with the Connector for AEM'
       url: '/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html'
@@ -68,6 +76,8 @@
 - section:
   name: 'Sitecore'
   url: '/sitecore/index.html'
+  icon: fa-regular fa-s
+  description: This section contains topics the Sitecore connector for Video Cloud.
   docs:
     - name: 'Getting Started with the Connector for Sitecore'
       url: '/sitecore/getting-started-brightcove-video-connect-sitecore-experience-platform.html'
@@ -80,21 +90,29 @@
 - section:
   name: 'SharePoint'
   url: '/sharepoint/index.html'
+  icon: fa-regular fa-s
+  description: This section contains topics on the Sharepoint connector for Video Cloud.
   docs:
     - name: 'Getting Started with the Connector for Sharepoint'
       url: '/sharepoint/getting-started-brightcove-video-connect-sharepoint.html'
 - section:
   name: 'Hootsuite'
   url: '/hootsuite/index.html'
+  icon: fa-regular fa-h
+  description: This section contains information about publishing Video Cloud videos using Hootsuite.
   docs:
     - name: 'Publishing Brightcove Videos from Hootsuite'
       url: '/hootsuite/publishing-brightcove-video-hootsuite.html'
 - section:
   name: 'eCommerce'
   url: '/ecommerce/index.html'
+  icon: fa-regular fa-cart-shopping
+  description: This section contains topics that apply to integrating Video Cloud with different eCommerce platforms.
   docs:
     - name: 'Salesforce Commerce Cloud'
       url: '/ecommerce/salesforce/index.html'
+      icon: fa-brands fa-salesforce
+      description: This section contains topics on the Brightcove custom cartridge for Salesforce Commerce Cloud. The Salesforce Commerce Connector is available for free to customers who have the Marketing Studio Essential or Premium packages.
       docs:
         - name: 'Salesforce Commerce Cloud: Installation'
           url: '/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-installation.html'
@@ -102,6 +120,8 @@
           url: '/ecommerce/salesforce/brightcove-custom-cartridge-salesforce-commerce-cloud-user-guide.html'
     - name: 'Adobe Magento Commerce'
       url: '/ecommerce/adobe-magento-commerce/index.html'
+      icon: fa-brands fa-magento
+      description: This section contains topics on the Brightcove custom cartridge for Adobe Magento Commerce. Note that these documents apply to version 2.x of Magento Commerce. The Adobe Magento Commerce Connector is available for free to customers who have the Marketing Studio Essential or Premium packages.
       docs:
         - name: 'Installation Guide'
           url: '/ecommerce/adobe-magento-commerce/installation-guide.html'
@@ -110,9 +130,13 @@
 - section:
   name: 'eCDN'
   url: '/ecdn/index.html'
+  icon: fa-regular fa-chart-network
+  description: This section contains topics that apply to integrating Video Cloud with different eCDNs.
   docs:
     - name: 'Kollective'
       url: '/ecdn/kollective/index.html'
+      icon: fa-regular fa-chart-network
+      description: This section contains topics on the Brightcove custom integration with Kollective eCDN.
       docs:
         - name: 'Kollective eCDN Deployment Guide'
           url: '/ecdn/kollective/kollective-deployment-guide.html'
@@ -120,11 +144,15 @@
           url: '/ecdn/kollective/kollective-user-guide.html'
     - name: 'Peer5'
       url: '/ecdn/peer5/index.html'
+      icon: fa-regular fa-chart-network
+      description: 
       docs:
         - name: 'Brightcove with Peer5 Integration'
           url: '/ecdn/peer5/brightcove-with-peer5-integration.html'
     - name: 'Ramp'
       url: '/ecdn/ramp/index.html'
+      icon: fa-regular fa-chart-network
+      description: Peer5 operates as a service that orchestrates peers and provides analytics and control. The service is activated using our Javascript API in the browser. The client side consists of custom WebRTC p2p logic, an HTTP client and a delivery manager that optimizes speed using the two methods (P2P and HTTP). This section contains topics on using the Peer5 plugin to integrate Peer5 with the Brightcove Player.
       docs:
         - name: 'Getting Started with Ramp OmniCache and Video Cloud'
           url: '/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html'
@@ -133,6 +161,8 @@
 - section:
   name: 'Brightcove Video Connect for Microsoft Teams'
   url: '/teams/index.html'
+  icon: fa-brands fa-microsoft
+  description: This section contains topics on integrating Video Cloud with Ramp Omnicache and Multicast+.
   docs:
     - name: Installing the Connector for Teams
       url: '/teams/installation.html'
@@ -141,6 +171,8 @@
 - section:
   name: 'Web Conferencing'
   url: '/web-conferencing/index.html'
+  icon: fa-regular fa-camera-web
+  description: This section contains topics that apply to integrating Brightcove Live with different Web Conferencing platforms.
   docs:
     - name: Zoom Conference on Brightcove Live
       url: '/web-conferencing/host-zoom-conference-brightcove-live.html'
@@ -153,12 +185,16 @@
 - section:
   name: 'Non-Brightcove Players'
   url: '/non-brightcove-players/index.html'
+  icon: fa-regular fa-play
+  description: 
   docs:
     - name: Deliver Brightcove Content Using InPlayer
       url: '/non-brightcove-players/inplayer.html'
 - section:
   name: 'Support'
   url: '/support/index.html'
+  icon: fa-regular fa-comments-question-check
+  description: Learn how to get help from Brightcove Support.
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
