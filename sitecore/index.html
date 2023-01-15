@@ -5,18 +5,26 @@ parent: Home
 layout: index_pages
 ---
   <h1><i class="fa-regular fa-s"></i> {{ page.title }}</h1>
-<article class="landing-page-wrapper">
-  <summary>{{ page.description }}</summary>
-  <section>
-    <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
-    <ul class="bcls-topic-list">
+  <article class="bcls-article">
+    <summary>{{ page.description }}</summary>
+  
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
       {% for item in site.data.navigation %}
-        {% if item.name == page.title %}
-          {% for doc in item.docs %}
-              <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-          {% endfor %}
-        {% endif %}
+      {% if item.name == page.title %}
+      <section class="flex-container">
+        <div>
+          <ul class="list-group list-group-flush">
+            {% for entry in item.docs %}
+            <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+      {% endif %}
       {% endfor %}
-    </ul>
-  </section>
-</article>
+    </section>
+  </article>

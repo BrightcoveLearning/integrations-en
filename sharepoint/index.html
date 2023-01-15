@@ -7,15 +7,24 @@ layout: index_pages
   <h1><i class="fa-regular fa-s"></i> {{ page.title }}</h1>
   <article class="bcls-article">
     <summary>{{ page.description }}</summary>
-  <section class="card-wrapper">
-    <section class="bcls-card">
-      <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics</h2>
-        <ul>
-          <li><a href="/sharepoint/getting-started-brightcove-video-connect-sharepoint.html">Getting Started with Brightcove Video Connect for SharePoint</a></li>
-          <li><a href="/sharepoint/sharepoint-brightcove-connector-4041-using-connector.html">SharePoint-Brightcove Connector 4.0/4.1: Using the Connector</a></li>
-        </ul>
+  
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+      {% for item in site.data.navigation %}
+      {% if item.name == page.title %}
+      <section class="flex-container">
+        <div>
+          <ul class="list-group list-group-flush">
+            {% for entry in item.docs %}
+            <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
+    </div>
+    </div>
+      {% endif %}
+      {% endfor %}
     </section>
-  </section>
-</article>
+  </article>
