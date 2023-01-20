@@ -1,21 +1,34 @@
 ---
 title: Ramp
 description: This section contains topics on integrating Video Cloud with Ramp Omnicache and Multicast+.
-parent: Home
-layout: index_pages
+parent: eCDN
 ---
-  <h1><i class="fa-regular fa-chart-network"></i> {{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="card-wrapper">
-    <section class="bcls-card">
-      <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics</h2>
-        <ul>
-          <li><a href="/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html">Getting Started with Ramp Multicast+ and Video Cloud</a></li>
-          <li><a href="/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html">ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html</a></li>
-        </ul>
-      </div>
-    </section>
-  </section>
+<!-- Template for sub-section that has just pages -->
+{% for item in site.data.navigation %}
+  {% if item.name == page.parent %}
+    {% for section in item.docs %}
+      {% if section.name == page.title %}
+      <h1><i class="{{ item.icon }}"></i> {{ page.title }}</h1>
+      <article class="bcls-article">
+        <summary>{{ page.description }}</summary>
+
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
+            <div class="card-body">
+              <section class="flex-container">
+                <div>
+                  <ul class="list-group list-group-flush">
+                    {% for entry in section.docs %}
+                    <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 </article>

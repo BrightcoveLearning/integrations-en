@@ -1,20 +1,34 @@
 ---
-title: Peer5 with Video Cloud
+title: Peer5
 description: "Peer5 operates as a service that orchestrates peers and provides analytics and control. The service is activated using our Javascript API in the browser. The client side consists of custom WebRTC p2p logic, an HTTP client and a delivery manager that optimizes speed using the two methods (P2P and HTTP). This section contains topics on using the Peer5 plugin to integrate Peer5 with the Brightcove Player."
-parent: Home
-layout: index_pages
+parent: eCDN
 ---
-  <h1><i class="fa-regular fa-chart-network"></i> {{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="card-wrapper">
-    <section class="bcls-card">
-      <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics</h2>
-        <ul>
-          <li><a href="/ecdn/peer5/brightcove-with-peer5-integration.html">Brightcove with Peer5 Integration</a></li>
-        </ul>
-      </div>
-    </section>
-  </section>
+<!-- Template for sub-section that has just pages -->
+{% for item in site.data.navigation %}
+  {% if item.name == page.parent %}
+    {% for section in item.docs %}
+      {% if section.name == page.title %}
+      <h1><i class="{{ item.icon }}"></i> {{ page.title }}</h1>
+      <article class="bcls-article">
+        <summary>{{ page.description }}</summary>
+
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
+            <div class="card-body">
+              <section class="flex-container">
+                <div>
+                  <ul class="list-group list-group-flush">
+                    {% for entry in section.docs %}
+                    <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 </article>

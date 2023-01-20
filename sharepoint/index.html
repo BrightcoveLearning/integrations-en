@@ -1,30 +1,30 @@
 ---
-title: Sharepoint
+title: SharePoint
 description: This section contains topics on the Sharepoint connector for Video Cloud.
 parent: Home
-layout: index_pages
 ---
-  <h1><i class="fa-regular fa-s"></i> {{ page.title }}</h1>
+<!-- Template for section that has just pages -->
+{% for item in site.data.navigation %}
+  {% if item.name == page.title %}
+  <h1><i class="{{ item.icon }}"></i> {{ page.title }}</h1>
   <article class="bcls-article">
     <summary>{{ page.description }}</summary>
-  
+
     <div class="col-12 col-lg-4 py-3">
-      <div class="card shadow-sm" style="background: white">
+      <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
         <div class="card-body">
-      {% for item in site.data.navigation %}
-      {% if item.name == page.title %}
-      <section class="flex-container">
-        <div>
-          <ul class="list-group list-group-flush">
-            {% for entry in item.docs %}
-            <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
-            {% endfor %}
-          </ul>
+          <section class="flex-container">
+            <div>
+              <ul class="list-group list-group-flush">
+                {% for entry in item.docs %}
+                <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-    </div>
-      {% endif %}
-      {% endfor %}
-    </section>
-  </article>
+  {% endif %}
+{% endfor %}
+</article>
