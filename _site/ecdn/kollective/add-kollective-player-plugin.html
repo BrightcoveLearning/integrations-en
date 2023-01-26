@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Adobe-AEM-Brightcove Connector: Overview</title>
+        <title>Installing the Kollective Player Plugin</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
+        <meta name="description" content="The Kollective player plugin may be use for both self-hosted or Brightcove-hosted implementations.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -347,7 +347,7 @@
               
               
               
-              <li class="nav-item"><a class="nav-link" href="/adobe/adobe-aem-brightcove-connector-overview.html" aria-current="page">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="/adobe/adobe-aem-brightcove-connector-overview.html">Overview</a></li>
               
               
               
@@ -508,7 +508,7 @@
                   
                   
                   
-                  <li class="nav-item"><a class="nav-link" href="/ecdn/kollective/add-kollective-player-plugin.html">Installing the Kollective Player Plugin</a></li>
+                  <li class="nav-item section-doc"><a class="nav-link" href="/ecdn/kollective/add-kollective-player-plugin.html" aria-current="page">Installing the Kollective Player Plugin</a></li>
                   
                   
                   
@@ -692,11 +692,15 @@
             <li class="breadcrumb-item"><a class="theme-link" href="/">Home</a></li>
             
             
-            <li class="breadcrumb-item"><a class="theme-link" href="/adobe/">Adobe</a></li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/ecdn/">Ecdn</a></li>
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Adobe-AEM-Brightcove Connector: Overview</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/ecdn/kollective/">Kollective</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Installing the Kollective Player Plugin</li>
             
             
           </ol>
@@ -717,38 +721,97 @@
       <br>
       
       
+<h1>Installing the Kollective Player Plugin</h1>
 <article class="bcls-article">
-  <h1>Adobe-AEM-Brightcove Connector: Overview</h1>
-  <summary>This topic provides an overview of the Brightcove connector for Adobe Experience Manager (AEM) 6.0.</summary>
+  <summary>The Kollective player plugin may be use for both self-hosted or Brightcove-hosted implementations.</summary>
   <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
-    <p>The latest release of the connector can be found on <a href="https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/">https://github.com/brightcove/Adobe-AEM-Brightcove-Connector/releases/</a>.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Be sure to get the correct version, depending on whether you use the on-premise or cloud-based version of AEM.</aside>
-    <p>For detailed instructions, see:</p>
-    <ul>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-installation.html">Installation</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-configuration.html">Configuration</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a></li>
-    </ul>
-    <!-- TO DO -->
-    <p>Installation of the Connector is similar to installation of the v4.1/v4.2 Connector described <a href="http://files.brightcove.com/bc-adobe-experience-manager.pdf">here</a> . If you are new to the Brightcove AEM Connector we recommend you read that document prior to proceeding.</p>
-    <p>Because this version of the Connector has just been released, it is recommended to install the connector on a development server that is configured as similarly as possible to your production server and work with it enough to be sure that it meets your needs in terms of both functionality and stability before deploying it on a production server. Also, the Connector is open source and any usage of the Connector falls under this <a href="https://github.com/coresecure/Adobe-AEM-Brightcove-Connector/blob/master/LICENSE">License</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="key_changes">Key changes</h2>
-    <p>The v6.x connector introduces support for several new features:</p>
-    <ul>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Labels">Labels</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Subfolders">Subfolders</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Clips">Clips</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Scheduled_Activation">Scheduled Activation</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Playlist_Creation">Playlist Creation</a></li>
-      <li><a href="/adobe/adobe-aem-brightcove-connector-using-connector.html#Multilingual_Metadata">Multilingual Metadata</a></li>
-    </ul>
+    <h2 id=""></h2>
+    <p></p>
   </section>
 </article>
 
+
+
+<section class="bcls-section">
+  <h2 id="Installing_the_player_plugin">Installing the player plugin</h2>
+  <p>
+    To integrate Kollective with Brightcove Player, add the Kollective plugin to your player.
+  </p>
+  
+    <aside class="bcls-aside bcls-aside--tip">
+        The Kollective Plugin is supported with the Brightcove Player
+        <strong>version v6.58+</strong>.
+      </aside>
+  <p>
+        The following steps detail using Video Cloud Studio to load the plugin.
+      </p>
+  
+      <ol class="bcls-tasklist-restart">
+        <li>
+          In Video Cloud Studio, open the <strong>PLAYERS</strong> module and either create a new player
+          or locate the player to which you wish to add the plugin.
+        </li>
+        <li>Select the link for the player to open the player's properties.</li>
+        <li>Select <strong>Plugins</strong> in the left navigation menu.</li>
+        <li>
+          <p>
+            Next, select the <strong>Add a Plugin</strong> button, and then select
+            <strong>Brightcove Plugin</strong>.
+          </p>
+  
+          <figure class="bcls-figure">
+            <img
+              class="bcls-image--no-border"
+              alt="Add a Plugin button"
+              src="/assets/images/ecdn/kollective/add-a-plugin.png"
+            />
+            <figcaption class="bcls-caption--image">
+              Add a Plugin button
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <p>
+            Expand the <strong>Brightcove Plugin</strong> dropdown and select
+            <strong>kollective</strong>.
+          </p>
+  
+          <figure class="bcls-figure">
+            <img
+              class="bcls-image--no-border"
+              alt="Kollective plugin"
+              src="/assets/images/ecdn/kollective/kollective_plugin.png"
+            />
+            <figcaption class="bcls-caption--image">
+              Kollective plugin
+            </figcaption>
+          </figure>
+        </li>
+    <li>
+      <p>
+        For the <strong>Options(JSON)</strong>: Enter the following:
+          </p>
+          <ul>
+            <li>
+              <code translate="No">ksdkUrl</code> - Points to the <code translate="No">ksdk</code> library from Kollective -- use the version of your choice
+            </li>
+          </ul>
+      <pre>
+  <code class="language-bash" translate="No">{
+      &quot;ksdkUrl&quot;: &quot;<span class="bcls-input">ksdk URL</span>&rdquo;
+  }
+  </code></pre>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Select the <strong>Save</strong> button.
+    </li>
+    <li>
+      Publish your player.
+    </li>
+  </ol>
+  </section>
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->
   
   <nav class="right-side-nav" id="right_side_nav">

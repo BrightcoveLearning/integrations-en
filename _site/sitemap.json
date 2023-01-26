@@ -5,6 +5,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/kollective/add-kollective-player-plugin.html",
+      "oldURL": "/add-kollective-player-plugin"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/adobe/adobe-aem-brightcove-connection-installation-cloud.html",
       "oldURL": "/adobe-aem-brightcove-connection-installation-cloud"
   },
@@ -180,37 +185,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/shopify/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/sitecore/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/teams/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
       "oldURL": "/index"
   },
 
@@ -220,27 +195,22 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/wordpress/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/hootsuite/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/wordpress/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
       "oldURL": "/index"
   },
 
@@ -255,12 +225,22 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/shopify/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
       "oldURL": "/index"
   },
 
@@ -275,7 +255,32 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/web-conferencing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/teams/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/",
       "oldURL": "/index"
   },
 

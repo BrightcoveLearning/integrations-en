@@ -140,6 +140,8 @@
       docs:
         - name: 'Kollective eCDN Deployment Guide'
           url: '/ecdn/kollective/kollective-deployment-guide.html'
+        - name: 'Installing the Kollective Player Plugin'
+          url: '/ecdn/kollective/add-kollective-player-plugin.html'
         - name: 'Kollective eCDN User Guide'
           url: '/ecdn/kollective/kollective-user-guide.html'
     - name: 'Peer5'

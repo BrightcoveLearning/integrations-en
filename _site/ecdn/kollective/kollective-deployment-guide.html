@@ -508,6 +508,12 @@
                   
                   
                   
+                  <li class="nav-item"><a class="nav-link" href="/ecdn/kollective/add-kollective-player-plugin.html">Installing the Kollective Player Plugin</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li class="nav-item"><a class="nav-link" href="/ecdn/kollective/kollective-user-guide.html">Kollective eCDN User Guide</a></li>
                   
                   
@@ -719,6 +725,12 @@
 <article class="bcls-article">
   <summary>In this topic, you will learn the how to integrate the Kollective eCDN with Brightcove Player.</summary>
 
+  <aside class="bcls-aside bcls-aside--information language-editable">
+    There is now a Brightcove hosted version of the Syndicator app, which we
+    recommend for most customers. Contact their Customer Success Manager to get set up. 
+    The self install is still an option, however, if you prefer to do it that way.
+  </aside>
+
 <section class="bcls-section">
 <h2 id="Overview">Overview</h2>
 
@@ -917,6 +929,8 @@ EMAIL_FROM=<span class="bcls-input">your email from address</span>
 <code class="language-bash" translate="No"># Kollective publish API base url
 KOLLECTIVE_PUBLISH_API_BASE_URL=https://content.kollective.app/api
 </code></pre>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note: this step is optional - by default the latest Kollective SDK will be used. You should only add a specific versioned URL if instructed to do so by Kollective.</aside>
   </li>
   <li>
     <p>
@@ -1086,92 +1100,7 @@ CUSTOM_FIELD_KOLLECTIVE_LAST_SYNC_STATUS=kollective_last_sync_status
 </ol>
 </section>
 
-<section class="bcls-section">
-<h2 id="Installing_the_player_plugin">Installing the player plugin</h2>
-<p>
-  To integrate Kollective with Brightcove Player, add the Kollective plugin to your player.
-</p>
 
-  <aside class="bcls-aside bcls-aside--tip">
-      The Kollective Plugin is supported with the Brightcove Player
-      <strong>version v6.58+</strong>.
-    </aside>
-<p>
-      The following steps detail using Video Cloud Studio to load the plugin.
-    </p>
-
-    <ol class="bcls-tasklist-restart">
-      <li>
-        In Video Cloud Studio, open the <strong>PLAYERS</strong> module and either create a new player
-        or locate the player to which you wish to add the plugin.
-      </li>
-      <li>Select the link for the player to open the player's properties.</li>
-      <li>Select <strong>Plugins</strong> in the left navigation menu.</li>
-      <li>
-        <p>
-          Next, select the <strong>Add a Plugin</strong> button, and then select
-          <strong>Brightcove Plugin</strong>.
-        </p>
-
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Add a Plugin button"
-            src="/assets/images/ecdn/kollective/add-a-plugin.png"
-          />
-          <figcaption class="bcls-caption--image">
-            Add a Plugin button
-          </figcaption>
-        </figure>
-      </li>
-      <li>
-        <p>
-          Expand the <strong>Brightcove Plugin</strong> dropdown and select
-          <strong>kollective</strong>.
-        </p>
-
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Kollective plugin"
-            src="/assets/images/ecdn/kollective/kollective_plugin.png"
-          />
-          <figcaption class="bcls-caption--image">
-            Kollective plugin
-          </figcaption>
-        </figure>
-      </li>
-  <li>
-    <p>
-      For the <strong>Options(JSON)</strong>: Enter the following:
-        </p>
-        <ul>
-          <li>
-            <code translate="No">ksdkUrl</code> - Points to the <code translate="No">ksdk</code> library from Kollective -- use the version of your choice
-          </li>
-        </ul>
-    <pre>
-<code class="language-bash" translate="No">{
-    &quot;ksdkUrl&quot;: &quot;<span class="bcls-input">ksdk URL</span>&rdquo;
-}
-</code></pre>
-      </li>
-    </ul>
-  </li>
-  <li>
-    Select the <strong>Save</strong> button.
-  </li>
-  <li>
-    Publish your player.
-  </li>
-  <!-- <li>
-  Update/change the embed code from <span class="bcls-input">data-video-id</span> to <span class="bcls-input">data-kollective-video-id</span>.
-  </li>
-<aside class="bcls-aside bcls-aside--warning">
-    When embedding a player for use with the Kollective integration, you must update/change the embed code from <span class="bcls-input">data-video-id</span> to <span class="bcls-input">data-kollective-video-id</span>.
-  </aside> -->
-</ol>
-</section>
 
 <!-- <section class="bcls-section">
 <h2 id="Whitelisting_domain_names">Whitelisting domain names</h2>
