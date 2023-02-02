@@ -4,14 +4,49 @@ description: This section contains information about integrations with non-Brigh
 parent: Home
 ---
 
-<!-- Template for section that has just pages -->
+<!-- Template for section that has just pages
 {% for item in site.data.navigation %}
-  {% if item.name == page.title %}
+  {% if item.name == page.title %} -->
   <h1><i class="{{ item.icon }}"></i> {{ page.title }}</h1>
   <article class="bcls-article">
     <summary>{{ page.description }}</summary>
 
-    <div class="col-12 col-lg-4 py-3">
+    <div class="row">
+      <div class="col-12 col-lg-4 py-3">
+        <div class="card shadow-sm" style="background: white" onclick="location.href='https://apis.support.brightcove.com/playback/'">
+          <div class="card-body">
+              <h5 class="card-title mb-3"><i class="fa-regular fa-play"></i>&nbsp;&nbsp;Playback API</h5>
+            <div class="card-text">
+              <p>The Video Cloud platform supports third-party players. For the integration with third-party players, the Playback API must be used to get the manifest file to the video.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://apis.support.brightcove.com/playback/getting-started/quick-start-playback-api.html" style="text-decoration: none;">Quick Start: Playback API</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--//card-body--> 
+        </div>
+        <!--//card--> 
+      </div>
+      <!--//col--> 
+      <!--end of the card-->
+      <div class="col-12 col-lg-4 py-3">
+        <div class="card shadow-sm" style="background: white" onclick="location.href='https://apis.support.brightcove.com/playback/'">
+          <div class="card-body">
+              <h5 class="card-title mb-3"><i class="fa-regular fa-filter"></i>&nbsp;&nbsp;Data Collection API</h5>
+            <div class="card-text">
+              <p>If a third-party player is used, the Data Collection API is also necessary to report analytics, at least to calculate the number of streams.</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://apis.support.brightcove.com/data-collection/getting-started/overview-data-collection-api-v2.html#minimal" style="text-decoration: none;">Overview: Data Collection API v2</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--//card-body--> 
+        </div>
+        <!--//card--> 
+      </div>
+    </div>
+
+    <!-- <div class="col-12 col-lg-4 py-3">
       <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
         <div class="card-body">
           <section class="flex-container">
@@ -27,5 +62,5 @@ parent: Home
       </div>
     </div>
   {% endif %}
-{% endfor %}
+{% endfor %} -->
 </article>

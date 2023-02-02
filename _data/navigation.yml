@@ -188,7 +188,7 @@
   name: 'Non-Brightcove Players'
   url: '/non-brightcove-players/index.html'
   icon: fa-regular fa-play
-  description: 
+  description: This section contains information about integrations with non-Brightcove players that allow Brightcove content to be delivered through them.
   docs:
     - name: Deliver Brightcove Content Using InPlayer
       url: '/non-brightcove-players/inplayer.html'
