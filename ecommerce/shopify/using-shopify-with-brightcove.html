@@ -15,6 +15,10 @@ layout: doc_pages_staging
     <aside class="bcls-aside bcls-aside--information language-editable">For instructions on installing the Brightcove Video Connector, see the <a href="/ecommerce/shopify/brightcove-shopify-commerce-platform-overview.html">Overview</a>.</aside>
   </section>
   <section class="bcls-section">
+    <h2 id="guidelines">Guidelines tab</h2>
+    <p>In the <strong>Guidelines</strong> tab you will find instructions for connecting the Brightcove Video Connector to each of the templates you use.</p>
+  </section>
+  <section class="bcls-section">
     <h2 id="viewing_videos">Viewing videos</h2>
     <p>To view existing videos in your Video Cloud account, click the <strong>Videos</strong>:</p>
     <figure class="bcls-figure">
@@ -202,7 +206,44 @@ layout: doc_pages_staging
       <dt>Performance reports</dt>
       <dd>Performance reports provide general information about the performance of the video content such as how many times videos were viewed, what devices they were viewed on, how many seconds of the video was watched, and so forth.</dd>
       <dt>Engagement reports</dt>
-      <dd>Engagement reports show you how many views there were at different points in a video </dd>
+      <dd>Engagement reports show you how many views there were at different points in a video - remember that these are views, not viewers, so for example, if someone kept moving the playhead back and rewatched the last few seconds of the video 10 times, that would count as 10 views at that point. The trends can still be revealing, however. A sharp decline in views early in the video, for example, suggests that it is not generally appealing, while a sharp decline later in the video might indicate a boring part or something that suggests to viewers that the video is essentially over.</dd>
     </dl>
+    <p>You can switch back and forth between performance and engagement reports using the report type selector:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/analytics-performance-engagement-selector.webp" alt="Report Type Selector">
+      <figcaption class="bcls-caption--image">Report Type Selector</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="performance_report_subtypes">Performance report types</h2>
+    <p>When you are viewing performance reports, there are many kinds that you can choose from using the subtype selector to the right of the report type selector:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/performance-report-filter-selector.webp" alt="Performance Report Types">
+      <figcaption class="bcls-caption--image">Performance Report Types</figcaption>
+    </figure>
+    <p>The different reports are useful in various ways. For example, for your business model, it may be particularly useful to know whether the viewers are predominantly on desktop computers or mobile devices, or which countries most of the views occur it. Similarly, you may want to view data by day, because it is important to you to know if viewers are looking at your campaigns more on weekdays or weekends.</p>
+    <p>The performance report table below the selectors show the analytics data for indiviual items. It will show up to 10 items at time, and if there are more than 10 items, you will see buttons to navigate through them at the bottom:</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="performance_report_chart">Performance Report</h2>
+    <p>The chart above the performance report table shows the total values for the account for different metrics over the select date range. The selector above the chart allows you to choose different metrics to view:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/analytics-report-selectors.webp" alt="Metrics Selector">
+      <figcaption class="bcls-caption--image">Metrics Selector</figcaption>
+    </figure>
+    <p></p>Also notice that when you mouse over one the bars on the chart, the actual data number that it represents is displayed:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/performance-report-mouseover-date.webp" alt="Mouse Over Performance Chart">
+      <figcaption class="bcls-caption--image">Mouse Over Performance Chart</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="engagement_reports">Engagement reports</h2>
+    <p>There are also subtypes for the Engagement report type, but they are limited to video, player, and day:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/engagement-report-filter-selector.webp" alt="Engagement Report Types">
+      <figcaption class="bcls-caption--image">Engagement Report Types</figcaption>
+    </figure>
+    <p>The chart above the engagement report table shows average engagement for videos across the account. The only change you can make in the chart is to adjust the date range.</p>
   </section>
 </article>
