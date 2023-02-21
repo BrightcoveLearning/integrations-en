@@ -62,3 +62,15 @@
   path = assets/s-site-assets-template-stylesheets
   url = https://github.com/BrightcoveLearning/s-site-assets-template-stylesheets
   branch = main
+[submodule "_includes/s-campaign"]
+	path = _includes/s-campaign
+	url = https://github.com/BrightcoveLearning/s-campaign
+[submodule "assets/images/s-campaign-img"]
+	path = assets/images/s-campaign-img
+	url = https://github.com/BrightcoveLearning/s-campaign-img
+[submodule "_includes/s-integrations"]
+	path = _includes/s-integrations
+	url = https://github.com/BrightcoveLearning/s-integrations
+[submodule "assets/images/s-integrations-img"]
+	path = assets/images/s-integrations-img
+	url = https://github.com/BrightcoveLearning/s-integrations-img
