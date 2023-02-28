@@ -253,22 +253,77 @@ layout: doc_pages_staging
           <li><strong>Description</strong> (optional)</li>
           <li><strong>Tags</strong> (optional)</li>
           <li><strong>Reference ID</strong> (optional) usually used to match an ID in another system.</li>
-          <li><strong>Products</strong> (optional) highlight your product(s) to the live event, which will also allow you to pin them to the top of the chat that appears at the top of the chat that accompanies the live event, where viewers can click them to visit the product page where it can be purchased.</li>
-          <li><strong>Region</strong> (required) choose the region that you think will be closest to your target audience.</li>
+          <li><strong>Products</strong> (optional) highlight your product(s) in the live event, which will also allow you to pin them to the top of the chat that appears at the top of the chat that accompanies the live event, where viewers can click them to visit the product page where it can be purchased.</li>
+          <li>
+            <strong>Region</strong> (required) choose the region that you think will be closest to your target audience.
+          </li>
           <li>
             <strong>Live Ingest Profile</strong> (optional) if you wish to use a different profile than the default one, you can see the renditions created for each profile by selecting it. The profile determines the video renditions actually delivered to viewers (be aware that the actual rendition a viewer sees depends on the bandwidth available on the viewer's connection).
-            <aside class="bcls-aside bcls-aside--warning language-editable">Note that Live streams must use Live ingest profiles - do not select a profile from the list unless its name includes "Live".</aside>
           </li>
-          <li><strong>Convert event to video asset when complete</strong> check the box to save a VOD recording of it. Note that if try to view a finished live event that no recording was saved for, you will see an error displayed in the player.</li>
+          <li><strong>Convert event to video asset when complete</strong> check the box to save a VOD recording of it. Note that if later you try to view a finished live event that no recording was saved for, you will see an error displayed in the player.</li>
           <li><strong>Products</strong> click <span class="button-green">Add Product</span> to open the product selector, where you can filter and select products you want to add to the live event. Click <span class="button-green">Save</span> when you have made your selections.</li>
         </ul>
       </li>
-      <li>Click <span class="button-green">Save</span> to create the live event.</li>
-  </ol>
+      <li>
+        Click <span class="button-green">Save</span> to create the live event.
+        <aside class="bcls-aside bcls-aside--tip language-editable">Note: if you see an error message indicating that you have created the maximum number of the events for the selected region, select a different region and click <span class="button-green">Save</span> again.</aside>
+      </li>
+    </ol>
+    <h3>Setting up and running the live event</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        It will take a couple of minutes for the live event to initialize. While you are waiting for that, you can get your live encoder ready by copying the Live endpoint (RTMP address) and stream name into your encoder settings from the live event control room:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-rtmp-stream-name.webp" alt="Live Endpoint and Stream Name">
+          <figcaption class="bcls-caption--image">Live Endpoint and Stream Name</figcaption>
+        </figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">
+          <p>How the endpoint and stream name are entered into your encoder varies depending one which encoder you use. For example, in the OBS software encoder, go to the Settings:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/shopify/obs-setup-settings.webp" alt="OBS Settings">
+            <figcaption class="bcls-caption--image">OBS Settings</figcaption>
+          </figure>
+          <p>Then go to the <strong>Stream</strong> settings, set the <strong>Service</strong> to <strong>Custom</strong>, and enter the RTMP endpoint in the <strong>Server</strong> field, and the stream name in the <strong>Steam Key</strong> field:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/shopify/obs-setup-rtmp-stream-name.webp" alt="OBS Stream Settings">
+            <figcaption class="bcls-caption--image">OBS Stream Settings</figcaption>
+          </figure>
+        </aside>
+      </li>
+      <li>
+        After you have started your encoder and the live event is ready, click the Play button on the player in the live event control room so that you can see the broadcast and use the <strong>Chat</strong> that is automatically included:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-playbutton.webp" alt="Start Live Event Playback">
+          <figcaption class="bcls-caption--image">Start Live Event Playback</figcaption>
+        </figure>
+      </li>
+      <li>
+        While the event is playing, you can enter your own chat messages or respond to messages from viewers:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-enter-chat-message.webp" alt="Send Chat Messages">
+          <figcaption class="bcls-caption--image">Send Chat Messages</figcaption>
+        </figure>
+      </li>
+      <li>
+        You can also pin products you added to the top of the chat - viewers can click on them to go to the product page:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-pin-product-to-chat.webp" alt="Pin Products to Chat">
+          <figcaption class="bcls-caption--image">Pin Products to Chat</figcaption>
+        </figure>
+        <p>You can also unpin products from the chat whenever you wish to.</p>
+      </li>
+      <li>When you want to end the event, click <span class="button-gray-border">End event</span>.</li>
+    </ol>
+    <p>After the live event is finished, analytics for the event will be displayed in the control room:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/live-event-analytics.webp" alt="Live Event Analytics">
+      <figcaption class="bcls-caption--image">Live Event Analytics</figcaption>
+    </figure>
   </section>
   <section class="bcls-section">
     <h2 id="viewing_analytics">Viewing analytics</h2>
     <p>Go to the Analytics tab to view Analytics for your videos:</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note that these are the same analytics you would see in Video Cloud Studio - they are included here for your convenience while you are working in Shopify.</aside>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/shopify/analytics-tab.webp" alt="Analytics Tab">
       <figcaption class="bcls-caption--image">Analytics Tab</figcaption>
