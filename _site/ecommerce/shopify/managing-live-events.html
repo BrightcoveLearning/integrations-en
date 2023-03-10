@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Shopify</title>
+        <title>Managing Live Events</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This section contains topics on the Brightcove custom cartridge for Shopify Commerce Platform.">
+        <meta name="description" content="This topics explains how to create and manage live events in your Shopify app.">
         
         <!-- Google Font -->
         <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
@@ -695,7 +695,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Shopify</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/ecommerce/shopify/">Shopify</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Managing Live Events</li>
             
             
           </ol>
@@ -708,49 +712,128 @@
   <div class="container">
     <div class="docs-overview py-5">
       
+      <div class="centered-inpage-nav" id="centered_inpage_nav">
+        <nav id="centered_toc">
+          <select id="centered_in_page_toc" class="form-select select-focus"></select>
+        </nav>
+      </div>
+      <br>
       
-<!-- temporary navigation -->
-<h1>Shopify</h1>
-<summary>This section contains topics on the Brightcove custom cartridge for Shopify Commerce Platform.</summary>
-<ul>
-  <li><a href="/ecommerce/shopify/brightcove-shopify-commerce-platform-overview.html">Overview and Installation</a></li>
-  <li><a href="/ecommerce/shopify/using-shopify-with-brightcove.html">Using the Brightcove Video Connector for Shopify</a></li>
-  <li><a href="/ecommerce/shopify/managing-live-events.html">Managing Live Events</a></li>
-</ul>
-<!-- Template for sub-section that has just pages -->
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+      
+<h1>Managing Live Events</h1>
+<article class="bcls-article">
+  <summary>This topics explains how to create and manage live events in your Shopify app.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>You can create live events that can be accessed from anywhere in your Shopify app. Live events automatically include a chat, and you can associate products that can be pinned to top of the chat at anytime to provide links to the product page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="view_live_events">View live events</h2>
+    <p>To view a list of live events for your account, go to the <strong>Live Events</strong> tab:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/live-events-tab.webp" alt="Live Events List">
+      <figcaption class="bcls-caption--image">Live Events List</figcaption>
+    </figure>
+    <p>To view a live event in progress (or a recording for a finished event, if one was made) click <strong>View</strong>:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/view-live-event.webp" alt="View Live Event">
+      <figcaption class="bcls-caption--image">View Live Event</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add_new_live_event">Add new live event</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>To add a new live event, click <span class="button-green">New Live Event</span> to open the dialog shown below.</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-event-new-dialog.webp" alt="New Live Event">
+          <figcaption class="bcls-caption--image">New Live Event</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Fill in the fields:</p>
+        <ul>
+          <li><strong>Name</strong> (required)</li>
+          <li><strong>Description</strong> (optional)</li>
+          <li><strong>Tags</strong> (optional)</li>
+          <li><strong>Reference ID</strong> (optional) usually used to match an ID in another system.</li>
+          <li><strong>Products</strong> (optional) highlight your product(s) in the live event, which will also allow you to pin them to the top of the chat that appears at the top of the chat that accompanies the live event, where viewers can click them to visit the product page where it can be purchased.</li>
+          <li>
+            <strong>Region</strong> (required) choose the region that you think will be closest to your target audience.
+          </li>
+          <li>
+            <strong>Live Ingest Profile</strong> (optional) if you wish to use a different profile than the default one, you can see the renditions created for each profile by selecting it. The profile determines the video renditions actually delivered to viewers (be aware that the actual rendition a viewer sees depends on the bandwidth available on the viewer's connection).
+          </li>
+          <li><strong>Convert event to video asset when complete</strong> check the box to save a VOD recording of it. Note that if later you try to view a finished live event that no recording was saved for, you will see an error displayed in the player.</li>
+          <li><strong>Products</strong> click <span class="button-green">Add Product</span> to open the product selector, where you can filter and select products you want to add to the live event. Click <span class="button-green">Save</span> when you have made your selections.</li>
+        </ul>
+      </li>
+      <li>
+        Click <span class="button-green">Save</span> to create the live event.
+        <aside class="bcls-aside bcls-aside--tip language-editable">Note: if you see an error message indicating that you have created the maximum number of the events for the selected region, select a different region and click <span class="button-green">Save</span> again.</aside>
+      </li>
+    </ol>
+    <h3>Setting up and running the live event</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        It will take a couple of minutes for the live event to initialize. While you are waiting for that, you can get your live encoder ready by copying the Live endpoint (RTMP address) and stream name into your encoder settings from the live event control room:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-rtmp-stream-name.webp" alt="Live Endpoint and Stream Name">
+          <figcaption class="bcls-caption--image">Live Endpoint and Stream Name</figcaption>
+        </figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">
+          <p>How the endpoint and stream name are entered into your encoder varies depending one which encoder you use. For example, in the OBS software encoder, go to the Settings:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/shopify/obs-setup-settings.webp" alt="OBS Settings">
+            <figcaption class="bcls-caption--image">OBS Settings</figcaption>
+          </figure>
+          <p>Then go to the <strong>Stream</strong> settings, set the <strong>Service</strong> to <strong>Custom</strong>, and enter the RTMP endpoint in the <strong>Server</strong> field, and the stream name in the <strong>Steam Key</strong> field:</p>
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/shopify/obs-setup-rtmp-stream-name.webp" alt="OBS Stream Settings">
+            <figcaption class="bcls-caption--image">OBS Stream Settings</figcaption>
+          </figure>
+        </aside>
+      </li>
+      <li>
+        After you have started your encoder and the live event is ready, click the Play button on the player in the live event control room so that you can see the broadcast and use the <strong>Chat</strong> that is automatically included:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-playbutton.webp" alt="Start Live Event Playback">
+          <figcaption class="bcls-caption--image">Start Live Event Playback</figcaption>
+        </figure>
+      </li>
+      <li>
+        While the event is playing, you can enter your own chat messages or respond to messages from viewers:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-enter-chat-message.webp" alt="Send Chat Messages">
+          <figcaption class="bcls-caption--image">Send Chat Messages</figcaption>
+        </figure>
+      </li>
+      <li>
+        You can also pin products you added to the top of the chat - viewers can click on them to go to the product page:
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/shopify/live-pin-product-to-chat.webp" alt="Pin Products to Chat">
+          <figcaption class="bcls-caption--image">Pin Products to Chat</figcaption>
+        </figure>
+        <p>You can also unpin products from the chat whenever you wish to.</p>
+      </li>
+      <li>When you want to end the event, click <span class="button-gray-border">End event</span>.</li>
+    </ol>
+    <p>After the live event is finished, analytics for the event will be displayed in the control room:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/shopify/live-event-analytics.webp" alt="Live Event Analytics">
+      <figcaption class="bcls-caption--image">Live Event Analytics</figcaption>
+    </figure>
+  </section>
 </article>
+
+
+
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->
+  
+  <nav class="right-side-nav" id="right_side_nav">
+    <h6 class="toc">Page Contents</h6>
+    <ul id="in_page_nav" class="list-none"></ul>
+  </nav>
   
 <!-- </div> -->
 </div>
