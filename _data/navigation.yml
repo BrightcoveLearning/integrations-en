@@ -127,6 +127,16 @@
           url: '/ecommerce/adobe-magento-commerce/installation-guide.html'
         - name: 'User Guide'
           url: '/ecommerce/adobe-magento-commerce/user-guide.html'
+    - name: Shopify
+      url: /ecommerce/shopify/index.html
+      icon: fa-brands fa-shopify
+      docs:
+        - name: Brightcove-Shopify Integration Overview
+          url: /ecommerce/shopify/brightcove-shopify-commerce-platform-overview.html
+        - name: Using the Brightcove Video Connector for Shopify
+          url: /ecommerce/shopify/using-shopify-with-brightcove.html
+        - name: Managing Live Events
+          url: /ecommerce/shopify/managing-live-events.html
 - section:
   name: 'eCDN'
   url: '/ecdn/index.html'

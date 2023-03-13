@@ -391,6 +391,43 @@
           </url>
         
       
+        <url>
+          
+            <loc>https://integrations.support.brightcove.com/ecommerce/shopify/index.html</loc>
+          
+            <lastmod>2023-03-13</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+          <url>
+            
+              <loc>https://integrations.support.brightcove.com/ecommerce/shopify/brightcove-shopify-commerce-platform-overview.html</loc>
+            
+            <lastmod>2023-03-13</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://integrations.support.brightcove.com/ecommerce/shopify/using-shopify-with-brightcove.html</loc>
+            
+            <lastmod>2023-03-13</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://integrations.support.brightcove.com/ecommerce/shopify/managing-live-events.html</loc>
+            
+            <lastmod>2023-03-13</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+      
     
       <url>
         <loc>https://integrations.support.brightcove.com/ecdn/index.html</loc>
