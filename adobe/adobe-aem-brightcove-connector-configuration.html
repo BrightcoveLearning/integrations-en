@@ -9,7 +9,13 @@ parent: Adobe
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
     <p>The Adobe-AEM-Brightcove Connector allows you to manage Brightcove Video Cloud videos and players within AEM, and easily embed videos in AEM pages.</p>
-    <aside class="bcls-aside bcls-aside--information">Note that this guide uses AEM 6.3. The connector also works with AEM 6.2, 6.4, and 6.5 and the steps are similar.</aside>
+    <aside class="bcls-aside bcls-aside--information">Notes:
+      <ul>
+        <li>If you are using Adobe Experience Cloud, be sure to see the <a href="#aem_cloud">Adobe Experience Cloud</a> section for additional configuration requirements/</li>
+        <li>This guide uses AEM 6.3. The connector also works with AEM 6.2, 6.4, and 6.5 and the steps are similar.</li>
+      </ul>
+       
+    </aside>
   </section>
   <section class="bcls-section">
     <h2 id="installation_steps">Configuration steps</h2>
@@ -196,5 +202,69 @@ parent: Adobe
       </li>
     </ol>
     <p>You have now completed the configuration of the AEM-Brightcove Connector. Proceed to <a href="/adobe/adobe-aem-brightcove-connector-using-connector.html">Using the Connector</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="aem_cloud">Adobe Experience Cloud</h2>
+    <p>There are a few configuration changes needed to use the Brightcove connector on AEM Cloud.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Include as part of your deployment an OSGI configuration to define your account information. This has all the same information as previous Brightcove versions but must be deployed in your ui.config project or similar.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe/config-mgr-account.png" alt="OSGI Configuration">
+          <figcaption class="bcls-caption--image">OSGI Configuration</figcaption>
+        </figure>
+      </li>
+      <li>
+        Include as part of your deployment an OSGI configuration for the replication listener if you would like to sync asset updates with Brightcove when you publish them. This replaces the deprecated custom Replication Agent included in previous Connector versions.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe/config-mgr-listener.png" alt="Replication Listener">
+          <figcaption class="bcls-caption--image">Replication Listener</figcaption>
+        </figure>
+      </li>
+      <li>
+        Be sure to enable the DAM Set last modified date workflow launcher for every Brightcove account folder in the DAM. This is disabled by default on the latest Cloud instances.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe/enable-last-modified-date.png" alt="Enable Set Last Modified Date">
+          <figcaption class="bcls-caption--image">Enable Set Last Modified Date</figcaption>
+        </figure>
+      </li>
+      <li>
+        Similar to previous versions, the connector comes with an (optional) automatic metadata schema tab. Instead of applying this automatically, you must select this schema and apply it to the Brightcove folders manually.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/adobe/apply-schema.png" alt="Automatic MetaData Schema">
+          <figcaption class="bcls-caption--image">Automatic MetaData Schema</figcaption>
+        </figure>
+      </li>
+      <li>
+        This update requires Java 11. Update your version if necessary.
+      </li>
+      <li>
+        You will need to embed this dependency package into their Maven projects. Packages need to be referenced as dependencies in the pom.xml, as provided by the vendor. 
+      </li>
+      <li>
+        To do this, you can use a local file repository within your pom.xml like the example below:
+<pre class="line-numbers"><code class="language-xml">&lt;repositories&gt;
+  &lt;repository&gt;
+    &lt;id&gt;my-local-repo&lt;/id&gt;
+    &lt;url&gt;file://${project.basedir}/my-repo&lt;/url&gt;
+  &lt;/repository&gt;
+&lt;/repositories&gt;</code></pre>
+      </li>
+      <li>
+        Then you can use the following command to install the connector package:
+<pre><code translate="no">mvn org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+  -Dfile=&lt;path-to-file&gt; -DgroupId=com.coresecure \ 
+  -DartifactId=brightcove.connector -Dversion=1.0.0 \
+  -Dpackaging=jar -DlocalRepositoryPath=&lt;path-defined-above&gt;</code></pre>
+      </li>
+      <li>
+        Finally, you must reference the locally-installed package via your dependencies section of pom.xml:
+<pre class="line-numbers"><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.coresecure&lt;/groupId&gt;
+  &lt;artifactId&gt;brightcove.connector&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+      </li>
+  </ol>
   </section>
 </article>
