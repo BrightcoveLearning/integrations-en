@@ -148,8 +148,8 @@
       icon: fa-regular fa-chart-network
       description: This section contains topics on the Brightcove custom integration with Kollective eCDN.
       docs:
-        - name: 'Kollective eCDN Deployment Guide'
-          url: '/ecdn/kollective/kollective-deployment-guide.html'
+        # - name: 'Kollective eCDN Deployment Guide'
+        #   url: '/ecdn/kollective/kollective-deployment-guide.html'
         - name: 'Installing the Kollective Player Plugin'
           url: '/ecdn/kollective/add-kollective-player-plugin.html'
         - name: 'Kollective eCDN User Guide'
