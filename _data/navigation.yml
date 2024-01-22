@@ -61,16 +61,16 @@
   icon: fa-regular fa-a
   description: This section contains topics on the Adobe Experience Manager connector for Video Cloud.
   docs:
+    - name: 'Overview'
+      url: '/adobe/adobe-aem-brightcove-connector-overview.html'
     - name: 'Getting Started with the Connector for AEM'
       url: '/adobe/getting-started-brightcove-video-connect-adobe-experience-manager.html'
-    - name: 'Configuration'
-      url: '/adobe/adobe-aem-brightcove-connector-configuration.html'
     - name: 'Installation for On-Premises AEM'
       url: '/adobe/adobe-aem-brightcove-connector-installation.html'
     - name: 'Installation for Cloud AEM'
       url: '/adobe/adobe-aem-brightcove-connection-installation-cloud.html'
-    - name: 'Overview'
-      url: '/adobe/adobe-aem-brightcove-connector-overview.html'
+    - name: 'Configuration'
+      url: '/adobe/adobe-aem-brightcove-connector-configuration.html'
     - name: 'Using the Connector'
       url: '/adobe/adobe-aem-brightcove-connector-using-connector.html'
 - section:
