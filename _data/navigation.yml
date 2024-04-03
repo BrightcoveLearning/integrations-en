@@ -161,15 +161,15 @@
       docs:
         - name: 'Brightcove with Peer5 Integration'
           url: '/ecdn/peer5/brightcove-with-peer5-integration.html'
-    - name: 'Ramp'
-      url: '/ecdn/ramp/index.html'
-      icon: fa-regular fa-chart-network
-      description: Peer5 operates as a service that orchestrates peers and provides analytics and control. The service is activated using our Javascript API in the browser. The client side consists of custom WebRTC p2p logic, an HTTP client and a delivery manager that optimizes speed using the two methods (P2P and HTTP). This section contains topics on using the Peer5 plugin to integrate Peer5 with the Brightcove Player.
-      docs:
-        - name: 'Getting Started with Ramp OmniCache and Video Cloud'
-          url: '/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html'
-        - name: 'Getting Started with Ramp Multicast+ and Video Cloud'
-          url: '/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html'
+    # - name: 'Ramp'
+    #   url: '/ecdn/ramp/index.html'
+    #   icon: fa-regular fa-chart-network
+    #   description: Peer5 operates as a service that orchestrates peers and provides analytics and control. The service is activated using our Javascript API in the browser. The client side consists of custom WebRTC p2p logic, an HTTP client and a delivery manager that optimizes speed using the two methods (P2P and HTTP). This section contains topics on using the Peer5 plugin to integrate Peer5 with the Brightcove Player.
+    #   docs:
+    #     - name: 'Getting Started with Ramp OmniCache and Video Cloud'
+    #       url: '/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html'
+    #     - name: 'Getting Started with Ramp Multicast+ and Video Cloud'
+    #       url: '/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html'
 - section:
   name: 'Brightcove Video Connect for Microsoft Teams'
   url: '/teams/index.html'
