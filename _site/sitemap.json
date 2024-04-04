@@ -145,16 +145,6 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html",
-      "oldURL": "/getting-started-ramp-multicast-and-video-cloud"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html",
-      "oldURL": "/getting-started-ramp-omnicache-and-video-cloud"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/web-conferencing/host-avaya-conference-brightcove-live.html",
       "oldURL": "/host-avaya-conference-brightcove-live"
   },
@@ -185,17 +175,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://integrations.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/sharepoint/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -210,7 +195,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
+      "newURL": "https://integrations.support.brightcove.com/ecdn/",
       "oldURL": "/index"
   },
 
@@ -220,7 +205,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
       "oldURL": "/index"
   },
 
@@ -230,12 +215,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/salesforce/",
+      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
@@ -245,7 +230,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
+      "newURL": "https://integrations.support.brightcove.com/adobe/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -255,12 +245,17 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/sitecore/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/drupal/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
       "oldURL": "/index"
   },
 
@@ -275,22 +270,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/inplayer.html",
       "oldURL": "/inplayer"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/sitecore/installation-guide.html",
       "oldURL": "/installation-guide"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/sitecore/installation-guide.html",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/installation-guide.html",
       "oldURL": "/installation-guide"
   },
 
