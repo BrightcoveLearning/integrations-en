@@ -145,6 +145,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-multicast-and-video-cloud.html",
+      "oldURL": "/getting-started-ramp-multicast-and-video-cloud"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/ecdn/ramp/getting-started-ramp-omnicache-and-video-cloud.html",
       "oldURL": "/getting-started-ramp-omnicache-and-video-cloud"
   },
@@ -180,17 +185,12 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/non-brightcove-players/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/support/",
+      "newURL": "https://integrations.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -210,12 +210,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecdn/",
+      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/ecdn/peer5/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/ecdn/",
       "oldURL": "/index"
   },
 
@@ -240,7 +245,7 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/general/",
+      "newURL": "https://integrations.support.brightcove.com/hootsuite/",
       "oldURL": "/index"
   },
 
@@ -260,17 +265,17 @@
   },
 
   {
-      "newURL": "https://integrations.support.brightcove.com/ecommerce/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://integrations.support.brightcove.com/teams/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://integrations.support.brightcove.com/ecommerce/adobe-magento-commerce/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://integrations.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
