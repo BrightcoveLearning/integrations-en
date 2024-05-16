@@ -12,35 +12,35 @@ parent: Ramp
   <section class="bcls-section">
     <h2 id="introduction">Introduction</h2>
 
-    <p>Ramp's&nbsp;<a href=" https://livetools.rampecdn.com/plugin/dev/vbrick-ecdn-plugin-videojs.js">AltitudeCDN™ Multicast+</a>&nbsp;product is
+    <p>Ramp's&nbsp;<a href="https://ramp.com/">AltitudeCDN™ Multicast+</a>&nbsp;product (This is the old name, the company did rebranding) is
       an enterprise live video distribution system&nbsp;that makes use of multicast enabled networks to&nbsp;reduce
       video traffic over the local network, the internet gateway, and&nbsp;limited bandwidth links within the enterprise
-      network. With Multicast+, client desktop computers&nbsp;using the Brightcove Player will pull the stream from a
-      Multicast+ receiver client on the local computer which "tunes in" to the live stream delivered on the network by
-      the Multicast+ server. &nbsp;The Multicast+ server pulls the live stream from the Brightcove CDN or an on-premise
-      streaming server. Multicast+ is a completely on-premise solution delivered as a software appliance and
-      is managed by the AltitudeCDN™ Altimeter management console. &nbsp;Multicast+ can be used standalone or in concert
+      network. With Ramp, client desktop computers&nbsp;using the Brightcove Player will pull the stream from a
+      Ramp receiver client on the local computer which "tunes in" to the live stream delivered on the network by
+      the Ramp server. &nbsp;The Ramp server pulls the live stream from the Brightcove CDN or an on-premise
+      streaming server. Ramp is a completely on-premise solution delivered as a software appliance and
+      is managed by the AltitudeCDN™ Altimeter management console. &nbsp;Ramp can be used standalone or in concert
       with&nbsp;AltitudeCDN™ Omnicache&nbsp;for mixed unicast/multicast networks.</p>
 
     <p>The integration with the Brightcove uses the <a
-        href="https://plugin.rampecdn.net/ramp-ecdn-plugin-videojs.js">Multicast+ Video.js plug-in</a> to rewrite
-      the stream URL to the local Multicast+ receiver client server. &nbsp;For complete details on setting up the
-      Multicast+ server for use with Video Cloud, see this <a target="_blank"
+        href="https://livetools.rampecdn.com/plugin/dev/vbrick-ecdn-plugin-videojs.js">Ramp Video.js plug-in</a> to rewrite
+      the stream URL to the local Ramp receiver client server. &nbsp;For complete details on setting up the
+      Ramp server for use with Video Cloud, see this <a target="_blank"
         href="/ecdn/ramp/downloads/Altitude CDN_OmniCache_Brightcove_TechNote_v14.pdf">TechNote</a> from Ramp.
     </p>
 
-    <p>Before proceeding with the instructions below, please complete the Multicast+ Quickstart process with the Ramp
-      team to ensure that the Multicast+ server, local Multicast+ receivers,&nbsp;and the local network are configured
+    <p>Before proceeding with the instructions below, please complete the Ramp Quickstart process with the Ramp
+      team to ensure that the Ramp server, local Ramp receivers,&nbsp;and the local network are configured
       properly.</p>
     <section class="bcls-section">
       <h2 id="playerconfig">Player Configuration</h2>
 
-      <p>Start by configuring a Brightcove player to use the Multicast+ plug-in. Create a new player with the desired
+      <p>Start by configuring a Brightcove player to use the Ramp Plugin. Create a new player with the desired
         skin and options.</p>
 
-      <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18351-player-setup.png" /></p>
+      <p><img class="bcls-image--no-border" alt="" src="/assets/images/ecdn/ramp/node18351-player-setup.webp" /></p>
 
-      <p>Then, add the Multicast+ Video.js plug-in.</p>
+      <p>Then, add the Ramp Plugin.</p>
 
       <p><img class="bcls-image--no-border" alt=""
           src="/assets/images/ecdn/ramp/node18351-player-setup-plugins-javascript.webp" /></p>
@@ -48,10 +48,10 @@ parent: Ramp
       <p>Copy and paste from here:</p>
 
       <pre class="brush:as3;">
-      //livetools.ramp.com/omnicache/plugin/multicastplugin.allinone.min.js
+        https://livetools.rampecdn.com/plugin/dev/vbrick-ecdn-plugin-videojs.js
       </pre>
 
-      <p>Finally, set the Multicast+ plug-in options. &nbsp;First, the player will need to know the multicast IP address
+      <!-- <p>Finally, set the Ramp plug-in options. &nbsp;First, the player will need to know the multicast IP address
         and port for the live multicast broadcast. &nbsp;The player can be locked to a particular multicast address by
         specifying a "maddr" parameter in the Options such as</p>
 
@@ -66,14 +66,14 @@ parent: Ramp
         and click Edit on the Custom Fields section:</p>
 
       <p><img class="bcls-image--no-border" alt=""
-          src="https://img.brightcove.com/node18351-customfield-metadata.png" /></p>
+          src="https://img.brightcove.com/node18351-customfield-metadata.png" /></p> -->
 
       <p>For a mixed unicast/multicast environment, use the "omnicache" parameter in the Options to specify
-        an&nbsp;Omnicache server for the player to fall back to if the Multicast+ receiver client is not available on
+        an&nbsp;Omnicache server for the player to fall back to if the Ramp receiver client is not available on
         the playback device or if the multicast stream is not available on that segment of the network.</p>
 
       <p><img class="bcls-image--no-border" alt=""
-          src="https://img.brightcove.com/node18351-player-setup-plugins-options.png" /></p>
+          src="/assets/images/ecdn/ramp/node18351-player-setup-plugins-options.webp" /></p>
 
       <p>Copy and paste from here:</p>
 
@@ -116,21 +116,21 @@ parent: Ramp
       <h2 id="embed">Embed Brightcove Player</h2>
 
       <p>Finally, embed the Brightcove player on your web page using the standard player publishing process.</p>
-
-      <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18351-player-embed.png" /></p>
+<!-- 
+      <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18351-player-embed.png" /></p> -->
 
       <p><br />
         <img class="bcls-image--no-border" alt=""
-          src="https://img.brightcove.com/node18351-player-embed_copy_code.png" /></p>
+          src="/assets/images/ecdn/ramp/node18351-player-embed_copy_code.webp" /></p>
     </section>
-    <section class="bcls-section">
-      <h2 id="liveworkflow">Providing Live Stream Manifest to Multicast+</h2>
+    <!-- <section class="bcls-section">
+      <h2 id="liveworkflow">Providing Live Stream Manifest to Ramp</h2>
 
-      <p>To broadcast a live stream on the enterprise network, Multicast+ needs to know the stream manifest URL
+      <p>To broadcast a live stream on the enterprise network, Ramp needs to know the stream manifest URL
         delivered by the Brightcove CDN or an internal streaming server. When using the Live workflow in Brightcove
         Video Cloud, the stream manifest URL is not known until the live event starts streaming. To provide the manifest
-        URL to Multicast+, you will start the live stream, copy the stream manifest, and then save the stream manifest
-        on the Multicast+ server via the Altimeter console.</p>
+        URL to Ramp, you will start the live stream, copy the stream manifest, and then save the stream manifest
+        on the Ramp server via the Altimeter console.</p>
 
       <h3>Start Live Stream and Determine Stream Manifest</h3>
 
@@ -141,7 +141,7 @@ parent: Ramp
       <p><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18351-live-event-create.png" />
       </p>
 
-      <p>Select the default player, not the Multicast+ enabled player.</p>
+      <p>Select the default player, not the Ramp enabled player.</p>
 
       <p><img class="bcls-image--no-border" alt=""
           src="https://img.brightcove.com/node18351-live-event-select-player.png" /></p>
@@ -175,9 +175,9 @@ parent: Ramp
       <p><img class="bcls-image--no-border" alt=""
           src="https://img.brightcove.com/node18351-new-ticket-live-copy-manifest.png" /></p>
 
-      <p>Finally, follow the instructions in this Multicast+ <a target="_blank"
+      <p>Finally, follow the instructions in this Ramp <a target="_blank"
           href="/ecdn/ramp/downloads/Altitude CDN_OmniCache_Brightcove_TechNote_v14.pdf">TechNote</a> or other
-        Multicast+ and Altimeter documentation to configure a new broadcast with the stream URL.</p>
-    </section>
+        Ramp and Altimeter documentation to configure a new broadcast with the stream URL.</p>
+    </section> -->
 
 </article>
