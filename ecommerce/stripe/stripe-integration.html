@@ -1,6 +1,6 @@
 ---
 title: Stripe
-description: "Brightcove's integration with Stripe allows you to... "
+description: "Stripe Connect eases the integration of platforms with the Stripe payment gateway from onboarding onwards."
 parent: Stripe
 grandparent: eCommerce
 layout: staging
@@ -9,11 +9,11 @@ layout: staging
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
+  <!-- <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
     <aside class="bcls-aside bcls-aside--information language-editable">It is recommended to use a <strong>Standard</strong> Stripe connect account.</aside>
     
-  </section>
+  </section> -->
 
   <section class="bcls-section">
     <h2 id="Configuration">Configuring Stripe Connect</h2>
@@ -27,14 +27,14 @@ layout: staging
                 <p></p>
             </figure>
         </li>
-        <li>Select the <strong>Country</strong> for the desired platform, and the <strong>Stripe Connect Account</strong> type. 
+        <li>Select the <strong>Country</strong> for the desired platform and the <strong>Stripe Connect Account</strong> type. 
             <figure class="bcls-figure">
                 <p></p>
                 <img class="bcls-image" src="/assets/images/stripe/popup.webp">
                 <p></p>
             </figure>
         </li>
-        <li>A one-time link will be generated, you can onboard through there. 
+        <li>A one-time link will be generated, where you can follow the onboarding process. 
             <figure class="bcls-figure">
                 <p></p>
                 <img class="bcls-image" src="/assets/images/stripe/link.webp">
@@ -47,8 +47,8 @@ layout: staging
 
   <section class="bcls-section">
     <h2 id="onboarding">Onboarding page</h2>
-    <ol class="bcls-tasklist-restart">
-        <li>After the customer fills up their onboarding data, their Stripe connect account will show up on the connect entries. Everything from Products, prices etc must be configured inside the connected account.
+    <ul>
+        <li>After filling out your onboarding data, your Stripe Connect account will show up on the connect entries.
             <figure class="bcls-figure">
                 <p></p>
                 <img class="bcls-image" src="/assets/images/stripe/landing.webp">
@@ -59,25 +59,24 @@ layout: staging
                 <img class="bcls-image" src="/assets/images/stripe/entries.webp">
                 <p></p>
             </figure>
+            <aside class="bcls-aside bcls-aside--information language-editable">Everything from Products, prices etc must be configured inside the connected account.</aside>
         </li>
-    </ol>
+    </ul>
     
   </section>
 
   <section class="bcls-section">
-    <h2 id="identifying-account-id">Identifying Connected Account ID</h2>
-    <p>Upon entering the Connected Account, click on the “Copy ID” button (or check the ID section of the account) to get the customer’s Connect Account ID. That ID will be required for the stripe configuration.</p>
+    <h2 id="identifying-account-id">Identifying the Connected Account ID</h2>
+    <p>Upon entering the Connected Account, click on the <strong>Copy ID</strong> button to get your Connect Account ID. That ID will be required for the stripe configuration.</p>
     <figure class="bcls-figure">
         <p></p>
         <img class="bcls-image" src="/assets/images/stripe/id.webp">
         <p></p>
     </figure>
-    <p>Afterwards, we head over to Developers->Webhook, to check if there’s already a webhook for connected accounts set up.</p>
-  </section>
-
-  <section class="bcls-section">
+    <p>Afterwards, navigate to Developers -> Webhook, to check if a webhook for connected accounts has been set up.</p>
+  
     <h2 id="connect">Connected Accounts Webhook</h2>
-    <p>On the overview page, the connect account webhooks will be of the type Connect. If there’s already one, enter in it to confirm it supports the required events listed below. If not, those events must be added to that webhook or a new one must be created. Below, we’ll list on how to register a new webhook related to stripe connected accounts. </p>
+    <p>On the overview page, the connect account webhooks will be of the type Connect. After finding the desired webhook, enter it to confirm it supports the required events listed below. If not, those events must be added to that webhook, or a new one must be created. Below, you'll find how to register a new webhook related to stripe-connected accounts. </p>
     <figure class="bcls-figure">
         <p></p>
         <img class="bcls-image" src="/assets/images/stripe/webhook.webp">
@@ -85,7 +84,7 @@ layout: staging
     </figure>
     <h3>Registering a new Webhook</h3>
     <p>The new webhook will have a list of events, that will be fired by stripe to our webhook every time they are triggered.</p>
-    <p>Below are the list of our current supported events: </p>
+    <p>Current supported events: </p>
     <ul>
         <li>'customer.subscription.deleted'</li>
         <li>'customer.subscription.updated'</li>
@@ -93,23 +92,24 @@ layout: staging
         <li>'customer.subscription.trial_will_end'</li>
     </ul>
     <aside class="bcls-aside bcls-aside--warning language-editable">Any other events registered will be ignored by our webhooks.</aside>
+    <p>On the creation page, fill in our <strong>endpoint URL.</strong></p>
     <figure class="bcls-figure">
         <p></p>
         <img class="bcls-image" src="/assets/images/stripe/listen.webp">
         <p></p>
     </figure>
-    <p>On the creation page, fill in our endpoint URL, On the Listen to section, be sure to select the Events on Connected accounts option and insert the events listed above on the select events section. </p>
+    <aside class="bcls-aside bcls-aside--information language-editable">In the Listen to section, be sure to select the Events on Connected accounts option and insert the events listed above in the <strong>Select Events</strong> section.</aside>
 </section>
 
 <section class="bcls-section">
     <h2 id="secret">Getting the Webhook Signing Secret</h2>
+    <p>To get the signing secret, enter the webhook page and click on the Signing Secret section to see the code. This code is required to configure the connect account in the Stripe Payment Gateway API.</p>
     <figure class="bcls-figure">
         <p></p>
         <img class="bcls-image" src="/assets/images/stripe/secret.webp">
         <p></p>
     </figure>
-    <p>To get the signing secret, enter in the webhook page, and click on the Signing Secret section to see the code. This code is required to configure the connect account in the Payment API Stripe Payment Gateway.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">After we have both the Connected Account ID and the Webhook Signing Secret, we can configure it properly in the Managing Payment Gateway configurations.</aside>
+    <!-- <aside class="bcls-aside bcls-aside--information language-editable">After we have both the Connected Account ID and the Webhook Signing Secret, we can configure it properly in the Managing Payment Gateway configurations.</aside> -->
 </section>
 
   
