@@ -21,7 +21,7 @@
   name: 'WordPress'
   url: '/wordpress/index.html'
   icon: fa-brands fa-wordpress
-  description: This section contains topics on the Wordpress connector for Video Cloud. The Connector supports Wordpress 6.1.
+  description: This section contains topics on the Wordpress connector for Video Cloud.
   docs:
     - name: 'Getting Started with Brightcove Video Connect'
       url: '/wordpress/getting-started-brightcove-video-connect-wordpress-cms.html'
