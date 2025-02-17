@@ -75,6 +75,11 @@
   },
 
   {
+      "newURL": "https://integrations.support.brightcove.com/drupal/drupal-11-brightcove-connector-overview.html",
+      "oldURL": "/drupal-11-brightcove-connector-overview"
+  },
+
+  {
       "newURL": "https://integrations.support.brightcove.com/drupal/drupal-7-brightcove-connector-configuration-and-usage.html",
       "oldURL": "/drupal-7-brightcove-connector-configuration-and-usage"
   },
