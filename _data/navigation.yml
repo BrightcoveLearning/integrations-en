@@ -41,6 +41,8 @@
   docs:
     - name: 'Getting Started with the Connector for Drupal'
       url: '/drupal/getting-started-brightcove-video-connect-drupal-cms.html'
+    - name: 'Drupal 11 - Brightcove Connector: Overview'
+      url: '/drupal/drupal-11-brightcove-connector-overview.html'
     - name: 'Drupal 9 - Brightcove Connector: Overview'
       url: '/drupal/drupal-9-brightcove-connector-overview.html'
     - name: 'Drupal 8 - Configuration'
